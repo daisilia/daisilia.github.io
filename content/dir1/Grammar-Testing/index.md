@@ -19,7 +19,7 @@ categories:
 
 <!-- more -->
 
-![](0.jpeg)
+![sdfasdfa](0.jpeg)
 
 ![](aloha.gif)
 
