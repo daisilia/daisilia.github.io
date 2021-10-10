@@ -1,0 +1,3 @@
+[submodule "themes/daisilia"]
+	path = themes/daisilia
+	url = https://github.com/alohaia/hugo-theme-daisilia.git

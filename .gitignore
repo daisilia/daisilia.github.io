@@ -1,0 +1,5 @@
+trash/
+*.old
+*.back
+test/
+test.*

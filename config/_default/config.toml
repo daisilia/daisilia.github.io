@@ -1,0 +1,57 @@
+title = "Aloha's Blog"
+baseURL = 'https://aloha.org.cn'
+theme = 'daisilia'
+enableEmoji = true
+assetDir = '/assets'
+
+# language
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh'
+[languages.zh]
+  languagedirection = 'zh'
+  title = "Aloha's Blog"
+  weight = 10
+
+[author]
+  fullname = "Qihuan Liu"
+  nickname = "Aloha"
+  avatar = "/images/avatar.gif"
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+# menus
+[menu]
+[[menu.daisy]]
+  identifier = 'home'
+  name = 'Home'
+  pre = '<i class="fas fa-home"></i>'
+  url = '/'
+  weight = 1
+[[menu.daisy]]
+  identifier = 'about'
+  name = 'About'
+  pre = '<i class="fas fa-user"></i>'
+  url = '/about/'
+  weight = 2
+[[menu.daisy]]
+  identifier = 'tags'
+  name = 'Tags'
+  pre = '<i class="fas fa-tags"></i>'
+  url = '/tags/'
+  weight = 3
+[[menu.daisy]]
+  identifier = 'categories'
+  name = 'Categories'
+  pre = '<i class="fas fa-th-list"></i>'
+  url = '/categories/'
+  weight = 4
+[[menu.daisy]]
+  identifier = 'docs'
+  name = 'Docs'
+  pre = '<i class="fas fa-book"></i>'
+  url = '/docs/'
+  weight = 5
+# [[menu.daisy]]
+#   pre = '<i class="fas fa-search"></i>'
