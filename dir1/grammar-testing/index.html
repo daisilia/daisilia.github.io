@@ -1,0 +1,2547 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,height=device-height,initial-scale=1">
+<title>Grammar Testing | Aloha's Blog</title>
+<link rel=stylesheet href=/css/bundle.min.dfaaf6d6f02274a0f30ee72d38539d81cfecd865c111a52c6f0d8ab2a62c325a.css integrity="sha256-36r21vAidKDzDuctOFOdgc/s2GXBEaUsbw2KsqYsMlo=" media=screen>
+<link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css>
+<link rel=stylesheet href="https://fonts.font.im/css?family=Fira+Mono|Indie+Flower|Lora|Noto+Sans|Noto+Serif">
+<link rel="shortcut icon" href=/images/favicon.ico type=image/vnd.microsoft.icon>
+<link rel=icon href=/images/favicon.ico type=image/vnd.microsoft.icon>
+</head>
+<body class=site-root id=SiteRoot>
+<div class=site-inner id=SiteInner>
+<div class=site-header id=SiteHeader><h1 class=site-title>Aloha's Blog</h1>
+<ul class=main-menu>
+<li class=menu-item><a href=/><i class="fas fa-home"></i>Home</a></li>
+<li class=menu-item><a href=/about/><i class="fas fa-user"></i>About</a></li>
+<li class=menu-item><a href=/tags/><i class="fas fa-tags"></i>Tags</a></li>
+<li class=menu-item><a href=/categories/><i class="fas fa-th-list"></i>Categories</a></li>
+<li class=menu-item><a href=/docs/><i class="fas fa-book"></i>Docs</a></li>
+</ul>
+</div>
+<div class=site-main id=SiteMain>
+<div class=site-left></div>
+<div class=site-content>
+<h1 class="article-title single-title">Grammar Testing</h1>
+<div class=article-metadata>
+<ul class=meta-section>
+<li class=meta-item>
+<i class="fas fa-calendar"></i>
+<span class=meta-item-text>Posted on</span>
+<span class=meta-item-value>2021-09-16</span>
+</li>
+<li class=meta-item>
+<i class="fas fa-clock"></i>
+<span class=meta-item-text>Edited on</span>
+<span class=meta-item-value>2021-09-16</span>
+</li>
+<li class=meta-item>
+<i class="fas fa-user"></i>
+<span class=meta-item-text>Author:</span>
+<span class=meta-item-value>QiHuan Liu</span>
+</li>
+<li class=meta-item>
+<i class="fas fa-users"></i>
+<span class=meta-item-text>Co-Authors:</span>
+<span class=meta-item-value>Mr. Guo, 陈可睿</span>
+</li>
+</ul>
+<ul class=meta-section>
+<li class=meta-item>
+<i class="fas fa-tags"></i>
+<span class=meta-item-text>Tags:</span>
+<span class=meta-item-value><a class=tag href=/tags/test>Test</a></span>
+</li>
+<li class=meta-item><i class="fas fa-th-list"></i>
+<span class=meta-item-text>Categories:</span>
+<span class=meta-item-value><a class=category href=/categories/all>All</a>, <a class=category href=/categories/test>Test</a></span>
+</li>
+<li class=meta-item><i class="fas fa-folder"></i>
+<span class=meta-item-text>In</span>
+<a class=meta-item-value href=/dir1/>Dir1s</a>
+</li>
+</ul>
+<ul class=meta-section>
+<li class=meta-item>
+<i class="far fa-file-word"></i>
+<span class=meta-item-text>Word count ≈</span>
+<span class=meta-item-value>4300</span>
+</li>
+<li class=meta-item>
+<i class="fas fa-hourglass-start"></i>
+<span class=meta-item-text>Reading time ≈</span>
+<span class=meta-item-value>20 min</span>
+</li>
+</ul>
+</div>
+<div class=article-content><p>语法测试用。</p>
+<p><div class=image-wrap>
+<a data-fancybox data-src=0.jpeg>
+<img src=0.jpeg alt>
+</a>
+</div>
+</p>
+<p><div class=image-wrap>
+<a data-fancybox data-src=aloha.gif>
+<img src=aloha.gif alt>
+</a>
+</div>
+</p>
+<p>[TOC]</p>
+<h2 id=headers><a scroll=headers>Headers</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>## H2
+### H3
+#### H4
+##### H5
+###### H6
+### Duplicate Header
+### Duplicate Header
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=h2><a scroll=h2>H2</a></h2>
+<h3 id=h3><a scroll=h3>H3</a></h3>
+<h4 id=h4><a scroll=h4>H4</a></h4>
+<h5 id=h5><a scroll=h5>H5</a></h5>
+<h6 id=h6><a scroll=h6>H6</a></h6>
+<h3 id=duplicate-header><a scroll=duplicate-header>Duplicate Header</a></h3>
+<h3 id=duplicate-header-1><a scroll=duplicate-header-1>Duplicate Header</a></h3>
+<p>此处略。</p>
+<h2 id=paragraphs><a scroll=paragraphs>Paragraphs</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>This is a paragraph.
+I am still part of the paragraph.
+
+New paragraph.
+</code></pre></td></tr></table>
+</div>
+</div><p>This is a paragraph.
+I am still part of the paragraph.</p>
+<p>New paragraph.</p>
+<h2 id=inline><a scroll=inline>Inline</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">39
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">40
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">41
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">42
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>`inline block`
+
+&lt;kbd&gt;ctrl&lt;/kbd&gt;+&lt;kbd&gt;alt&lt;/kbd&gt;+&lt;kbd&gt;del&lt;/kbd&gt;
+
+**bold 1** and __bold 2__
+
+*italic 1*  and _italic 2_
+
+~~strike~~
+
+
+***bold 1 and italic 1***
+
+___bold 2 and italic 2___
+
+__*bold 2 and italic 1*__
+
+**_bold 1 and italic 2_**
+
+
+~~*strike italic 1*~~ and *~~strike italic 2~~*
+
+~~_strike italic 2_~~ and  _~~strike italic 2~~_
+
+
+~~**strike bold 1**~~ and **~~strike bold 1~~**
+
+~~__strike bold 2__~~ and __~~strike bold 2~~__
+
+
+~~***strike italic 1 bold 1***~~ and ***~~strike italic 1 bold 1~~***
+
+~~___strike italic 2 bold 2___~~ and ___~~strike italic 2 bold 2~~___
+
+**~~*strike italic 1 bold 1*~~** and *~~**strike italic 1 bold 1**~~*
+
+__~~_strike italic 2 bold 2_~~__ and _~~__strike italic 2 bold 2__~~_
+
+**~~_strike italic 2 bold 1_~~** and _~~**strike italic 2 bold 1**~~_
+
+__~~*strike italic 1 bold 2*~~__ and *~~__strike italic 1 bold 2__~~*
+
+</code></pre></td></tr></table>
+</div>
+</div><p><code>inline block</code></p>
+<p><kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd></p>
+<p><strong>bold 1</strong> and <strong>bold 2</strong></p>
+<p><em>italic 1</em> and <em>italic 2</em></p>
+<p><del>strike</del></p>
+<p><em><strong>bold 1 and italic 1</strong></em></p>
+<p><em><strong>bold 2 and italic 2</strong></em></p>
+<p><strong><em>bold 2 and italic 1</em></strong></p>
+<p><strong><em>bold 1 and italic 2</em></strong></p>
+<p><del><em>strike italic 1</em></del> and <em><del>strike italic 2</del></em></p>
+<p><del><em>strike italic 2</em></del> and <em><del>strike italic 2</del></em></p>
+<p><del><strong>strike bold 1</strong></del> and <strong><del>strike bold 1</del></strong></p>
+<p><del><strong>strike bold 2</strong></del> and <strong><del>strike bold 2</del></strong></p>
+<p><del><em><strong>strike italic 1 bold 1</strong></em></del> and <em><strong><del>strike italic 1 bold 1</del></strong></em></p>
+<p><del><em><strong>strike italic 2 bold 2</strong></em></del> and <em><strong><del>strike italic 2 bold 2</del></strong></em></p>
+<p><strong><del><em>strike italic 1 bold 1</em></del></strong> and <em><del><strong>strike italic 1 bold 1</strong></del></em></p>
+<p><strong><del><em>strike italic 2 bold 2</em></del></strong> and <em><del><strong>strike italic 2 bold 2</strong></del></em></p>
+<p><strong><del><em>strike italic 2 bold 1</em></del></strong> and <em><del><strong>strike italic 2 bold 1</strong></del></em></p>
+<p><strong><del><em>strike italic 1 bold 2</em></del></strong> and <em><del><strong>strike italic 1 bold 2</strong></del></em></p>
+<h2 id=links><a scroll=links>Links</a></h2>
+<p>Footnote, reference sources are provided in separate markdowns files specified in frontmatter.</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>[Reference Link][1]
+
+Footnotes[^1] have a label[^label] and a definition[^!DEF]
+
+Web image
+![Web Picture](http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg &#34;Web Picture&#34;)
+
+Local image
+![Local Picture](logo-revolunet-carre.jpg &#34;Local Picture&#34;)
+
+contact@revolunet.com
+
+@revolunet
+
+Issue #1
+
+https://github.com/revolunet/sublimetext-markdown-preview/
+
+This is a link https://github.com/revolunet/sublimetext-markdown-preview/.
+
+This is a link &#34;https://github.com/revolunet/sublimetext-markdown-preview/&#34;.
+
+With this link (https://github.com/revolunet/sublimetext-markdown-preview/), it still works.
+
+    [1]: https://github.com/revolunet/sublimetext-markdown-preview/
+    [^1]: This is a footnote
+    [^label]: A footnote on &#34;label&#34;
+    [^!DEF]: The footnote for definition
+</code></pre></td></tr></table>
+</div>
+</div><p>[Reference Link][1]</p>
+<p>Footnotes[^1] have a label[^label] and a definition[^!DEF]</p>
+<p>Web image</p>
+<p>Local image</p>
+<p><a href=http://www.google.com>www.google.com</a></p>
+<p><a href=mailto:contact@revolunet.com>contact@revolunet.com</a></p>
+<p>@revolunet</p>
+<p>Issue #1</p>
+<p><a href=https://github.com/revolunet/sublimetext-markdown-preview/>https://github.com/revolunet/sublimetext-markdown-preview/</a></p>
+<p>This is a link <a href=https://github.com/revolunet/sublimetext-markdown-preview/>https://github.com/revolunet/sublimetext-markdown-preview/</a>.</p>
+<p>This is a link &ldquo;<a href=https://github.com/revolunet/sublimetext-markdown-preview/%22>https://github.com/revolunet/sublimetext-markdown-preview/"</a>.</p>
+<p>With this link (<a href=https://github.com/revolunet/sublimetext-markdown-preview/),>https://github.com/revolunet/sublimetext-markdown-preview/),</a> it still works.</p>
+<h2 id=abbreviation><a scroll=abbreviation>Abbreviation</a></h2>
+<p>Abbreviations source are found in a separate markdown file specified in frontmatter.</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>The HTML specification 
+is maintained by the W3C.
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+</code></pre></td></tr></table>
+</div>
+</div><p>The HTML specification
+is maintained by the W3C.</p>
+<h2 id=unordered-list><a scroll=unordered-list>Unordered List</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Unordered List
+
+- item 1
+    * item A
+    * item B
+        more text
+        + item a
+        + item b
+        + item c
+    * item C
+- item 2
+- item 3
+</code></pre></td></tr></table>
+</div>
+</div><p>Unordered List</p>
+<ul>
+<li>item 1
+<ul>
+<li>item A</li>
+<li>item B
+more text
+<ul>
+<li>item a</li>
+<li>item b</li>
+<li>item c</li>
+</ul>
+</li>
+<li>item C</li>
+</ul>
+</li>
+<li>item 2</li>
+<li>item 3</li>
+</ul>
+<h2 id=ordered-list><a scroll=ordered-list>Ordered List</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Ordered List
+
+1. item 1
+    1. item A
+    2. item B
+        more text
+        1. item a
+        2. item b
+        3. item c
+    3. item C
+2. item 2
+3. item 3
+</code></pre></td></tr></table>
+</div>
+</div><p>Ordered List</p>
+<ol>
+<li>item 1
+<ol>
+<li>item A</li>
+<li>item B
+more text
+<ol>
+<li>item a</li>
+<li>item b</li>
+<li>item c</li>
+</ol>
+</li>
+<li>item C</li>
+</ol>
+</li>
+<li>item 2</li>
+<li>item 3</li>
+</ol>
+<h2 id=task-list><a scroll=task-list>Task List</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Task List
+
+- [X] item 1
+    * [X] item A
+    * [ ] item B
+        more text
+        + [x] item a
+        + [ ] item b
+        + [x] item c
+    * [X] item C
+- [ ] item 2
+- [ ] item 3
+</code></pre></td></tr></table>
+</div>
+</div><p>Task List</p>
+<ul>
+<li><input checked disabled type=checkbox> item 1
+<ul>
+<li><input checked disabled type=checkbox> item A</li>
+<li><input disabled type=checkbox> item B
+more text
+<ul>
+<li><input checked disabled type=checkbox> item a</li>
+<li><input disabled type=checkbox> item b</li>
+<li><input checked disabled type=checkbox> item c</li>
+</ul>
+</li>
+<li><input checked disabled type=checkbox> item C</li>
+</ul>
+</li>
+<li><input disabled type=checkbox> item 2</li>
+<li><input disabled type=checkbox> item 3</li>
+</ul>
+<h2 id=mixed-lists><a scroll=mixed-lists>Mixed Lists</a></h2>
+<p><code>Really Mixed Lists</code> should break with <code>sane_lists</code> on.</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Mixed Lists
+
+- item 1
+    * [X] item A
+    * [ ] item B
+        more text
+        1. item a
+        2. itemb
+        3. item c
+    * [X] item C
+- item 2
+- item 3
+
+
+Really Mixed Lists
+
+- item 1
+    * [X] item A
+    - item B
+        more text
+        1. item a
+        + itemb
+        + [ ] item c
+    3. item C
+2. item 2
+- [X] item 3
+</code></pre></td></tr></table>
+</div>
+</div><p>Mixed Lists</p>
+<ul>
+<li>item 1
+<ul>
+<li><input checked disabled type=checkbox> item A</li>
+<li><input disabled type=checkbox> item B
+more text
+<ol>
+<li>item a</li>
+<li>itemb</li>
+<li>item c</li>
+</ol>
+</li>
+<li><input checked disabled type=checkbox> item C</li>
+</ul>
+</li>
+<li>item 2</li>
+<li>item 3</li>
+</ul>
+<p>Really Mixed Lists</p>
+<ul>
+<li>item 1
+<ul>
+<li><input checked disabled type=checkbox> item A</li>
+</ul>
+<ul>
+<li>item B
+more text
+<ol>
+<li>item a</li>
+</ol>
+<ul>
+<li>itemb</li>
+<li><input disabled type=checkbox> item c</li>
+</ul>
+</li>
+</ul>
+<ol start=3>
+<li>item C</li>
+</ol>
+</li>
+</ul>
+<ol start=2>
+<li>item 2</li>
+</ol>
+<ul>
+<li><input checked disabled type=checkbox> item 3</li>
+</ul>
+<h2 id=dictionary><a scroll=dictionary>Dictionary</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Dictionary
+:   item 1
+
+    item 2
+
+    item 3
+</code></pre></td></tr></table>
+</div>
+</div><dl>
+<dt>Dictionary</dt>
+<dd>item 1
+<p>item 2</p>
+<p>item 3</p>
+</dd>
+</dl>
+<h2 id=blocks><a scroll=blocks>Blocks</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>    This is a block.
+    
+    This is more of a block.
+
+    Long line, Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong.
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>This is a block.
+
+This is more of a block.
+
+Long line, Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong.
+</code></pre>
+<h2 id=block-quotes><a scroll=block-quotes>Block Quotes</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>&gt; This is a block quote
+&gt;&gt; How does it look?
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>This is a block quote.</p>
+<blockquote>
+<p>How does it look?
+I think it looks good.</p>
+</blockquote>
+</blockquote>
+<h2 id=fenced-block><a scroll=fenced-block>Fenced Block</a></h2>
+<p>Assuming guessing is not enabled.</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>```
+// Fenced **without** highlighting
+function doIt() {
+    for (var i = 1; i &lt;= slen ; i^^) {
+        setTimeout(&#34;document.z.textdisplay.value = newMake()&#34;, i*300);
+        setTimeout(&#34;window.status = newMake()&#34;, i*300);
+    }
+}
+```
+
+```javascript
+// Fenced **with** highlighting
+function doIt() {
+    for (var i = 1; i &lt;= slen ; i^^) {
+        setTimeout(&#34;document.z.textdisplay.value = newMake()&#34;, i*300);
+        setTimeout(&#34;window.status = newMake()&#34;, i*300);
+    }
+}
+```
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>// Fenced **without** highlighting
+function doIt() {
+    for (var i = 1; i &lt;= slen ; i^^) {
+        setTimeout(&#34;document.z.textdisplay.value = newMake()&#34;, i*300);
+        setTimeout(&#34;window.status = newMake()&#34;, i*300);
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#75715e>// Fenced **with** highlighting
+</span><span style=color:#75715e></span><span style=color:#00a8c8>function</span> <span style=color:#75af00>doIt</span><span style=color:#111>()</span> <span style=color:#111>{</span>
+    <span style=color:#00a8c8>for</span> <span style=color:#111>(</span><span style=color:#00a8c8>var</span> <span style=color:#75af00>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span><span style=color:#111>;</span> <span style=color:#75af00>i</span> <span style=color:#f92672>&lt;=</span> <span style=color:#75af00>slen</span> <span style=color:#111>;</span> <span style=color:#75af00>i</span><span style=color:#f92672>^^</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+        <span style=color:#75af00>setTimeout</span><span style=color:#111>(</span><span style=color:#d88200>&#34;document.z.textdisplay.value = newMake()&#34;</span><span style=color:#111>,</span> <span style=color:#75af00>i</span><span style=color:#f92672>*</span><span style=color:#ae81ff>300</span><span style=color:#111>);</span>
+        <span style=color:#75af00>setTimeout</span><span style=color:#111>(</span><span style=color:#d88200>&#34;window.status = newMake()&#34;</span><span style=color:#111>,</span> <span style=color:#75af00>i</span><span style=color:#f92672>*</span><span style=color:#ae81ff>300</span><span style=color:#111>);</span>
+    <span style=color:#111>}</span>
+<span style=color:#111>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=tables><a scroll=tables>Tables</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>| _Colors_      | Fruits          | Vegetable         |
+| ------------- |:---------------:| -----------------:|
+| Red           | *Apple*         | [Pepper](#Tables) |
+| ~~Orange~~    | Oranges         | **Carrot**        |
+| Green         | ~~***Pears***~~ | Spinach           |
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th><em>Colors</em></th>
+<th align=center>Fruits</th>
+<th align=right>Vegetable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Red</td>
+<td align=center><em>Apple</em></td>
+<td align=right>Pepper</td>
+</tr>
+<tr>
+<td><del>Orange</del></td>
+<td align=center>Oranges</td>
+<td align=right><strong>Carrot</strong></td>
+</tr>
+<tr>
+<td>Green</td>
+<td align=center><del><em><strong>Pears</strong></em></del></td>
+<td align=right>Spinach</td>
+</tr>
+</tbody>
+</table>
+<h2 id=smart-strong><a scroll=smart-strong>Smart Strong</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Text with double__underscore__words.
+
+__Strong__ still works.
+
+__this__works__too__
+</code></pre></td></tr></table>
+</div>
+</div><p>Text with double__underscore__words.</p>
+<p><strong>Strong</strong> still works.</p>
+<p><strong>this__works__too</strong></p>
+<h2 id=smarty><a scroll=smarty>Smarty</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>&#34;double quotes&#34;
+
+&#39;single quotes&#39;
+
+da--sh
+
+elipsis...
+</code></pre></td></tr></table>
+</div>
+</div><p>&ldquo;double quotes&rdquo;</p>
+<p>&lsquo;single quotes&rsquo;</p>
+<p>da&ndash;sh</p>
+<p>elipsis&mldr;</p>
+<h2 id=attribute-list><a scroll=attribute-list>Attribute List</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Normal Text
+
+Modified Text
+{: style=&#34;font-weight:bold;&#34; }
+</code></pre></td></tr></table>
+</div>
+</div><p>Normal Text</p>
+<p>Modified Text
+{: style=&ldquo;font-weight:bold;&rdquo; }</p>
+<h2 id=admonition><a scroll=admonition>Admonition</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>!!! Attention &#34;Success!&#34;
+    You can use inline ~~stuff~~ markup too!
+
+!!! Hint &#34;Info!&#34;
+    - Here is some info.
+    - And some more
+
+!!! Caution &#34;Warning!&#34;
+    - [X] Make sure you turn off the stove
+    - [X] Don&#39;t run with scissors
+
+!!! Danger &#34;Alert!&#34;
+    You really need to read [this](#admonition)!
+
+!!! Question &#34;Question?&#34;
+    Are you serious?
+
+!!! Note &#34;Note&#34;
+    😄
+
+    &gt; Not all markup can be placed in these boxes, but you can fit all sorts of things in them. But you will notice that the styles don&#39;t always play nice with each other.  Additional CSS could fix this though.
+
+    Stuff like _this_ works too.
+
+    | _Colors_      | Fruits          | Vegetable    |
+    | ------------- |:---------------:| ------------:|
+    | Red           | *Apple*         | Pepper       |
+    | ~~Orange~~    | Oranges         | **Carrot**   |
+    | Green         | ~~***Pears***~~ | Spinach      |
+
+!!! Unknown &#34;Title&#34;
+    Default class style
+</code></pre></td></tr></table>
+</div>
+</div><p>!!! Attention &ldquo;Success!&rdquo;
+You can use inline <del>stuff</del> markup too!</p>
+<p>!!! Hint &ldquo;Info!&rdquo;
+- Here is some info.
+- And some more</p>
+<p>!!! Caution &ldquo;Warning!&rdquo;
+- [X] Make sure you turn off the stove
+- [X] Don&rsquo;t run with scissors</p>
+<p>!!! Danger &ldquo;Alert!&rdquo;
+You really need to read <a href=#admonition>this</a>!</p>
+<p>!!! Question &ldquo;Question?&rdquo;
+Are you serious?</p>
+<p>!!! Note &ldquo;Note&rdquo;
+😄</p>
+<pre><code>&gt; Not all markup can be placed in these boxes, but you can fit all sorts of things in them. But you will notice that the styles don't always play nice with each other.  Additional CSS could fix this though.
+
+Stuff like _this_ works too.
+
+| _Colors_      | Fruits          | Vegetable    |
+| ------------- |:---------------:| ------------:|
+| Red           | *Apple*         | Pepper       |
+| ~~Orange~~    | Oranges         | **Carrot**   |
+| Green         | ~~***Pears***~~ | Spinach      |
+</code></pre>
+<p>!!! Unknown &ldquo;Title&rdquo;
+Default class style</p>
+<h2 id=github-emoji><a scroll=github-emoji>Github Emoji</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>This is a test for emoji 😄.  The emojis are images linked to github assets :octocat:.
+</code></pre></td></tr></table>
+</div>
+</div><p>This is a test for emoji 😄. The emojis are images linked to github assets :octocat:.</p>
+<h3 id=people><a scroll=people>People</a></h3>
+<p>👍👎👽👼💢😠😧😲👶💙😊💥🙇‍♂️:bowtie:👦👰💔👤👥👏😰💥😖😕👷‍♂️👮‍♂️👫👩‍❤️‍👨👩‍❤️‍💋‍👨😢😿💘💃👯‍♀️💨😞😥💫😵💧👂❗😑👀👊👨‍👩‍👦😨:feelsgood:🐾:finnadie:🔥✊😳😦🖕👧:goberserk::godmode:💚❕❔😬😁😀💂‍♂️💇‍♀️✋💩🙉❤️😍😻💓💗:hurtrealbad:😯👿💁‍♀️😇👺👹😂😹💋😗😽😚😘😙😆👄💌👨👲👳‍♂️😷💆‍♀️🤘💪🎵💅:neckbeard:😐🙅‍♀️😶👃🎶👌🙆‍♀️👴👵👐😮😔😣🙍‍♀️👱‍♂️🙎‍♀️👇👈👉☝️👆💩😾🙏👸👊💜❓😡:rage1::rage2::rage3::rage4:✋🙌🙋‍♀️☺️😌💞🏃‍♂️🏃😆😱🙀🙈💩💀😴😪😄😸😃😺😈😏😼😭✨💖🙊💬⭐🌟😛😝😜😎:suspect:😓💦😅💭👎👍😫👅😤:trollface:💕👬👭😒✌️🚶‍♂️👋😩😉👩😟💛😋💤</p>
+<h3 id=nature><a scroll=nature>Nature</a></h3>
+<p>🐜🐤🐻🐝🪲🐦🌼🐡🐗💐🐛🌵🐫🐱🐈🌸🌰🐔☁️🐮🐄🌙🐊🌀🌳🐶🐕🐬🐉🐲🐪🌾🌍🌎🌏🐘🌲🍂🌓🌛🐟🌁🍀🐸🌕🌝🌐🐐🐹🐥🐣🌿🌺🐝🐴🐨🌗🌜🍃🐆🍁🌌🐒🐵🌔🐭🐁🍄🌑🌚🌃🌊:octocat:🐙🐂🌴🐼⛅🐾🐧🐷🐖🐽🐩🐰🐇🐎🐏🐀🐓🌹🌱🐑🐚🐌🐍❄️☃️:squirrel:🌞🌻☀️🐯🐅🐠🌷🐢☂️🌋🌘🌖🐃🌒🌔🐳🐋🐺⚡</p>
+<h3 id=objects><a scroll=objects>Objects</a></h3>
+<p>🎱⏰🍎🎨👟🍼🎈🎍🍌📊⚾🏀🛀🛁🔋🍺🍻🔔🍱🚴‍♂️👙🎂🃏✒️📘💣📖🔖📑📚👢🎳🍞💼💡🍰📆📲📷🍬📇💿📉📈🍒🍫🎄🎬📋📕🔐🌂♣️🍸☕💻🎊🍪🌽💳👑🔮🍛🍮🍡🎯📅♦️💵🎎🚪🍩👗📀📧🥚🍆🔌✉️✉📩💶👓📠📁🎆🍥🎣🎏🔦🐬💾🎴🏈👣🍴🍤🍟🎲💎👻🎁💝⛳🍇🍏📗🎸🔫🍔🔨👜🎧♥️🔆👠🔪🍯🏇⌛⏳🍨🍦📥📨📱🎃👖🔑👘🏮📒🍋💄🔒🔏🍭➿🔊📢🔅🔍🔎🀄📫📪📬📭👞🍖📣🍈📝🎤🔬💽💸💰🎓🚵‍♂️🎥🎹🎼🔇📛👔📰🔕📓📔🔩🍢📖📂📙📤📦📄📃📟📎🍑🍐✏✏️☎️💊🍍🍕📯📮👝🍗💷👛📌📻🍜🎀🍚🍙🍘🎑💍🏉🎽🍶👡🎅🛰️🎷🎒✂️📜💺🍧👕👞🚿🎿🚬🏂⚽🔉👾♠️🍝❇️🎇🔈🍲📏🍓🏄‍♂️🍣🍠🏊‍♂️💉🎉🎋🍊🍵☎📞🔭🎾🚽🍅🎩📐🏆🍹🎺👕📺🔓📼📹🎮🎻⌚🍉🎐🍷👚👒🔧💴</p>
+<h3 id=places><a scroll=places>Places</a></h3>
+<p>🚡✈️🚑⚓🚛🏧🏦💈🔰🚲🚙⛵🌉🚅🚄🚌🚏🚗🎠🏁⛪🎪🌇🌆🇨🇳🚧🏪🎌🇩🇪🏬🇪🇸🏰🏤🏭🎡🚒⛲🇫🇷⛽🇬🇧🚁🏥🏨♨️🏠🏡🇮🇹🏮🗾🏯🇯🇵🇰🇷🚈🏩🚐🚝🗻🚠🚞🗿🏢🚘🚍🚔🚖🎭🚓🏣🚃🌈🚗🚀🎢🚨📍🚣‍♂️🇷🇺⛵🏫🚢🎰🚤🌠🚉🗽🚂🌅🌄🚟🚕⛺🎫🗼🚜🚥🚋🚆🚊🚩🚎🚚🇬🇧🇺🇸🚦⚠️💒</p>
+<h3 id=symbols><a scroll=symbols>Symbols</a></h3>
+<p>💯🔢🅰️🆎🔤🔡🉑♒♈◀️⏬⏫⬇️🔽▶️⤵️⤴️⬅️↙️↘️➡️↪️⬆️↕️🔼↖️↗️🔃🔄🅱️🚼🔙🛄☑️‼️⚫⬛◾◼️▪️🔲♋🔠♑💹🚸🎦🆑🕐🕙🕥🕚🕦🕛🕧🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤㊗️🆒©️➰💱🛃💠🚯8️⃣✴️✳️🔚⏩5️⃣4️⃣🆓♊#️⃣💟✔️➗💲❗➖✖️➕🆔🉐ℹ️⁉️🔟🈁🔵🔷🔶🛅↔️↩️♌♎🔗ⓜ️🚹🚇📴❎🆕🆖9️⃣🚳⛔🚫📵🚷🚭🚱⭕🅾️🆗🔛1️⃣⛎🅿️〽️🛂♓🚰🚮🔘♻️🔴®️🔁🔂🚻⏪🈂️♐♏㊙️7️⃣:shipit:📶6️⃣🔯🔹🔸🔺🔻🔜🆘🔣♉3️⃣™️🔝🔱🔀2️⃣🈹🈴🈺🈯🈷️🈶🈵🈚🈸🈲🈳🔞🆙📳♍🆚〰️🚾♿✅⚪💮⬜◽◻️▫️🔳🚺❌0️⃣</p>
+<h2 id=insert><a scroll=insert>Insert</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>^^insert^^
+
+^^*insert italic*^^  *^^insert italic 2^^*
+
+^^_insert italic_^^  _^^insert italic 2^^_
+
+^^**insert bold**^^  **^^insert bold 2^^**
+
+^^__insert bold__^^  __^^insert bold 2^^__
+
+^^***insert italic bold***^^  ***^^insert italic bold 2^^***
+
+^^___insert italic bold___^^  ___^^insert italic bold 2^^___
+
+**^^*insert italic bold*^^**  *^^**insert italic bold 2**^^*
+
+__^^_insert italic bold_^^__  _^^__insert italic bold 2__^^_
+
+**^^_insert italic bold_^^**  _^^**insert italic bold 2**^^_
+
+__^^*insert italic bold*^^__  *^^__insert italic bold 2__^^*
+</code></pre></td></tr></table>
+</div>
+</div><p>^^insert^^</p>
+<p>^^<em>insert italic</em>^^ <em>^^insert italic 2^^</em></p>
+<p>^^<em>insert italic</em>^^ <em>^^insert italic 2^^</em></p>
+<p>^^<strong>insert bold</strong>^^ <strong>^^insert bold 2^^</strong></p>
+<p>^^<strong>insert bold</strong>^^ <strong>^^insert bold 2^^</strong></p>
+<p>^^<em><strong>insert italic bold</strong></em>^^ <em><strong>^^insert italic bold 2^^</strong></em></p>
+<p>^^<em><strong>insert italic bold</strong></em>^^ <em><strong>^^insert italic bold 2^^</strong></em></p>
+<p><strong>^^<em>insert italic bold</em>^^</strong> <em>^^<strong>insert italic bold 2</strong>^^</em></p>
+<p><strong>^^<em>insert italic bold</em>^^</strong> <em>^^<strong>insert italic bold 2</strong>^^</em></p>
+<p><strong>^^<em>insert italic bold</em>^^</strong> <em>^^<strong>insert italic bold 2</strong>^^</em></p>
+<p><strong>^^<em>insert italic bold</em>^^</strong> <em>^^<strong>insert italic bold 2</strong>^^</em></p>
+<h2 id=progress><a scroll=progress>Progress</a></h2>
+<p>Progress bars are block elements and it is recommened to put a newline before and after. But they will be recognized inline, but they will be on their own line.</p>
+<p>Normally you would just globally set your additional classes: <code>progressbar(add_classes=candystripe-animate)</code>, but here we will demonstrate that it works with the <code>attr_list</code> extension. It will take inline style.</p>
+<p>To turn off level classes (which are used to decide special colors for certain percentages) you could just use <code>progressbar(level_class=False)</code>.</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>| Test               | Result                                        |
+|--------------------|-----------------------------------------------|
+|Animated: 0%        |[=0% &#34;0%&#34;]{: .candystripe-animate}             |
+|Animated: 5%        |[=5% &#34;5%&#34;]{: .candystripe-animate}             |
+|Animated: 25%       |[=25% &#34;25%&#34;]{: .candystripe-animate}           |
+|Animated: 45%       |[=45% &#34;45%&#34;]{: .candystripe-animate}           |
+|Animated: 65%       |[=65% &#34;65%&#34;]{: .candystripe-animate}           |
+|Animated: 85%       |[=85% &#34;85%&#34;]{: .candystripe-animate}           |
+|Animated: 100%      |[=100% &#34;100%&#34;]{: .candystripe-animate}         |
+|Division Percentage |[= 212.2/537 &#34;212.2/537 Testing division&#34;]     |
+|No Label            |[= 50%]                                        |
+|Inline              |Before[= 50% &#34;I&#39;m a block!&#34;]After              |
+|Gloss and Animated  |[= 50% &#34;Gloss&#34;]{: .candystripe-animate .gloss} |
+</code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Animated: 0%</td>
+<td>[=0% &ldquo;0%"]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 5%</td>
+<td>[=5% &ldquo;5%"]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 25%</td>
+<td>[=25% &ldquo;25%"]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 45%</td>
+<td>[=45% &ldquo;45%"]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 65%</td>
+<td>[=65% &ldquo;65%"]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 85%</td>
+<td>[=85% &ldquo;85%"]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Animated: 100%</td>
+<td>[=100% &ldquo;100%"]{: .candystripe-animate}</td>
+</tr>
+<tr>
+<td>Division Percentage</td>
+<td>[= 212.2/537 &ldquo;212.2/537 Testing division&rdquo;]</td>
+</tr>
+<tr>
+<td>No Label</td>
+<td>[= 50%]</td>
+</tr>
+<tr>
+<td>Inline</td>
+<td>Before[= 50% &ldquo;I&rsquo;m a block!"]After</td>
+</tr>
+<tr>
+<td>Gloss and Animated</td>
+<td>[= 50% &ldquo;Gloss&rdquo;]{: .candystripe-animate .gloss}</td>
+</tr>
+</tbody>
+</table>
+<h2 id=neseted-fences><a scroll=neseted-fences>Neseted Fences</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>    ```
+    This will still be parsed
+    as a normal indented code block.
+    ```
+
+```
+This will still be parsed
+as a fenced code block.
+```
+
+- This is a list that contains multiple code blocks.
+
+    - Here is an indented block
+
+            ```
+            This will still be parsed
+            as a normal indented code block.
+            ```
+
+    - Here is a fenced code block:
+
+        ```
+        This will still be parsed
+        as a fenced code block.
+        ```
+
+        &gt; ```
+        &gt; Blockquotes?
+        &gt; Not a problem!
+        &gt; ```
+</code></pre></td></tr></table>
+</div>
+</div><pre><code>```
+This will still be parsed
+as a normal indented code block.
+```
+</code></pre>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>This will still be parsed
+as a fenced code block.
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>This is a list that contains multiple code blocks.</p>
+<ul>
+<li>
+<p>Here is an indented block</p>
+<pre><code>  ```
+  This will still be parsed
+  as a normal indented code block.
+  ```
+</code></pre>
+</li>
+<li>
+<p>Here is a fenced code block:</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>This will still be parsed
+as a fenced code block.
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Blockquotes?
+Not a problem!
+</code></pre></td></tr></table>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=uml-flow-charts><a scroll=uml-flow-charts>UML Flow Charts</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>```flow
+st=&gt;start: Start:&gt;http://www.google.com[blank]
+e=&gt;end:&gt;http://www.google.com
+op1=&gt;operation: My Operation
+sub1=&gt;subroutine: My Subroutine
+cond=&gt;condition: Yes
+or No?:&gt;http://www.google.com
+io=&gt;inputoutput: catch something...
+
+st-&gt;op1-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op1
+```
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>st=&gt;start: Start:&gt;http://www.google.com[blank]
+e=&gt;end:&gt;http://www.google.com
+op1=&gt;operation: My Operation
+sub1=&gt;subroutine: My Subroutine
+cond=&gt;condition: Yes
+or No?:&gt;http://www.google.com
+io=&gt;inputoutput: catch something...
+
+st-&gt;op1-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op1
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=uml-sequence-diagrams><a scroll=uml-sequence-diagrams>UML Sequence Diagrams</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>```sequence
+Title: Here is a title
+A-&gt;B: Normal line
+B--&gt;C: Dashed line
+C-&gt;&gt;D: Open arrow
+D--&gt;&gt;A: Dashed open arrow
+```
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>Title: Here is a title
+A-&gt;B: Normal line
+B--&gt;C: Dashed line
+C-&gt;&gt;D: Open arrow
+D--&gt;&gt;A: Dashed open arrow
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=math><a scroll=math>Math</a></h2>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>$p(x|y) = \frac{p(y|x)p(x)}{p(y)}$, \(p(x|y) = \frac{p(y|x)p(x)}{p(y)}\).
+
+$$
+E(\mathbf{v}, \mathbf{h}) = -\sum_{i,j}w_{ij}v_i h_j - \sum_i b_i v_i - \sum_j c_j h_j
+$$
+
+\[3 &lt; 4\]
+
+\begin{align}
+    p(v_i=1|\mathbf{h}) &amp; = \sigma\left(\sum_j w_{ij}h_j + b_i\right) \\
+    p(h_j=1|\mathbf{v}) &amp; = \sigma\left(\sum_i w_{ij}v_i + c_j\right)
+\end{align}
+</code></pre></td></tr></table>
+</div>
+</div><p>$p(x|y) = \frac{p(y|x)p(x)}{p(y)}$, (p(x|y) = \frac{p(y|x)p(x)}{p(y)}).</p>
+<p>$$
+E(\mathbf{v}, \mathbf{h}) = -\sum_{i,j}w_{ij}v_i h_j - \sum_i b_i v_i - \sum_j c_j h_j
+$$</p>
+<p>[3 &lt; 4]</p>
+<p>\begin{align}
+p(v_i=1|\mathbf{h}) & = \sigma\left(\sum_j w_{ij}h_j + b_i\right) \<br>
+p(h_j=1|\mathbf{v}) & = \sigma\left(\sum_i w_{ij}v_i + c_j\right)
+\end{align}</p>
+<h2 id=reason><a scroll=reason>reason</a></h2>
+<p>I use <strong><a href=https://github.com/iissnan/hexo-theme-next>hexo-theme-next</a></strong> for my blog, and I met a problem same with <a href=https://github.com/iissnan/hexo-theme-next/issues/826>#826</a>.</p>
+<p>I wrote a plugin <a href=https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus><strong>hexo-renderer-markdown-it-plus</strong></a> for fix it,and this article is a demo for <code>hexo-renderer-markdown-it-plus</code></p>
+<p>{
+{
+}<br>
+}</p>
+<ol>
+<li>asdf</li>
+<li>asdfas</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+<li>a</li>
+</ol>
+<ul>
+<li>asdfas</li>
+<li>asdfasdf</li>
+</ul>
+<ul>
+<li>asdfasd</li>
+<li>asdfasd</li>
+</ul>
+<ul>
+<li>
+<p>asdf</p>
+</li>
+<li>
+<p>asdfasdf</p>
+</li>
+<li>
+<p><input disabled type=checkbox> unchecked</p>
+</li>
+<li>
+<p><input checked disabled type=checkbox> checked</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align=right>Size</th>
+<th align=right>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bre</td>
+<td align=right>123</td>
+<td align=right>4.5</td>
+</tr>
+<tr>
+<td>laun</td>
+<td align=right>105</td>
+<td align=right>21</td>
+</tr>
+<tr>
+<td>laun</td>
+<td align=right>593</td>
+<td align=right>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td align=right>1396.0</td>
+<td align=right>62.0</td>
+</tr>
+<tr>
+<td>Average</td>
+<td align=right>349.0</td>
+<td align=right>15.5</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+<li>four</li>
+</ol>
+<p>unavailable</p>
+<p>i. asdf
+ii. asdfas</p>
+<p>a) asdf
+b) asdfas
+c) asdf</p>
+<p>A) asdfa
+B) asdf
+C) asdfasd</p>
+<dl>
+<dt>Term with <em>inline markup</em></dt>
+<dd>Characteristics
+<ul>
+<li>Characteristic 1
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#00a8c8>int</span> <span style=color:#75af00>main</span><span style=color:#111>(){</span>
+    <span style=color:#00a8c8>return</span> <span style=color:#ae81ff>0</span><span style=color:#111>;</span>
+<span style=color:#111>}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Characteristic 2</li>
+</ul>
+</dd>
+</dl>
+<p>The hexo default <a href=https://github.com/hexojs/hexo-renderer-marked>hexo-renderer-marked</a>
+do not support LaTex parser, you must referer external link to parse Latex grammar to
+html(That&rsquo;s what <code>hexo-theme-next</code> did, <code>hexo-theme-next</code> use <code>mathjax</code>),
+and the <code>mathjax</code> and <code>hexo-renderer-marked</code> will cause some problem:</p>
+<ol>
+<li><code>_</code> parse error, you must change <code>x_i</code> to <code>x\_i</code>(This problem had been fixed when i test.)</li>
+<li>do not support lines grammar, example below:</li>
+</ol>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-latex data-lang=latex><span style=color:#d88200>$$</span><span style=color:#111>
+</span><span style=color:#111>H</span><span style=color:#f92672>=-</span><span style=color:#111>\sum</span><span style=color:#111>_{i</span><span style=color:#f92672>=</span><span style=color:#ae81ff>1</span><span style=color:#111>}^N </span><span style=color:#f92672>(</span><span style=color:#111>\sigma</span><span style=color:#111>_{i}^x </span><span style=color:#111>\sigma</span><span style=color:#111>_{i</span><span style=color:#f92672>+</span><span style=color:#ae81ff>1</span><span style=color:#111>}^x</span><span style=color:#f92672>+</span><span style=color:#111>g </span><span style=color:#111>\sigma</span><span style=color:#111>_{i}^z</span><span style=color:#f92672>)</span><span style=color:#111>
+</span><span style=color:#111></span><span style=color:#d88200>$$</span>
+
+<span style=color:#d88200>$$</span><span style=color:#111>
+</span><span style=color:#111>f</span><span style=color:#f92672>(</span><span style=color:#111>n</span><span style=color:#f92672>)</span><span style=color:#111> </span><span style=color:#f92672>=</span><span style=color:#111> </span><span style=color:#111>\begin</span><span style=color:#111>{cases}
+</span><span style=color:#111> </span><span style=color:#111>\frac</span><span style=color:#111>{n}{</span><span style=color:#ae81ff>2</span><span style=color:#111>},
+</span><span style=color:#111> &amp; </span><span style=color:#111>\text</span><span style=color:#111>{if } n</span><span style=color:#111>\text</span><span style=color:#111>{ is even}
+</span><span style=color:#111> </span><span style=color:#111>\\</span><span style=color:#111> </span><span style=color:#ae81ff>3</span><span style=color:#111>n</span><span style=color:#f92672>+</span><span style=color:#ae81ff>1</span><span style=color:#111>, &amp; </span><span style=color:#111>\text</span><span style=color:#111>{if } n</span><span style=color:#111>\text</span><span style=color:#111>{ is odd}
+</span><span style=color:#111> </span><span style=color:#111>\end</span><span style=color:#111>{cases}
+</span><span style=color:#111></span><span style=color:#d88200>$$</span>
+
+<span style=color:#d88200>$$</span><span style=color:#111>
+</span><span style=color:#111></span><span style=color:#111>\begin</span><span style=color:#111>{aligned}
+</span><span style=color:#111></span><span style=color:#111>\nabla</span><span style=color:#111> </span><span style=color:#111>\times</span><span style=color:#111> </span><span style=color:#111>\vec</span><span style=color:#111>{</span><span style=color:#111>\mathbf</span><span style=color:#111>{B}} </span><span style=color:#f92672>-</span><span style=color:#111>\,</span><span style=color:#111> </span><span style=color:#111>\frac</span><span style=color:#ae81ff>1</span><span style=color:#111>c</span><span style=color:#111>\,</span><span style=color:#111> </span><span style=color:#111>\frac</span><span style=color:#111>{</span><span style=color:#111>\partial\vec</span><span style=color:#111>{</span><span style=color:#111>\mathbf</span><span style=color:#111>{E}}}{</span><span style=color:#111>\partial</span><span style=color:#111> t} &amp; </span><span style=color:#f92672>=</span><span style=color:#111> </span><span style=color:#111>\frac</span><span style=color:#111>{</span><span style=color:#ae81ff>4</span><span style=color:#111>\pi</span><span style=color:#111>}{c}</span><span style=color:#111>\vec</span><span style=color:#111>{</span><span style=color:#111>\mathbf</span><span style=color:#111>{j}} </span><span style=color:#111>\\</span><span style=color:#111>   
+</span><span style=color:#111></span><span style=color:#111>\nabla</span><span style=color:#111> </span><span style=color:#111>\cdot</span><span style=color:#111> </span><span style=color:#111>\vec</span><span style=color:#111>{</span><span style=color:#111>\mathbf</span><span style=color:#111>{E}} &amp; </span><span style=color:#f92672>=</span><span style=color:#111> </span><span style=color:#ae81ff>4</span><span style=color:#111> </span><span style=color:#111>\pi</span><span style=color:#111> </span><span style=color:#111>\rho</span><span style=color:#111> </span><span style=color:#111>\\</span><span style=color:#111>
+</span><span style=color:#111></span><span style=color:#111>\nabla</span><span style=color:#111> </span><span style=color:#111>\times</span><span style=color:#111> </span><span style=color:#111>\vec</span><span style=color:#111>{</span><span style=color:#111>\mathbf</span><span style=color:#111>{E}}</span><span style=color:#111>\,</span><span style=color:#111> </span><span style=color:#f92672>+</span><span style=color:#111>\,</span><span style=color:#111> </span><span style=color:#111>\frac</span><span style=color:#ae81ff>1</span><span style=color:#111>c</span><span style=color:#111>\,</span><span style=color:#111> </span><span style=color:#111>\frac</span><span style=color:#111>{</span><span style=color:#111>\partial\vec</span><span style=color:#111>{</span><span style=color:#111>\mathbf</span><span style=color:#111>{B}}}{</span><span style=color:#111>\partial</span><span style=color:#111> t} &amp; </span><span style=color:#f92672>=</span><span style=color:#111> </span><span style=color:#111>\vec</span><span style=color:#111>{</span><span style=color:#111>\mathbf</span><span style=color:#111>{</span><span style=color:#ae81ff>0</span><span style=color:#111>}} </span><span style=color:#111>\\</span><span style=color:#111>
+</span><span style=color:#111></span><span style=color:#111>\nabla</span><span style=color:#111> </span><span style=color:#111>\cdot</span><span style=color:#111> </span><span style=color:#111>\vec</span><span style=color:#111>{</span><span style=color:#111>\mathbf</span><span style=color:#111>{B}} &amp; </span><span style=color:#f92672>=</span><span style=color:#111> </span><span style=color:#ae81ff>0</span><span style=color:#111> </span><span style=color:#111>\end</span><span style=color:#111>{aligned}
+</span><span style=color:#111></span><span style=color:#d88200>$$</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=hexo-renderer-markdown-it-plus><a scroll=hexo-renderer-markdown-it-plus>hexo-renderer-markdown-it-plus</a></h2>
+<p><a href=https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus><strong>hexo-renderer-markdown-it-plus</strong></a> support lines grammer for $\KaTeX$(Don&rsquo;t worry, it&rsquo;s grammer same with Latex).</p>
+<p><strong><a href=https://github.com/CHENXCHEN/hexo-renderer-markdown-it-plus>hexo-renderer-markdown-it-plus</a></strong></p>
+<p>The latex code of above will be display below:</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#00a8c8>int</span> <span style=color:#75af00>main</span><span style=color:#111>()</span>
+<span style=color:#111>{</span>
+    <span style=color:#00a8c8>return</span> <span style=color:#ae81ff>0</span><span style=color:#111>;</span>
+<span style=color:#111>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>$$
+H=-\sum_{i=1}^N (\sigma_{i}^x \sigma_{i+1}^x+g \sigma_{i}^z)
+$$</p>
+<p>$$f(n) = \begin{cases}
+\frac{n}{2},
+& \text{if } n\text{ is even}
+\ 3n+1, & \text{if } n\text{ is odd}
+\end{cases}$$</p>
+<p>$$\begin{aligned}
+\nabla \times \vec{\mathbf{B}} -, \frac1c, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \<br>
+\nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \<br>
+\nabla \times \vec{\mathbf{E}}, +, \frac1c, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \<br>
+\nabla \cdot \vec{\mathbf{B}} & = 0 \end{aligned}$$</p>
+<p>BTW, i bundle some plugins, example below:</p>
+<ol>
+<li>H~2~0</li>
+<li>x^2^</li>
+<li>++inserted++, <del>Delete</del></li>
+<li>$\KaTeX$/$\MathJax$/$\LaTeX$, example $x_i + y_i = z_i$ and $y_i + z_i = 10$</li>
+<li>😄 😂 😛</li>
+<li>toc&anchor(do not explain this)</li>
+<li>deflist</li>
+<li><em>italic</em> <strong>bold</strong></li>
+</ol>
+<p><a href=https://pandoc.org/MANUAL.html#definition-lists>deflist syntax</a></p>
+<dl>
+<dt>Term 1</dt>
+<dd>Definition 1</dd>
+<dd>asdfasdf</dd>
+<dt>Term 2 with <em>inline markup</em></dt>
+<dd>Characteristics
+<ul>
+<li>
+<p>Definition 2</p>
+</li>
+<li>
+<p>Definition 3</p>
+<p>{ some code, part of Definition 2 }
+asdf</p>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Term 1
+~ Definition 2
+~ Definition 2</p>
+<ol start=8>
+<li>abbr</li>
+</ol>
+<p>*[abbr]: hover this will show you something.</p>
+<ol start=9>
+<li>Look at the bottom <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></li>
+</ol>
+<ol start=10>
+<li>==mark==, <code>==mark==</code></li>
+</ol>
+<p><strong>The markdown code show as below:</strong></p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=color:#00a8c8>1.</span> H~2~0
+<span style=color:#00a8c8>2.</span> x^2^
+<span style=color:#00a8c8>3.</span> ++inserted++, ~~Delete~~
+<span style=color:#00a8c8>4.</span> $\KaTex$, example $x_i + y_i = z_i$ and $y_i + z_i = 10$
+<span style=color:#00a8c8>5.</span> 😄 😂 😛
+<span style=color:#00a8c8>6.</span> toc<span style=color:#960050;background-color:#1e0010>&amp;</span>anchor(do not explain this)
+<span style=color:#00a8c8>7.</span> deflist
+
+Term 1
+
+:   Definition 1
+
+Term 2 with <span style=font-style:italic>*inline markup*</span>
+
+:   Definition 2
+
+        { some code, part of Definition 2 }
+
+    Third paragraph of definition 2.
+
+<span style=color:#00a8c8>8.</span> abbr
+
+*[abbr]: hover this will show you something.
+
+<span style=color:#00a8c8>9.</span> Look at the bottom[^hello]
+
+   [^hello]: footnote
+<span style=color:#00a8c8>10.</span> ==mark==, <span style=color:#d88200>`==mark==`</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=tag-plugins><a scroll=tag-plugins>Tag-plugins</a></h2>
+<p>Docs: <a href=https://hexo.io/zh-cn/docs/tag-plugins.html>https://hexo.io/zh-cn/docs/tag-plugins.html</a></p>
+<h3 id=link><a scroll=link>Link</a></h3>
+<p>{% link Baidu <a href=https://www.baidu.com>https://www.baidu.com</a> <a href=https://www.google.com>https://www.google.com</a> ExtBaidu %}</p>
+<h3 id=code-block><a scroll=code-block>Code Block</a></h3>
+<p>{% codeblock test.cpp lang:cpp <a href=https://www.aloha.org.cn>https://www.aloha.org.cn</a> &ldquo;Aloha' Blog&rdquo; first_line:46 mark:1-3,49-56 %}
+GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, &ldquo;LearnOpenGL&rdquo;, glfwGetPrimaryMonitor(), NULL);
+if (window == NULL)
+{
+std::cout &#171; &ldquo;Failed to create GLFW window&rdquo; &#171; std::endl;
+:smile deep water:
+glfwTerminate();
+return -1;
+}
+glfwMakeContextCurrent(window);
+glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+glfwSetCursorPosCallback(window, mouse_callback);
+glfwSetScrollCallback(window, scroll_callback);</p>
+<p>// tell GLFW to capture our mouse
+glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+{% endcodeblock %}</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=color:#111>cout</span> <span style=color:#f92672>&lt;&lt;</span> <span style=color:#d88200>&#34;Hello world!&#34;</span> <span style=color:#f92672>&lt;&lt;</span> <span style=color:#111>endl</span><span style=color:#111>;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=include-code><a scroll=include-code>Include Code</a></h3>
+<p>{% include_code proj6-camera.cpp lang:cpp from:307 to:325 proj6-camera.cpp %}</p>
+<h3 id=iframe><a scroll=iframe>Iframe</a></h3>
+<p>{% iframe <a href=https://theme-next.iissnan.com/tag-plugins.html>https://theme-next.iissnan.com/tag-plugins.html</a> 800 600 %}</p>
+<h3 id=image><a scroll=image>Image</a></h3>
+<p>{% img right &ldquo;/images/aloha.gif&rdquo; 200 &ldquo;aloha&rsquo;aloha'&rdquo; %}</p>
+<ul>
+<li><code>img.right</code>、<code>img.left</code> 会分别在右、左边浮动显示。</li>
+<li><code>img</code> 的高度不超过 <code>35em</code>。</li>
+</ul>
+<h3 id=pull-quote><a scroll=pull-quote>Pull Quote</a></h3>
+<p>{% pullquote %}
+content
+What&rsquo;s this?
+{% endpullquote %}</p>
+<h3 id=reference><a scroll=reference>Reference</a></h3>
+<p>{% post_link The-TTY-Demystified &ldquo;The <b>TTY</b> Demystified&rdquo; false %}</p>
+<p>{% post_link The-TTY-Demystified false %}</p>
+<p>{% post_link The-TTY-Demystified &ldquo;The TTY Demystified&rdquo; false %}</p>
+<h3 id=asset-resource><a scroll=asset-resource>Asset Resource</a></h3>
+<blockquote>
+<p>需要将 <code>_config.yml</code> 文件中的 <code>post_asset_folder</code> 选项设为 <code>true</code> 来打开。</p>
+<blockquote>
+<p>asfasdf</p>
+</blockquote>
+</blockquote>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>{% asset_path slug %}
+{% asset_img slug [title] %}
+{% asset_link slug [title] %}
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=next-tags><a scroll=next-tags>NexT tags</a></h3>
+<h4 id=call-out><a scroll=call-out>Call Out</a></h4>
+<p>{% note default default@default %}
+default
+{% endnote %}</p>
+<p>{% note primary primary@primary %}
+primary
+{% endnote %}</p>
+<p>{% note success success@success %}
+success
+{% endnote %}</p>
+<p>{% note info info@info %}
+info
+{% endnote %}</p>
+<p>{% note warning warning@warning %}
+warning
+{% endnote %}</p>
+<p>{% note danger danger@danger %}
+danger
+{% endnote %}</p>
+<h4 id=button><a scroll=button>Button</a></h4>
+<p><code>button</code> or <code>btn</code></p>
+<p>sepqrate: ,</p>
+<p>{% btn <a href=https://cmake.org/cmake/help/v3.20/command/target_include_directories.html,>https://cmake.org/cmake/help/v3.20/command/target_include_directories.html,</a> target_include_directories, bras, Bars %}</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#d88200>&#39;use strict&#39;</span><span style=color:#111>;</span>
+
+<span style=color:#00a8c8>function</span> <span style=color:#75af00>postButton</span><span style=color:#111>(</span><span style=color:#75af00>args</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#75af00>args</span> <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>.</span><span style=color:#75af00>join</span><span style=color:#111>(</span><span style=color:#d88200>&#39; &#39;</span><span style=color:#111>).</span><span style=color:#75af00>split</span><span style=color:#111>(</span><span style=color:#d88200>&#39;,&#39;</span><span style=color:#111>);</span>
+  <span style=color:#00a8c8>let</span> <span style=color:#75af00>url</span>   <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>0</span><span style=color:#111>];</span>
+  <span style=color:#00a8c8>let</span> <span style=color:#75af00>text</span>  <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>]</span> <span style=color:#f92672>||</span> <span style=color:#d88200>&#39;&#39;</span><span style=color:#111>;</span>
+  <span style=color:#00a8c8>let</span> <span style=color:#75af00>icon</span>  <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>]</span> <span style=color:#f92672>||</span> <span style=color:#d88200>&#39;&#39;</span><span style=color:#111>;</span>
+  <span style=color:#00a8c8>let</span> <span style=color:#75af00>title</span> <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>]</span> <span style=color:#f92672>||</span> <span style=color:#d88200>&#39;&#39;</span><span style=color:#111>;</span>
+
+  <span style=color:#00a8c8>if</span> <span style=color:#111>(</span><span style=color:#f92672>!</span><span style=color:#75af00>url</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+    <span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>log</span><span style=color:#111>.</span><span style=color:#75af00>warn</span><span style=color:#111>(</span><span style=color:#d88200>&#39;URL can NOT be empty.&#39;</span><span style=color:#111>);</span>
+  <span style=color:#111>}</span>
+
+  <span style=color:#75af00>text</span> <span style=color:#f92672>=</span> <span style=color:#75af00>text</span><span style=color:#111>.</span><span style=color:#75af00>trim</span><span style=color:#111>();</span>
+  <span style=color:#75af00>icon</span> <span style=color:#f92672>=</span> <span style=color:#75af00>icon</span><span style=color:#111>.</span><span style=color:#75af00>trim</span><span style=color:#111>();</span>
+  <span style=color:#75af00>icon</span> <span style=color:#f92672>=</span> <span style=color:#75af00>icon</span><span style=color:#111>.</span><span style=color:#75af00>startsWith</span><span style=color:#111>(</span><span style=color:#d88200>&#39;fa&#39;</span><span style=color:#111>)</span> <span style=color:#f92672>?</span> <span style=color:#75af00>icon</span> <span style=color:#f92672>:</span> <span style=color:#d88200>&#39;fa fa-&#39;</span> <span style=color:#f92672>+</span> <span style=color:#75af00>icon</span><span style=color:#111>;</span>
+  <span style=color:#75af00>title</span> <span style=color:#f92672>=</span> <span style=color:#75af00>title</span><span style=color:#111>.</span><span style=color:#75af00>trim</span><span style=color:#111>();</span>
+
+  <span style=color:#00a8c8>return</span> <span style=color:#d88200>`&lt;a class=&#34;btn&#34; href=&#34;</span><span style=color:#d88200>${</span><span style=color:#75af00>url</span><span style=color:#d88200>}</span><span style=color:#d88200>&#34;</span><span style=color:#d88200>${</span><span style=color:#75af00>title</span><span style=color:#111>.</span><span style=color:#75af00>length</span> <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>?</span> <span style=color:#d88200>` title=&#34;</span><span style=color:#d88200>${</span><span style=color:#75af00>title</span><span style=color:#d88200>}</span><span style=color:#d88200>&#34;`</span> <span style=color:#f92672>:</span> <span style=color:#d88200>&#39;&#39;</span><span style=color:#d88200>}</span><span style=color:#d88200>&gt;
+</span><span style=color:#d88200>            </span><span style=color:#d88200>${</span><span style=color:#75af00>icon</span><span style=color:#111>.</span><span style=color:#75af00>length</span> <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>?</span> <span style=color:#d88200>`&lt;i class=&#34;</span><span style=color:#d88200>${</span><span style=color:#75af00>icon</span><span style=color:#d88200>}</span><span style=color:#d88200>&#34;&gt;&lt;/i&gt;`</span> <span style=color:#f92672>:</span> <span style=color:#d88200>&#39;&#39;</span><span style=color:#d88200>}${</span><span style=color:#75af00>text</span><span style=color:#d88200>}</span><span style=color:#d88200>
+</span><span style=color:#d88200>          &lt;/a&gt;`</span><span style=color:#111>;</span>
+<span style=color:#111>}</span>
+
+<span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>.</span><span style=color:#75af00>tag</span><span style=color:#111>.</span><span style=color:#75af00>register</span><span style=color:#111>(</span><span style=color:#d88200>&#39;button&#39;</span><span style=color:#111>,</span> <span style=color:#75af00>postButton</span><span style=color:#111>,</span> <span style=color:#111>{</span><span style=color:#75af00>ends</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>false</span><span style=color:#111>});</span>
+<span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>.</span><span style=color:#75af00>tag</span><span style=color:#111>.</span><span style=color:#75af00>register</span><span style=color:#111>(</span><span style=color:#d88200>&#39;btn&#39;</span><span style=color:#111>,</span> <span style=color:#75af00>postButton</span><span style=color:#111>,</span> <span style=color:#111>{</span><span style=color:#75af00>ends</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>false</span><span style=color:#111>});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id=caniuse><a scroll=caniuse>caniUse</a></h4>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#d88200>&#39;use strict&#39;</span><span style=color:#111>;</span>
+
+<span style=color:#00a8c8>function</span> <span style=color:#75af00>caniUse</span><span style=color:#111>(</span><span style=color:#75af00>args</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#75af00>args</span> <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>.</span><span style=color:#75af00>join</span><span style=color:#111>(</span><span style=color:#d88200>&#39;&#39;</span><span style=color:#111>).</span><span style=color:#75af00>split</span><span style=color:#111>(</span><span style=color:#d88200>&#39;@&#39;</span><span style=color:#111>);</span>
+  <span style=color:#00a8c8>var</span> <span style=color:#75af00>feature</span> <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>0</span><span style=color:#111>];</span>
+  <span style=color:#00a8c8>var</span> <span style=color:#75af00>periods</span> <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>]</span> <span style=color:#f92672>||</span> <span style=color:#d88200>&#39;current&#39;</span><span style=color:#111>;</span>
+
+  <span style=color:#00a8c8>if</span> <span style=color:#111>(</span><span style=color:#f92672>!</span><span style=color:#75af00>feature</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+    <span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>log</span><span style=color:#111>.</span><span style=color:#75af00>warn</span><span style=color:#111>(</span><span style=color:#d88200>&#39;Caniuse feature can NOT be empty.&#39;</span><span style=color:#111>);</span>
+    <span style=color:#00a8c8>return</span> <span style=color:#d88200>&#39;&#39;</span><span style=color:#111>;</span>
+  <span style=color:#111>}</span>
+
+  <span style=color:#00a8c8>return</span> <span style=color:#d88200>`&lt;iframe data-feature=&#34;</span><span style=color:#d88200>${</span><span style=color:#75af00>feature</span><span style=color:#d88200>}</span><span style=color:#d88200>&#34; src=&#34;https://caniuse.bitsofco.de/embed/index.html?feat=</span><span style=color:#d88200>${</span><span style=color:#75af00>feature</span><span style=color:#d88200>}</span><span style=color:#d88200>&amp;periods=</span><span style=color:#d88200>${</span><span style=color:#75af00>periods</span><span style=color:#d88200>}</span><span style=color:#d88200>&amp;accessible-colours=false&#34; frameborder=&#34;0&#34; width=&#34;100%&#34; height=&#34;400px&#34;&gt;&lt;/iframe&gt;`</span><span style=color:#111>;</span>
+<span style=color:#111>}</span>
+
+<span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>.</span><span style=color:#75af00>tag</span><span style=color:#111>.</span><span style=color:#75af00>register</span><span style=color:#111>(</span><span style=color:#d88200>&#39;caniuse&#39;</span><span style=color:#111>,</span> <span style=color:#75af00>caniUse</span><span style=color:#111>);</span>
+<span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>.</span><span style=color:#75af00>tag</span><span style=color:#111>.</span><span style=color:#75af00>register</span><span style=color:#111>(</span><span style=color:#d88200>&#39;can&#39;</span><span style=color:#111>,</span> <span style=color:#75af00>caniUse</span><span style=color:#111>);</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id=center-quote><a scroll=center-quote>Center Quote</a></h4>
+<p><code>centerquote</code> or <code>cq</code></p>
+<p>{% cq %}
+So we beat on, boats against the current, borne back ceaselessly into the past.
+我们奋力向前，宛如逆水行舟，与激流抗争勇进，直至淹没入岁月长河。
+{% endcq %}</p>
+<h4 id=group-pictures><a scroll=group-pictures>Group Pictures</a></h4>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">  9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 32
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 33
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 34
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 35
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 36
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 37
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 38
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 39
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 40
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 41
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 42
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 43
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 44
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 45
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 46
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 47
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 48
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 49
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 50
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 51
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 52
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 53
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 54
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 55
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 56
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 57
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 58
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 59
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 60
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 61
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 62
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 63
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 64
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 65
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 66
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 67
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 68
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 69
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 70
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 71
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 72
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 73
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 74
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 75
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 76
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 77
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 78
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 79
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 80
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 81
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 82
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 83
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 84
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 85
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 86
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 87
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 88
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 89
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 90
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 91
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 92
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 93
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 94
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 95
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 96
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 97
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 98
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 99
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">100
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">101
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">102
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">103
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">104
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">105
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">106
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">107
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">108
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">109
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">110
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">111
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">112
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">113
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">114
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">115
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">116
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">117
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">118
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">119
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">120
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">121
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">122
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">123
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">124
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">125
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">126
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">127
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">128
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">129
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">130
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">131
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">132
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">133
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">134
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">135
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#d88200>&#39;use strict&#39;</span><span style=color:#111>;</span>
+
+<span style=color:#00a8c8>var</span> <span style=color:#75af00>LAYOUTS</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+  <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>1</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>]</span>
+  <span style=color:#111>},</span>
+  <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>1</span><span style=color:#111>]</span>
+  <span style=color:#111>},</span>
+  <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>1</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>1</span><span style=color:#111>]</span>
+  <span style=color:#111>},</span>
+  <span style=color:#ae81ff>5</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>]</span>
+  <span style=color:#111>},</span>
+  <span style=color:#ae81ff>6</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>5</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>]</span>
+  <span style=color:#111>},</span>
+  <span style=color:#ae81ff>7</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>5</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>]</span>
+  <span style=color:#111>},</span>
+  <span style=color:#ae81ff>8</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>5</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>6</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>7</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>]</span>
+  <span style=color:#111>},</span>
+  <span style=color:#ae81ff>9</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>5</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>6</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>7</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>]</span>
+  <span style=color:#111>},</span>
+  <span style=color:#ae81ff>10</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+    <span style=color:#ae81ff>1</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>2</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>3</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>4</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>5</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>6</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>],</span>
+    <span style=color:#ae81ff>7</span><span style=color:#f92672>:</span> <span style=color:#111>[</span><span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>3</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>,</span> <span style=color:#ae81ff>2</span><span style=color:#111>]</span>
+  <span style=color:#111>}</span>
+<span style=color:#111>};</span>
+
+<span style=color:#00a8c8>function</span> <span style=color:#75af00>groupBy</span><span style=color:#111>(</span><span style=color:#75af00>group</span><span style=color:#111>,</span> <span style=color:#75af00>data</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#00a8c8>var</span> <span style=color:#75af00>r</span> <span style=color:#f92672>=</span> <span style=color:#111>[];</span>
+  <span style=color:#00a8c8>for</span> <span style=color:#111>(</span><span style=color:#00a8c8>let</span> <span style=color:#75af00>count</span> <span style=color:#00a8c8>of</span> <span style=color:#75af00>group</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+    <span style=color:#75af00>r</span><span style=color:#111>.</span><span style=color:#75af00>push</span><span style=color:#111>(</span><span style=color:#75af00>data</span><span style=color:#111>.</span><span style=color:#75af00>slice</span><span style=color:#111>(</span><span style=color:#ae81ff>0</span><span style=color:#111>,</span> <span style=color:#75af00>count</span><span style=color:#111>));</span>
+    <span style=color:#75af00>data</span> <span style=color:#f92672>=</span> <span style=color:#75af00>data</span><span style=color:#111>.</span><span style=color:#75af00>slice</span><span style=color:#111>(</span><span style=color:#75af00>count</span><span style=color:#111>);</span>
+  <span style=color:#111>}</span>
+  <span style=color:#00a8c8>return</span> <span style=color:#75af00>r</span><span style=color:#111>;</span>
+<span style=color:#111>}</span>
+
+<span style=color:#00a8c8>var</span> <span style=color:#75af00>templates</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+
+  <span style=color:#75af00>dispatch</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#75af00>pictures</span><span style=color:#111>,</span> <span style=color:#75af00>group</span><span style=color:#111>,</span> <span style=color:#75af00>layout</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+    <span style=color:#00a8c8>var</span> <span style=color:#75af00>rule</span> <span style=color:#f92672>=</span> <span style=color:#75af00>LAYOUTS</span><span style=color:#111>[</span><span style=color:#75af00>group</span><span style=color:#111>]</span> <span style=color:#f92672>?</span> <span style=color:#75af00>LAYOUTS</span><span style=color:#111>[</span><span style=color:#75af00>group</span><span style=color:#111>][</span><span style=color:#75af00>layout</span><span style=color:#111>]</span> <span style=color:#f92672>:</span> <span style=color:#00a8c8>null</span><span style=color:#111>;</span>
+    <span style=color:#00a8c8>return</span> <span style=color:#75af00>rule</span> <span style=color:#f92672>?</span> <span style=color:#00a8c8>this</span><span style=color:#111>.</span><span style=color:#75af00>getHTML</span><span style=color:#111>(</span><span style=color:#75af00>groupBy</span><span style=color:#111>(</span><span style=color:#75af00>rule</span><span style=color:#111>,</span> <span style=color:#75af00>pictures</span><span style=color:#111>))</span> <span style=color:#f92672>:</span> <span style=color:#75af00>templates</span><span style=color:#111>.</span><span style=color:#75af00>defaults</span><span style=color:#111>(</span><span style=color:#75af00>pictures</span><span style=color:#111>);</span>
+  <span style=color:#111>},</span>
+
+  <span style=color:#75715e>/**
+</span><span style=color:#75715e>   * Defaults Layout
+</span><span style=color:#75715e>   *
+</span><span style=color:#75715e>   * □ □ □
+</span><span style=color:#75715e>   * □ □ □
+</span><span style=color:#75715e>   * ...
+</span><span style=color:#75715e>   *
+</span><span style=color:#75715e>   * @param pictures
+</span><span style=color:#75715e>   */</span>
+  <span style=color:#75af00>defaults</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#75af00>pictures</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+    <span style=color:#00a8c8>var</span> <span style=color:#75af00>ROW_SIZE</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>3</span><span style=color:#111>;</span>
+    <span style=color:#00a8c8>var</span> <span style=color:#75af00>rows</span> <span style=color:#f92672>=</span> <span style=color:#75af00>pictures</span><span style=color:#111>.</span><span style=color:#75af00>length</span> <span style=color:#f92672>/</span> <span style=color:#75af00>ROW_SIZE</span><span style=color:#111>;</span>
+    <span style=color:#00a8c8>var</span> <span style=color:#75af00>pictureArr</span> <span style=color:#f92672>=</span> <span style=color:#111>[];</span>
+
+    <span style=color:#00a8c8>for</span> <span style=color:#111>(</span><span style=color:#00a8c8>var</span> <span style=color:#75af00>i</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span><span style=color:#111>;</span> <span style=color:#75af00>i</span> <span style=color:#f92672>&lt;</span> <span style=color:#75af00>rows</span><span style=color:#111>;</span> <span style=color:#75af00>i</span><span style=color:#f92672>++</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+      <span style=color:#75af00>pictureArr</span><span style=color:#111>.</span><span style=color:#75af00>push</span><span style=color:#111>(</span><span style=color:#75af00>pictures</span><span style=color:#111>.</span><span style=color:#75af00>slice</span><span style=color:#111>(</span><span style=color:#75af00>i</span> <span style=color:#f92672>*</span> <span style=color:#75af00>ROW_SIZE</span><span style=color:#111>,</span> <span style=color:#111>(</span><span style=color:#75af00>i</span> <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span><span style=color:#111>)</span> <span style=color:#f92672>*</span> <span style=color:#75af00>ROW_SIZE</span><span style=color:#111>));</span>
+    <span style=color:#111>}</span>
+
+    <span style=color:#00a8c8>return</span> <span style=color:#00a8c8>this</span><span style=color:#111>.</span><span style=color:#75af00>getHTML</span><span style=color:#111>(</span><span style=color:#75af00>pictureArr</span><span style=color:#111>);</span>
+  <span style=color:#111>},</span>
+
+  <span style=color:#75af00>getHTML</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#75af00>rows</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+    <span style=color:#00a8c8>var</span> <span style=color:#75af00>rowHTML</span> <span style=color:#f92672>=</span> <span style=color:#75af00>rows</span><span style=color:#111>.</span><span style=color:#75af00>map</span><span style=color:#111>(</span><span style=color:#75af00>row</span> <span style=color:#111>=&gt;</span> <span style=color:#111>{</span>
+      <span style=color:#00a8c8>return</span> <span style=color:#d88200>`&lt;div class=&#34;group-picture-row&#34;&gt;</span><span style=color:#d88200>${</span><span style=color:#00a8c8>this</span><span style=color:#111>.</span><span style=color:#75af00>getColumnHTML</span><span style=color:#111>(</span><span style=color:#75af00>row</span><span style=color:#111>)</span><span style=color:#d88200>}</span><span style=color:#d88200>&lt;/div&gt;`</span><span style=color:#111>;</span>
+    <span style=color:#111>}).</span><span style=color:#75af00>join</span><span style=color:#111>(</span><span style=color:#d88200>&#39;&#39;</span><span style=color:#111>);</span>
+
+    <span style=color:#00a8c8>return</span> <span style=color:#d88200>`&lt;div class=&#34;group-picture-container&#34;&gt;</span><span style=color:#d88200>${</span><span style=color:#75af00>rowHTML</span><span style=color:#d88200>}</span><span style=color:#d88200>&lt;/div&gt;`</span><span style=color:#111>;</span>
+  <span style=color:#111>},</span>
+
+  <span style=color:#75af00>getColumnHTML</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(</span><span style=color:#75af00>pictures</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+    <span style=color:#00a8c8>var</span> <span style=color:#75af00>columnWidth</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>100</span> <span style=color:#f92672>/</span> <span style=color:#75af00>pictures</span><span style=color:#111>.</span><span style=color:#75af00>length</span><span style=color:#111>;</span>
+    <span style=color:#00a8c8>var</span> <span style=color:#75af00>columnStyle</span> <span style=color:#f92672>=</span> <span style=color:#d88200>`style=&#34;width: </span><span style=color:#d88200>${</span><span style=color:#75af00>columnWidth</span><span style=color:#d88200>}</span><span style=color:#d88200>%;&#34;`</span><span style=color:#111>;</span>
+    <span style=color:#00a8c8>return</span> <span style=color:#75af00>pictures</span><span style=color:#111>.</span><span style=color:#75af00>map</span><span style=color:#111>(</span><span style=color:#75af00>picture</span> <span style=color:#111>=&gt;</span> <span style=color:#111>{</span>
+      <span style=color:#00a8c8>return</span> <span style=color:#d88200>`&lt;div class=&#34;group-picture-column&#34; </span><span style=color:#d88200>${</span><span style=color:#75af00>columnStyle</span><span style=color:#d88200>}</span><span style=color:#d88200>&gt;</span><span style=color:#d88200>${</span><span style=color:#75af00>picture</span><span style=color:#d88200>}</span><span style=color:#d88200>&lt;/div&gt;`</span><span style=color:#111>;</span>
+    <span style=color:#111>}).</span><span style=color:#75af00>join</span><span style=color:#111>(</span><span style=color:#d88200>&#39;&#39;</span><span style=color:#111>);</span>
+  <span style=color:#111>}</span>
+<span style=color:#111>};</span>
+
+<span style=color:#00a8c8>function</span> <span style=color:#75af00>groupPicture</span><span style=color:#111>(</span><span style=color:#75af00>args</span><span style=color:#111>,</span> <span style=color:#75af00>content</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#75af00>args</span> <span style=color:#f92672>=</span> <span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>0</span><span style=color:#111>].</span><span style=color:#75af00>split</span><span style=color:#111>(</span><span style=color:#d88200>&#39;-&#39;</span><span style=color:#111>);</span>
+  <span style=color:#00a8c8>var</span> <span style=color:#75af00>group</span> <span style=color:#f92672>=</span> <span style=color:#111>parseInt</span><span style=color:#111>(</span><span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>0</span><span style=color:#111>],</span> <span style=color:#ae81ff>10</span><span style=color:#111>);</span>
+  <span style=color:#00a8c8>var</span> <span style=color:#75af00>layout</span> <span style=color:#f92672>=</span> <span style=color:#111>parseInt</span><span style=color:#111>(</span><span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>],</span> <span style=color:#ae81ff>10</span><span style=color:#111>);</span>
+
+  <span style=color:#75af00>content</span> <span style=color:#f92672>=</span> <span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>render</span><span style=color:#111>.</span><span style=color:#75af00>renderSync</span><span style=color:#111>({</span><span style=color:#75af00>text</span><span style=color:#f92672>:</span> <span style=color:#75af00>content</span><span style=color:#111>,</span> <span style=color:#75af00>engine</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#39;markdown&#39;</span><span style=color:#111>});</span>
+
+  <span style=color:#00a8c8>var</span> <span style=color:#75af00>pictures</span> <span style=color:#f92672>=</span> <span style=color:#75af00>content</span><span style=color:#111>.</span><span style=color:#75af00>match</span><span style=color:#111>(</span><span style=color:#d88200>/&lt;img[\s\S]*?&gt;/g</span><span style=color:#111>);</span>
+
+  <span style=color:#00a8c8>return</span> <span style=color:#d88200>`&lt;div class=&#34;group-picture&#34;&gt;</span><span style=color:#d88200>${</span><span style=color:#75af00>templates</span><span style=color:#111>.</span><span style=color:#75af00>dispatch</span><span style=color:#111>(</span><span style=color:#75af00>pictures</span><span style=color:#111>,</span> <span style=color:#75af00>group</span><span style=color:#111>,</span> <span style=color:#75af00>layout</span><span style=color:#111>)</span><span style=color:#d88200>}</span><span style=color:#d88200>&lt;/div&gt;`</span><span style=color:#111>;</span>
+<span style=color:#111>}</span>
+
+<span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>.</span><span style=color:#75af00>tag</span><span style=color:#111>.</span><span style=color:#75af00>register</span><span style=color:#111>(</span><span style=color:#d88200>&#39;grouppicture&#39;</span><span style=color:#111>,</span> <span style=color:#75af00>groupPicture</span><span style=color:#111>,</span> <span style=color:#111>{</span><span style=color:#75af00>ends</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>true</span><span style=color:#111>});</span>
+<span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>.</span><span style=color:#75af00>tag</span><span style=color:#111>.</span><span style=color:#75af00>register</span><span style=color:#111>(</span><span style=color:#d88200>&#39;gp&#39;</span><span style=color:#111>,</span> <span style=color:#75af00>groupPicture</span><span style=color:#111>,</span> <span style=color:#111>{</span><span style=color:#75af00>ends</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>true</span><span style=color:#111>});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id=label><a scroll=label>Label</a></h4>
+<p>sepqrate: @</p>
+<p>{% label default@《了不起的盖茨比》 %}</p>
+<ul>
+<li>default</li>
+<li>primary</li>
+<li>info</li>
+<li>success</li>
+<li>danger</li>
+<li>warning</li>
+</ul>
+<h4 id=mermaid><a scroll=mermaid>Mermaid</a></h4>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#d88200>&#39;use strict&#39;</span><span style=color:#111>;</span>
+
+<span style=color:#00a8c8>function</span> <span style=color:#75af00>mermaid</span><span style=color:#111>(</span><span style=color:#75af00>args</span><span style=color:#111>,</span> <span style=color:#75af00>content</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#00a8c8>return</span> <span style=color:#d88200>`&lt;pre class=&#34;mermaid&#34; style=&#34;text-align: center;&#34;&gt;
+</span><span style=color:#d88200>            </span><span style=color:#d88200>${</span><span style=color:#75af00>args</span><span style=color:#111>.</span><span style=color:#75af00>join</span><span style=color:#111>(</span><span style=color:#d88200>&#39; &#39;</span><span style=color:#111>)</span><span style=color:#d88200>}</span><span style=color:#d88200>
+</span><span style=color:#d88200>            </span><span style=color:#d88200>${</span><span style=color:#75af00>content</span><span style=color:#d88200>}</span><span style=color:#d88200>
+</span><span style=color:#d88200>          &lt;/pre&gt;`</span><span style=color:#111>;</span>
+<span style=color:#111>}</span>
+
+<span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>.</span><span style=color:#75af00>tag</span><span style=color:#111>.</span><span style=color:#75af00>register</span><span style=color:#111>(</span><span style=color:#d88200>&#39;mermaid&#39;</span><span style=color:#111>,</span> <span style=color:#75af00>mermaid</span><span style=color:#111>,</span> <span style=color:#111>{</span><span style=color:#75af00>ends</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>true</span><span style=color:#111>});</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Documentation:
+<ul>
+<li>NexT: <a href=https://theme-next.js.org/docs/tag-plugins/mermaid.html>https://theme-next.js.org/docs/tag-plugins/mermaid.html</a></li>
+<li>Github: <a href=https://github.com/mermaid-js/mermaid>https://github.com/mermaid-js/mermaid</a> 、http://mermaid-js.github.io/mermaid/#/flowchart</li>
+<li>Live editor: <a href=https://mermaidjs.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBW0hhcmRdIC0tPnxUZXh0fCBCKFJvdW5kKVxuICAgIEIgLS0-IEN7RGVjaXNpb259XG4gICAgQyAtLT58T25lfCBEW1Jlc3VsdCAxXVxuICAgIEMgLS0-fFR3b3wgRVtSZXN1bHQgMl0iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ>https://mermaidjs.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggVERcbiAgICBBW0hhcmRdIC0tPnxUZXh0fCBCKFJvdW5kKVxuICAgIEIgLS0-IEN7RGVjaXNpb259XG4gICAgQyAtLT58T25lfCBEW1Jlc3VsdCAxXVxuICAgIEMgLS0-fFR3b3wgRVtSZXN1bHQgMl0iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ</a></li>
+</ul>
+</li>
+</ul>
+<h4 id=pdf><a scroll=pdf>Pdf</a></h4>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#d88200>&#39;use strict&#39;</span><span style=color:#111>;</span>
+
+<span style=color:#00a8c8>function</span> <span style=color:#75af00>pdf</span><span style=color:#111>(</span><span style=color:#75af00>args</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#00a8c8>let</span> <span style=color:#75af00>theme</span> <span style=color:#f92672>=</span> <span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>theme</span><span style=color:#111>.</span><span style=color:#75af00>config</span><span style=color:#111>;</span>
+  <span style=color:#00a8c8>return</span> <span style=color:#d88200>`&lt;div class=&#34;pdfobject-container&#34; data-target=&#34;</span><span style=color:#d88200>${</span><span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>0</span><span style=color:#111>]</span><span style=color:#d88200>}</span><span style=color:#d88200>&#34; data-height=&#34;</span><span style=color:#d88200>${</span><span style=color:#75af00>args</span><span style=color:#111>[</span><span style=color:#ae81ff>1</span><span style=color:#111>]</span> <span style=color:#f92672>||</span> <span style=color:#75af00>theme</span><span style=color:#111>.</span><span style=color:#75af00>pdf</span><span style=color:#111>.</span><span style=color:#75af00>height</span><span style=color:#d88200>}</span><span style=color:#d88200>&#34;&gt;&lt;/div&gt;`</span><span style=color:#111>;</span>
+<span style=color:#111>}</span>
+
+<span style=color:#75af00>hexo</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>.</span><span style=color:#75af00>tag</span><span style=color:#111>.</span><span style=color:#75af00>register</span><span style=color:#111>(</span><span style=color:#d88200>&#39;pdf&#39;</span><span style=color:#111>,</span> <span style=color:#75af00>pdf</span><span style=color:#111>,</span> <span style=color:#111>{</span><span style=color:#75af00>ends</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>false</span><span style=color:#111>});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id=tabs><a scroll=tabs>Tabs</a></h4>
+<p><code>tabs</code> or <code>subtabs</code> or <code>subsubtabs</code></p>
+<p><a href=https://blog.zhujian.life/posts/5213c80b.html>https://blog.zhujian.life/posts/5213c80b.html</a></p>
+<p>{% tabs Unique name, 1 %}</p>
+<p>Top content 1</p>
+<p>Top content 2</p>
+<p>Top content 3</p>
+<p>{% subtabs Unique name 2, 1 %}</p>
+<p>Sub content 1</p>
+<p>Sub content 2</p>
+<p>{% endsubtabs %}</p>
+<p>{% subtabs Unique name 3, 2 %}</p>
+<p>Sub content 1</p>
+<p>Sub content 2</p>
+<p>{% endsubtabs %}</p>
+<p>{% endtabs %}</p>
+<h4 id=hexo-blog-encrypthttpsgithubcomd0n9x1nhexo-blog-encryptblobmasterreadmezhmd><a scroll=hexo-blog-encrypthttpsgithubcomd0n9x1nhexo-blog-encryptblobmasterreadmezhmd><a href=https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md>hexo-blog-encrypt</a></a></h4>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">199
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">200
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">201
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">202
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">203
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">204
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">205
+</span><span style=display:block;width:100%;background-color:#e1e1e1><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">206
+</span></span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">207
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">208
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">209
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>---</span>
+<span style=color:#75af00>title</span><span style=color:#111>:</span> <span style=color:#75af00>Hello</span> <span style=color:#75af00>World</span>
+<span style=color:#75af00>tags</span><span style=color:#111>:</span>
+  <span style=color:#f92672>-</span> <span style=color:#75af00>作为日记加密</span>
+<span style=color:#75af00>date</span><span style=color:#111>:</span> <span style=color:#ae81ff>2016</span><span style=color:#f92672>-</span><span style=color:#ae81ff>03</span><span style=color:#f92672>-</span><span style=color:#ae81ff>30</span> <span style=color:#ae81ff>21</span><span style=color:#111>:</span><span style=color:#ae81ff>12</span><span style=color:#111>:</span><span style=color:#ae81ff>21</span>
+<span style=color:#75af00>password</span><span style=color:#111>:</span> <span style=color:#75af00>mikemessi</span>
+<span style=color:#75af00>abstract</span><span style=color:#111>:</span> <span style=color:#75af00>有东西被加密了</span><span style=color:#111>,</span> <span style=color:#75af00>请输入密码查看</span><span style=color:#111>.</span>
+<span style=display:block;width:100%;background-color:#e1e1e1><span style=color:#75af00>message</span><span style=color:#111>:</span> <span style=color:#75af00>您好</span><span style=color:#111>,</span> <span style=color:#75af00>这里需要密码</span><span style=color:#111>.</span>
+</span><span style=color:#75af00>theme</span><span style=color:#111>:</span> <span style=color:#75af00>xray</span>
+<span style=color:#75af00>wrong_pass_message</span><span style=color:#111>:</span> <span style=color:#75af00>抱歉</span><span style=color:#111>,</span> <span style=color:#75af00>这个密码看着不太对</span><span style=color:#111>,</span> <span style=color:#75af00>请再试试</span><span style=color:#111>.</span>
+<span style=color:#f92672>---</span></code></pre></td></tr></table>
+</div>
+</div>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">199
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">200
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">201
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">202
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">203
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">204
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">205
+</span><span style=display:block;width:100%;background-color:#e1e1e1><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">206
+</span></span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">207
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">208
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">209
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">210
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">211
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">212
+</span><span style=display:block;width:100%;background-color:#e1e1e1><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">213
+</span></span><span style=display:block;width:100%;background-color:#e1e1e1><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">214
+</span></span><span style=display:block;width:100%;background-color:#e1e1e1><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">215
+</span></span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">216
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">217
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">218
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#75715e>// GetTitleFunc returns a func that can be used to transform a string to
+</span><span style=color:#75715e>// title case.
+</span><span style=color:#75715e>//
+</span><span style=color:#75715e>// The supported styles are
+</span><span style=color:#75715e>//
+</span><span style=color:#75715e>// - &#34;Go&#34; (strings.Title)
+</span><span style=color:#75715e>// - &#34;AP&#34; (see https://www.apstylebook.com/)
+</span><span style=display:block;width:100%;background-color:#e1e1e1><span style=color:#75715e>// - &#34;Chicago&#34; (see https://www.chicagomanualofstyle.org/home.html)
+</span></span><span style=color:#75715e>//
+</span><span style=color:#75715e>// If an unknown or empty style is provided, AP style is what you get.
+</span><span style=color:#75715e></span><span style=color:#00a8c8>func</span> <span style=color:#75af00>GetTitleFunc</span><span style=color:#111>(</span><span style=color:#75af00>style</span> <span style=color:#00a8c8>string</span><span style=color:#111>)</span> <span style=color:#00a8c8>func</span><span style=color:#111>(</span><span style=color:#75af00>s</span> <span style=color:#00a8c8>string</span><span style=color:#111>)</span> <span style=color:#00a8c8>string</span> <span style=color:#111>{</span>
+  <span style=color:#00a8c8>switch</span> <span style=color:#75af00>strings</span><span style=color:#111>.</span><span style=color:#75af00>ToLower</span><span style=color:#111>(</span><span style=color:#75af00>style</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#00a8c8>case</span> <span style=color:#d88200>&#34;go&#34;</span><span style=color:#111>:</span>
+    <span style=color:#00a8c8>return</span> <span style=color:#75af00>strings</span><span style=color:#111>.</span><span style=color:#75af00>Title</span>
+<span style=display:block;width:100%;background-color:#e1e1e1>  <span style=color:#00a8c8>case</span> <span style=color:#d88200>&#34;chicago&#34;</span><span style=color:#111>:</span>
+</span><span style=display:block;width:100%;background-color:#e1e1e1>    <span style=color:#00a8c8>return</span> <span style=color:#75af00>transform</span><span style=color:#111>.</span><span style=color:#75af00>NewTitleConverter</span><span style=color:#111>(</span><span style=color:#75af00>transform</span><span style=color:#111>.</span><span style=color:#75af00>ChicagoStyle</span><span style=color:#111>)</span>
+</span><span style=display:block;width:100%;background-color:#e1e1e1>  <span style=color:#00a8c8>default</span><span style=color:#111>:</span>
+</span>    <span style=color:#00a8c8>return</span> <span style=color:#75af00>transform</span><span style=color:#111>.</span><span style=color:#75af00>NewTitleConverter</span><span style=color:#111>(</span><span style=color:#75af00>transform</span><span style=color:#111>.</span><span style=color:#75af00>APStyle</span><span style=color:#111>)</span>
+  <span style=color:#111>}</span>
+<span style=color:#111>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#111>---</span>
+<span style=color:#f92672>title</span><span style=color:#111>:</span> <span style=color:#ae81ff>Hello World</span>
+<span style=color:#f92672>tags</span><span style=color:#111>:</span>
+  - <span style=color:#ae81ff>作为日记加密</span>
+<span style=color:#f92672>date</span><span style=color:#111>:</span> <span style=color:#d88200>2016-03-30 21:12:21</span>
+<span style=color:#f92672>password</span><span style=color:#111>:</span> <span style=color:#ae81ff>mikemessi</span>
+<span style=color:#f92672>abstract</span><span style=color:#111>:</span> <span style=color:#ae81ff>有东西被加密了, 请输入密码查看.</span>
+<span style=color:#f92672>message</span><span style=color:#111>:</span> <span style=color:#ae81ff>您好, 这里需要密码.</span>
+<span style=color:#f92672>theme</span><span style=color:#111>:</span> <span style=color:#ae81ff>xray</span>
+<span style=color:#f92672>wrong_pass_message</span><span style=color:#111>:</span> <span style=color:#ae81ff>抱歉, 这个密码看着不太对, 请再试试.</span>
+<span style=color:#111>---</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>encrypt</span><span style=color:#111>:</span>
+  <span style=color:#f92672>abstract</span><span style=color:#111>:</span> <span style=color:#ae81ff>本文已加密，请联系我以获取密码，联系方式见 About 页面。</span>
+  <span style=color:#f92672>message</span><span style=color:#111>:</span> <span style=color:#ae81ff>请输入密码查看</span>
+  <span style=color:#f92672>theme</span><span style=color:#111>:</span> <span style=color:#ae81ff>default</span> <span style=color:#75715e># default | blink | shrink | flip | up | surge | wave | xray</span>
+  <span style=color:#f92672>tags</span><span style=color:#111>:</span>
+    - {<span style=color:#f92672>name: Test, password</span><span style=color:#111>:</span> <span style=color:#ae81ff>melody}</span>
+  <span style=color:#f92672>wrong_pass_message</span><span style=color:#111>:</span> <span style=color:#ae81ff>密码错误！</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>footnote&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class=site-comment><script src=https://giscus.app/client.js data-repo=alohaia/alohaia.github.io data-repo-id="MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY=" data-category=Announcements data-category-id=DIC_kwDOFfHILM4B_XeA data-mapping=title data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+<div class=site-right></div>
+</div>
+<div class=site-footer id=SiteFooter><div class=footer-copyright>Copyright 2021 by
+Qihuan Liu
+. All Rights Reserved.</div>
+</div>
+<div class=site-sidebar id=SiteSidebar>
+<div class=sidebar-container>
+<div class=sidebar-nav>
+<span class="sidebar-nav-item sidebar-nav-docs active">Table of Content</span>
+<span class="sidebar-nav-item sidebar-nav-overview">Overview</span>
+</div>
+<div class=sidebar-content>
+<div class="sidebar-toc sidebar-pannel active">
+<h1 class=toc-title id=TOCTitle>Grammar Testing</h1>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#headers>Headers</a></li>
+<li><a href=#h2>H2</a>
+<ul>
+<li><a href=#h3>H3</a>
+<ul>
+<li><a href=#h4>H4</a></li>
+</ul>
+</li>
+<li><a href=#duplicate-header>Duplicate Header</a></li>
+<li><a href=#duplicate-header-1>Duplicate Header</a></li>
+</ul>
+</li>
+<li><a href=#paragraphs>Paragraphs</a></li>
+<li><a href=#inline>Inline</a></li>
+<li><a href=#links>Links</a></li>
+<li><a href=#abbreviation>Abbreviation</a></li>
+<li><a href=#unordered-list>Unordered List</a></li>
+<li><a href=#ordered-list>Ordered List</a></li>
+<li><a href=#task-list>Task List</a></li>
+<li><a href=#mixed-lists>Mixed Lists</a></li>
+<li><a href=#dictionary>Dictionary</a></li>
+<li><a href=#blocks>Blocks</a></li>
+<li><a href=#block-quotes>Block Quotes</a></li>
+<li><a href=#fenced-block>Fenced Block</a></li>
+<li><a href=#tables>Tables</a></li>
+<li><a href=#smart-strong>Smart Strong</a></li>
+<li><a href=#smarty>Smarty</a></li>
+<li><a href=#attribute-list>Attribute List</a></li>
+<li><a href=#admonition>Admonition</a></li>
+<li><a href=#github-emoji>Github Emoji</a>
+<ul>
+<li><a href=#people>People</a></li>
+<li><a href=#nature>Nature</a></li>
+<li><a href=#objects>Objects</a></li>
+<li><a href=#places>Places</a></li>
+<li><a href=#symbols>Symbols</a></li>
+</ul>
+</li>
+<li><a href=#insert>Insert</a></li>
+<li><a href=#progress>Progress</a></li>
+<li><a href=#neseted-fences>Neseted Fences</a></li>
+<li><a href=#uml-flow-charts>UML Flow Charts</a></li>
+<li><a href=#uml-sequence-diagrams>UML Sequence Diagrams</a></li>
+<li><a href=#math>Math</a></li>
+<li><a href=#reason>reason</a></li>
+<li><a href=#hexo-renderer-markdown-it-plus>hexo-renderer-markdown-it-plus</a></li>
+<li><a href=#tag-plugins>Tag-plugins</a>
+<ul>
+<li><a href=#link>Link</a></li>
+<li><a href=#code-block>Code Block</a></li>
+<li><a href=#include-code>Include Code</a></li>
+<li><a href=#iframe>Iframe</a></li>
+<li><a href=#image>Image</a></li>
+<li><a href=#pull-quote>Pull Quote</a></li>
+<li><a href=#reference>Reference</a></li>
+<li><a href=#asset-resource>Asset Resource</a></li>
+<li><a href=#next-tags>NexT tags</a>
+<ul>
+<li><a href=#call-out>Call Out</a></li>
+<li><a href=#button>Button</a></li>
+<li><a href=#caniuse>caniUse</a></li>
+<li><a href=#center-quote>Center Quote</a></li>
+<li><a href=#group-pictures>Group Pictures</a></li>
+<li><a href=#label>Label</a></li>
+<li><a href=#mermaid>Mermaid</a></li>
+<li><a href=#pdf>Pdf</a></li>
+<li><a href=#tabs>Tabs</a></li>
+<li><a href=#hexo-blog-encrypthttpsgithubcomd0n9x1nhexo-blog-encryptblobmasterreadmezhmd><a href=https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md>hexo-blog-encrypt</a></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div class="sidebar-overview sidebar-pannel">
+<div class=sidebar-avatar>
+<a href=/about><img class=site-avatar-image alt=Aloha src=/images/avatar.gif></a>
+</div>
+<p class=site-author-name>
+Qihuan Liu
+</p>
+<p class=site-description>追寻罗素先生的脚步，渴望寻找到我想要的答案。</p>
+<div class=site-state>
+<a class=site-state-item href=/>
+<p class=site-state-num>64</p>
+<p class=site-state-name>Pages</p>
+</a>
+<a class=site-state-item href=/docs>
+<p class=site-state-num>11</p>
+<p class=site-state-name>Docs</p>
+</a>
+<a class=site-state-item href=/categories>
+<p class=site-state-num>5</p>
+<p class=site-state-name>Categories</p>
+</a>
+<a class=site-state-item href=/tags>
+<p class=site-state-num>19</p>
+<p class=site-state-name>Tags</p>
+</a>
+</div>
+<div class=sidebar-quote>
+<p class=sidebar-quote-content id=SidebarQuoteContent>主人不来过夜半，闲敲棋子落灯花。</p>
+<p class=sidebar-quote-from id=SidebarQuoteFrom>——宋代·赵师秀《约客》</p>
+</div>
+<div class=sidebar-music>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css>
+<script src=https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js></script>
+<meting-js server=netease type=playlist id=6822976600 mini=false fixed=false list-folded=true autoplay volume=0.4 theme=#b7daff order=random loop=all preload=auto mutex=true>
+</meting-js>
+</div>
+</div>
+</div>
+<div class=back2top id=Back2top role=button>
+<i class="fas fa-arrow-up"></i>
+<span class=back2top-progress id=Back2topProgress></span>
+</div>
+</div>
+<div class=sidebar-toggle id=SidebarToggle role=button>
+<span class="toggle-line over"></span>
+<span class="toggle-line middle"></span>
+<span class="toggle-line below"></span>
+</div>
+</div>
+</div>
+<script src=https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js></script>
+<script type=module>
+  Fancybox.bind("[data-fancybox]", { "groupAll": true });
+</script>
+<script>MathJax={tex:{inlineMath:[["$","$"]]},displayMath:[["$$","$$"],["[[","]]"]],svg:{fontCache:"global"}}</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=/js/daisy.min.c5515f62060cf373fc698b3ef59ca05015c0f30990c730f00f22bca755254c2b.js integrity="sha256-xVFfYgYM83P8aYs+9ZygUBXA8wmQxzDwDyK8p1UlTCs="></script>
+<script data-pjax src=/js/daisy.each.min.cb2d3153792a341e9f9dba7298f71e7360abd8395aa6a246214edfcc1dff3127.js integrity="sha256-yy0xU3kqNB6fnbpymPcec2Cr2DlapqJGIU7fzB3/MSc="></script>
+<script src=https://cdn.jsdelivr.net/npm/pjax/pjax.min.js></script>
+<script src=/js/pjax.min.335dab55532d0a59a906b71ec58cb429fa225ce704d444d1f5f8731665b4d62b.js integrity="sha256-M12rVVMtClmpBrcexYy0KfoiXOcE1ETR9fhzFmW01is="></script>
+<script src=https://sdk.jinrishici.com/v2/browser/jinrishici.js></script>
+<script>var poem_part,poem_full;const content=document.getElementById("SidebarQuoteContent"),from=document.getElementById("SidebarQuoteFrom");function toggleFull(){content.innerHTML==poem_part?content.innerHTML=poem_full:content.innerHTML=poem_part}jinrishici.load(function(a){poem_part=a.data.content,content.innerText=poem_part,from.innerText='——'+a.data.origin.dynasty+'·'+a.data.origin.author+'《'+a.data.origin.title+'》',poem_full="&nbsp".repeat(8)+a.data.origin.content.join('<br/>'+"&nbsp".repeat(8)),content.onclick=toggleFull})</script>
+</body>
+</html>
