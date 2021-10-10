@@ -40,6 +40,47 @@ git subtree push --prefix public daisilia blog
 
 ![Pages 设置](pages.png)
 
+## 使用 git action 将仓库子目录作为网站根目录
+
+添加文件 `blog.hugo/.github/workflows/gh-pages.yml`：
+
+```ini
+name: github pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: hugo -D --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+```
+
+再到 https://github.com/daisilia/daisilia.github.io 进入 Pages 设置界面，将 `gh-pages` 分支设置为要用的分支即可。
+
 ## 将主题添加为子模块
 
 这里已经将远程仓库 https://github.com/alohaia/hugo-theme-daisilia 克隆到 `blog.hugo/themes/daisilia`，执行以下命令即可将其添加为子模块。
