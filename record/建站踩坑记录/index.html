@@ -49,12 +49,12 @@ Qihuan Liu
 <li class=meta-item>
 <i class="far fa-file-word"></i>
 <span class=meta-item-text>Word count ≈</span>
-<span class=meta-item-value>200</span>
+<span class=meta-item-value>300</span>
 </li>
 <li class=meta-item>
 <i class="fas fa-hourglass-start"></i>
 <span class=meta-item-text>Reading time ≈</span>
-<span class=meta-item-value>1 min</span>
+<span class=meta-item-value>2 min</span>
 </li>
 </ul>
 </div>
@@ -116,6 +116,79 @@ git push -u daisilia
 </a>
 </div>
 </p>
+<h2 id=使用-git-action-将仓库子目录作为网站根目录><a scroll=使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a></h2>
+<p>添加文件 <code>blog.hugo/.github/workflows/gh-pages.yml</code>：</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#75af00>name: github pages</span>
+
+<span style=color:#75af00>on:</span>
+  <span style=color:#75af00>push:</span>
+    <span style=color:#75af00>branches:</span>
+      <span style=color:#75af00>- main  # Set a branch to deploy</span>
+  <span style=color:#75af00>pull_request:</span>
+
+<span style=color:#75af00>jobs:</span>
+  <span style=color:#75af00>deploy:</span>
+    <span style=color:#75af00>runs-on: ubuntu-20.04</span>
+    <span style=color:#75af00>steps:</span>
+      <span style=color:#75af00>- uses: actions/checkout@v2</span>
+        <span style=color:#75af00>with:</span>
+          <span style=color:#75af00>submodules: true  # Fetch Hugo themes (true OR recursive)</span>
+          <span style=color:#75af00>fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod</span>
+
+      <span style=color:#75af00>- name: Setup Hugo</span>
+        <span style=color:#75af00>uses: peaceiris/actions-hugo@v2</span>
+        <span style=color:#75af00>with:</span>
+          <span style=color:#75af00>hugo-version: &#39;latest&#39;</span>
+          <span style=color:#75af00>extended: true</span>
+
+      <span style=color:#75af00>- name: Build</span>
+        <span style=color:#75af00>run: hugo -D --minify</span>
+
+      <span style=color:#75af00>- name: Deploy</span>
+        <span style=color:#75af00>uses: peaceiris/actions-gh-pages@v3</span>
+        <span style=color:#75af00>if: github.ref</span> <span style=color:#f92672>=</span><span style=color:#d88200>= &#39;refs/heads/main&#39;
+</span><span style=color:#d88200>        with:
+</span><span style=color:#d88200>          github_token: ${{ secrets.GITHUB_TOKEN }}
+</span><span style=color:#d88200>          publish_dir: ./public</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>再到 <a href=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>gh-pages</code> 分支设置为要用的分支即可。</p>
 <h2 id=将主题添加为子模块><a scroll=将主题添加为子模块>将主题添加为子模块</a></h2>
 <p>这里已经将远程仓库 <a href=https://github.com/alohaia/hugo-theme-daisilia>https://github.com/alohaia/hugo-theme-daisilia</a> 克隆到 <code>blog.hugo/themes/daisilia</code>，执行以下命令即可将其添加为子模块。</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
@@ -148,6 +221,7 @@ Qihuan Liu
 <nav id=TableOfContents>
 <ul>
 <li><a href=#将仓库子目录作为网站根目录>将仓库子目录作为网站根目录</a></li>
+<li><a href=#使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a></li>
 <li><a href=#将主题添加为子模块>将主题添加为子模块</a></li>
 </ul>
 </nav>
