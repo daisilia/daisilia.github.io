@@ -19,9 +19,15 @@ categories:
 
 <!-- more -->
 
+## FancyBox
+
 ![sdfasdfa](0.jpeg)
 
 ![](aloha.gif)
+
+PC：<a data-fancybox data-type="pdf" href="data-transformation_zh_cn.pdf">数据转换</a>
+
+移动端：<a data-fancybox data-type="pdf" href="/js/pdfjs/web/viewer.html?file=/r-%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/data-transformation_zh_cn.pdf">数据转换</a>
 
 [TOC]
 
