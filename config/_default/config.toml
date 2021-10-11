@@ -16,6 +16,7 @@ defaultContentLanguage = 'zh'
   fullname = "Qihuan Liu"
   nickname = "Aloha"
   avatar = "/images/avatar.gif"
+  homepage = "https://daisilia.wiki"
 
 [taxonomies]
   tag = 'tags'

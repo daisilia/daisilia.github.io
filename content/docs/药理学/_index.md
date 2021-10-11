@@ -13,7 +13,7 @@ categories:
 药理学（pharmacology）
 : 研究++药物与生物体++（机体和病原体）相互作用及作用规律的学科。
 
-<!-- more -->
+<!--more-->
 
 {% note default TOC 0 %}
 1. <a href="{% post_path 药物代谢动力学 %}">药物代谢动力学</a>
