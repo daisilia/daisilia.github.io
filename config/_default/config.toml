@@ -2,7 +2,6 @@ title = "Aloha's Blog"
 baseURL = 'https://aloha.org.cn'
 theme = 'daisilia'
 enableEmoji = true
-assetDir = '/assets'
 
 # language
 languageCode = 'zh-cn'
