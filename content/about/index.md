@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2021-09-16T16:29:41+08:00
-draft: true
+draft: false
 type: about
 ---
 

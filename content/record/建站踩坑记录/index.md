@@ -79,12 +79,6 @@ jobs:
           publish_dir: ./public
 ```
 
-::: .right
-
-![Pages 设置](pages.png)
-
-:::
-
 再到 https://github.com/daisilia/daisilia.github.io 进入 Pages 设置界面，将 `gh-pages` 分支设置为要用的分支即可。
 
 ## 将主题添加为子模块
