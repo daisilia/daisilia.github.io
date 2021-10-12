@@ -4,7 +4,7 @@ description = '追寻罗素先生的脚步，渴望寻找到我想要的答案�
 mes_404     = 'Over the Mountains, mountains...'
 [daisy.comment]
 enable            = true
-disable_on_local  = false
+disable_on_local  = true
 repo              = 'alohaia/alohaia.github.io'
 repo_id           = 'MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY='
 category          = "Announcements"

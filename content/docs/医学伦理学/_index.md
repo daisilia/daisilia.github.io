@@ -1,13 +1,13 @@
 ---
 title: 医学伦理学
+draft: false
 comments: true
-mathjax: false
+math: false
 date: 2021-09-02 09:25:02
 tags:
-    - Index
     - 医学伦理学
 categories:
-    - [Learning, Medicine, 医学伦理学]
+    - 医学伦理学
 ---
 
 医学伦理学

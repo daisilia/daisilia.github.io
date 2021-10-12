@@ -1,13 +1,13 @@
 ---
 title: 病理学
-comments: true
-mathjax: false
 date: 2021-08-31 09:16:40
+draft: false
+comments: true
+math: false
 tags:
-    - Index
     - 病理学
 categories:
-    - [Learning, Medicine, 病理学]
+    - 病理学
 ---
 
 Empty...

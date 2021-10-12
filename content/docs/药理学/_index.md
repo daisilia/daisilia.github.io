@@ -1,13 +1,13 @@
 ---
 title: 药理学
-comments: true
-mathjax: false
 date: 2021-09-03 10:15:33
+draft: false
+comments: true
+math: false
 tags:
-    - Index
     - 药理学
 categories:
-    - [Learning, Medicine, 药理学]
+    - 药理学
 ---
 
 药理学（pharmacology）
@@ -15,21 +15,21 @@ categories:
 
 <!--more-->
 
-{% note default TOC 0 %}
-1. <a href="{% post_path 药物代谢动力学 %}">药物代谢动力学</a>
-{% endnote %}
+{{% tab default TOC 0 %}}
+1. <a href="{{% relref "药物代谢动力学" %}}">药物代谢动力学</a>
+{{% /tab %}}
 
 药物（Drug）
 : 可以++改变或查明++机体生理功能及病理状态，可用于++预防、诊断和治疗++疾病，但对用药者（相对）无害的物质。
 
-{% centerquote %}
+{{% centerquote %}}
 万物皆毒，无显著界定。
 药物与毒物之间的唯一区别就是剂量。
 ——Darsetllung des Paracelsus
-{% endcenterquote %}
+{{% /centerquote %}}
 
 根据将药理学分为两个分支：
-- <a href="{% post_path 药物代谢动力学 %}">**药物代谢动力学**/**药动学**</a>（pharmacokinetics）：研究药物在机体的影响下所发生的变化与作用规律。
+- <a href="{{% relref "药物代谢动力学" %}}">**药物代谢动力学**/**药动学**</a>（pharmacokinetics）：研究药物在机体的影响下所发生的变化与作用规律。
 - **药物效应动力学**/**药效学**（pharmacodynamics）：研究药物对机体的作用及作用规律。
 
 药物治疗的四个过程：
