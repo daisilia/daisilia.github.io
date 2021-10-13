@@ -40,6 +40,8 @@ git subtree push --prefix public daisilia blog
 
 ![Pages 设置](pages.png)
 
+{{< figure src="pages.png" title="title" alt="alt" caption="caption" link="/docs" width=100 >}}
+
 ## 使用 git action 将仓库子目录作为网站根目录
 
 添加文件 `blog.hugo/.github/workflows/gh-pages.yml`：
