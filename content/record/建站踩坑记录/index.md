@@ -37,10 +37,7 @@ git subtree push --prefix public daisilia blog
 ```
 
 最后再到 https://github.com/daisilia/daisilia.github.io 进入 Pages 设置界面，将 `blog` 分支设置为要用的分支即可。
-
-![Pages 设置](pages.png)
-
-{{< figure src="pages.png" title="title" alt="alt" caption="caption" link="/docs" width=100 >}}
+{{< figure src="pages.png" title="Pages 设置" alt="Pages 设置" caption="进入 Pages 设置界面，将 `blog` 分支设置为选定分支" link="" >}}
 
 ## 使用 git action 将仓库子目录作为网站根目录
 
