@@ -1,37 +1,41 @@
 [daisy]
-subtitle    = '不乱于心，不困于情。不畏将来，不念过往。'
-description = '追寻罗素先生的脚步，渴望寻找到我想要的答案。'
-mes_404     = 'Over the Mountains, mountains...'
-[daisy.comment]
-enable            = true
-disable_on_local  = true
-repo              = 'alohaia/alohaia.github.io'
-repo_id           = 'MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY='
-category          = "Announcements"
-category_id       = "DIC_kwDOFfHILM4B_XeA"
-mapping           = "title"
-reactions_enabled = "1"
-emit_metadata     = "1"
-theme             = "light"
-[daisy.quote]
-enable = 'jinrishici' # or 'rainbow'
-[daisy.music]
-enable      = true
-server      = 'netease'
-type        = 'playlist'
-id          = '6822976600'
-mini        = false
-fixed       = false
-list_folded = true
-autoplay    = false
-volume      = 0.4
-theme       = '#b7daff'
-order       = 'random'
-loop        = 'all'
-preload     = 'auto'
-mutex       = true
-[daisy.pjax]
-enable = true
-[daisy.fancybox]
-enable = true
-[[daisy.header]]
+  subtitle    = '不乱于心，不困于情。不畏将来，不念过往。'
+  description = '追寻罗素先生的脚步，渴望寻找到我想要的答案。'
+  mes_404     = 'Over the Mountains, mountains...'
+  [daisy.social]
+    github = "https://github.com/alohaia"
+    email = "liu.qihuan@outlook.com"
+  [daisy.comment]
+    enable            = true
+    disable_on_local  = true
+    repo              = 'alohaia/alohaia.github.io'
+    repo_id           = 'MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY='
+    category          = "Announcements"
+    category_id       = "DIC_kwDOFfHILM4B_XeA"
+    mapping           = "title"
+    reactions_enabled = "1"
+    emit_metadata     = "1"
+    theme             = "light"
+  [daisy.quote]
+    enable = 'jinrishici' # or 'rainbow'
+  [daisy.music]
+    enable      = true
+    server      = 'netease'
+    type        = 'playlist'
+    id          = '6822976600'
+    mini        = false
+    fixed       = false
+    list_folded = true
+    autoplay    = false
+    volume      = 0.4
+    theme       = '#b7daff'
+    order       = 'random'
+    loop        = 'all'
+    preload     = 'auto'
+    mutex       = true
+  [daisy.pjax]
+    enable = true
+  [daisy.fancybox]
+    enable = true
+  [daisy.links]
+    "**郭老师**的网络自留地" = "https://www.sdiopid.top"
