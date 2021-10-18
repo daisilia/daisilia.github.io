@@ -15,7 +15,7 @@ defaultMarkdownHandler = 'goldmark'
       block = true
       title = true
   [goldmark.renderer]
-    hardWraps = false
+    hardWraps = true
     unsafe = true
     xhtml = true
 [highlight]
