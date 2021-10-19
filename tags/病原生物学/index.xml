@@ -239,9 +239,9 @@
 &lt;/tr>
 &lt;tr>
 &lt;td align="center">寄生部位&lt;/td>
-&lt;td align="center">成虫：小肠&lt;br/>囊尾蚴：全身各处（&lt;span class="inline-list">&lt;span class="inline-list-item">皮下肌肉@脑@眼&lt;/span>&lt;/span>）&lt;/td>
+&lt;td align="center">成虫：小肠&lt;br/>囊尾蚴：全身各处（&lt;span class="inline-list">&lt;span class="inline-list-item">皮下肌肉&lt;/span>&lt;span class="inline-list-item">脑&lt;/span>&lt;span class="inline-list-item">眼&lt;/span>&lt;/span>）&lt;/td>
 &lt;td align="center">小肠（成虫）&lt;/td>
-&lt;td align="center">成虫：小肠&lt;br/>棘球蚴：全身各处［&lt;span class="inline-list">&lt;span class="inline-list-item">&lt;strong>肝&lt;/strong>（最常见）@肺@脑&lt;/span>&lt;/span>］&lt;/td>
+&lt;td align="center">成虫：小肠&lt;br/>棘球蚴：全身各处［&lt;span class="inline-list">&lt;span class="inline-list-item">&lt;strong>肝&lt;/strong>（最常见）&lt;/span>&lt;span class="inline-list-item">肺&lt;/span>&lt;span class="inline-list-item">脑&lt;/span>&lt;/span>］&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td align="center">离体途径&lt;/td>
@@ -407,7 +407,7 @@
 &lt;td align="center">经口&lt;/td>
 &lt;td align="center">经口&lt;/td>
 &lt;td align="center">直接（性接触）、间接接触&lt;/td>
-&lt;td align="center">&lt;span class="inline-list">&lt;span class="inline-list-item">蚊媒叮咬@输血@垂直传播&lt;/span>&lt;/span>&lt;/td>
+&lt;td align="center">&lt;span class="inline-list">&lt;span class="inline-list-item">蚊媒叮咬&lt;/span>&lt;span class="inline-list-item">输血&lt;/span>&lt;span class="inline-list-item">垂直传播&lt;/span>&lt;/span>&lt;/td>
 &lt;td align="center">多种水平传播及垂直传播&lt;/td>
 &lt;td align="center">经口&lt;/td>
 &lt;/tr>
@@ -502,7 +502,7 @@
 &lt;td align="center">-&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>病原生物学</title><link>https://daisilia.wiki/docs/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/</link><pubDate>Tue, 16 Mar 2021 15:49:12 +0000</pubDate><guid>https://daisilia.wiki/docs/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/</guid><description>&lt;p>&lt;strong>病原生物学&lt;/strong>（pathogen biology）是研究病原生物的&lt;span class="inline-list">&lt;span class="inline-list-item">&lt;em>生物学规律&lt;/em>、&lt;em>致病机制&lt;/em>、_及、&lt;em>其和宿主之间相互作用&lt;/em>&lt;/span>&lt;/span>的学科。&lt;/p>
+&lt;/table></description></item><item><title>病原生物学</title><link>https://daisilia.wiki/docs/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/</link><pubDate>Tue, 16 Mar 2021 15:49:12 +0000</pubDate><guid>https://daisilia.wiki/docs/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/</guid><description>&lt;p>&lt;strong>病原生物学&lt;/strong>（pathogen biology）是研究病原生物的&lt;span class="inline-list">&lt;span class="inline-list-item">&lt;em>生物学规律&lt;/em>、&lt;/span>&lt;span class="inline-list-item">&lt;em>致病机制&lt;/em>、&lt;/span>&lt;span class="inline-list-conjunction">及、&lt;/span>&lt;span class="inline-list-item">&lt;em>其和宿主之间相互作用&lt;/em>&lt;/span>&lt;/span>的学科。&lt;/p>
 &lt;dl>
 &lt;dt>生物 | 生命体 | 有机体（organism）&lt;/dt>
 &lt;dd>能进行新陈代谢、能生长、具有应激性、能生殖发育、遗传变异，能在一定程度上适应和影响环境。&lt;/dd>
