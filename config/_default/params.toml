@@ -37,5 +37,7 @@
     enable = true
   [daisy.fancybox]
     enable = true
+  [daisy.exturl]
+    enable = false
   [daisy.links]
     "**郭老师**的网络自留地" = "https://www.sdiopid.top"
