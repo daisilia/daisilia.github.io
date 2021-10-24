@@ -43,7 +43,7 @@ git subtree push --prefix public daisilia blog
 
 添加文件 `blog.hugo/.github/workflows/gh-pages.yml`：
 
-```ini
+```yaml
 name: github pages
 
 on:

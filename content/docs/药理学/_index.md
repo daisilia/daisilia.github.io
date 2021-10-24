@@ -15,17 +15,12 @@ categories:
 
 <!--more-->
 
-{{% tab default TOC 0 %}}
-1. <a href="{{% relref "药物代谢动力学" %}}">药物代谢动力学</a>
-{{% /tab %}}
-
 药物（Drug）
 : 可以<ins>改变或查明</ins>机体生理功能及病理状态，可用于<ins>预防、诊断和治疗</ins>疾病，但对用药者（相对）无害的物质。
 
-{{% centerquote %}}
+{{% centerquote by="Darsetllung des Paracelsus" %}}
 万物皆毒，无显著界定。
 药物与毒物之间的唯一区别就是剂量。
-——Darsetllung des Paracelsus
 {{% /centerquote %}}
 
 根据将药理学分为两个分支：

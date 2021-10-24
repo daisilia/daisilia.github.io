@@ -38,7 +38,7 @@ categories:
 
 {{< figure src="Gram-stain.jpg" title="Gram-stain" caption="" alt="Gram-stain" class="" >}}
 
-{{% tab type="info" summary="革兰氏阳性菌和革兰氏阴性菌" details=false open=true %}}
+{{% tab type="default" summary="革兰氏阳性菌和革兰氏阴性菌" details=false open=true %}}
 
 革兰氏阳性菌细胞壁：*三维立体结构*
 - *肽聚糖*：较厚（15\~50 层）
