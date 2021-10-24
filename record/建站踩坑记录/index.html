@@ -15,7 +15,7 @@
 ">
 <meta property="article:tag" content>
 <meta property="article:section" content>
-<title>建站踩坑记录 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.fdbad26a450bb82e8b072e862c5070d8db3644eb9dcf6953ddb5965858a5e511.css integrity="sha256-/brSakULuC6LBy6GLFBw2Ns2ROudz2lT3bWWWFil5RE=">
+<title>建站踩坑记录 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.1a6aee5ab8a7083ece21b75c03e4e5a46cf037d4bb2366755a910cdca7a062aa.css integrity="sha256-GmruWrinCD7OIbdcA+TlpGzwN9S7I2Z1WpEM3KegYqo=">
 <link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css>
 <link href=https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css rel=stylesheet>
@@ -45,19 +45,11 @@
 <span class=meta-item-text>Author:</span>
 <span class=meta-item-value>Qihuan Liu
 </span>
-</li></ul><ul class=meta-section>
-<li class=meta-item>
-<i class="far fa-file-word"></i>
-<span class=meta-item-text>Word count ≈</span>
-<span class=meta-item-value>300</span>
-</li>
-<li class=meta-item>
-<i class="fas fa-hourglass-start"></i>
-<span class=meta-item-text>Reading time ≈</span>
-<span class=meta-item-value>2 min</span></li>
-</ul>
+</li></ul>
 </div><div class=article-content><p>这篇文章记录了开始用 Hugo 作为静态网站生成器后的踩坑记录，包括写主题和网站布署等方面。</p>
-<h2 id=将仓库子目录作为网站根目录 class=heading><a scroll=将仓库子目录作为网站根目录>将仓库子目录作为网站根目录</a></h2>
+<h2 id=将仓库子目录作为网站根目录 class=heading>
+<a scroll=将仓库子目录作为网站根目录>将仓库子目录作为网站根目录</a>
+</h2>
 <p>如果你已经了解情况，那么参考下面的命令，你的问题就应该解决了：</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
@@ -115,7 +107,9 @@ git push -u daisilia
 </figcaption>
 </figure>
 </p>
-<h2 id=使用-git-action-将仓库子目录作为网站根目录 class=heading><a scroll=使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a></h2>
+<h2 id=使用-git-action-将仓库子目录作为网站根目录 class=heading>
+<a scroll=使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a>
+</h2>
 <p>添加文件 <code>blog.hugo/.github/workflows/gh-pages.yml</code>：</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
@@ -153,42 +147,44 @@ git push -u daisilia
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
 </span></code></pre></td>
 <td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=color:#75af00>name: github pages</span>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>github pages</span>
 
-<span style=color:#75af00>on:</span>
-  <span style=color:#75af00>push:</span>
-    <span style=color:#75af00>branches:</span>
-      <span style=color:#75af00>- main  # Set a branch to deploy</span>
-  <span style=color:#75af00>pull_request:</span>
+<span style=color:#f92672>on</span><span style=color:#111>:</span>
+  <span style=color:#f92672>push</span><span style=color:#111>:</span>
+    <span style=color:#f92672>branches</span><span style=color:#111>:</span>
+      - <span style=color:#ae81ff>main </span> <span style=color:#75715e># Set a branch to deploy</span>
+  <span style=color:#f92672>pull_request</span><span style=color:#111>:</span>
 
-<span style=color:#75af00>jobs:</span>
-  <span style=color:#75af00>deploy:</span>
-    <span style=color:#75af00>runs-on: ubuntu-20.04</span>
-    <span style=color:#75af00>steps:</span>
-      <span style=color:#75af00>- uses: actions/checkout@v2</span>
-        <span style=color:#75af00>with:</span>
-          <span style=color:#75af00>submodules: true  # Fetch Hugo themes (true OR recursive)</span>
-          <span style=color:#75af00>fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod</span>
+<span style=color:#f92672>jobs</span><span style=color:#111>:</span>
+  <span style=color:#f92672>deploy</span><span style=color:#111>:</span>
+    <span style=color:#f92672>runs-on</span><span style=color:#111>:</span> <span style=color:#ae81ff>ubuntu-20.04</span>
+    <span style=color:#f92672>steps</span><span style=color:#111>:</span>
+      - <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>actions/checkout@v2</span>
+        <span style=color:#f92672>with</span><span style=color:#111>:</span>
+          <span style=color:#f92672>submodules</span><span style=color:#111>:</span> <span style=color:#00a8c8>true</span>  <span style=color:#75715e># Fetch Hugo themes (true OR recursive)</span>
+          <span style=color:#f92672>fetch-depth</span><span style=color:#111>:</span> <span style=color:#ae81ff>0</span>    <span style=color:#75715e># Fetch all history for .GitInfo and .Lastmod</span>
 
-      <span style=color:#75af00>- name: Setup Hugo</span>
-        <span style=color:#75af00>uses: peaceiris/actions-hugo@v2</span>
-        <span style=color:#75af00>with:</span>
-          <span style=color:#75af00>hugo-version: &#39;latest&#39;</span>
-          <span style=color:#75af00>extended: true</span>
+      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Setup Hugo</span>
+        <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>peaceiris/actions-hugo@v2</span>
+        <span style=color:#f92672>with</span><span style=color:#111>:</span>
+          <span style=color:#f92672>hugo-version</span><span style=color:#111>:</span> <span style=color:#d88200>&#39;latest&#39;</span>
+          <span style=color:#f92672>extended</span><span style=color:#111>:</span> <span style=color:#00a8c8>true</span>
 
-      <span style=color:#75af00>- name: Build</span>
-        <span style=color:#75af00>run: hugo -D --minify</span>
+      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Build</span>
+        <span style=color:#f92672>run</span><span style=color:#111>:</span> <span style=color:#ae81ff>hugo -D --minify</span>
 
-      <span style=color:#75af00>- name: Deploy</span>
-        <span style=color:#75af00>uses: peaceiris/actions-gh-pages@v3</span>
-        <span style=color:#75af00>if: github.ref</span> <span style=color:#f92672>=</span><span style=color:#d88200>= &#39;refs/heads/main&#39;
-</span><span style=color:#d88200>        with:
-</span><span style=color:#d88200>          github_token: ${{ secrets.GITHUB_TOKEN }}
-</span><span style=color:#d88200>          publish_dir: ./public</span>
+      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Deploy</span>
+        <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
+        <span style=color:#f92672>if</span><span style=color:#111>:</span> <span style=color:#ae81ff>github.ref == &#39;refs/heads/main&#39;</span>
+        <span style=color:#f92672>with</span><span style=color:#111>:</span>
+          <span style=color:#f92672>github_token</span><span style=color:#111>:</span> <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
+          <span style=color:#f92672>publish_dir</span><span style=color:#111>:</span> <span style=color:#ae81ff>./public</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>再到 <a href=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>gh-pages</code> 分支设置为要用的分支即可。</p>
-<h2 id=将主题添加为子模块 class=heading><a scroll=将主题添加为子模块>将主题添加为子模块</a></h2>
+<h2 id=将主题添加为子模块 class=heading>
+<a scroll=将主题添加为子模块>将主题添加为子模块</a>
+</h2>
 <p>这里已经将远程仓库 <a href=https://github.com/alohaia/hugo-theme-daisilia>https://github.com/alohaia/hugo-theme-daisilia</a> 克隆到 <code>blog.hugo/themes/daisilia</code>，执行以下命令即可将其添加为子模块。</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
@@ -204,11 +200,11 @@ git push -u daisilia
 <div class=site-right></div>
 </div>
 <footer class=site-footer id=SiteFooter><div class=footer-powerby>
-<span>Power by <a href=https://gohugo.io>Hugo</a></span>
+<span>Power by <a target=_blank href=https://gohugo.io>Hugo</a></span>
 <span class=division>|</span>
-<span>Theme - <a href=https://github.com/alohaia/hugo-theme-daisilia>Daisilia</a></span>
+<span>Theme - <a target=_blank href=https://github.com/alohaia/hugo-theme-daisilia>Daisilia</a></span>
 </div>
-<div class=footer-copyright>© 2020 - 2021<span class="heart animate__heartBeat animate__infinite"><i class="fas fa-heart"></i></span><span><a href=https://daisilia.wiki>Qihuan Liu
+<div class=footer-copyright>© 2020 - 2021<span class="heart animate__heartBeat animate__infinite"><i class="fas fa-heart"></i></span><span><a target=_blank href=https://daisilia.wiki>Qihuan Liu
 </a></span></div>
 <div class=js-each style=display:none></div>
 </footer>
@@ -229,9 +225,9 @@ git push -u daisilia
 </div>
 <p class=site-author-name>Qihuan Liu
 </p>
-<p class=site-description>追寻罗素先生的脚步，渴望寻找到我想要的答案。</p><div class=sidebar-social><a class=sidebar-social-item href=mailto:liu.qihuan@outlook.com><i class="fas fa-envelope"></i>E-Mail</a><a class=sidebar-social-item href=liu.qihuan@outlook.com><i class="fab fa-github"></i>Github</a></div><div class=site-state>
+<p class=site-description>追寻罗素先生的脚步，渴望寻找到我想要的答案。</p><div class=sidebar-social><a class=sidebar-social-item href=mailto:liu.qihuan@outlook.com><i class="fas fa-envelope"></i>E-Mail</a><a class=sidebar-social-item target=_blank href=https://github.com/alohaia><i class="fab fa-github"></i>Github</a></div><div class=site-state>
 <a class=site-state-item href=/>
-<p class=site-state-num>35</p>
+<p class=site-state-num>36</p>
 <p class=site-state-name>Pages</p>
 </a>
 <a class=site-state-item href=/docs>
