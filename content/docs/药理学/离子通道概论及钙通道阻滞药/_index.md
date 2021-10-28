@@ -1,5 +1,5 @@
 ---
-title: "离子通道概论及钙通道阻滞剂"
+title: "离子通道概论及钙通道阻滞药"
 date: 2021-10-23T14:41:23+08:00
 draft: false
 comments: true
