@@ -1,6 +1,6 @@
 ---
 title: 医学伦理学
-draft: false
+draft: true
 comments: true
 math: false
 date: 2021-09-02 09:25:02
