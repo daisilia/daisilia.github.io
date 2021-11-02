@@ -15,7 +15,7 @@
 ">
 <meta property="article:tag" content>
 <meta property="article:section" content>
-<title>建站踩坑记录 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.1a6aee5ab8a7083ece21b75c03e4e5a46cf037d4bb2366755a910cdca7a062aa.css integrity="sha256-GmruWrinCD7OIbdcA+TlpGzwN9S7I2Z1WpEM3KegYqo=">
+<title>建站踩坑记录 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.e2e328336c3bae51ffbfab8dab73456ad5e16e007315bd9b30d3e3aa9240b109.css integrity="sha256-4uMoM2w7rlH/v6uNq3NFatXhbgBzFb2bMNPjqpJAsQk=">
 <link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css>
 <link href=https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css rel=stylesheet>
@@ -47,9 +47,7 @@
 </span>
 </li></ul>
 </div><div class=article-content><p>这篇文章记录了开始用 Hugo 作为静态网站生成器后的踩坑记录，包括写主题和网站布署等方面。</p>
-<h2 id=将仓库子目录作为网站根目录 class=heading>
-<a scroll=将仓库子目录作为网站根目录>将仓库子目录作为网站根目录</a>
-</h2>
+<h2 id=将仓库子目录作为网站根目录 class=heading><a scroll=将仓库子目录作为网站根目录>将仓库子目录作为网站根目录</a></h2>
 <p>如果你已经了解情况，那么参考下面的命令，你的问题就应该解决了：</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
@@ -99,7 +97,8 @@ git push -u daisilia
 <pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git subtree push --prefix public daisilia blog
 </code></pre></td></tr></table>
 </div>
-</div><p>最后再到 <a href=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>blog</code> 分支设置为要用的分支即可。<br>
+</div><p>最后再到 <a target=_blank href=https://github.com/daisilia/daisilia.github.io class=exurl title=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a>
+进入 Pages 设置界面，将 <code>blog</code> 分支设置为要用的分支即可。<br>
 <figure>
 <a data-fancybox data-src=pages.png>
 <img src=pages.png alt="Pages 设置"> </a><figcaption>
@@ -107,9 +106,7 @@ git push -u daisilia
 </figcaption>
 </figure>
 </p>
-<h2 id=使用-git-action-将仓库子目录作为网站根目录 class=heading>
-<a scroll=使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a>
-</h2>
+<h2 id=使用-git-action-将仓库子目录作为网站根目录 class=heading><a scroll=使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a></h2>
 <p>添加文件 <code>blog.hugo/.github/workflows/gh-pages.yml</code>：</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
@@ -181,11 +178,11 @@ git push -u daisilia
           <span style=color:#f92672>publish_dir</span><span style=color:#111>:</span> <span style=color:#ae81ff>./public</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>再到 <a href=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>gh-pages</code> 分支设置为要用的分支即可。</p>
-<h2 id=将主题添加为子模块 class=heading>
-<a scroll=将主题添加为子模块>将主题添加为子模块</a>
-</h2>
-<p>这里已经将远程仓库 <a href=https://github.com/alohaia/hugo-theme-daisilia>https://github.com/alohaia/hugo-theme-daisilia</a> 克隆到 <code>blog.hugo/themes/daisilia</code>，执行以下命令即可将其添加为子模块。</p>
+</div><p>再到 <a target=_blank href=https://github.com/daisilia/daisilia.github.io class=exurl title=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a>
+进入 Pages 设置界面，将 <code>gh-pages</code> 分支设置为要用的分支即可。</p>
+<h2 id=将主题添加为子模块 class=heading><a scroll=将主题添加为子模块>将主题添加为子模块</a></h2>
+<p>这里已经将远程仓库 <a target=_blank href=https://github.com/alohaia/hugo-theme-daisilia class=exurl title=https://github.com/alohaia/hugo-theme-daisilia>https://github.com/alohaia/hugo-theme-daisilia</a>
+克隆到 <code>blog.hugo/themes/daisilia</code>，执行以下命令即可将其添加为子模块。</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
 <pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
@@ -227,19 +224,19 @@ git push -u daisilia
 </p>
 <p class=site-description>追寻罗素先生的脚步，渴望寻找到我想要的答案。</p><div class=sidebar-social><a class=sidebar-social-item href=mailto:liu.qihuan@outlook.com><i class="fas fa-envelope"></i>E-Mail</a><a class=sidebar-social-item target=_blank href=https://github.com/alohaia><i class="fab fa-github"></i>Github</a></div><div class=site-state>
 <a class=site-state-item href=/>
-<p class=site-state-num>39</p>
+<p class=site-state-num>41</p>
 <p class=site-state-name>Pages</p>
 </a>
 <a class=site-state-item href=/docs>
-<p class=site-state-num>9</p>
+<p class=site-state-num>8</p>
 <p class=site-state-name>Docs</p>
 </a>
 <a class=site-state-item href=/categories>
-<p class=site-state-num>9</p>
+<p class=site-state-num>8</p>
 <p class=site-state-name>Categories</p>
 </a>
 <a class=site-state-item href=/tags>
-<p class=site-state-num>14</p>
+<p class=site-state-num>13</p>
 <p class=site-state-name>Tags</p>
 </a>
 </div>
