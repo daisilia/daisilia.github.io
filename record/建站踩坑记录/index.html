@@ -15,7 +15,7 @@
 ">
 <meta property="article:tag" content>
 <meta property="article:section" content>
-<title>建站踩坑记录 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.2e3874945bc4f510ac99b08d38a2dfbc0f96a9b47cce991fe07ad102fd622397.css integrity="sha256-Ljh0lFvE9RCsmbCNOKLfvA+WqbR8zpkf4HrRAv1iI5c=">
+<title>建站踩坑记录 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.eb23b7ba0becb3061ef7efe5baf424b49a01bf4dec6ae024fd2a259d9bcc0bd0.css integrity="sha256-6yO3ugvsswYe9+/luvQktJoBv03sauAk/SolnZvMC9A=">
 <link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css>
 <link href=https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css rel=stylesheet>
@@ -47,7 +47,10 @@
 </span>
 </li></ul>
 </div><div class=article-content><p>这篇文章记录了开始用 Hugo 作为静态网站生成器后的踩坑记录，包括写主题和网站布署等方面。</p>
-<h2 id=将仓库子目录作为网站根目录 class=heading><a scroll=将仓库子目录作为网站根目录>将仓库子目录作为网站根目录</a></h2>
+<h2 class=heading id=将仓库子目录作为网站根目录>
+<a scroll=将仓库子目录作为网站根目录>
+将仓库子目录作为网站根目录
+</a></h2>
 <p>如果你已经了解情况，那么参考下面的命令，你的问题就应该解决了：</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
@@ -97,7 +100,7 @@ git push -u daisilia
 <pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git subtree push --prefix public daisilia blog
 </code></pre></td></tr></table>
 </div>
-</div><p>最后再到 <a target=_blank href=https://github.com/daisilia/daisilia.github.io class=exurl title=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>blog</code> 分支设置为要用的分支即可。<br>
+</div><p>最后再到 <a target=_blank href=https://github.com/daisilia/daisilia.github.io class=exurl>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>blog</code> 分支设置为要用的分支即可。<br>
 <figure>
 <a data-fancybox data-src=pages.png>
 <img src=pages.png alt="Pages 设置"> </a><figcaption>
@@ -105,7 +108,10 @@ git push -u daisilia
 </figcaption>
 </figure>
 </p>
-<h2 id=使用-git-action-将仓库子目录作为网站根目录 class=heading><a scroll=使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a></h2>
+<h2 class=heading id=使用-git-action-将仓库子目录作为网站根目录>
+<a scroll=使用-git-action-将仓库子目录作为网站根目录>
+使用 git action 将仓库子目录作为网站根目录
+</a></h2>
 <p>添加文件 <code>blog.hugo/.github/workflows/gh-pages.yml</code>：</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
@@ -177,9 +183,12 @@ git push -u daisilia
           <span style=color:#f92672>publish_dir</span><span style=color:#111>:</span> <span style=color:#ae81ff>./public</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>再到 <a target=_blank href=https://github.com/daisilia/daisilia.github.io class=exurl title=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>gh-pages</code> 分支设置为要用的分支即可。</p>
-<h2 id=将主题添加为子模块 class=heading><a scroll=将主题添加为子模块>将主题添加为子模块</a></h2>
-<p>这里已经将远程仓库 <a target=_blank href=https://github.com/alohaia/hugo-theme-daisilia class=exurl title=https://github.com/alohaia/hugo-theme-daisilia>https://github.com/alohaia/hugo-theme-daisilia</a> 克隆到 <code>blog.hugo/themes/daisilia</code>，执行以下命令即可将其添加为子模块。</p>
+</div><p>再到 <a target=_blank href=https://github.com/daisilia/daisilia.github.io class=exurl>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>gh-pages</code> 分支设置为要用的分支即可。</p>
+<h2 class=heading id=将主题添加为子模块>
+<a scroll=将主题添加为子模块>
+将主题添加为子模块
+</a></h2>
+<p>这里已经将远程仓库 <a target=_blank href=https://github.com/alohaia/hugo-theme-daisilia class=exurl>https://github.com/alohaia/hugo-theme-daisilia</a> 克隆到 <code>blog.hugo/themes/daisilia</code>，执行以下命令即可将其添加为子模块。</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
 <table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
 <pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
