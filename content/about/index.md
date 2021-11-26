@@ -5,17 +5,24 @@ draft: false
 type: about
 ---
 
+**What is this site used for?**
+
+记录一些[系统化的笔记]({{< relref "/docs" >}})、一些[记录]({{< relref "/record" >}})以及一些乱七八糟的东西。由于精力有限，许多内容仍在[旧博客](https://aloha.org.cn)，没有搬过来。
+
 **Who am I?**
 
-- CMU（~~Carnegie Mellon University~~）在读*医学牲*
-- 编程爱好者、（Neo）Vimmer
+- CMU（~~Carnegie Mellon University~~中国医科大学）在读*医学牲*
+- 编程爱好者、（Neo）Vimmer {{< figure src="https://github-readme-stats.vercel.app/api?username=alohaia&show_icons=true&theme=tokyonight" title="" caption="" alt="" class="right float-right" >}}
 
 **What am I doing?**
 
 - 我的博客（医学、计算机……）
-    - 博客地址：https://aloha.org.cn
-    - NeoVim 插件：https://github.com/alohaia/vim-hexowiki
-- 我的 NeoVim 配置：https://github.com/alohaia/nvimcfg
+    - 博客地址：[Aloha's Blog](https://daisilia.com)
+    - 博客主题：[Daisilia](https://github.com/alohaia/hugo-theme-daisilia)
+    - 给博客写的 NeoVim 插件：[hugowiki.nvim](https://github.com/alohaia/hugowiki.nvim)
+- 我的 NeoVim 配置：[https://github.com/alohaia/nvimcfg](https://github.com/alohaia/nvimcfg)
+
+{{< figure src="aloha.gif" title="" caption="" alt="" width="250px" class="fight float-right" >}}
 
 **What do I wanna do?**
 
@@ -28,6 +35,5 @@ type: about
 - E-mail
     - Outlook: [liu.qihuan@outlook.com](mailto:liu.qihuan@outlook.com)
     - Gmail: [ericksonorlandop11811@gmail.com](mailto:ericksonorlandop11811@gmail.com)
-- BiliBili [@alohaia](https://space.bilibili.com/437854288)
 - Github [@alohaia](https://github.com/alohaia)
-- 你也可以直接在下方评论留言
+- BiliBili [@alohaia](https://space.bilibili.com/437854288)
