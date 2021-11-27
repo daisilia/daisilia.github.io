@@ -15,7 +15,7 @@ defaultContentLanguage = 'zh'
 [frontmatter]
   date = ['date', 'publishDate', 'lastmod']
   expiryDate = ['expiryDate']
-  lastmod = [':fileModTime', 'lastmod', 'date', 'publishDate']
+  lastmod = ['lastmod', 'date', 'publishDate']
   publishDate = ['publishDate', 'date']
 
 [author]

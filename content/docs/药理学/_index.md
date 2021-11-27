@@ -8,6 +8,7 @@ tags:
     - 药理学
 categories:
     - 药理学
+lastmod: 2021-11-27T17:37:51+08:00
 ---
 
 药理学（pharmacology）
