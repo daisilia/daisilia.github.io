@@ -2,6 +2,7 @@ title = "Aloha's Blog"
 baseURL = 'https://daisilia.wiki'
 theme = 'daisilia'
 enableEmoji = true
+enableGitInfo = true
 
 # language
 languageCode = 'zh-cn'
