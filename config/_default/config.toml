@@ -12,11 +12,10 @@ defaultContentLanguage = 'zh'
   weight = 10
 
 # enableGitInfo = false
-enableGitInfo = true
 [frontmatter]
   date = ['date', 'publishDate', 'lastmod']
   expiryDate = ['expiryDate']
-  lastmod = [':git'] # , ':fileModTime', 'lastmod', 'date', 'publishDate'
+  lastmod = [':fileModTime', 'lastmod', 'date', 'publishDate']
   publishDate = ['publishDate', 'date']
 
 [author]
