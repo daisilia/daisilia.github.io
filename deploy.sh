@@ -1,9 +1,9 @@
 #!/bin/bash
 
 if [[ $# -gt 0 ]]; then
-    mes="`date +%Y.%m.%d` $1"
+    mes="`date date +%Y-%m-%dT%T%:z` $1"
 else
-    mes="`date +%Y.%m.%d`"
+    mes="`date date +%Y-%m-%dT%T%:z`"
 fi
 
 git add .
