@@ -1,13 +1,13 @@
 ---
 title: "About"
 date: 2021-09-16T16:29:41+08:00
-draft: false
+lastmod: 2022-01-22T18:40:11+08:00
 type: about
 ---
 
 **What is this site used for?**
 
-记录一些[系统化的笔记]({{< relref "/docs" >}})、一些[记录]({{< relref "/record" >}})以及一些乱七八糟的东西。由于精力有限，许多内容仍在[旧博客](https://aloha.org.cn)，没有搬过来。
+记录一些[系统化的笔记]({{< relref "/series" >}})、一些[记录]({{< relref "/record" >}})以及一些乱七八糟的东西。由于精力有限，许多内容仍在[旧博客](https://aloha.org.cn)，没有搬过来。
 
 **Who am I?**
 

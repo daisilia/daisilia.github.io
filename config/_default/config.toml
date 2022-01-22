@@ -26,7 +26,7 @@ defaultContentLanguage = 'zh'
 
 [taxonomies]
   tag = 'tags'
-  category = 'categories'
+  # category = 'categories'
 
 # menus
 [menu]
@@ -48,17 +48,17 @@ defaultContentLanguage = 'zh'
   pre = '<i class="fas fa-tags"></i>'
   url = '/tags/'
   weight = 3
+# [[menu.daisy]]
+#   identifier = 'categories'
+#   name = 'Categories'
+#   pre = '<i class="fas fa-th-list"></i>'
+#   url = '/categories/'
+#   weight = 4
 [[menu.daisy]]
-  identifier = 'categories'
-  name = 'Categories'
-  pre = '<i class="fas fa-th-list"></i>'
-  url = '/categories/'
-  weight = 4
-[[menu.daisy]]
-  identifier = 'docs'
-  name = 'Docs'
+  identifier = 'series'
+  name = 'Series'
   pre = '<i class="fas fa-book"></i>'
-  url = '/docs/'
-  weight = 5
+  url = '/series/'
+  weight = 4
 # [[menu.daisy]]
 #   pre = '<i class="fas fa-search"></i>'
