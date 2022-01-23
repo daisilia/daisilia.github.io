@@ -9,13 +9,13 @@
 <meta property="og:image" content="https://daisilia.wiki/images/favicon.ico">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="0001-01-01 00:00:00 +0000 UTC">
-<meta property="article:modified_time" content="2022-01-04 18:21:05 +0800 +0800">
+<meta property="article:modified_time" content="2022-01-23 18:38:47 +0800 +0800">
 <meta property="article:expiration_time" content="0001-01-01 00:00:00 +0000 UTC">
 <meta property="article:author" content="Qihuan Liu
 ">
 <meta property="article:tag" content>
 <meta property="article:section" content>
-<title>Records | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.0c3b4c3b0cd9e5fdd1d69a0cf42903ee846cc9c092e1a55a66dc58b558370cb4.css integrity="sha256-DDtMOwzZ5f3R1poM9CkD7oRsycCS4aVaZtxYtVg3DLQ=">
+<title>Records | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.ede1661d479615481e25212000c1122f3a66d7de74cb8848974e64d383f3724f.css integrity="sha256-7eFmHUeWFUgeJSEgAMESLzpm1950y4hIl05k04Pzck8=">
 <link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css>
 <link href=https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css rel=stylesheet>
@@ -28,7 +28,8 @@
 <body class=site-root id=SiteRoot>
 <div id=loading></div>
 <div class=site-inner id=SiteInner>
-<header class=site-header id=SiteHeader><h1 class=site-title>Aloha's Blog</h1><ul class=main-menu><li class=menu-item><a href=/><i class="fas fa-home"></i>Home</a></li><li class=menu-item><a href=/about/><i class="fas fa-user"></i>About</a></li><li class=menu-item><a href=/tags/><i class="fas fa-tags"></i>Tags</a></li><li class=menu-item><a href=/series/><i class="fas fa-book"></i>Series</a></li></ul>
+<header class=site-header id=SiteHeader><h1 class=site-title>Aloha's Blog</h1><ul class=main-menu><li class=menu-item><a href=/><i class="fas fa-home"></i>Home</a></li><li class=menu-item><a href=/about/><i class="fas fa-user"></i>About</a></li><li class=menu-item><a href=/tags/><i class="fas fa-tags"></i>Tags</a></li><li class=menu-item><a href=/series/><i class="fas fa-book"></i>Series</a></li><li class="menu-item search" id=searchBtn><i class="fas fa-search"></i>CTRL-/</li>
+</ul>
 </header>
 <div class=site-main id=SiteMain>
 <div class=site-left></div>
@@ -40,7 +41,7 @@
 </li><li class=meta-item>
 <i class="fas fa-clock"></i>
 <span class=meta-item-text>Edited on</span>
-<span class=meta-item-value>2022-01-04</span>
+<span class=meta-item-value>2022-01-23</span>
 </li><li class=meta-item>
 <i class="fas fa-user"></i>
 <span class=meta-item-text>Author:</span>
@@ -48,6 +49,33 @@
 </span>
 </li></ul>
 </div><div class=page-list><div class=page-list-item>
+<h1 class="page-title article-title"><a href=/record/vue-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/>Vue 学习记录</a></h1>
+<div class="page-metadata article-metadata"><ul class=meta-section><li class=meta-item>
+<i class="fas fa-calendar"></i>
+<span class=meta-item-text>Posted on</span>
+<span class=meta-item-value>2021-12-30</span>
+</li><li class=meta-item>
+<i class="fas fa-clock"></i>
+<span class=meta-item-text>Edited on</span>
+<span class=meta-item-value>2022-01-23</span>
+</li><li class=meta-item>
+<i class="fas fa-user"></i>
+<span class=meta-item-text>Author:</span>
+<span class=meta-item-value>Qihuan Liu
+</span>
+</li></ul><ul class=meta-section><li class=meta-item>
+<i class="fas fa-tags"></i>
+<span class=meta-item-text>Tags:</span>
+<span class=meta-item-value><a class=tag href=/tags/vue>Vue</a></span>
+</li><li class=meta-item><i class="fas fa-folder"></i>
+<span class=meta-item-text>In</span>
+<a class=meta-item-value href=/record/>Records</a>
+</li></ul>
+</div>
+<div class="summary article-content">前置知识 Object.defineProperty 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 let number = 20; Object.defineProperty(person, 'age', { value: 18, // 设置 person 对象中 age 属性的值 enumerable: true, // 设置 age 属性可枚举 writable: true, // 设置属性可写入 configurable: true, // 设置属性可删除 get: function(){ // 读取 age 的值时，调用 get 函数 young = number; number = number + 1; return young; }, set: function(value){ // 给 age 赋值时，调用 set 函数 number = value; }, }) Vue Tips 不要考虑如何操作 DOM，去考虑修改数据； 网络应用开发：axios； computed 属性 computed 属性的 get（getter）和 set（setter）方法中的 this 被设置成指向 Vue 实例。
+</div>
+<a class=read-more href=/record/vue-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/>Read More ...</a>
+</div><div class=page-list-item>
 <h1 class="page-title article-title"><a href=/record/vue-%E7%BB%84%E4%BB%B6%E5%8C%96/>Vue 组件化</a></h1>
 <div class="page-metadata article-metadata"><ul class=meta-section><li class=meta-item>
 <i class="fas fa-calendar"></i>
@@ -77,33 +105,6 @@
 基本语法 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 // 1. 创建组件 const childComponent = Vue.extend({ template: ` &lt;div class="child"> 姓名：&lt;input type="text" name="姓名" v-model="auther.
 </div>
 <a class=read-more href=/record/vue-%E7%BB%84%E4%BB%B6%E5%8C%96/>Read More ...</a>
-</div><div class=page-list-item>
-<h1 class="page-title article-title"><a href=/record/vue-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/>Vue 学习记录</a></h1>
-<div class="page-metadata article-metadata"><ul class=meta-section><li class=meta-item>
-<i class="fas fa-calendar"></i>
-<span class=meta-item-text>Posted on</span>
-<span class=meta-item-value>2021-12-30</span>
-</li><li class=meta-item>
-<i class="fas fa-clock"></i>
-<span class=meta-item-text>Edited on</span>
-<span class=meta-item-value>2022-01-04</span>
-</li><li class=meta-item>
-<i class="fas fa-user"></i>
-<span class=meta-item-text>Author:</span>
-<span class=meta-item-value>Qihuan Liu
-</span>
-</li></ul><ul class=meta-section><li class=meta-item>
-<i class="fas fa-tags"></i>
-<span class=meta-item-text>Tags:</span>
-<span class=meta-item-value><a class=tag href=/tags/vue>Vue</a></span>
-</li><li class=meta-item><i class="fas fa-folder"></i>
-<span class=meta-item-text>In</span>
-<a class=meta-item-value href=/record/>Records</a>
-</li></ul>
-</div>
-<div class="summary article-content">前置知识 Object.defineProperty 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 let number = 20; Object.defineProperty(person, 'age', { value: 18, // 设置 person 对象中 age 属性的值 enumerable: true, // 设置 age 属性可枚举 writable: true, // 设置属性可写入 configurable: true, // 设置属性可删除 get: function(){ // 读取 age 的值时，调用 get 函数 young = number; number = number + 1; return young; }, set: function(value){ // 给 age 赋值时，调用 set 函数 number = value; }, }) Vue Tips 不要考虑如何操作 DOM，去考虑修改数据； 网络应用开发：axios； computed 属性 computed 属性的 get（getter）和 set（setter）方法中的 this 被设置成指向 Vue 实例。
-</div>
-<a class=read-more href=/record/vue-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/>Read More ...</a>
 </div><div class=page-list-item>
 <h1 class="page-title article-title"><a href=/record/ajax-%E6%9D%82%E8%AE%B0/>AJAX 杂记</a></h1>
 <div class="page-metadata article-metadata"><ul class=meta-section><li class=meta-item>
@@ -161,8 +162,13 @@
 </div>
 <div class=site-right></div>
 </div><div id=fastSearch>
-<input id=searchInput tabindex=0>
+<div class=fast-search-container>
+<div class=fast-search-header>
+<input id=searchInput autocomplete=false tabindex=0>
+<span class=fast-search-hint>CTRL-/</span>
+</div>
 <ul id=searchResults></ul>
+</div>
 </div>
 <script src=/js/fuse.min.js></script>
 <script src=/js/fastsearch.js></script>
@@ -229,8 +235,8 @@
     "hideScrollbar": false, 
   });
 </script>
-<script src=/js/daisy.min.3e02cf26721722ca1a962fc0f5199a6f989af18c5facb337be279dd62882de98.js integrity="sha256-PgLPJnIXIsoali/A9Rmab5ia8YxfrLM3vied1iiC3pg="></script>
-<script data-pjax src=/js/daisy.each.min.77ce9967e04cf8ce15c30e259fcb46f7550a882200aefa5911f3b946a50b8187.js integrity="sha256-d86ZZ+BM+M4Vww4ln8tG91UKiCIArvpZEfO5RqULgYc="></script>
+<script src=/js/daisy.min.24e36dc511a9bd7cc2ff0543a19223f3711cee5a1d30356c5209896d21898959.js integrity="sha256-JONtxRGpvXzC/wVDoZIj83Ec7lodMDVsUgmJbSGJiVk="></script>
+<script data-pjax src=/js/daisy.each.min.02394dc293d713b92c5be6a595c090e059334da9092af32f5e4d1cb79e5a7a0a.js integrity="sha256-AjlNwpPXE7ksW+allcCQ4FkzTakJKvMvXk0ct55aego="></script>
 <script src=https://cdn.jsdelivr.net/npm/pjax/pjax.min.js></script><script src=/js/pjax.min.7b5a8e0a328d3a239283651aefd618ea17b5cce89f29feb493614189c42cafc1.js integrity="sha256-e1qOCjKNOiOSg2Ua79YY6he1zOifKf60k2FBicQsr8E="></script><script src=https://sdk.jinrishici.com/v2/browser/jinrishici.js></script>
 <script>var poem_part,poem_full;const content=document.getElementById("SidebarQuoteContent"),from=document.getElementById("SidebarQuoteFrom");function toggleFull(){content.innerHTML==poem_part?content.innerHTML=poem_full:content.innerHTML=poem_part}jinrishici.load(function(a){poem_part=a.data.content,content.innerText=poem_part,from.innerText='——'+a.data.origin.dynasty+'·'+a.data.origin.author+'《'+a.data.origin.title+'》',poem_full="&nbsp".repeat(8)+a.data.origin.content.join('<br/>'+"&nbsp".repeat(8)),content.onclick=toggleFull})</script>
 </body>
