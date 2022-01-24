@@ -3,6 +3,7 @@
 build_one <- function(io) {
     # if output is not older than input, skip the compilation
     if (!blogdown:::require_rebuild(io[2], io[1])) {
+        cat(sprintf("%s up to date.\n", io[2]))
         return()
     }
 
@@ -14,7 +15,9 @@ build_one <- function(io) {
 }
 
 # Rmd files under the source directory
-rmds <- list.files("source", "[.]Rmd$", recursive = TRUE, full.names = TRUE)
+rmds <- list.files("content", "[.]Rmd$", recursive = TRUE, full.names = TRUE)
 files <- cbind(rmds, blogdown:::with_ext(rmds, ".md"))
 
-for (i in seq_len(nrow(files))) build_one(files[i, ])
+for (i in seq_len(nrow(files))) {
+    build_one(files[i, ])
+}

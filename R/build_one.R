@@ -2,17 +2,20 @@
 
 local({
     # fall back on '/' if baseurl is not specified
-    baseurl <- blogdown:::get_config2("root", "/")
+    baseurl <- blogdown:::get_config("baseUrl")
     knitr::opts_knit$set(
-        base.url = baseurl, base.dir = normalizePath("source")
+        base.url = baseurl,
+        base.dir = normalizePath("content"),
+        width = 70
     )
 
     # input/output filenames are passed as two additional arguments to Rscript
     a <- commandArgs(TRUE)
     d <- gsub("^source/_?|[.][a-zA-Z]+$", "", a[1])
+    reld <- paste(strsplit(d, "/")[[1]][-1], collapse = "/") # remove "content/"
     knitr::opts_chunk$set(
-        fig.path   = sprintf("_%s/", d),
-        cache.path = sprintf("cache/%s/", d),
+        fig.path   = sprintf("../static/R-figures/%s/", reld),
+        cache.path = sprintf("../.cache/%s/", reld),
         comment    = "#>",
         results    = "hold",
         tiry       = TRUE,
@@ -25,17 +28,16 @@ local({
         error      = TRUE
     )
     options(digits = 4)
-    knitr::opts_knit$set(width = 70)
     knitr::knit(a[1], a[2],
         quiet = TRUE, encoding = "UTF-8", envir = .GlobalEnv
     )
 
-    # post processing
     text <- readLines(a[2], encoding = "UTF-8")
+    # post processing
     text <- gsub("!\\[(.*?)\\]\\(.*?([^/]*?\\.png)\\)",
-        "{% asset_img \"\\2\" \"\\1'\\1'\" %}",
+        sprintf('{{< figure src="/R-figures/%s/\\2" title="\\1" alt="\\1" >}}', reld),
         text,
         perl = TRUE
     )
-    writeLines(text, con = a[2], sep = "\n", useBytes = F)
+    writeLines(text, con = a[2], sep = "\n", useBytes = FALSE)
 })

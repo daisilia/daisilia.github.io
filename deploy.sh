@@ -6,6 +6,7 @@ else
     mes="`date +%Y-%m-%dT%T%:z`"
 fi
 
+R/build.R
 git add .
 git commit -m "${mes}"
 git push
