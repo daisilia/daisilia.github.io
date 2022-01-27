@@ -1,5 +1,5 @@
 title = "Aloha's Blog"
-baseURL = 'https://daisilia.wiki'
+baseURL = 'https://daisilia.com'
 theme = 'daisilia'
 enableEmoji = true
 hasCJKLanguage = true
