@@ -69,7 +69,7 @@ ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/ggplot2-introduction-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/ggplot2-introduction-1.png" title="" alt="" >}}
 
 `ggplot(data = mpg)` 创建了一个空白的坐标系，`geom_point()` 就向图中添加了一个点层，这样就创建了一个散点图。
 
@@ -94,7 +94,7 @@ ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy, color = class))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/mapping-color-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/mapping-color-1.png" title="" alt="" >}}
 
 用 `aes()` 将图形属性名称关联起来，`ggplot2` 就会自动为每个变量值分配唯一的图形属性*水平*。
 
@@ -110,7 +110,7 @@ ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy, size = class))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/mapping-size-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/mapping-size-1.png" title="" alt="" >}}
 
 这里出现了一条警告信息，因为将无序变量 `class` 映射为有需变量 `size` 不是一个好主意。
 
@@ -124,7 +124,7 @@ ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy, shape = class))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/mapping-alpha,shape-1.png" title="" alt="" >}}{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/mapping-alpha,shape-2.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/mapping-alpha,shape-1.png" title="" alt="" >}}{{< figure src="/R-figures/R 与数学建模/R-数据科学/mapping-alpha,shape-2.png" title="" alt="" >}}
 
 注意下图中的 “suv” 没有显示，这是因为 `ggplot2` 默认只支持 6 种形状。
 
@@ -138,7 +138,7 @@ ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy), color = "blue")
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/manual-fixed-value-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/manual-fixed-value-1.png" title="" alt="" >}}
 
 注意不要将固定值放在 `aes()` 函数里，因为此时颜色并不是用来传达变量的信息，而只是改变图的外观。错误示范：
 
@@ -148,7 +148,7 @@ ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/manual-fixed-value-wrong-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/manual-fixed-value-wrong-1.png" title="" alt="" >}}
 
 其中的点的颜色都是橙色，这是因为 R 将 `"blue"` 视作数据，而不是颜色值。
 
@@ -167,7 +167,7 @@ ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy, color = displ < 5))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/other examples-1.png" title="" alt="" >}}{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/other examples-2.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/other examples-1.png" title="" alt="" >}}{{< figure src="/R-figures/R 与数学建模/R-数据科学/other examples-2.png" title="" alt="" >}}
 
 ### 分面
 
@@ -180,7 +180,7 @@ ggplot(data = mpg) +
     facet_wrap(~class, nrow = 2)
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/facet_wrap-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/facet_wrap-1.png" title="" alt="" >}}
 
 `facet_wrap()` 函数的第一个参数是一个公式（R 中的一种数据结构，不是数学意义上的公式），传递给 `facet_wrap()` 的参数应该是离散型的。
 
@@ -193,7 +193,7 @@ ggplot(data = mpg) +
     facet_grid(drv ~ cyl)
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/facet_grid-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/facet_grid-1.png" title="" alt="" >}}
 
 如果不想在行或列的维度进行分面，可以使用 `.` 代替变量名，如 `. ~ cyl`
 
@@ -207,7 +207,7 @@ ggplot(data = mpg) +
     geom_smooth(mapping = aes(x = displ, y = hwy))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/geometry object-1.png" title="" alt="" >}}{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/geometry object-2.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/geometry object-1.png" title="" alt="" >}}{{< figure src="/R-figures/R 与数学建模/R-数据科学/geometry object-2.png" title="" alt="" >}}
 
 两张图使用了同样的数据，但它们使用了不同的可视化对象。在 `ggplot2` 语法中，我们称它们使用了不同的**几何对象**。第一张图使用了点几何对象而第二张图使用了平滑曲线几何对象。
 
@@ -222,7 +222,7 @@ ggplot(data = mpg) +
     geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv, color = drv))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/geom_smooth-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/geom_smooth-1.png" title="" alt="" >}}
 
 :::
 
@@ -242,7 +242,7 @@ ggplot(data = diamonds) +
     geom_bar(mapping = aes(x = cut))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/R-数据科学/geom_bar-1.png" title="" alt="" >}}
+{{< figure src="/R-figures/R 与数学建模/R-数据科学/geom_bar-1.png" title="" alt="" >}}
 
 注意到图中出现了一个新的变量 `count`，但是 `count` 不是 `diamonds` 中的变量。之所以会出现新的变量，是因为一些图形（如条形图）不只是绘制数据集的原始数据，而是可以绘制自己计算出的新数据。
 

@@ -13,6 +13,7 @@ local({
     a <- commandArgs(TRUE)
     d <- gsub("^source/_?|[.][a-zA-Z]+$", "", a[1])
     reld <- paste(strsplit(d, "/")[[1]][-1], collapse = "/") # remove "content/"
+    reld <- gsub("/index$", "", reld)
     knitr::opts_chunk$set(
         fig.path   = sprintf("../static/R-figures/%s/", reld),
         cache.path = sprintf("../.cache/%s/", reld),

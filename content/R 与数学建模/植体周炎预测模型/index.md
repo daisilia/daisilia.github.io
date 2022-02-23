@@ -282,7 +282,7 @@ options(datadist = ddist.train)
 plot(nomogram(fit.train, fun = plogis, lp = FALSE, funlabel = "预测概率"))
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/植体周炎预测模型/index/unnamed-chunk-9-1.png" title="列线图预测模型" alt="列线图预测模型" >}}
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-9-1.png" title="列线图预测模型" alt="列线图预测模型" >}}
 
 ## 数据验证
 
@@ -324,7 +324,7 @@ ci.auc(p.roc.train)
 #> 95% CI: 75.2%-88.2% (DeLong)
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/植体周炎预测模型/index/unnamed-chunk-11-1.png" title="ROC Curve（训练集）" alt="ROC Curve（训练集）" >}}
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-11-1.png" title="ROC Curve（训练集）" alt="ROC Curve（训练集）" >}}
 
 
 ```r
@@ -342,7 +342,7 @@ ci.auc(p.roc.test)
 #> 95% CI: 60.2%-79.8% (DeLong)
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/植体周炎预测模型/index/unnamed-chunk-12-1.png" title="ROC Curve（测试集）" alt="ROC Curve（测试集）" >}}
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-12-1.png" title="ROC Curve（测试集）" alt="ROC Curve（测试集）" >}}
 训练集 AUC 达 81.7%（95%CI：75.16%-88.25%），测试集 AUC 为 70.0%（95%CI：60.24%-79.76%），提示列线图模型区分度良好。
 
 ### 列线图校准曲线
@@ -358,7 +358,7 @@ plot(cal_train,
      main = "Calibration Curve（训练集）")
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/植体周炎预测模型/index/unnamed-chunk-13-1.png" title="列线图校准曲线（训练集）" alt="列线图校准曲线（训练集）" >}}
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-13-1.png" title="列线图校准曲线（训练集）" alt="列线图校准曲线（训练集）" >}}
 
 
 ```r
@@ -373,6 +373,6 @@ plot(cal_test,
      main = "Calibration Curve（测试集）")
 ```
 
-{{< figure src="/R-figures/home/aloha/Documents/blog/content/R 与数学建模/植体周炎预测模型/index/unnamed-chunk-14-1.png" title="列线图校准曲线（测试集）" alt="列线图校准曲线（测试集）" >}}
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-14-1.png" title="列线图校准曲线（测试集）" alt="列线图校准曲线（测试集）" >}}
 
 通过校验曲线可以看出训练集和测试集的预测值与实际值基本一致。

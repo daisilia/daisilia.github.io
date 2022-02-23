@@ -2,7 +2,8 @@
 
 build_one <- function(io) {
     # if output is not older than input, skip the compilation
-    if (!blogdown:::require_rebuild(io[2], io[1])) {
+    if (!blogdown:::require_rebuild(io[2], io[1])
+        && !("--force" %in% commandArgs())) {
         cat(sprintf("%s up to date.\n", io[2]))
         return()
     }
