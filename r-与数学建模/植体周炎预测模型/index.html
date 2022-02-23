@@ -1,0 +1,773 @@
+<!doctype html><html lang=zh-cn>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,height=device-height,initial-scale=1"><meta property="og:site_name" content="Aloha's Blog">
+<meta property="og:title" content="植体周炎预测模型：Logistic 回归分析及列线图模型">
+<meta property="og:description" content="数据准备：使用 sample 函数对原始数据进行随机抽样，抽取 70% 的数据作为训练集（n=329），其余的作为测试集（n=141），抽样结果（训练集）保存在 sample.txt 文件中。
+建立模型：使用 stats 程序包中的 glm 函数对训练集数据使用单因素和多因素 Logistic 回归分析，确定发生植体周炎的危险因素（P<0.05）。用多因素 Logistic 回归分析的结果计算 OR 值，并借助 boot 程序包，使用 Bootstrap 法计算 OR 的 95% 置信区间。使用 rms 程序包建立列线图预测模型。
+验证模型：分别借助 rms 程序包中的 calibrate 函数和 pROC 程序包中的 plot.roc 函数，使用 C-index 和校准曲线来检验模型的区分度和校准度。Logistic 回归的 C-index 即为 ROC 曲线下面积（AUC）。内部验证和外部验证分别使用训练集和测试集数据进行。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://daisilia.com/r-%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E6%A4%8D%E4%BD%93%E5%91%A8%E7%82%8E%E9%A2%84%E6%B5%8B%E6%A8%A1%E5%9E%8B/">
+<meta property="og:image" content="https://daisilia.wiki/images/favicon.ico">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-02-23 12:55:52 +0800 +0800">
+<meta property="article:modified_time" content="2022-02-23 18:47:05 +0800 +0800">
+<meta property="article:expiration_time" content="0001-01-01 00:00:00 +0000 UTC">
+<meta property="article:author" content="Qihuan Liu
+">
+<meta property="article:tag" content="R Logistic 回归分析 列线图预测模型 ">
+<meta property="article:section" content>
+<title>植体周炎预测模型：Logistic 回归分析及列线图模型 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.650847edbda36499d889ae0c9f24ae2773176a44733f95ea2b2cb091cf86946c.css integrity="sha256-ZQhH7b2jZJnYia4MnySuJ3MXakRzP5XqKyywkc+GlGw=">
+<link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
+<link href=https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css rel=stylesheet>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Indie+Flower&family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+SC:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel=stylesheet>
+<link rel="shortcut icon" href=/images/favicon.ico type=image/vnd.microsoft.icon>
+<link rel=icon href=/images/favicon.ico type=image/vnd.microsoft.icon>
+</head>
+<body class=site-root id=SiteRoot>
+<div id=loading></div>
+<div class=site-inner id=SiteInner>
+<header class=site-header id=SiteHeader><h1 class=site-title>Aloha's Blog</h1><ul class=main-menu><li class=menu-item><a href=/><i class="fas fa-home"></i>Home</a></li><li class=menu-item><a href=/about/><i class="fas fa-user"></i>About</a></li><li class=menu-item><a href=/tags/><i class="fas fa-tags"></i>Tags</a></li><li class=menu-item><a href=/series/><i class="fas fa-book"></i>Series</a></li><li class="menu-item search" id=searchBtn><i class="fas fa-search"></i>CTRL-/</li>
+</ul>
+</header>
+<div class=site-main id=SiteMain>
+<div class=site-left></div>
+<div class=site-content id=SiteContent><h1 class="article-title single-title">植体周炎预测模型：Logistic 回归分析及列线图模型</h1>
+<div class=article-metadata><ul class=meta-section><li class=meta-item>
+<i class="fas fa-calendar"></i>
+<span class=meta-item-text>Posted on</span>
+<span class=meta-item-value>2022-02-23</span>
+</li><li class=meta-item>
+<i class="fas fa-clock"></i>
+<span class=meta-item-text>Edited on</span>
+<span class=meta-item-value>2022-02-23</span>
+</li><li class=meta-item>
+<i class="fas fa-user"></i>
+<span class=meta-item-text>Author:</span>
+<span class=meta-item-value>Qihuan Liu
+</span>
+</li></ul><ul class=meta-section><li class=meta-item>
+<i class="fas fa-tags"></i>
+<span class=meta-item-text>Tags:</span>
+<span class=meta-item-value><a class=tag href=/tags/r>R</a>, <a class=tag href=/tags/logistic-%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90>Logistic 回归分析</a>, <a class=tag href=/tags/%E5%88%97%E7%BA%BF%E5%9B%BE%E9%A2%84%E6%B5%8B%E6%A8%A1%E5%9E%8B>列线图预测模型</a></span>
+</li><li class=meta-item><i class="fas fa-folder"></i>
+<span class=meta-item-text>In</span>
+<a class=meta-item-value href=/r-%E4%B8%8E%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/>R 与数学建模</a>
+</li></ul>
+</div><div class=article-content><p><strong>数据准备</strong>：使用 <code>sample</code> 函数对原始数据进行随机抽样，抽取 70% 的数据作为训练集（n=329），其余的作为测试集（n=141），抽样结果（训练集）保存在 sample.txt 文件中。<br>
+<strong>建立模型</strong>：使用 <code>stats</code> 程序包中的 <code>glm</code> 函数对训练集数据使用单因素和多因素 Logistic 回归分析，确定发生植体周炎的危险因素（P&lt;0.05）。用多因素 Logistic 回归分析的结果计算 OR 值，并借助 <code>boot</code> 程序包，使用 Bootstrap 法计算 OR 的 95% 置信区间。使用 <code>rms</code> 程序包建立列线图预测模型。<br>
+<strong>验证模型</strong>：分别借助 <code>rms</code> 程序包中的 <code>calibrate</code> 函数和 <code>pROC</code> 程序包中的 <code>plot.roc</code> 函数，使用 C-index 和校准曲线来检验模型的区分度和校准度。Logistic 回归的 C-index 即为 ROC 曲线下面积（AUC）。内部验证和外部验证分别使用训练集和测试集数据进行。</p>
+<h2 class=heading id=模型建立><a scroll=模型建立>模型建立</a></h2>
+<h3 class=heading id=准备工作><a scroll=准备工作>准备工作</a></h3>
+<p>导入需要用到的 R 程序包并导入数据：</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#75715e># 导入 R 库</span>
+<span style=color:#75af00>library</span><span style=color:#111>(</span><span style=color:#111>readxl</span><span style=color:#111>)</span>
+<span style=color:#75af00>library</span><span style=color:#111>(</span><span style=color:#111>writexl</span><span style=color:#111>)</span>
+<span style=color:#75af00>library</span><span style=color:#111>(</span><span style=color:#111>lme4</span><span style=color:#111>)</span>
+<span style=color:#75af00>library</span><span style=color:#111>(</span><span style=color:#111>broom</span><span style=color:#111>)</span>
+<span style=color:#75af00>library</span><span style=color:#111>(</span><span style=color:#111>tidyverse</span><span style=color:#111>)</span>
+
+<span style=color:#75715e># 导入数据</span>
+<span style=color:#111>raw_data</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>read_excel</span><span style=color:#111>(</span><span style=color:#d88200>&#34;data.xlsx&#34;</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><details class="tab default" id=tab_根据需要预处理数据>
+<summary class=tab-title><span class=tab-title-content>根据需要预处理数据</span><span class=tab-title-indicator><i class="fas fa-angle-right"></i></span></summary>
+<div class=tab-content>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#75715e># 选择研究变量</span>
+<span style=color:#111>data</span> <span style=color:#f92672>&lt;-</span> <span style=color:#111>raw_data[</span><span style=color:#111>,</span><span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#ae81ff>-1</span><span style=color:#111>,</span><span style=color:#ae81ff>-2</span><span style=color:#111>,</span><span style=color:#ae81ff>-3</span><span style=color:#111>,</span><span style=color:#ae81ff>-10</span><span style=color:#111>,</span><span style=color:#ae81ff>-17</span><span style=color:#111>,</span><span style=color:#ae81ff>-18</span><span style=color:#111>,</span><span style=color:#ae81ff>-20</span><span style=color:#111>)</span><span style=color:#111>]</span>
+<span style=color:#111>data</span><span style=color:#f92672>$</span>年龄 <span style=color:#f92672>&lt;-</span> <span style=color:#111>raw_data</span><span style=color:#f92672>$</span>修复体戴入日期 <span style=color:#f92672>-</span> <span style=color:#111>raw_data</span><span style=color:#f92672>$</span>出生日期
+
+<span style=color:#75715e># 计数数据</span>
+<span style=color:#111>names.count</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#d88200>&#34;吸烟&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;性别&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;修复体材料&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;骨吸收情况&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;分期&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;分级&#34;</span><span style=color:#111>,</span>
+                 <span style=color:#d88200>&#34;颌位&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;牙位&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;种植系统&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;植骨手术明细&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;用膜明细&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;缝合方式&#34;</span><span style=color:#111>)</span>
+<span style=color:#111>names.all</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>colnames</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#111>)</span><span style=color:#111>[</span><span style=color:#f92672>-</span><span style=color:#75af00>which</span><span style=color:#111>(</span><span style=color:#75af00>colnames</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#111>)</span> <span style=color:#f92672>==</span> <span style=color:#d88200>&#34;植体周炎&#34;</span><span style=color:#111>)</span><span style=color:#111>]</span>
+
+<span style=color:#75715e># 再次处理数据细节</span>
+<span style=color:#111>data</span><span style=color:#f92672>$</span>口内植体数目 <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>as.numeric</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#f92672>$</span>口内植体数目<span style=color:#111>)</span> <span style=color:#75715e># “口内植体数目” 原本是字符串，这里将其转换为数值</span>
+<span style=color:#111>data</span><span style=color:#75af00>[which</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#f92672>$</span>分级 <span style=color:#f92672>==</span> <span style=color:#d88200>&#34;B&#34;</span><span style=color:#111>),</span><span style=color:#111>]</span><span style=color:#f92672>$</span>分级 <span style=color:#f92672>&lt;-</span> <span style=color:#d88200>&#34;b&#34;</span>         <span style=color:#75715e># 分级 B 和 b 相同</span>
+<span style=color:#111>data</span><span style=color:#75af00>[which</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#f92672>$</span>分级 <span style=color:#f92672>==</span> <span style=color:#d88200>&#34;a&#34;</span><span style=color:#111>),</span><span style=color:#111>]</span><span style=color:#f92672>$</span>分级 <span style=color:#f92672>&lt;-</span> <span style=color:#d88200>&#34;b&#34;</span>         <span style=color:#75715e># 把分级里a合并到b里面</span>
+<span style=color:#111>data</span><span style=color:#75af00>[which</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#f92672>$</span>骨吸收情况 <span style=color:#f92672>==</span> <span style=color:#d88200>&#34;1/2&#34;</span><span style=color:#111>),</span><span style=color:#111>]</span><span style=color:#f92672>$</span>骨吸收情况 <span style=color:#f92672>&lt;-</span> <span style=color:#d88200>&#34;&gt;1/2&#34;</span>
+<span style=color:#111>data</span><span style=color:#75af00>[which</span><span style=color:#111>(</span><span style=color:#75af00>as.numeric</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#f92672>$</span>修复体材料<span style=color:#111>)</span> <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>3</span><span style=color:#111>),</span><span style=color:#111>]</span><span style=color:#f92672>$</span>修复体材料 <span style=color:#f92672>&lt;-</span> <span style=color:#ae81ff>3</span> <span style=color:#75715e># 修复体材料 3 以后都合并为一类</span>
+
+<span style=color:#75715e># 处理错误数据</span>
+<span style=color:#111>data</span><span style=color:#75af00>[which</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#f92672>$</span>吸烟 <span style=color:#f92672>==</span> <span style=color:#ae81ff>2</span><span style=color:#111>),</span><span style=color:#111>]</span><span style=color:#f92672>$</span>吸烟 <span style=color:#f92672>&lt;-</span> <span style=color:#ae81ff>0</span>
+<span style=color:#111>data</span><span style=color:#75af00>[which</span><span style=color:#111>(</span><span style=color:#75af00>is.na</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#f92672>$</span>种植系统<span style=color:#111>)),</span><span style=color:#111>]</span><span style=color:#f92672>$</span>种植系统 <span style=color:#f92672>&lt;-</span> <span style=color:#ae81ff>1</span>
+<span style=color:#111>data</span><span style=color:#75af00>[which</span><span style=color:#111>(</span><span style=color:#75af00>is.na</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#f92672>$</span>用膜明细<span style=color:#111>)),</span><span style=color:#111>]</span><span style=color:#f92672>$</span>用膜明细 <span style=color:#f92672>&lt;-</span> <span style=color:#ae81ff>1</span>
+
+<span style=color:#75715e># 去除有缺失值的病例</span>
+<span style=color:#111>data</span> <span style=color:#f92672>&lt;-</span> <span style=color:#111>data</span><span style=color:#75af00>[complete.cases</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#111>),</span><span style=color:#111>]</span>
+
+<span style=color:#75715e># 计数数据转成因子型变量</span>
+<span style=color:#75af00>for</span><span style=color:#111>(</span><span style=color:#111>name</span> <span style=color:#111>in</span> <span style=color:#111>names.count</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#111>data[[name]]</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>factor</span><span style=color:#111>(</span><span style=color:#111>data[[name]]</span><span style=color:#111>)</span>
+<span style=color:#111>}</span>
+</code></pre></td></tr></table>
+</div>
+</div> </div>
+</details>
+<p>现在准备好的数据储存在 <code>data</code> 变量中。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#&gt; # A tibble: 6 × 23
+#&gt;   吸烟  种植前空腹血糖 性别  修复体材料 口内植体数目 骨吸收情况 分期  分级 
+#&gt;   &lt;fct&gt;          &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt;             &lt;dbl&gt; &lt;fct&gt;      &lt;fct&gt; &lt;fct&gt;
+#&gt; 1 0               4.9  1     1                     4 &lt;1/3       3     b    
+#&gt; 2 0               4.9  1     1                     4 1/3-1/2    3     b    
+#&gt; 3 0               5.98 1     1                     3 &lt;1/3       3     c    
+#&gt; 4 0               4.89 2     1                     7 1/3-1/2    3     c    
+#&gt; 5 0               4.89 2     1                     7 植体       3     c    
+#&gt; 6 0               4.89 2     1                     7 1/3-1/2    4     c    
+#&gt; # … with 15 more variables: 颌位 &lt;fct&gt;, 牙位 &lt;fct&gt;, 角化组织宽度（mm） &lt;dbl&gt;,
+#&gt; #   维护周期（月） &lt;dbl&gt;, 平均复查周期 &lt;dbl&gt;, 种植系统 &lt;fct&gt;, 植体直径 &lt;dbl&gt;,
+#&gt; #   植体长度 &lt;dbl&gt;, 植骨手术明细 &lt;fct&gt;, 用膜明细 &lt;fct&gt;, 缝合方式 &lt;fct&gt;,
+#&gt; #   穿龈角度（近中） &lt;dbl&gt;, 穿龈角度（远中） &lt;dbl&gt;, 植体周炎 &lt;dbl&gt;, 年龄 &lt;drtn&gt;
+</code></pre></td></tr></table>
+</div>
+</div><h3 class=heading id=训练集和测试集><a scroll=训练集和测试集>训练集和测试集</a></h3>
+<p>通过以下代码随机选取 7/10 的数据作为训练集，并将抽样方案保存在 sample.txt 文件中。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#111>smp</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>sample</span><span style=color:#111>(</span><span style=color:#75af00>seq_len</span><span style=color:#111>(</span><span style=color:#75af00>nrow</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#111>)),</span> <span style=color:#75af00>round</span><span style=color:#111>(</span><span style=color:#75af00>nrow</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#111>)</span> <span style=color:#f92672>*</span> <span style=color:#ae81ff>0.7</span><span style=color:#111>))</span>
+<span style=color:#75af00>write</span><span style=color:#111>(</span><span style=color:#111>smp</span><span style=color:#111>,</span> <span style=color:#111>file</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;sample.txt&#34;</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>代码编写过程中可能需要多次运行代码，为保持多次运行之间的一致性，在选取合适的抽样（<a scroll=单因素-logistic-回归 class=anchor>单因素 Logistic 回归</a>）后，之后的抽样选取就通过读取 sample.txt 文件完成。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#75715e># 随机抽取训练集，其他作为测试集</span>
+<span style=color:#111>smp</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>scan</span><span style=color:#111>(</span><span style=color:#111>file</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;sample.txt&#34;</span><span style=color:#111>)</span>
+<span style=color:#111>data.train</span> <span style=color:#f92672>&lt;-</span> <span style=color:#111>data[smp</span><span style=color:#111>,</span> <span style=color:#111>]</span>
+<span style=color:#111>data.test</span> <span style=color:#f92672>&lt;-</span> <span style=color:#111>data[</span><span style=color:#f92672>-</span><span style=color:#111>smp</span><span style=color:#111>,</span> <span style=color:#111>]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 class=heading id=单因素-logistic-回归><a scroll=单因素-logistic-回归>单因素 Logistic 回归</a></h3>
+<p>使用 <code>glm</code> 函数，对训练集数据的每个预测变量进行单因素分析，获取 P 值，并选出 P &lt; 0.05 的预测变量（抽样的不同会对这一步造成较大影响）。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#111>p.values</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>data.frame</span><span style=color:#111>()</span>
+<span style=color:#111>names.selected</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>c</span><span style=color:#111>()</span>
+<span style=color:#75af00>for </span><span style=color:#111>(</span><span style=color:#111>name</span> <span style=color:#111>in</span> <span style=color:#111>names.all</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#111>f</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>as.formula</span><span style=color:#111>(</span><span style=color:#75af00>paste</span><span style=color:#111>(</span><span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#d88200>&#34;植体周炎&#34;</span><span style=color:#111>,</span> <span style=color:#75af00>paste</span><span style=color:#111>(</span><span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#d88200>&#34;`&#34;</span><span style=color:#111>,</span> <span style=color:#111>name</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;`&#34;</span><span style=color:#111>),</span> <span style=color:#111>collapse</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;&#34;</span><span style=color:#111>)),</span> <span style=color:#111>collapse</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;~&#34;</span><span style=color:#111>))</span>
+  <span style=color:#111>model.tmp</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>glm</span><span style=color:#111>(</span><span style=color:#111>f</span><span style=color:#111>,</span> <span style=color:#111>data</span> <span style=color:#f92672>=</span> <span style=color:#111>data.train</span><span style=color:#111>,</span> <span style=color:#111>family</span> <span style=color:#f92672>=</span> <span style=color:#75af00>binomial</span><span style=color:#111>())</span>
+  <span style=color:#111>additions</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>summary</span><span style=color:#111>(</span><span style=color:#111>model.tmp</span><span style=color:#111>)</span><span style=color:#f92672>$</span><span style=color:#111>coefficients[</span><span style=color:#ae81ff>-1</span><span style=color:#111>,</span> <span style=color:#ae81ff>4</span><span style=color:#111>]</span>
+  <span style=color:#75af00>if </span><span style=color:#111>(</span><span style=color:#75af00>is.null</span><span style=color:#111>(</span><span style=color:#75af00>names</span><span style=color:#111>(</span><span style=color:#111>additions</span><span style=color:#111>)))</span> <span style=color:#111>{</span>
+    <span style=color:#75af00>names</span><span style=color:#111>(</span><span style=color:#111>additions</span><span style=color:#111>)</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>paste</span><span style=color:#111>(</span><span style=color:#111>name</span><span style=color:#111>,</span> <span style=color:#75af00>levels</span><span style=color:#111>(</span><span style=color:#111>data.train[[name]]</span><span style=color:#111>)</span><span style=color:#111>[</span><span style=color:#ae81ff>-1</span><span style=color:#111>]</span><span style=color:#111>,</span> <span style=color:#111>sep</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;&#34;</span><span style=color:#111>)</span>
+  <span style=color:#111>}</span>
+  
+  <span style=color:#111>p.values</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>rbind</span><span style=color:#111>(</span><span style=color:#111>p.values</span><span style=color:#111>,</span> <span style=color:#75af00>data.frame</span><span style=color:#111>(</span><span style=color:#d88200>&#34;P value&#34;</span> <span style=color:#f92672>=</span> <span style=color:#111>additions</span><span style=color:#111>))</span>
+  <span style=color:#75af00>if </span><span style=color:#111>(</span><span style=color:#75af00>any</span><span style=color:#111>(</span><span style=color:#111>additions</span> <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>0.05</span><span style=color:#111>))</span> <span style=color:#111>{</span>
+    <span style=color:#111>names.selected</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#111>names.selected</span><span style=color:#111>,</span> <span style=color:#111>name</span><span style=color:#111>)</span>
+  <span style=color:#111>}</span>
+<span style=color:#111>}</span>
+<span style=color:#111>names.selected</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#&gt; [1] &#34;修复体材料&#34;     &#34;骨吸收情况&#34;     &#34;分级&#34;           &#34;维护周期（月）&#34;
+#&gt; [5] &#34;平均复查周期&#34;
+</code></pre></td></tr></table>
+</div>
+</div><p>根据单因素 Logistic 回归的结果，这次抽样选出的危险因素（P&lt;0.05）为：“修复体材料”，“骨吸收情况”，“分级”，“维护周期（月）”和“平均复查周期”。</p>
+<h3 class=heading id=多因素-logistic-回归分析><a scroll=多因素-logistic-回归分析>多因素 Logistic 回归分析</a></h3>
+<p>用单因素 Logistic 回归筛选出的危险因素，同样使用 <code>glm</code> 函数，进行多因素 Logistic 回归分析。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#111>names.05</span> <span style=color:#f92672>&lt;-</span> <span style=color:#111>names.selected</span>
+<span style=color:#111>f.05</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>as.formula</span><span style=color:#111>(</span><span style=color:#75af00>paste</span><span style=color:#111>(</span><span style=color:#111>collapse</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;~&#34;</span><span style=color:#111>,</span>
+   <span style=color:#75af00>c</span><span style=color:#111>(</span>
+     <span style=color:#d88200>&#34;植体周炎&#34;</span><span style=color:#111>,</span>
+     <span style=color:#75af00>paste</span><span style=color:#111>(</span><span style=color:#111>collapse</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;&#34;</span><span style=color:#111>,</span> <span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#d88200>&#34;`&#34;</span><span style=color:#111>,</span> <span style=color:#75af00>paste</span><span style=color:#111>(</span><span style=color:#111>names.05</span><span style=color:#111>,</span> <span style=color:#111>collapse</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;`+`&#34;</span><span style=color:#111>),</span> <span style=color:#d88200>&#34;`&#34;</span><span style=color:#111>))</span>
+     <span style=color:#111>)</span>
+<span style=color:#111>))</span>
+<span style=color:#111>model.05</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>glm</span><span style=color:#111>(</span><span style=color:#111>f.05</span><span style=color:#111>,</span> <span style=color:#111>data</span> <span style=color:#f92672>=</span> <span style=color:#111>data.train</span><span style=color:#111>,</span> <span style=color:#111>family</span> <span style=color:#f92672>=</span> <span style=color:#75af00>binomial</span><span style=color:#111>())</span>
+<span style=color:#75af00>summary</span><span style=color:#111>(</span><span style=color:#111>model.05</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#&gt; 
+#&gt; Call:
+#&gt; glm(formula = f.05, family = binomial(), data = data.train)
+#&gt; 
+#&gt; Deviance Residuals: 
+#&gt;    Min      1Q  Median      3Q     Max  
+#&gt; -1.511  -0.548  -0.331  -0.189   2.628  
+#&gt; 
+#&gt; Coefficients:
+#&gt;                   Estimate Std. Error z value Pr(&gt;|z|)    
+#&gt; (Intercept)       -5.26989    0.72909   -7.23  4.9e-13 ***
+#&gt; 修复体材料2       -0.07740    0.41125   -0.19  0.85072    
+#&gt; 修复体材料3        0.95364    0.52022    1.83  0.06678 .  
+#&gt; 骨吸收情况&gt;1/2     2.81191    0.63639    4.42  9.9e-06 ***
+#&gt; 骨吸收情况1/3-1/2  0.66028    0.44389    1.49  0.13689    
+#&gt; 骨吸收情况植体     1.12159    0.52408    2.14  0.03235 *  
+#&gt; 分级c              1.08745    0.44902    2.42  0.01544 *  
+#&gt; `维护周期（月）`   0.02031    0.00576    3.52  0.00042 ***
+#&gt; 平均复查周期       0.01974    0.00941    2.10  0.03593 *  
+#&gt; ---
+#&gt; Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+#&gt; 
+#&gt; (Dispersion parameter for binomial family taken to be 1)
+#&gt; 
+#&gt;     Null deviance: 283.80  on 328  degrees of freedom
+#&gt; Residual deviance: 219.58  on 320  degrees of freedom
+#&gt; AIC: 237.6
+#&gt; 
+#&gt; Number of Fisher Scoring iterations: 6
+</code></pre></td></tr></table>
+</div>
+</div><div open class="tab success">
+<div class=tab-title><span class=tab-title-content></span></div>
+<div class=tab-content>
+<p>注意这里构建公式的方法：先使用加了 <code>collapse</code> 参数的 <code>paste</code> 函数将 <code>names.05</code> 拼接成字符串形式的“公式”，再通过 <code>as.formula</code> 方法，将字符串转换为公式。</p>
+</div>
+</div>
+<h3 class=heading id=or-及-or-的-95-置信区间><a scroll=or-及-or-的-95-置信区间>OR 及 OR 的 95% 置信区间</a></h3>
+<p>在 R 中，可以使用 <code>exp(coef(model))</code> 计算比值比（OR）。</p>
+<p>你既可以借助 <code>boot</code> 程序包，使用 <a scroll=bootstrap-法 class=anchor>Bootstrap 法</a>计算 OR 及其 95% 置信区间，也可以使用<a scroll=更简单的方法 class=anchor>更简单的方法</a>。</p>
+<h4 class=heading id=bootstrap-法><a scroll=bootstrap-法>Bootstrap 法</a></h4>
+<p>为了控制更多的细节，这里使用 <code>boot</code> 程序包的 <code>boot</code> 函数计算 OR，并使用同属于 <code>boot</code> 程序包的 <code>boot.ci</code> 函数计算置信区间。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#75af00>library</span><span style=color:#111>(</span><span style=color:#111>boot</span><span style=color:#111>)</span>
+<span style=color:#75af00>set.seed</span><span style=color:#111>(</span><span style=color:#ae81ff>1645248416</span><span style=color:#111>)</span> <span style=color:#75715e># unclass(Sys.time())</span>
+
+<span style=color:#75715e># 计算 OR 值的函数</span>
+<span style=color:#111>st.boot</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>function</span><span style=color:#111>(</span><span style=color:#111>data</span><span style=color:#111>,</span> <span style=color:#111>indices</span><span style=color:#111>)</span> <span style=color:#111>{</span>
+  <span style=color:#111>model</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>glm</span><span style=color:#111>(</span><span style=color:#111>f.05</span><span style=color:#111>,</span> <span style=color:#111>data[indices</span><span style=color:#111>,</span> <span style=color:#111>]</span><span style=color:#111>,</span> <span style=color:#111>family</span> <span style=color:#f92672>=</span> <span style=color:#75af00>binomial</span><span style=color:#111>())</span>
+  <span style=color:#75af00>return</span><span style=color:#111>(</span><span style=color:#75af00>exp</span><span style=color:#111>(</span><span style=color:#75af00>coef</span><span style=color:#111>(</span><span style=color:#111>model</span><span style=color:#111>)))</span>
+<span style=color:#111>}</span>
+
+<span style=color:#75715e># 运行 Bootstrap 计算 OR</span>
+<span style=color:#111>results</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>boot</span><span style=color:#111>(</span><span style=color:#111>data.train</span><span style=color:#111>,</span> <span style=color:#111>statistic</span> <span style=color:#f92672>=</span> <span style=color:#111>st.boot</span><span style=color:#111>,</span> <span style=color:#111>R</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1000</span><span style=color:#111>)</span>
+
+<span style=color:#111>ci</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>matrix</span><span style=color:#111>(</span><span style=color:#111>nrow</span> <span style=color:#f92672>=</span> <span style=color:#75af00>length</span><span style=color:#111>(</span><span style=color:#111>results</span><span style=color:#f92672>$</span><span style=color:#111>t0</span><span style=color:#111>),</span> <span style=color:#111>ncol</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>2</span><span style=color:#111>)</span>
+<span style=color:#75af00>colnames</span><span style=color:#111>(</span><span style=color:#111>ci</span><span style=color:#111>)</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#d88200>&#34;2.5%&#34;</span><span style=color:#111>,</span> <span style=color:#d88200>&#34;97.5%&#34;</span><span style=color:#111>)</span>
+<span style=color:#75af00>rownames</span><span style=color:#111>(</span><span style=color:#111>ci</span><span style=color:#111>)</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>names</span><span style=color:#111>(</span><span style=color:#111>results</span><span style=color:#f92672>$</span><span style=color:#111>t0</span><span style=color:#111>)</span>
+<span style=color:#75af00>for </span><span style=color:#111>(</span><span style=color:#111>i</span> <span style=color:#111>in</span> <span style=color:#75af00>seq_len</span><span style=color:#111>(</span><span style=color:#75af00>length</span><span style=color:#111>(</span><span style=color:#111>results</span><span style=color:#f92672>$</span><span style=color:#111>t0</span><span style=color:#111>)))</span> <span style=color:#111>{</span>
+  <span style=color:#111>n</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>boot.ci</span><span style=color:#111>(</span><span style=color:#111>boot.out</span> <span style=color:#f92672>=</span> <span style=color:#111>results</span><span style=color:#111>,</span> <span style=color:#111>conf</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0.95</span><span style=color:#111>,</span> <span style=color:#111>type</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;bca&#34;</span><span style=color:#111>,</span> <span style=color:#111>index</span> <span style=color:#f92672>=</span> <span style=color:#111>i</span><span style=color:#111>)</span>
+  <span style=color:#111>ci[i</span><span style=color:#111>,</span> <span style=color:#111>]</span> <span style=color:#f92672>&lt;-</span> <span style=color:#111>n</span><span style=color:#f92672>$</span><span style=color:#111>bca</span><span style=color:#75af00>[c</span><span style=color:#111>(</span><span style=color:#ae81ff>4</span><span style=color:#111>,</span> <span style=color:#ae81ff>5</span><span style=color:#111>)</span><span style=color:#111>]</span>
+<span style=color:#111>}</span>
+
+<span style=color:#111>table2.05</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>data.frame</span><span style=color:#111>(</span>
+  <span style=color:#d88200>&#34;OR&#34;</span> <span style=color:#f92672>=</span> <span style=color:#111>results</span><span style=color:#f92672>$</span><span style=color:#111>t0</span><span style=color:#111>,</span>
+  <span style=color:#d88200>&#34;OR.CI&#34;</span> <span style=color:#f92672>=</span> <span style=color:#111>ci</span><span style=color:#111>,</span>
+  <span style=color:#d88200>&#34;P值&#34;</span> <span style=color:#f92672>=</span> <span style=color:#75af00>tidy</span><span style=color:#111>(</span><span style=color:#111>model.05</span><span style=color:#111>)</span><span style=color:#f92672>$</span><span style=color:#111>p.value</span>
+<span style=color:#111>)</span>
+<span style=color:#75af00>head</span><span style=color:#111>(</span><span style=color:#111>table2.05</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#&gt;                          OR OR.CI.2.5. OR.CI.97.5.       P值
+#&gt; (Intercept)        0.005144   0.001077     0.02295 4.901e-13
+#&gt; 修复体材料2        0.925524   0.365046     2.13859 8.507e-01
+#&gt; 修复体材料3        2.595143   0.856581     7.63863 6.678e-02
+#&gt; 骨吸收情况&gt;1/2    16.641733   4.311440    62.61887 9.938e-06
+#&gt; 骨吸收情况1/3-1/2  1.935325   0.718117     4.88898 1.369e-01
+#&gt; 骨吸收情况植体     3.069725   0.762045     8.27774 3.235e-02
+</code></pre></td></tr></table>
+</div>
+</div><h4 class=heading id=更简单的方法><a scroll=更简单的方法>更简单的方法</a></h4>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#111>table_simple</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>data.frame</span><span style=color:#111>(</span>
+  <span style=color:#d88200>&#34;OR&#34;</span> <span style=color:#f92672>=</span> <span style=color:#75af00>exp</span><span style=color:#111>(</span><span style=color:#75af00>coef</span><span style=color:#111>(</span><span style=color:#111>model.05</span><span style=color:#111>)),</span>
+  <span style=color:#d88200>&#34;OR.CI&#34;</span> <span style=color:#f92672>=</span> <span style=color:#75af00>exp</span><span style=color:#111>(</span><span style=color:#75af00>confint</span><span style=color:#111>(</span><span style=color:#111>model.05</span><span style=color:#111>)),</span>
+  <span style=color:#d88200>&#34;P值&#34;</span> <span style=color:#f92672>=</span> <span style=color:#75af00>tidy</span><span style=color:#111>(</span><span style=color:#111>model.05</span><span style=color:#111>)</span><span style=color:#f92672>$</span><span style=color:#111>p.value</span>
+<span style=color:#111>)</span>
+<span style=color:#75af00>head</span><span style=color:#111>(</span><span style=color:#111>table_simple</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#&gt;                          OR OR.CI.2.5.. OR.CI.97.5..       P值
+#&gt; (Intercept)        0.005144    0.001112      0.01965 4.901e-13
+#&gt; 修复体材料2        0.925524    0.403301      2.04682 8.507e-01
+#&gt; 修复体材料3        2.595143    0.913069      7.12754 6.678e-02
+#&gt; 骨吸收情况&gt;1/2    16.641733    4.901419     60.79632 9.938e-06
+#&gt; 骨吸收情况1/3-1/2  1.935325    0.811607      4.67088 1.369e-01
+#&gt; 骨吸收情况植体     3.069725    1.063397      8.47141 3.235e-02
+</code></pre></td></tr></table>
+</div>
+</div><p>OR 和 P 值与之前的结果相同，但置信区间有少许差别。</p>
+<h2 class=heading id=列线图预测模型><a scroll=列线图预测模型>列线图预测模型</a></h2>
+<p><code>rms</code> 程序包提供了用来建立列线图预测模型的函数。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#75af00>library</span><span style=color:#111>(</span><span style=color:#111>rms</span><span style=color:#111>)</span>
+
+<span style=color:#75715e># 使用训练集建立列线图预测模型</span>
+<span style=color:#111>fit.train</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>lrm</span><span style=color:#111>(</span><span style=color:#111>f.05</span><span style=color:#111>,</span> <span style=color:#111>data.train</span><span style=color:#111>,</span> <span style=color:#111>x</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>,</span> <span style=color:#111>y</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>)</span>
+<span style=color:#111>ddist.train</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>datadist</span><span style=color:#111>(</span><span style=color:#111>data.train</span><span style=color:#111>)</span>
+<span style=color:#75af00>options</span><span style=color:#111>(</span><span style=color:#111>datadist</span> <span style=color:#f92672>=</span> <span style=color:#111>ddist.train</span><span style=color:#111>)</span>
+<span style=color:#75af00>plot</span><span style=color:#111>(</span><span style=color:#75af00>nomogram</span><span style=color:#111>(</span><span style=color:#111>fit.train</span><span style=color:#111>,</span> <span style=color:#111>fun</span> <span style=color:#f92672>=</span> <span style=color:#111>plogis</span><span style=color:#111>,</span> <span style=color:#111>lp</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>FALSE</span><span style=color:#111>,</span> <span style=color:#111>funlabel</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;预测概率&#34;</span><span style=color:#111>))</span>
+</code></pre></td></tr></table>
+</div>
+</div><figure>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-9-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-9-1.png alt=列线图预测模型> </a><figcaption>
+<h4 class=title>列线图预测模型</h4>
+</figcaption>
+</figure>
+<h2 class=heading id=数据验证><a scroll=数据验证>数据验证</a></h2>
+<p>数据验证分为内部验证和外部验证。这里使用测试集进行外部验证，内部验证在训练集上进行。在内部验证和外部验证中，都分别通过 <a scroll=roc-曲线 class=anchor>ROC 曲线</a>和<a scroll=列线图校准曲线 class=anchor>列线图校准曲线</a>检验数据的区分度和校准度。</p>
+<h3 class=heading id=roc-曲线><a scroll=roc-曲线>ROC 曲线</a></h3>
+<p>ROC 曲线<strong>全称受试者工作特征曲线</strong> （receiver operating characteristic curve），又称为<strong>感受性曲线</strong>（sensitivity curve），曲线上每个点反映着对同一信号刺激的感受性。<br>
+ROC 曲线的横轴为<strong>特异度</strong>（specificity，SPC），即<strong>假阳性率</strong>（false postive rate，FPR）；纵轴为<strong>敏感度</strong>（sensitivity），即<strong>真阳性率</strong>（true postive rate，TPR）。</p>
+<p>$$SPC=FPR=\frac{TN}{N}=\frac{TN}{TN+FP}<br>
+\,.$$</p>
+<p>$$TPR=Recall=\frac{TP}{P}=\frac{TP}{TP+FN}<br>
+\,.$$</p>
+<p>AUC 全称<strong>曲线下面积</strong>（Area Under Curve），在 Logistic 回归中，AUC 等同于 C-index（concordance index，一致性指数），可以直观的评价模型的好坏，值越大越好。</p>
+<p>使用 ROC 曲线检验数据的区分度，<code>pROC</code> 程序包提供了这里所需要的函数，其中 <code>plot.roc</code> 用于绘制 ROC 曲线，<code>ci.auc</code> 用于获取 AUC 的置信区间。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#75af00>library</span><span style=color:#111>(</span><span style=color:#111>pROC</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#111>pre.train</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>predict</span><span style=color:#111>(</span><span style=color:#111>model.05</span><span style=color:#111>,</span> <span style=color:#111>data.train</span><span style=color:#111>,</span> <span style=color:#111>type</span> <span style=color:#f92672>=</span> <span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#d88200>&#34;response&#34;</span><span style=color:#111>))</span>
+<span style=color:#111>p.roc.train</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>plot.roc</span><span style=color:#111>(</span><span style=color:#111>data.train</span><span style=color:#f92672>$</span>植体周炎<span style=color:#111>,</span> <span style=color:#111>pre.train</span><span style=color:#111>,</span>
+                        <span style=color:#111>main</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;ROC Curve（训练集）&#34;</span><span style=color:#111>,</span> <span style=color:#111>percent</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>,</span>
+                        <span style=color:#111>print.auc</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>,</span>
+                        <span style=color:#111>ci</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>,</span> <span style=color:#111>of</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;thresholds&#34;</span><span style=color:#111>,</span>
+                        <span style=color:#111>thresholds</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;best&#34;</span><span style=color:#111>,</span>
+                        <span style=color:#111>print.thres</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;best&#34;</span><span style=color:#111>)</span>
+<span style=color:#75af00>ci.auc</span><span style=color:#111>(</span><span style=color:#111>p.roc.train</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#&gt; 95% CI: 75.2%-88.2% (DeLong)
+</code></pre></td></tr></table>
+</div>
+</div><figure>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-11-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-11-1.png alt="ROC Curve（训练集）"> </a><figcaption>
+<h4 class=title>ROC Curve（训练集）</h4>
+</figcaption>
+</figure>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#111>pre.test</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>predict</span><span style=color:#111>(</span><span style=color:#111>model.05</span><span style=color:#111>,</span> <span style=color:#111>data.test</span><span style=color:#111>,</span> <span style=color:#111>type</span> <span style=color:#f92672>=</span> <span style=color:#75af00>c</span><span style=color:#111>(</span><span style=color:#d88200>&#34;response&#34;</span><span style=color:#111>))</span>
+<span style=color:#111>p.roc.test</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>plot.roc</span><span style=color:#111>(</span><span style=color:#111>data.test</span><span style=color:#f92672>$</span>植体周炎<span style=color:#111>,</span> <span style=color:#111>pre.test</span><span style=color:#111>,</span>
+                        <span style=color:#111>main</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;ROC Curve（测试集）&#34;</span><span style=color:#111>,</span> <span style=color:#111>percent</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>,</span>
+                        <span style=color:#111>print.auc</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>,</span>
+                        <span style=color:#111>ci</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>,</span> <span style=color:#111>of</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;thresholds&#34;</span><span style=color:#111>,</span>
+                        <span style=color:#111>thresholds</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;best&#34;</span><span style=color:#111>,</span>
+                        <span style=color:#111>print.thres</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;best&#34;</span><span style=color:#111>)</span>
+<span style=color:#75af00>ci.auc</span><span style=color:#111>(</span><span style=color:#111>p.roc.test</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>#&gt; 95% CI: 60.2%-79.8% (DeLong)
+</code></pre></td></tr></table>
+</div>
+</div><p><figure>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-12-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-12-1.png alt="ROC Curve（测试集）"> </a><figcaption>
+<h4 class=title>ROC Curve（测试集）</h4>
+</figcaption>
+</figure>
+<br>
+训练集 AUC 达 81.7%（95%CI：75.16%-88.25%），测试集 AUC 为 70.0%（95%CI：60.24%-79.76%），提示列线图模型区分度良好。</p>
+<h3 class=heading id=列线图校准曲线><a scroll=列线图校准曲线>列线图校准曲线</a></h3>
+<p>使用列线图校准曲线检验数据的校准度。绘制列线图校准曲线用到的 <code>calibrate</code> 也是 <code>rms</code> 包中的函数。这里使用 Bootstrap 法（<code>method = "boot"</code>），重复 1000 次（<code>B = 1000</code>）。其他常用的 <code>method</code> 还有 <code>"crossvalidation"</code>、<code>".632"</code> 及 <code>"randomization"</code>。</p>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#111>cal_train</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>calibrate</span><span style=color:#111>(</span><span style=color:#111>fit.train</span><span style=color:#111>,</span>  <span style=color:#111>method</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;boot&#34;</span><span style=color:#111>,</span> <span style=color:#111>B</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1000</span><span style=color:#111>)</span>
+<span style=color:#75af00>plot</span><span style=color:#111>(</span><span style=color:#111>cal_train</span><span style=color:#111>,</span>
+     <span style=color:#111>xlab</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;Nomogram Predicted&#34;</span><span style=color:#111>,</span>
+     <span style=color:#111>ylab</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;Actual&#34;</span><span style=color:#111>,</span>
+     <span style=color:#111>main</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;Calibration Curve（训练集）&#34;</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><figure>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-13-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-13-1.png alt=列线图校准曲线（训练集）> </a><figcaption>
+<h4 class=title>列线图校准曲线（训练集）</h4>
+</figcaption>
+</figure>
+<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">8
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-r data-lang=r><span style=color:#111>fit.test</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>lrm</span><span style=color:#111>(</span><span style=color:#111>f.05</span><span style=color:#111>,</span> <span style=color:#111>data.test</span><span style=color:#111>,</span> <span style=color:#111>x</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>,</span> <span style=color:#111>y</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>TRUE</span><span style=color:#111>)</span>
+<span style=color:#111>ddist.test</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>datadist</span><span style=color:#111>(</span><span style=color:#111>data.test</span><span style=color:#111>)</span>
+<span style=color:#75af00>options</span><span style=color:#111>(</span><span style=color:#111>datadist</span> <span style=color:#f92672>=</span> <span style=color:#111>ddist.test</span><span style=color:#111>)</span>
+
+<span style=color:#111>cal_test</span> <span style=color:#f92672>&lt;-</span> <span style=color:#75af00>calibrate</span><span style=color:#111>(</span><span style=color:#111>fit.test</span><span style=color:#111>,</span>  <span style=color:#111>method</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;boot&#34;</span><span style=color:#111>,</span> <span style=color:#111>B</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1000</span><span style=color:#111>)</span>
+<span style=color:#75af00>plot</span><span style=color:#111>(</span><span style=color:#111>cal_test</span><span style=color:#111>,</span>
+     <span style=color:#111>xlab</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;Nomogram Predicted&#34;</span><span style=color:#111>,</span>
+     <span style=color:#111>ylab</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;Actual&#34;</span><span style=color:#111>,</span>
+     <span style=color:#111>main</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;Calibration Curve（测试集）&#34;</span><span style=color:#111>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><figure>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-14-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/%e6%a4%8d%e4%bd%93%e5%91%a8%e7%82%8e%e9%a2%84%e6%b5%8b%e6%a8%a1%e5%9e%8b/unnamed-chunk-14-1.png alt=列线图校准曲线（测试集）> </a><figcaption>
+<h4 class=title>列线图校准曲线（测试集）</h4>
+</figcaption>
+</figure>
+<p>通过校验曲线可以看出训练集和测试集的预测值与实际值基本一致。</p></div></div>
+<div class=site-comment><script src=https://giscus.app/client.js data-repo=alohaia/alohaia.github.io data-repo-id="MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY=" data-category=Announcements data-category-id=DIC_kwDOFfHILM4B_XeA data-mapping=title data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+</div>
+<div class=site-right></div>
+</div><div id=fastSearch>
+<div class=fast-search-container>
+<div class=fast-search-header>
+<input id=searchInput autocomplete=off tabindex=0>
+<span class=fast-search-hint id=searchHint>CTRL-/</span>
+</div>
+<ul id=searchResults></ul>
+</div>
+</div>
+<script src=/js/fuse.min.js></script>
+<script src=/js/fastsearch.js></script>
+<footer class=site-footer id=SiteFooter><div class=footer-powerby>
+<span>Power by <a target=_blank href=https://gohugo.io>Hugo</a></span>
+<span class=division>|</span>
+<span>Theme - <a target=_blank href=https://github.com/alohaia/hugo-theme-daisilia>Daisilia</a></span>
+</div>
+<div class=footer-copyright>© 2020 - 2022<span class="heart animate__heartBeat animate__infinite"><i class="fas fa-heart"></i></span><span><a target=_blank href=https://daisilia.com>Qihuan Liu
+</a></span></div>
+<div class=js-each style=display:none><script>MathJax={tex:{inlineMath:[["$","$"]]},displayMath:[["$$","$$"],["[[","]]"]],svg:{fontCache:"global"}}</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+</div>
+</footer>
+<aside class=site-sidebar id=SiteSidebar><div class=sidebar-container>
+<div class=sidebar-nav><span role=button class="sidebar-nav-item sidebar-nav-series">Table of Content</span>
+<span role=button class="sidebar-nav-item sidebar-nav-overview">Overview</span></div>
+<div class=sidebar-content>
+<div class="sidebar-toc sidebar-pannel"><h1 class=toc-title id=TOCTitle>植体周炎预测模型：Logistic 回归分析及列线图模型</h1><nav id=TableOfContents>
+<ul>
+<li><a href=#模型建立>模型建立</a>
+<ul>
+<li><a href=#准备工作>准备工作</a></li>
+<li><a href=#训练集和测试集>训练集和测试集</a></li>
+<li><a href=#单因素-logistic-回归>单因素 Logistic 回归</a></li>
+<li><a href=#多因素-logistic-回归分析>多因素 Logistic 回归分析</a></li>
+<li><a href=#or-及-or-的-95-置信区间>OR 及 OR 的 95% 置信区间</a>
+<ul>
+<li><a href=#bootstrap-法>Bootstrap 法</a></li>
+<li><a href=#更简单的方法>更简单的方法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#列线图预测模型>列线图预测模型</a></li>
+<li><a href=#数据验证>数据验证</a>
+<ul>
+<li><a href=#roc-曲线>ROC 曲线</a></li>
+<li><a href=#列线图校准曲线>列线图校准曲线</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+<div class="sidebar-overview sidebar-pannel">
+<div class=sidebar-avatar>
+<a href=/about><img class=site-avatar-image alt=Aloha src=/images/avatar.gif></a>
+</div>
+<p class=site-author-name>Qihuan Liu
+</p>
+<p class=site-description>追寻罗素先生的脚步，渴望寻找到我想要的答案。</p><div class=sidebar-social><a class=sidebar-social-item href=mailto:liu.qihuan@outlook.com><i class="fas fa-envelope"></i>E-Mail</a><a class=sidebar-social-item target=_blank href=https://github.com/alohaia><i class="fab fa-github"></i>Github</a></div><div class=site-state>
+<a class=site-state-item href=/>
+<p class=site-state-num>61</p>
+<p class=site-state-name>Pages</p>
+</a>
+<a class=site-state-item href=/tags>
+<p class=site-state-num>23</p>
+<p class=site-state-name>Tags</p>
+</a>
+<a class=site-state-item href=/series>
+<p class=site-state-num>8</p>
+<p class=site-state-name>Series</p>
+</a>
+</div>
+<div class=sidebar-quote><p class=sidebar-quote-content id=SidebarQuoteContent>主人不来过夜半，闲敲棋子落灯花。</p>
+<p class=sidebar-quote-from id=SidebarQuoteFrom>——宋代·赵师秀《约客》</p></div><div class=sidebar-music><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css>
+<script src=https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js></script>
+<meting-js server=netease type=playlist id=6822976600 mini=false fixed=false list-folded=true autoplay volume=0.4 theme=#b7daff order=random loop=all preload=auto mutex=true>
+</meting-js>
+</div><div class=sidebar-links>
+<div class=sidebar-links-title><i class="fas fa-user-friends"></i>友链</div><a class=sidebar-links-item target=_blank href=https://www.sdiopid.top><strong>郭老师</strong>的网络自留地</a></div></div>
+</div>
+<div class=back2top id=Back2top role=button>
+<i class="fas fa-angle-double-up"></i>
+<span class=back2top-progress id=Back2topProgress></span>
+</div>
+</div>
+<div class=sidebar-toggle id=SidebarToggle role=button>
+<span class="toggle-line over"></span>
+<span class="toggle-line middle"></span>
+<span class="toggle-line below"></span>
+</div>
+</aside>
+</div>
+<div class=loading-track><div class=loading-progress></div></div>
+<script src=/js/jquery-3.6.0.min.js></script>
+<script src=/js/fancybox.umd.js></script>
+<link rel=stylesheet type=text/css href=/css/fancybox.css>
+<script type=module>
+  Fancybox.bind("[data-fancybox]", {
+    "groupAll": true,
+    "hideScrollbar": false, 
+  });
+</script>
+<script src=/js/daisy.min.24e36dc511a9bd7cc2ff0543a19223f3711cee5a1d30356c5209896d21898959.js integrity="sha256-JONtxRGpvXzC/wVDoZIj83Ec7lodMDVsUgmJbSGJiVk="></script>
+<script data-pjax src=/js/daisy.each.min.6a83729469cd40d47a4e79d659cd3c181532975782ae4a4782bb19c59eb3aa0a.js integrity="sha256-aoNylGnNQNR6TnnWWc08GBUyl1eCrkpHgrsZxZ6zqgo="></script>
+<script src=/js/pjax.min.js></script><script src=/js/pjax.min.65dc23094a879a22e8524fea7805d6c180bf5101e5b03c83bbc192fa40736973.js integrity="sha256-ZdwjCUqHmiLoUk/qeAXWwYC/UQHlsDyDu8GS+kBzaXM="></script><script src=https://sdk.jinrishici.com/v2/browser/jinrishici.js></script>
+<script>var poem_part,poem_full;const content=document.getElementById("SidebarQuoteContent"),from=document.getElementById("SidebarQuoteFrom");function toggleFull(){content.innerHTML==poem_part?content.innerHTML=poem_full:content.innerHTML=poem_part}jinrishici.load(function(a){poem_part=a.data.content,content.innerText=poem_part,from.innerText='——'+a.data.origin.dynasty+'·'+a.data.origin.author+'《'+a.data.origin.title+'》',poem_full="&nbsp".repeat(8)+a.data.origin.content.join('<br/>'+"&nbsp".repeat(8)),content.onclick=toggleFull})</script>
+</body>
+</html>

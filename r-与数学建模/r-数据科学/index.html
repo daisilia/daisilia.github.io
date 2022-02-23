@@ -15,7 +15,7 @@
 ">
 <meta property="article:tag" content="R 数学建模 数据分析 ">
 <meta property="article:section" content>
-<title>R 数据科学 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.1ae159e254cfd60f555fa46cc7b8cbf1251ee92d3ee947984712eed4775585ad.css integrity="sha256-GuFZ4lTP1g9VX6Rsx7jL8SUe6S0+6UeYRxLu1HdVha0=">
+<title>R 数据科学 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.650847edbda36499d889ae0c9f24ae2773176a44733f95ea2b2cb091cf86946c.css integrity="sha256-ZQhH7b2jZJnYia4MnySuJ3MXakRzP5XqKyywkc+GlGw=">
 <link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
 <link href=https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css rel=stylesheet>
 <link rel=preconnect href=https://fonts.googleapis.com>
@@ -135,8 +135,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/ggplot2-introduction-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/ggplot2-introduction-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/ggplot2-introduction-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/ggplot2-introduction-1.png> </a>
 </figure>
 <p><code>ggplot(data = mpg)</code> 创建了一个空白的坐标系，<code>geom_point()</code> 就向图中添加了一个点层，这样就创建了一个散点图。</p>
 <p><code>ggplot2</code> 中每个几何对象都有一个 <code>mapping</code> 参数。这个参数定义了如何将数据集中的变量映射为图形属性。<code>mapping</code> 参数总是与 <code>aes()</code> 函数成对出现，<code>aes()</code> 函数的 <code>x</code> 参数和 <code>y</code> 参数分别指定了映射到 <code>x</code> 轴的变量与映射到 <code>y</code> 轴的变量。<code>ggplot2</code> 在 <code>data</code> 参数中寻找映射变量，本例中就是 <code>mpg</code>。</p>
@@ -165,8 +165,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-color-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-color-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-color-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-color-1.png> </a>
 </figure>
 <p>用 <code>aes()</code> 将图形属性名称关联起来，<code>ggplot2</code> 就会自动为每个变量值分配唯一的图形属性<em>水平</em>。</p>
 <p>{% note success %}<br>
@@ -184,8 +184,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-size-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-size-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-size-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-size-1.png> </a>
 </figure>
 <p>这里出现了一条警告信息，因为将无序变量 <code>class</code> 映射为有需变量 <code>size</code> 不是一个好主意。</p>
 <p>或者将 <code>class</code> 映射为点的透明度或形状：</p>
@@ -204,12 +204,12 @@
 </code></pre></td></tr></table>
 </div>
 </div><p><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-alpha,shape-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-alpha,shape-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-alpha,shape-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-alpha,shape-1.png> </a>
 </figure>
 <figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-alpha,shape-2.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-alpha,shape-2.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-alpha,shape-2.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/mapping-alpha,shape-2.png> </a>
 </figure>
 </p>
 <p>注意下图中的 “suv” 没有显示，这是因为 <code>ggplot2</code> 默认只支持 6 种形状。</p>
@@ -226,8 +226,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/manual-fixed-value-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/manual-fixed-value-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/manual-fixed-value-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/manual-fixed-value-1.png> </a>
 </figure>
 <p>注意不要将固定值放在 <code>aes()</code> 函数里，因为此时颜色并不是用来传达变量的信息，而只是改变图的外观。错误示范：</p>
 <div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
@@ -241,8 +241,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/manual-fixed-value-wrong-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/manual-fixed-value-wrong-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/manual-fixed-value-wrong-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/manual-fixed-value-wrong-1.png> </a>
 </figure>
 <p>其中的点的颜色都是橙色，这是因为 R 将 <code>"blue"</code> 视作数据，而不是颜色值。</p>
 <p>此外，需要为图形属性设置一个有效值：</p>
@@ -267,12 +267,12 @@
 </code></pre></td></tr></table>
 </div>
 </div><p><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/other%20examples-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/other%20examples-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/other%20examples-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/other%20examples-1.png> </a>
 </figure>
 <figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/other%20examples-2.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/other%20examples-2.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/other%20examples-2.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/other%20examples-2.png> </a>
 </figure>
 </p>
 <h3 class=heading id=分面><a scroll=分面>分面</a></h3>
@@ -290,8 +290,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/facet_wrap-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/facet_wrap-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/facet_wrap-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/facet_wrap-1.png> </a>
 </figure>
 <p><code>facet_wrap()</code> 函数的第一个参数是一个公式（R 中的一种数据结构，不是数学意义上的公式），传递给 <code>facet_wrap()</code> 的参数应该是离散型的。</p>
 <p>要通过两个变量对图进行分面，需使用 <code>facet_grid()</code> 函数，该函数的公式参数包含由 <code>~</code> 分隔的两个变量名。</p>
@@ -308,8 +308,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/facet_grid-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/facet_grid-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/facet_grid-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/facet_grid-1.png> </a>
 </figure>
 <p>如果不想在行或列的维度进行分面，可以使用 <code>.</code> 代替变量名，如 <code>. ~ cyl</code></p>
 <h3 class=heading id=几何对象><a scroll=几何对象>几何对象</a></h3>
@@ -328,12 +328,12 @@
 </code></pre></td></tr></table>
 </div>
 </div><p><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geometry%20object-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geometry%20object-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geometry%20object-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geometry%20object-1.png> </a>
 </figure>
 <figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geometry%20object-2.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geometry%20object-2.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geometry%20object-2.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geometry%20object-2.png> </a>
 </figure>
 </p>
 <p>两张图使用了同样的数据，但它们使用了不同的可视化对象。在 <code>ggplot2</code> 语法中，我们称它们使用了不同的<strong>几何对象</strong>。第一张图使用了点几何对象而第二张图使用了平滑曲线几何对象。</p>
@@ -352,8 +352,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geom_smooth-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geom_smooth-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geom_smooth-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geom_smooth-1.png> </a>
 </figure>
 <p>:::</p>
 <p>为避免代码重复，可以将所有几何对象共用的映射写在 <code>ggplot()</code> 函数中，这样 ggplot2 会将这些映射作为全局映射应用到图中的每个几何对象中。以下代码与 <a scroll=geom_smooth class=anchor>上面的代码</a> 等效。</p>
@@ -381,8 +381,8 @@
 </code></pre></td></tr></table>
 </div>
 </div><figure>
-<a data-fancybox data-src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geom_bar-1.png>
-<img src=/R-figures/home/aloha/Documents/blog/content/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geom_bar-1.png> </a>
+<a data-fancybox data-src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geom_bar-1.png>
+<img src=/R-figures/R%20%e4%b8%8e%e6%95%b0%e5%ad%a6%e5%bb%ba%e6%a8%a1/R-%e6%95%b0%e6%8d%ae%e7%a7%91%e5%ad%a6/geom_bar-1.png> </a>
 </figure>
 <p>注意到图中出现了一个新的变量 <code>count</code>，但是 <code>count</code> 不是 <code>diamonds</code> 中的变量。之所以会出现新的变量，是因为一些图形（如条形图）不只是绘制数据集的原始数据，而是可以绘制自己计算出的新数据。</p>
 <ul>
@@ -451,11 +451,11 @@
 </p>
 <p class=site-description>追寻罗素先生的脚步，渴望寻找到我想要的答案。</p><div class=sidebar-social><a class=sidebar-social-item href=mailto:liu.qihuan@outlook.com><i class="fas fa-envelope"></i>E-Mail</a><a class=sidebar-social-item target=_blank href=https://github.com/alohaia><i class="fab fa-github"></i>Github</a></div><div class=site-state>
 <a class=site-state-item href=/>
-<p class=site-state-num>60</p>
+<p class=site-state-num>61</p>
 <p class=site-state-name>Pages</p>
 </a>
 <a class=site-state-item href=/tags>
-<p class=site-state-num>21</p>
+<p class=site-state-num>23</p>
 <p class=site-state-name>Tags</p>
 </a>
 <a class=site-state-item href=/series>
