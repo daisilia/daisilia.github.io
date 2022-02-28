@@ -1,7 +1,7 @@
 ---
 title: "植体周炎预测模型：Logistic 回归分析及列线图模型"
 date: 2022-02-23T12:55:52+08:00
-lastmod: 2022-02-28T22:23:48+08:00
+lastmod: 2022-02-28T23:17:00+08:00
 comments: true
 math: true
 weight: 1
@@ -209,6 +209,8 @@ plot(nomogram(fit.train, fun = plogis, lp = FALSE, funlabel = "预测概率"))
 
 ### ROC 曲线
 
+{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" alt="Sensitivity_and_specificity.svg" caption="由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href='https://creativecommons.org/licenses/by-sa/4.0' title='Creative Commons Attribution-Share Alike 4.0'>CC BY-SA 4.0</a>，<a href='https://commons.wikimedia.org/w/index.php?curid=65826093'>链接</a>" class="float-right" id="fig_Sensitivity_and_specificity.svg" >}} 
+
 ROC 曲线**全称受试者工作特征曲线** （receiver operating characteristic curve），又称为**感受性曲线**（sensitivity curve），曲线上每个点反映着对同一信号刺激的感受性。
 ROC 曲线的横轴为**特异度**（specificity），即**真阴性率**（true negative rate，TNR）；纵轴为**敏感度**（sensitivity），即**真阳性率**（true postive rate，TPR）、**召回率**（Recall）。
 
@@ -217,10 +219,6 @@ $$Specificity=TNR=\frac{TN}{N}=\frac{TN}{TN+FP}
 
 $$Sensitivity=TPR=Recall=\frac{TP}{P}=\frac{TP}{TP+FN}
 \\,.$$
-
-{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" caption="" alt="Sensitivity_and_specificity.svg" class="float-left" id="fig_Sensitivity_and_specificity.svg" >}}
-
-[^1]: 由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>，<a href="https://commons.wikimedia.org/w/index.php?curid=65826093">链接</a>
 
 AUC 全称**曲线下面积**（Area Under Curve），在 Logistic 回归中，AUC 等同于 C-index（concordance index，一致性指数），可以直观的评价模型的好坏，值越大越好。
 
