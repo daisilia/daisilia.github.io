@@ -304,35 +304,35 @@
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td align="center">&lt;a href="#%E7%94%B2%E5%9E%8B%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92">HAV&lt;/a>&lt;/td>
+&lt;td align="center">&lt;a scroll="甲型肝炎病毒" class="anchor">HAV&lt;/a>&lt;/td>
 &lt;td align="center">+ssRNA&lt;/td>
 &lt;td align="center">-&lt;/td>
 &lt;td align="center">粪-口途径&lt;/td>
 &lt;td align="center">-&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="center">&lt;a href="#%E4%B9%99%E5%9E%8B%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92">HBV&lt;/a>&lt;/td>
+&lt;td align="center">&lt;a scroll="乙型肝炎病毒" class="anchor">HBV&lt;/a>&lt;/td>
 &lt;td align="center">dsDNA&lt;/td>
 &lt;td align="center">+&lt;/td>
 &lt;td align="center">血液、母婴、性传播&lt;/td>
 &lt;td align="center">+&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="center">&lt;a href="#%E4%B8%99%E5%9E%8B%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92">HCV&lt;/a>&lt;/td>
+&lt;td align="center">&lt;a scroll="丙型肝炎病毒" class="anchor">HCV&lt;/a>&lt;/td>
 &lt;td align="center">+ssRNA&lt;/td>
 &lt;td align="center">+&lt;/td>
 &lt;td align="center">血液、母婴、性传播&lt;/td>
 &lt;td align="center">+&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="center">&lt;a href="#%E4%B8%81%E5%9E%8B%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92">HDV&lt;/a>&lt;/td>
+&lt;td align="center">&lt;a scroll="丁型肝炎病毒" class="anchor">HDV&lt;/a>&lt;/td>
 &lt;td align="center">-ssRNA&lt;/td>
 &lt;td align="center">+&lt;/td>
 &lt;td align="center">血液、母婴、性传播&lt;/td>
 &lt;td align="center">+&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td align="center">&lt;a href="#%E6%88%8A%E5%9E%8B%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92">HEV&lt;/a>&lt;/td>
+&lt;td align="center">&lt;a scroll="戊型肝炎病毒" class="anchor">HEV&lt;/a>&lt;/td>
 &lt;td align="center">+ssRNA&lt;/td>
 &lt;td align="center">-&lt;/td>
 &lt;td align="center">粪-口途径&lt;/td>
