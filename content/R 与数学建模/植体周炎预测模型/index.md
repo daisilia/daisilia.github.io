@@ -1,7 +1,7 @@
 ---
 title: "植体周炎预测模型：Logistic 回归分析及列线图模型"
 date: 2022-02-23T12:55:52+08:00
-lastmod: 2022-02-28T22:23:48+08:00
+lastmod: 2022-02-28T23:17:00+08:00
 comments: true
 math: true
 weight: 1
@@ -252,17 +252,18 @@ table_simple <- data.frame(
   "OR.CI" = exp(confint(model.05)),
   "P值" = tidy(model.05)$p.value
 )
+```
+
+```
+#> Error in cat(conditionMessage(c), file = stderr(), sep = ""): ignoring SIGPIPE signal
+```
+
+```r
 head(table_simple)
 ```
 
 ```
-#>                          OR OR.CI.2.5.. OR.CI.97.5..       P值
-#> (Intercept)        0.005144    0.001112      0.01965 4.901e-13
-#> 修复体材料2        0.925524    0.403301      2.04682 8.507e-01
-#> 修复体材料3        2.595143    0.913069      7.12754 6.678e-02
-#> 骨吸收情况>1/2    16.641733    4.901419     60.79632 9.938e-06
-#> 骨吸收情况1/3-1/2  1.935325    0.811607      4.67088 1.369e-01
-#> 骨吸收情况植体     3.069725    1.063397      8.47141 3.235e-02
+#> Error in h(simpleError(msg, call)): 在为'head'函数选择方法时评估'x'参数出了错: 找不到对象'table_simple'
 ```
 
 OR 和 P 值与之前的结果相同，但置信区间有少许差别。
@@ -290,6 +291,8 @@ plot(nomogram(fit.train, fun = plogis, lp = FALSE, funlabel = "预测概率"))
 
 ### ROC 曲线
 
+{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" alt="Sensitivity_and_specificity.svg" caption="由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href='https://creativecommons.org/licenses/by-sa/4.0' title='Creative Commons Attribution-Share Alike 4.0'>CC BY-SA 4.0</a>，<a href='https://commons.wikimedia.org/w/index.php?curid=65826093'>链接</a>" class="float-right" id="fig_Sensitivity_and_specificity.svg" >}} 
+
 ROC 曲线**全称受试者工作特征曲线** （receiver operating characteristic curve），又称为**感受性曲线**（sensitivity curve），曲线上每个点反映着对同一信号刺激的感受性。
 ROC 曲线的横轴为**特异度**（specificity），即**真阴性率**（true negative rate，TNR）；纵轴为**敏感度**（sensitivity），即**真阳性率**（true postive rate，TPR）、**召回率**（Recall）。
 
@@ -298,10 +301,6 @@ $$Specificity=TNR=\frac{TN}{N}=\frac{TN}{TN+FP}
 
 $$Sensitivity=TPR=Recall=\frac{TP}{P}=\frac{TP}{TP+FN}
 \\,.$$
-
-{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" caption="" alt="Sensitivity_and_specificity.svg" class="float-left" id="fig_Sensitivity_and_specificity.svg" >}}
-
-[^1]: 由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>，<a href="https://commons.wikimedia.org/w/index.php?curid=65826093">链接</a>
 
 AUC 全称**曲线下面积**（Area Under Curve），在 Logistic 回归中，AUC 等同于 C-index（concordance index，一致性指数），可以直观的评价模型的好坏，值越大越好。
 
