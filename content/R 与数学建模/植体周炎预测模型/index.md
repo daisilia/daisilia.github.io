@@ -1,7 +1,7 @@
 ---
 title: "植体周炎预测模型：Logistic 回归分析及列线图模型"
 date: 2022-02-23T12:55:52+08:00
-lastmod: 2022-02-23T18:47:05+08:00
+lastmod: 2022-02-28T22:23:48+08:00
 comments: true
 math: true
 weight: 1
@@ -140,7 +140,7 @@ names.selected
 
 根据单因素 Logistic 回归的结果，这次抽样选出的危险因素（P<0.05）为：“修复体材料”，“骨吸收情况”，“分级”，“维护周期（月）”和“平均复查周期”。
 
-### 多因素 Logistic 回归分析
+### 多因素 Logistic 回归
 
 用单因素 Logistic 回归筛选出的危险因素，同样使用 `glm` 函数，进行多因素 Logistic 回归分析。
 
@@ -197,7 +197,7 @@ summary(model.05)
 
 在 R 中，可以使用 `exp(coef(model))` 计算比值比（OR）。
 
-你既可以借助 `boot` 程序包，使用 [Bootstrap 法](#bootstrap-法)计算 OR 及其 95% 置信区间，也可以使用[更简单的方法](#更简单的方法)。
+既可以借助 `boot` 程序包，使用 [Bootstrap 法](#bootstrap-法)计算 OR 及其 95% 置信区间，也可以直接使用[`confint` 函数](#confint-函数)。
 
 #### Bootstrap 法
 
@@ -243,7 +243,7 @@ head(table2.05)
 #> 骨吸收情况植体     3.069725   0.762045     8.27774 3.235e-02
 ```
 
-#### 更简单的方法
+#### `confint` 函数
 
 
 ```r
@@ -291,13 +291,17 @@ plot(nomogram(fit.train, fun = plogis, lp = FALSE, funlabel = "预测概率"))
 ### ROC 曲线
 
 ROC 曲线**全称受试者工作特征曲线** （receiver operating characteristic curve），又称为**感受性曲线**（sensitivity curve），曲线上每个点反映着对同一信号刺激的感受性。
-ROC 曲线的横轴为**特异度**（specificity，SPC），即**假阳性率**（false postive rate，FPR）；纵轴为**敏感度**（sensitivity），即**真阳性率**（true postive rate，TPR）。
+ROC 曲线的横轴为**特异度**（specificity），即**真阴性率**（true negative rate，TNR）；纵轴为**敏感度**（sensitivity），即**真阳性率**（true postive rate，TPR）、**召回率**（Recall）。
 
-$$SPC=FPR=\frac{TN}{N}=\frac{TN}{TN+FP}
+$$Specificity=TNR=\frac{TN}{N}=\frac{TN}{TN+FP}
 \\,.$$
 
-$$TPR=Recall=\frac{TP}{P}=\frac{TP}{TP+FN}
+$$Sensitivity=TPR=Recall=\frac{TP}{P}=\frac{TP}{TP+FN}
 \\,.$$
+
+{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" caption="" alt="Sensitivity_and_specificity.svg" class="float-left" id="fig_Sensitivity_and_specificity.svg" >}}
+
+[^1]: 由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>，<a href="https://commons.wikimedia.org/w/index.php?curid=65826093">链接</a>
 
 AUC 全称**曲线下面积**（Area Under Curve），在 Logistic 回归中，AUC 等同于 C-index（concordance index，一致性指数），可以直观的评价模型的好坏，值越大越好。
 
