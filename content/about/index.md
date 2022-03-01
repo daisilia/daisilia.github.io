@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2021-09-16T16:29:41+08:00
-lastmod: 2022-01-22T18:40:11+08:00
+lastmod: 2022-03-01T16:39:47+08:00
 type: about
 ---
 
@@ -12,7 +12,9 @@ type: about
 **Who am I?**
 
 - CMU（~~Carnegie Mellon University~~中国医科大学）在读*医学牲*
-- 编程爱好者、（Neo）Vimmer {{< figure src="https://github-readme-stats.vercel.app/api?username=alohaia&show_icons=true&theme=tokyonight" title="" caption="" alt="" class="right float-right" >}}
+- 编程爱好者、（Neo）Vimmer
+
+{{< figure src="https://github-readme-stats.vercel.app/api?username=alohaia&show_icons=true&theme=tokyonight" fancybox=false title="" caption="" alt="" class="float-right" >}}
 
 **What am I doing?**
 
@@ -22,7 +24,7 @@ type: about
     - 给博客写的 NeoVim 插件：[hugowiki.nvim](https://github.com/alohaia/hugowiki.nvim)
 - 我的 NeoVim 配置：[https://github.com/alohaia/nvimcfg](https://github.com/alohaia/nvimcfg)
 
-{{< figure src="aloha.gif" title="" caption="" alt="" width="250px" class="fight float-right" >}}
+{{< figure src="aloha.gif" fancybox=false title="" caption="" alt="" width="250px" class="float-right" >}}
 
 **What do I wanna do?**
 
