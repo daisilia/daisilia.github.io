@@ -15,7 +15,7 @@
 ">
 <meta property="article:tag" content="Vue ">
 <meta property="article:section" content>
-<title>Vue 组件化 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.55f60e6ebce6afab4ecd5bc7edaa6b5880a6ed16fb074c9d558279d145ed6e2a.css integrity="sha256-VfYObrzmr6tOzVvH7aprWICm7Rb7B0ydVYJ50UXtbio=">
+<title>Vue 组件化 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.6aae0ba98a272d28fc15309c4e58d3e5040ce5bfe646a81b0ea4d4636921bf3e.css integrity="sha256-aq4LqYonLSj8FTCcTljT5QQM5b/mRqgbDqTUY2khvz4=">
 <link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
 <link href=https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css rel=stylesheet>
 <link rel=preconnect href=https://fonts.googleapis.com>
@@ -52,151 +52,75 @@
 <div class=tab-title><span class=tab-title-content></span></div><div class=tab-content>
 <p>尽量回避 HTML 中内置的标签名（注意 HTML 忽略大小写）。</p></div></div><div open class="tab info">
 <div class=tab-title><span class=tab-title-content></span></div><div class=tab-content>
-<p>在组件配置对象中使用 <code>name</code> 配置项可指定组件在 Vue 开发工具中显示的名称。</p></div></div><h2 class=heading id=基本语法><a scroll=基本语法>基本语法</a></h2><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#75715e>// 1. 创建组件
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#00a8c8>const</span> <span style=color:#75af00>childComponent</span> <span style=color:#f92672>=</span> <span style=color:#75af00>Vue</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>({</span>
-</span></span><span style=display:flex><span>    <span style=color:#75af00>template</span><span style=color:#f92672>:</span> <span style=color:#d88200>`
-</span></span></span><span style=display:flex><span><span style=color:#d88200>        &lt;div class=&#34;child&#34;&gt;
-</span></span></span><span style=display:flex><span><span style=color:#d88200>            姓名：&lt;input type=&#34;text&#34; name=&#34;姓名&#34; v-model=&#34;auther.name&#34;&gt;
-</span></span></span><span style=display:flex><span><span style=color:#d88200>            邮箱：&lt;input type=&#34;text&#34; name=&#34;邮箱&#34; v-model=&#34;auther.email&#34;&gt;
-</span></span></span><span style=display:flex><span><span style=color:#d88200>        &lt;/div&gt;
-</span></span></span><span style=display:flex><span><span style=color:#d88200>    `</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#75af00>data</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(){</span>
-</span></span><span style=display:flex><span>        <span style=color:#00a8c8>return</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>            <span style=color:#75af00>auther</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>                <span style=color:#75af00>name</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#39;melody&#39;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>                <span style=color:#75af00>email</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#39;melody@163.com&#39;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>            <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>            <span style=color:#75715e>// ...
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#111>}</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#75715e>// ...
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#111>})</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#00a8c8>new</span> <span style=color:#75af00>Vue</span><span style=color:#111>({</span>
-</span></span><span style=display:flex><span>    <span style=color:#75af00>el</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#39;#root&#39;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#75715e>// 2. 注册组件（局部注册）
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75af00>components</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>        <span style=color:#75715e>// childComponent,
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#75af00>child</span><span style=color:#f92672>:</span> <span style=color:#75af00>childComponent</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span><span style=color:#111>})</span>
-</span></span></code></pre></td></tr></table></div></div><p>然后在 HTML 中添加组件标签：</p><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:#111>&lt;</span><span style=color:#f92672>div</span> <span style=color:#75af00>id</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;root&#34;</span><span style=color:#111>&gt;</span>
-</span></span><span style=display:flex><span>    <span style=color:#75715e>&lt;!-- 挂载组件 --&gt;</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>&lt;</span><span style=color:#f92672>child</span><span style=color:#111>&gt;&lt;/</span><span style=color:#f92672>child</span><span style=color:#111>&gt;</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>&lt;</span><span style=color:#f92672>child</span><span style=color:#111>/&gt;</span><span style=color:#75715e>&lt;!-- 注意 Vue 脚手架才能正确处理好多个自闭合标签 --&gt;</span>
-</span></span><span style=display:flex><span><span style=color:#111>&lt;/</span><span style=color:#f92672>div</span><span style=color:#111>&gt;</span>
-</span></span></code></pre></td></tr></table></div></div><div open class="tab info" id=tab_注册全局组件>
+<p>在组件配置对象中使用 <code>name</code> 配置项可指定组件在 Vue 开发工具中显示的名称。</p></div></div><h2 class=heading id=基本语法><a scroll=基本语法>基本语法</a></h2><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span><span style=color:#75715e>// 1. 创建组件
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span><span style=color:#75715e></span><span style=color:#00a8c8>const</span> <span style=color:#75af00>childComponent</span> <span style=color:#f92672>=</span> <span style=color:#75af00>Vue</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>({</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span>    <span style=color:#75af00>template</span><span style=color:#f92672>:</span> <span style=color:#d88200>`
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span><span><span style=color:#d88200>        &lt;div class=&#34;child&#34;&gt;
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span><span style=color:#d88200>            姓名：&lt;input type=&#34;text&#34; name=&#34;姓名&#34; v-model=&#34;auther.name&#34;&gt;
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span><span><span style=color:#d88200>            邮箱：&lt;input type=&#34;text&#34; name=&#34;邮箱&#34; v-model=&#34;auther.email&#34;&gt;
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span><span style=color:#d88200>        &lt;/div&gt;
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span><span><span style=color:#d88200>    `</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span><span>    <span style=color:#75af00>data</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(){</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span><span>        <span style=color:#00a8c8>return</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span><span>            <span style=color:#75af00>auther</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span><span>                <span style=color:#75af00>name</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#39;melody&#39;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span><span>                <span style=color:#75af00>email</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#39;melody@163.com&#39;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span><span>            <span style=color:#111>},</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span><span>            <span style=color:#75715e>// ...
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span><span><span style=color:#75715e></span>        <span style=color:#111>}</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span><span>    <span style=color:#75715e>// ...
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span><span><span style=color:#75715e></span><span style=color:#111>})</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span><span><span style=color:#00a8c8>new</span> <span style=color:#75af00>Vue</span><span style=color:#111>({</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22</span><span>    <span style=color:#75af00>el</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#39;#root&#39;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23</span><span>    <span style=color:#75715e>// 2. 注册组件（局部注册）
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24</span><span><span style=color:#75715e></span>    <span style=color:#75af00>components</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25</span><span>        <span style=color:#75715e>// childComponent,
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">26</span><span><span style=color:#75715e></span>        <span style=color:#75af00>child</span><span style=color:#f92672>:</span> <span style=color:#75af00>childComponent</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">27</span><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">28</span><span><span style=color:#111>})</span>
+</span></span></code></pre></div><p>然后在 HTML 中添加组件标签：</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#111>&lt;</span><span style=color:#f92672>div</span> <span style=color:#75af00>id</span><span style=color:#f92672>=</span><span style=color:#d88200>&#34;root&#34;</span><span style=color:#111>&gt;</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#75715e>&lt;!-- 挂载组件 --&gt;</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#111>&lt;</span><span style=color:#f92672>child</span><span style=color:#111>&gt;&lt;/</span><span style=color:#f92672>child</span><span style=color:#111>&gt;</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>    <span style=color:#111>&lt;</span><span style=color:#f92672>child</span><span style=color:#111>/&gt;</span><span style=color:#75715e>&lt;!-- 注意 Vue 脚手架才能正确处理好多个自闭合标签 --&gt;</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span><span style=color:#111>&lt;/</span><span style=color:#f92672>div</span><span style=color:#111>&gt;</span>
+</span></span></code></pre></div><div open class="tab info" id=tab_注册全局组件>
 <div class=tab-title><span class=tab-title-content>注册全局组件</span></div><div class=tab-content>
 <p>注册全局组件的方法与注册全局过滤器、全局自定义指令的方法类似，使用 <code>Vue.component</code> 方法。</p></div></div><div open class="tab info">
 <div class=tab-title><span class=tab-title-content></span></div><div class=tab-content>
-<p>Vue 也可以直接用组件配置对象作为 <code>components</code> 中的组件的值，即上述对应代码可简写为：</p><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">9
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#00a8c8>const</span> <span style=color:#75af00>childComponent</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>    <span style=color:#75af00>template</span><span style=color:#f92672>:</span> <span style=color:#75715e>/* ... */</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#75af00>data</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(){</span>
-</span></span><span style=display:flex><span>        <span style=color:#00a8c8>return</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>            <span style=color:#75715e>// ...
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#111>}</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#75715e>// ...
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#111>}</span>
-</span></span></code></pre></td></tr></table></div></div></div></div><h2 class=heading id=组件嵌套><a scroll=组件嵌套>组件嵌套</a></h2><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#00a8c8>const</span> <span style=color:#75af00>coc</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>    <span style=color:#75af00>template</span><span style=color:#f92672>:</span> <span style=color:#d88200>`
-</span></span></span><span style=display:flex><span><span style=color:#d88200>        &lt;div class=&#34;child&#34;&gt;
-</span></span></span><span style=display:flex><span><span style=color:#d88200>            &lt;p&gt;信息：{{mes}}&lt;/p&gt;
-</span></span></span><span style=display:flex><span><span style=color:#d88200>        &lt;/div&gt;
-</span></span></span><span style=display:flex><span><span style=color:#d88200>    `</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#75af00>data</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(){</span>
-</span></span><span style=display:flex><span>        <span style=color:#00a8c8>return</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>            <span style=color:#75af00>mes</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#34;hello&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>            <span style=color:#75715e>// ...
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#111>}</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span><span style=color:#111>}</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// 1. 创建组件
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#00a8c8>const</span> <span style=color:#75af00>childComponent</span> <span style=color:#f92672>=</span> <span style=color:#75af00>Vue</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>({</span>
-</span></span><span style=display:flex><span>    <span style=color:#75715e>// ...
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75af00>components</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
-</span></span><span style=display:flex><span>        <span style=color:#d88200>&#39;child-of-child&#39;</span><span style=color:#f92672>:</span> <span style=color:#75af00>coc</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>},</span>
-</span></span><span style=display:flex><span>    <span style=color:#75715e>// ...
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#111>})</span>
-</span></span></code></pre></td></tr></table></div></div></div></div><div class=site-comment><script src=https://giscus.app/client.js data-repo=alohaia/alohaia.github.io data-repo-id="MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY=" data-category=Announcements data-category-id=DIC_kwDOFfHILM4B_XeA data-mapping=title data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+<p>Vue 也可以直接用组件配置对象作为 <code>components</code> 中的组件的值，即上述对应代码可简写为：</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span><span style=color:#00a8c8>const</span> <span style=color:#75af00>childComponent</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>    <span style=color:#75af00>template</span><span style=color:#f92672>:</span> <span style=color:#75715e>/* ... */</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>    <span style=color:#75af00>data</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(){</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>        <span style=color:#00a8c8>return</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">5</span><span>            <span style=color:#75715e>// ...
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">6</span><span><span style=color:#75715e></span>        <span style=color:#111>}</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">7</span><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">8</span><span>    <span style=color:#75715e>// ...
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">9</span><span><span style=color:#75715e></span><span style=color:#111>}</span>
+</span></span></code></pre></div></div></div><h2 class=heading id=组件嵌套><a scroll=组件嵌套>组件嵌套</a></h2><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span><span style=color:#00a8c8>const</span> <span style=color:#75af00>coc</span> <span style=color:#f92672>=</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span>    <span style=color:#75af00>template</span><span style=color:#f92672>:</span> <span style=color:#d88200>`
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span><span style=color:#d88200>        &lt;div class=&#34;child&#34;&gt;
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span><span><span style=color:#d88200>            &lt;p&gt;信息：{{mes}}&lt;/p&gt;
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span><span style=color:#d88200>        &lt;/div&gt;
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span><span><span style=color:#d88200>    `</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span>    <span style=color:#75af00>data</span><span style=color:#f92672>:</span> <span style=color:#00a8c8>function</span><span style=color:#111>(){</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span><span>        <span style=color:#00a8c8>return</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span><span>            <span style=color:#75af00>mes</span><span style=color:#f92672>:</span> <span style=color:#d88200>&#34;hello&#34;</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span><span>            <span style=color:#75715e>// ...
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span><span><span style=color:#75715e></span>        <span style=color:#111>}</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span><span><span style=color:#111>}</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span><span><span style=color:#75715e>// 1. 创建组件
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span><span><span style=color:#75715e></span><span style=color:#00a8c8>const</span> <span style=color:#75af00>childComponent</span> <span style=color:#f92672>=</span> <span style=color:#75af00>Vue</span><span style=color:#111>.</span><span style=color:#75af00>extend</span><span style=color:#111>({</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span><span>    <span style=color:#75715e>// ...
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span><span><span style=color:#75715e></span>    <span style=color:#75af00>components</span><span style=color:#f92672>:</span> <span style=color:#111>{</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span><span>        <span style=color:#d88200>&#39;child-of-child&#39;</span><span style=color:#f92672>:</span> <span style=color:#75af00>coc</span><span style=color:#111>,</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span><span>    <span style=color:#111>},</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span><span>    <span style=color:#75715e>// ...
+</span></span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22</span><span><span style=color:#75715e></span><span style=color:#111>})</span>
+</span></span></code></pre></div></div></div><div class=site-comment><script src=https://giscus.app/client.js data-repo=alohaia/alohaia.github.io data-repo-id="MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY=" data-category=Announcements data-category-id=DIC_kwDOFfHILM4B_XeA data-mapping=title data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
 </div><div class=site-right></div></div><div id=fastSearch>
 <div class=fast-search-container>
 <div class=fast-search-header>
@@ -222,7 +146,7 @@
 </div><p class=site-author-name>Qihuan Liu
 </p><p class=site-description>追寻罗素先生的脚步，渴望寻找到我想要的答案。</p><div class=sidebar-social><a class=sidebar-social-item href=mailto:liu.qihuan@outlook.com><i class="fas fa-envelope"></i>E-Mail</a><a class=sidebar-social-item target=_blank href=https://github.com/alohaia><i class="fab fa-github"></i>Github</a></div><div class=site-state>
 <a class=site-state-item href=/>
-<p class=site-state-num>68</p><p class=site-state-name>Pages</p></a>
+<p class=site-state-num>69</p><p class=site-state-name>Pages</p></a>
 <a class=site-state-item href=/tags>
 <p class=site-state-num>37</p><p class=site-state-name>Tags</p></a>
 <a class=site-state-item href=/series>

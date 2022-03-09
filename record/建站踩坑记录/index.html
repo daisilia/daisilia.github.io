@@ -15,7 +15,7 @@
 ">
 <meta property="article:tag" content>
 <meta property="article:section" content>
-<title>建站踩坑记录 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.55f60e6ebce6afab4ecd5bc7edaa6b5880a6ed16fb074c9d558279d145ed6e2a.css integrity="sha256-VfYObrzmr6tOzVvH7aprWICm7Rb7B0ydVYJ50UXtbio=">
+<title>建站踩坑记录 | Aloha's Blog</title><link rel=stylesheet href=/css/bundle.min.6aae0ba98a272d28fc15309c4e58d3e5040ce5bfe646a81b0ea4d4636921bf3e.css integrity="sha256-aq4LqYonLSj8FTCcTljT5QQM5b/mRqgbDqTUY2khvz4=">
 <link rel=stylesheet href=https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css>
 <link href=https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css rel=stylesheet>
 <link rel=preconnect href=https://fonts.googleapis.com>
@@ -39,113 +39,54 @@
 <span class=meta-item-text>Author:</span>
 <span class=meta-item-value>Qihuan Liu
 </span>
-</li></ul></div><div class=article-content><p>这篇文章记录了开始用 Hugo 作为静态网站生成器后的踩坑记录，包括写主题和网站布署等方面。</p><h2 class=heading id=将仓库子目录作为网站根目录><a scroll=将仓库子目录作为网站根目录>将仓库子目录作为网站根目录</a></h2><p>如果你已经了解情况，那么参考下面的命令，你的问题就应该解决了：</p><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git subtree push --prefix public daisilia blog
-</span></span></code></pre></td></tr></table></div></div><p>如若不然，让我们先来了解一下情况：</p><ul>
+</li></ul></div><div class=article-content><p>这篇文章记录了开始用 Hugo 作为静态网站生成器后的踩坑记录，包括写主题和网站布署等方面。</p><h2 class=heading id=将仓库子目录作为网站根目录><a scroll=将仓库子目录作为网站根目录>将仓库子目录作为网站根目录</a></h2><p>如果你已经了解情况，那么参考下面的命令，你的问题就应该解决了：</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>git subtree push --prefix public daisilia blog
+</span></span></code></pre></div><p>如若不然，让我们先来了解一下情况：</p><ul>
 <li>有一个用 <code>hugo new site</code> 生成的网站源码目录 <code>blog.hugo</code>，并在 <code>blog.hugo</code> 初始化了一个 GitHub 仓库；
-<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>hugo new site blog.hugo <span style=color:#f92672>&amp;&amp;</span> <span style=color:#111>cd</span> blog.hugo
-</span></span><span style=display:flex><span><span style=color:#75715e># ... 添加内容并使用 hugo 命令生成 public/ 目录</span>
-</span></span><span style=display:flex><span>git init .
-</span></span><span style=display:flex><span>git add . <span style=color:#f92672>&amp;&amp;</span> git commit -m <span style=color:#d88200>&#34;Init&#34;</span>
-</span></span></code></pre></td></tr></table></div></div></li><li>添加 <code>git@github.com:daisilia/daisilia.github.io.git</code> 为 remote <code>daisilia</code>，并做一次提交：
-<div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git remote add daisilia git@github.com:daisilia/daisilia.github.io.git
-</span></span><span style=display:flex><span>git push -u daisilia
-</span></span></code></pre></td></tr></table></div></div></li></ul><p>最后运行一开始提到的命令，将 <code>public</code> 目录提交为 <code>blog</code> 分支：</p><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git subtree push --prefix public daisilia blog
-</span></span></code></pre></td></tr></table></div></div><p>最后再到 <a href=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>blog</code> 分支设置为要用的分支即可。<br>
+<div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>hugo new site blog.hugo <span style=color:#f92672>&amp;&amp;</span> <span style=color:#111>cd</span> blog.hugo
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span><span style=color:#75715e># ... 添加内容并使用 hugo 命令生成 public/ 目录</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">3</span><span>git init .
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">4</span><span>git add . <span style=color:#f92672>&amp;&amp;</span> git commit -m <span style=color:#d88200>&#34;Init&#34;</span>
+</span></span></code></pre></div></li><li>添加 <code>git@github.com:daisilia/daisilia.github.io.git</code> 为 remote <code>daisilia</code>，并做一次提交：
+<div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>git remote add daisilia git@github.com:daisilia/daisilia.github.io.git
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">2</span><span>git push -u daisilia
+</span></span></code></pre></div></li></ul><p>最后运行一开始提到的命令，将 <code>public</code> 目录提交为 <code>blog</code> 分支：</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>git subtree push --prefix public daisilia blog
+</span></span></code></pre></div><p>最后再到 <a href=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>blog</code> 分支设置为要用的分支即可。<br>
 <figure>
 <a data-fancybox data-src=pages.png><img src=pages.png alt="Pages 设置"></a><figcaption>
-<h4 class=title>Pages 设置</h4><p class=caption>进入 Pages 设置界面，将 <code>blog</code> 分支设置为选定分支</p></figcaption></figure></p><h2 class=heading id=使用-git-action-将仓库子目录作为网站根目录><a scroll=使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a></h2><p>添加文件 <code>blog.hugo/.github/workflows/gh-pages.yml</code>：</p><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">26
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">27
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">28
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">29
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">30
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">31
-</span><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">32
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>github pages</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#f92672>on</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>push</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>branches</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>      - <span style=color:#ae81ff>main </span> <span style=color:#75715e># Set a branch to deploy</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>pull_request</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#f92672>jobs</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>  <span style=color:#f92672>deploy</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>runs-on</span><span style=color:#111>:</span> <span style=color:#ae81ff>ubuntu-20.04</span>
-</span></span><span style=display:flex><span>    <span style=color:#f92672>steps</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>      - <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>actions/checkout@v2</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>          <span style=color:#f92672>submodules</span><span style=color:#111>:</span> <span style=color:#00a8c8>true</span>  <span style=color:#75715e># Fetch Hugo themes (true OR recursive)</span>
-</span></span><span style=display:flex><span>          <span style=color:#f92672>fetch-depth</span><span style=color:#111>:</span> <span style=color:#ae81ff>0</span>    <span style=color:#75715e># Fetch all history for .GitInfo and .Lastmod</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Setup Hugo</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>peaceiris/actions-hugo@v2</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>          <span style=color:#f92672>hugo-version</span><span style=color:#111>:</span> <span style=color:#d88200>&#39;latest&#39;</span>
-</span></span><span style=display:flex><span>          <span style=color:#f92672>extended</span><span style=color:#111>:</span> <span style=color:#00a8c8>true</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Build</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>run</span><span style=color:#111>:</span> <span style=color:#ae81ff>hugo -D --minify</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Deploy</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>if</span><span style=color:#111>:</span> <span style=color:#ae81ff>github.ref == &#39;refs/heads/main&#39;</span>
-</span></span><span style=display:flex><span>        <span style=color:#f92672>with</span><span style=color:#111>:</span>
-</span></span><span style=display:flex><span>          <span style=color:#f92672>github_token</span><span style=color:#111>:</span> <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
-</span></span><span style=display:flex><span>          <span style=color:#f92672>publish_dir</span><span style=color:#111>:</span> <span style=color:#ae81ff>./public</span>
-</span></span></code></pre></td></tr></table></div></div><p>再到 <a href=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>gh-pages</code> 分支设置为要用的分支即可。</p><h2 class=heading id=将主题添加为子模块><a scroll=将主题添加为子模块>将主题添加为子模块</a></h2><p>这里已经将远程仓库 <a href=https://github.com/alohaia/hugo-theme-daisilia>https://github.com/alohaia/hugo-theme-daisilia</a> 克隆到 <code>blog.hugo/themes/daisilia</code>，执行以下命令即可将其添加为子模块。</p><div class=highlight><div style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
-<table style=border-spacing:0;padding:0;margin:0;border:0><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
-</span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
-<pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>git submodule add https://github.com/alohaia/hugo-theme-daisilia.git themes/daisilia
-</span></span></code></pre></td></tr></table></div></div></div></div><div class=site-comment><script src=https://giscus.app/client.js data-repo=alohaia/alohaia.github.io data-repo-id="MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY=" data-category=Announcements data-category-id=DIC_kwDOFfHILM4B_XeA data-mapping=title data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
+<h4 class=title>Pages 设置</h4><p class=caption>进入 Pages 设置界面，将 <code>blog</code> 分支设置为选定分支</p></figcaption></figure></p><h2 class=heading id=使用-git-action-将仓库子目录作为网站根目录><a scroll=使用-git-action-将仓库子目录作为网站根目录>使用 git action 将仓库子目录作为网站根目录</a></h2><p>添加文件 <code>blog.hugo/.github/workflows/gh-pages.yml</code>：</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span><span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>github pages</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span><span><span style=color:#f92672>on</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span><span>  <span style=color:#f92672>push</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span><span>    <span style=color:#f92672>branches</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span><span>      - <span style=color:#ae81ff>main </span> <span style=color:#75715e># Set a branch to deploy</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span><span>  <span style=color:#f92672>pull_request</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span><span><span style=color:#f92672>jobs</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span><span>  <span style=color:#f92672>deploy</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span><span>    <span style=color:#f92672>runs-on</span><span style=color:#111>:</span> <span style=color:#ae81ff>ubuntu-20.04</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span><span>    <span style=color:#f92672>steps</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span><span>      - <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>actions/checkout@v2</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span><span>        <span style=color:#f92672>with</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span><span>          <span style=color:#f92672>submodules</span><span style=color:#111>:</span> <span style=color:#00a8c8>true</span>  <span style=color:#75715e># Fetch Hugo themes (true OR recursive)</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span><span>          <span style=color:#f92672>fetch-depth</span><span style=color:#111>:</span> <span style=color:#ae81ff>0</span>    <span style=color:#75715e># Fetch all history for .GitInfo and .Lastmod</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span><span>      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Setup Hugo</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span><span>        <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>peaceiris/actions-hugo@v2</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span><span>        <span style=color:#f92672>with</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span><span>          <span style=color:#f92672>hugo-version</span><span style=color:#111>:</span> <span style=color:#d88200>&#39;latest&#39;</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">22</span><span>          <span style=color:#f92672>extended</span><span style=color:#111>:</span> <span style=color:#00a8c8>true</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">23</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">24</span><span>      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Build</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">25</span><span>        <span style=color:#f92672>run</span><span style=color:#111>:</span> <span style=color:#ae81ff>hugo -D --minify</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">26</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">27</span><span>      - <span style=color:#f92672>name</span><span style=color:#111>:</span> <span style=color:#ae81ff>Deploy</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">28</span><span>        <span style=color:#f92672>uses</span><span style=color:#111>:</span> <span style=color:#ae81ff>peaceiris/actions-gh-pages@v3</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">29</span><span>        <span style=color:#f92672>if</span><span style=color:#111>:</span> <span style=color:#ae81ff>github.ref == &#39;refs/heads/main&#39;</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">30</span><span>        <span style=color:#f92672>with</span><span style=color:#111>:</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">31</span><span>          <span style=color:#f92672>github_token</span><span style=color:#111>:</span> <span style=color:#ae81ff>${{ secrets.GITHUB_TOKEN }}</span>
+</span></span><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">32</span><span>          <span style=color:#f92672>publish_dir</span><span style=color:#111>:</span> <span style=color:#ae81ff>./public</span>
+</span></span></code></pre></div><p>再到 <a href=https://github.com/daisilia/daisilia.github.io>https://github.com/daisilia/daisilia.github.io</a> 进入 Pages 设置界面，将 <code>gh-pages</code> 分支设置为要用的分支即可。</p><h2 class=heading id=将主题添加为子模块><a scroll=将主题添加为子模块>将主题添加为子模块</a></h2><p>这里已经将远程仓库 <a href=https://github.com/alohaia/hugo-theme-daisilia>https://github.com/alohaia/hugo-theme-daisilia</a> 克隆到 <code>blog.hugo/themes/daisilia</code>，执行以下命令即可将其添加为子模块。</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span style="white-space:pre;user-select:none;margin-right:.4em;padding:0 .4em;color:#7f7f7f">1</span><span>git submodule add https://github.com/alohaia/hugo-theme-daisilia.git themes/daisilia
+</span></span></code></pre></div></div></div><div class=site-comment><script src=https://giscus.app/client.js data-repo=alohaia/alohaia.github.io data-repo-id="MDEwOlJlcG9zaXRvcnkzNjgxNjY5NTY=" data-category=Announcements data-category-id=DIC_kwDOFfHILM4B_XeA data-mapping=title data-reactions-enabled=1 data-emit-metadata=1 data-theme=light crossorigin=anonymous async></script>
 </div><div class=site-right></div></div><div id=fastSearch>
 <div class=fast-search-container>
 <div class=fast-search-header>
@@ -169,7 +110,7 @@
 </div><p class=site-author-name>Qihuan Liu
 </p><p class=site-description>追寻罗素先生的脚步，渴望寻找到我想要的答案。</p><div class=sidebar-social><a class=sidebar-social-item href=mailto:liu.qihuan@outlook.com><i class="fas fa-envelope"></i>E-Mail</a><a class=sidebar-social-item target=_blank href=https://github.com/alohaia><i class="fab fa-github"></i>Github</a></div><div class=site-state>
 <a class=site-state-item href=/>
-<p class=site-state-num>68</p><p class=site-state-name>Pages</p></a>
+<p class=site-state-num>69</p><p class=site-state-name>Pages</p></a>
 <a class=site-state-item href=/tags>
 <p class=site-state-num>37</p><p class=site-state-name>Tags</p></a>
 <a class=site-state-item href=/series>
