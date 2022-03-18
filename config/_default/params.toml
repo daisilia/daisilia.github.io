@@ -4,6 +4,7 @@
   mes_404     = 'Over the Mountains, mountains...'
   [daisy.copyright]
     startyear = 2020
+    creativecommons = "by-nc-sa"
   [daisy.social]
     github = "https://github.com/alohaia"
     email = "liu.qihuan@outlook.com"
