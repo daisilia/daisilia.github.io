@@ -1,7 +1,7 @@
 ---
-title: 2022-04-04
+title: 诊断学-腹部体格检查
 date: 2022-04-04T14:11:53+08:00
-lastmod: 2022-04-04T21:46:12+08:00
+lastmod: 2022-04-05T16:43:48+08:00
 comments: true
 math: false
 tags:

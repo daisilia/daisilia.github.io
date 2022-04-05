@@ -1,7 +1,8 @@
 ---
-title: 2022-04-03
+title:
+type: diary
 date: 2022-04-03T20:57:01+08:00
-lastmod: 2022-04-03T21:58:22+08:00
+lastmod: 2022-04-05T16:47:32+08:00
 comments: true
 math: false
 tags:
