@@ -1,7 +1,7 @@
 ---
-title: 无题
+title: 诊断学-心血管系统查体；外科学-外科感染
 date: 2022-04-07T16:39:06+08:00
-lastmod: 2022-04-07T20:35:42+08:00
+lastmod: 2022-04-08T12:01:53+08:00
 comments: true
 math: false
 tags:
