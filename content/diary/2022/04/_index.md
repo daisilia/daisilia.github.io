@@ -1,7 +1,7 @@
 ---
 title: 2022 年 04 月
 date: 2022-04-01T17:48:16+08:00
-lastmod: 2022-04-07T16:46:21+08:00
+lastmod: 2022-04-13T20:46:11+08:00
 comments: true
 math: false
 tags:
@@ -16,3 +16,5 @@ TODO list：
 - [诊断学](https://changjiang.yuketang.cn/v2/web/studentLog/8095614)
   [ ] 04 诊断学-腹部检查
   [ ] 06 [肝胆疾病常用实验室检测](https://changjiang.yuketang.cn/v2/web/student-v3/8095614/598720857670609664/10841947)
+
+[13]({{< relref "13" >}})
