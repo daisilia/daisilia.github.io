@@ -9,6 +9,12 @@ tags:
     - WSL
 ---
 
+B 站视频[【WSL + NeoVim】WSL 演示 NeoVim 配置安装](https://www.bilibili.com/video/BV1C44y1g7Sg/)，中的演示文稿。
+
+<!--more-->
+
+{{< bilibili bvid="1C44y1g7Sg" >}}
+
 ## 准备工作
 
 - ArchWSL，两种方式下载：
