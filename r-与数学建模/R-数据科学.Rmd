@@ -3,7 +3,7 @@ title: R 数据科学
 comments: true
 math: true
 date: 2021-09-02T19:12:20+08:00
-lastmod: 2022-02-28T22:38:44+08:00
+lastmod: 2022-05-09T14:26:16+08:00
 tags:
     - R
     - 数学建模
@@ -167,15 +167,12 @@ ggplot(data = mpg) +
 
 你可以在同一张图中使用多个几何对象：
 
-:::#geom_smooth
-
 ```{r, "geom_smooth", fig.cap="", message = FALSE}
 ggplot(data = mpg) +
     geom_point(mapping = aes(x = displ, y = hwy, color = drv), size = 3) +
     geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv, color = drv))
 ```
-
-:::
+{#geom_smooth}
 
 为避免代码重复，可以将所有几何对象共用的映射写在 `ggplot()` 函数中，这样 ggplot2 会将这些映射作为全局映射应用到图中的每个几何对象中。以下代码与 [上面的代码](#geom_smooth) 等效。
 
