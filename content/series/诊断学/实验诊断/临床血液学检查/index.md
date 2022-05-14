@@ -1,9 +1,9 @@
 ---
 title: "临床血液学检查"
 date: 2022-05-11T13:27:56+08:00
-lastmod: 2022-05-11T13:32:04+08:00
+lastmod: 2022-05-14T23:38:33+08:00
 comments: true
-math: false
+math: true
 weight: 1
 tags:
     - 诊断学
