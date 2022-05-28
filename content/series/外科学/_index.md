@@ -1,7 +1,7 @@
 ---
 title: "外科学"
 date: 2022-05-25T21:45:26+08:00
-lastmod: 2022-05-26T23:32:21+08:00
+lastmod: 2022-05-28T11:10:44+08:00
 comments: true
 math: false
 weight: 0
@@ -16,3 +16,7 @@ tags:
 : 只有通过手术或手法整复处理才能取得最好治疗效果的疾病。
 
 <!--more-->
+
+TODO：
+
+- [重症监测治疗与复苏]({{< relref "重症监测治疗与复苏" >}})：[MODS](https://changjiang.yuketang.cn/v2/web/student-v3/8505407/589312815460800000/10565132)
