@@ -1,7 +1,7 @@
 ---
 title: "植体周炎预测模型：Logistic 回归分析及列线图模型"
 date: 2022-02-23T12:55:52+08:00
-lastmod: 2022-02-28T23:17:00+08:00
+lastmod: 2022-06-08T11:20:00+08:00
 comments: true
 math: true
 weight: 1
@@ -11,8 +11,8 @@ tags:
     - 列线图预测模型
 ---
 
-**数据准备**：使用 `sample` 函数对原始数据进行随机抽样，抽取 70% 的数据作为训练集（n=329），其余的作为测试集（n=141），抽样结果（训练集）保存在 sample.txt 文件中。
-**建立模型**：使用 `stats` 程序包中的 `glm` 函数对训练集数据使用单因素和多因素 Logistic 回归分析，确定发生植体周炎的危险因素（P<0.05）。用多因素 Logistic 回归分析的结果计算 OR 值，并借助 `boot` 程序包，使用 Bootstrap 法计算 OR 的 95% 置信区间。使用 `rms` 程序包建立列线图预测模型。
+**数据准备**：使用 `sample` 函数对原始数据进行随机抽样，抽取 70% 的数据作为训练集（n=329），其余的作为测试集（n=141），抽样结果（训练集）保存在 [sample.txt](./sample.txt) 文件中。
+**建立模型**：使用 `stats` 程序包中的 `glm` 函数对训练集数据使用单因素和多因素 Logistic 回归分析，确定发生植体周炎的危险因素（P \< 0.05）。用多因素 Logistic 回归分析的结果计算 OR 值，并借助 `boot` 程序包，使用 Bootstrap 法计算 OR 的 95% 置信区间。使用 `rms` 程序包建立列线图预测模型。
 **验证模型**：分别借助 `rms` 程序包中的 `calibrate` 函数和 `pROC` 程序包中的 `plot.roc` 函数，使用 C-index 和校准曲线来检验模型的区分度和校准度。Logistic 回归的 C-index 即为 ROC 曲线下面积（AUC）。内部验证和外部验证分别使用训练集和测试集数据进行。
 
 <!--more-->
@@ -76,14 +76,14 @@ head(data)
 
 ### 训练集和测试集
 
-通过以下代码随机选取 7/10 的数据作为训练集，并将抽样方案保存在 sample.txt 文件中。
+通过以下代码随机选取 7/10 的数据作为训练集，并将抽样方案保存在 [sample.txt](./sample.txt) 文件中。
 
 ```{r, eval=FALSE}
 smp <- sample(seq_len(nrow(data)), round(nrow(data) * 0.7))
 write(smp, file = "sample.txt")
 ```
 
-代码编写过程中可能需要多次运行代码，为保持多次运行之间的一致性，在选取合适的抽样（[单因素 Logistic 回归](#单因素-logistic-回归)）后，之后的抽样选取就通过读取 sample.txt 文件完成。
+代码编写过程中可能需要多次运行代码，为保持多次运行之间的一致性，在选取合适的抽样（[单因素 Logistic 回归](#单因素-logistic-回归)）后，之后的抽样选取就通过读取 [sample.txt](./sample.txt) 文件完成。
 
 ```{r}
 # 随机抽取训练集，其他作为测试集
@@ -94,7 +94,7 @@ data.test <- data[-smp, ]
 
 ### 单因素 Logistic 回归
 
-使用 `glm` 函数，对训练集数据的每个预测变量进行单因素分析，获取 P 值，并选出 P < 0.05 的预测变量（抽样的不同会对这一步造成较大影响）。
+使用 `glm` 函数，对训练集数据的每个预测变量进行单因素分析，获取 P 值，并选出 P \< 0.05 的预测变量（抽样的不同会对这一步造成较大影响）。
 
 ```{r}
 p.values <- data.frame()
@@ -106,7 +106,7 @@ for (name in names.all) {
   if (is.null(names(additions))) {
     names(additions) <- paste(name, levels(data.train[[name]])[-1], sep = "")
   }
-  
+
   p.values <- rbind(p.values, data.frame("P value" = additions))
   if (any(additions < 0.05)) {
     names.selected <- c(names.selected, name)
@@ -115,7 +115,7 @@ for (name in names.all) {
 names.selected
 ```
 
-根据单因素 Logistic 回归的结果，这次抽样选出的危险因素（P<0.05）为：“修复体材料”，“骨吸收情况”，“分级”，“维护周期（月）”和“平均复查周期”。
+根据单因素 Logistic 回归的结果，这次抽样选出的危险因素（P \< 0.05）为：“修复体材料”，“骨吸收情况”，“分级”，“维护周期（月）”和“平均复查周期”。
 
 ### 多因素 Logistic 回归
 
@@ -209,7 +209,7 @@ plot(nomogram(fit.train, fun = plogis, lp = FALSE, funlabel = "预测概率"))
 
 ### ROC 曲线
 
-{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" alt="Sensitivity_and_specificity.svg" caption="由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href='https://creativecommons.org/licenses/by-sa/4.0' title='Creative Commons Attribution-Share Alike 4.0'>CC BY-SA 4.0</a>，<a href='https://commons.wikimedia.org/w/index.php?curid=65826093'>链接</a>" class="float-right" id="fig_Sensitivity_and_specificity.svg" >}} 
+{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" alt="Sensitivity_and_specificity.svg" caption="由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href='https://creativecommons.org/licenses/by-sa/4.0' title='Creative Commons Attribution-Share Alike 4.0'>CC BY-SA 4.0</a>，<a href='https://commons.wikimedia.org/w/index.php?curid=65826093'>链接</a>" class="float-right" id="fig_Sensitivity_and_specificity.svg" >}}
 
 ROC 曲线**全称受试者工作特征曲线** （receiver operating characteristic curve），又称为**感受性曲线**（sensitivity curve），曲线上每个点反映着对同一信号刺激的感受性。
 ROC 曲线的横轴为**特异度**（specificity），即**真阴性率**（true negative rate，TNR）；纵轴为**敏感度**（sensitivity），即**真阳性率**（true postive rate，TPR）、**召回率**（Recall）。
