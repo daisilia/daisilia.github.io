@@ -1,7 +1,7 @@
 ---
 title: "心脏超声检查"
 date: 2022-06-26T12:02:29+08:00
-lastmod: 2022-06-26T12:02:54+08:00
+lastmod: 2022-06-26T17:28:00+08:00
 comments: true
 math: false
 weight: 1
@@ -9,6 +9,8 @@ tags:
 ---
 
 ## 先天性心脏病的超声诊断
+
+https://changjiang.yuketang.cn/v2/web/student/8095614/5742272/10138961
 
 心脏方位（[心脏超声基本知识](https://changjiang.yuketang.cn/v2/web/student/8095614/5706915/10008256)）：
 

@@ -1,7 +1,7 @@
 ---
 title: "心电图"
 date: 2022-05-09T14:02:47+08:00
-lastmod: 2022-05-11T19:26:18+08:00
+lastmod: 2022-06-26T17:15:37+08:00
 comments: true
 math: true
 weight: 1
@@ -10,6 +10,8 @@ tags:
 ---
 
 心脏的特殊传导系统（心传导系）包括{{% hzl %}}窦房结、|结间束（前、中、后）、|房室交界区、|房室束/希氏束|束支（左、右或*前、后*）|_和|浦肯野（Purkinje）纤维网{{% /hzl %}}。
+
+{{< figure src="SinusRhythmLabels.svg" title="SinusRhythmLabels" caption="By Created by Agateller (Anthony Atkielski), converted to svg by atom. - SinusRhythmLabels.png, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1560893" alt="SinusRhythmLabels" class="" id="fig_sinusrhythmlabels" >}}
 
 {{% table title="心电图波段对应的心脏的电活动" caption="" left_sticky=false %}}
 | 波段                           | 电活动                                 |
