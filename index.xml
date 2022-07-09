@@ -8,7 +8,7 @@ alt="SinusRhythmLabels"/>&lt;/a>&lt;figcaption>
 &lt;h4 class="title">SinusRhythmLabels&lt;/h4>&lt;p class="caption">By Created by Agateller (Anthony Atkielski), converted to svg by atom. - SinusRhythmLabels.png, Public Domain, &lt;a href="https://commons.wikimedia.org/w/index.php?curid=1560893" target="_blank">https://commons.wikimedia.org/w/index.php?curid=1560893&lt;/a>&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;table>&lt;caption>&lt;h4 class='title'>心电图波段对应的心脏的电活动&lt;/h4>&lt;/caption>
+&lt;div class='table-wrap'>&lt;table>&lt;caption class='title'>心电图波段对应的心脏的电活动&lt;/caption>
 &lt;thead>
 &lt;tr>
 &lt;th>波段&lt;/th>
@@ -45,7 +45,7 @@ alt="SinusRhythmLabels"/>&lt;/a>&lt;figcaption>
 &lt;td>心室开始除极到心室复极完毕&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>镇静催眠药</title><link>https://daisilia.com/series/%E8%8D%AF%E7%90%86%E5%AD%A6/%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E8%8D%AF%E7%90%86%E5%AD%A6/%E9%95%87%E9%9D%99%E5%82%AC%E7%9C%A0%E8%8D%AF/</link><pubDate>Fri, 04 Mar 2022 17:20:27 +0800</pubDate><guid>https://daisilia.com/series/%E8%8D%AF%E7%90%86%E5%AD%A6/%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E8%8D%AF%E7%90%86%E5%AD%A6/%E9%95%87%E9%9D%99%E5%82%AC%E7%9C%A0%E8%8D%AF/</guid><description>苯二氮卓类</description></item><item><title>Vue 组件化</title><link>https://daisilia.com/record/vue-%E7%BB%84%E4%BB%B6%E5%8C%96/</link><pubDate>Tue, 04 Jan 2022 16:55:54 +0800</pubDate><guid>https://daisilia.com/record/vue-%E7%BB%84%E4%BB%B6%E5%8C%96/</guid><description>注意事项 组件初始化所用的配置对象中没有 el 选项。 组件中的 data 配置项中的“数据”要写成函数。 关于组件起名 组件名推荐写法： 一个单词：school、S</description></item><item><title>AJAX 杂记</title><link>https://daisilia.com/record/ajax-%E6%9D%82%E8%AE%B0/</link><pubDate>Fri, 31 Dec 2021 16:35:23 +0800</pubDate><guid>https://daisilia.com/record/ajax-%E6%9D%82%E8%AE%B0/</guid><description>&lt;dl>
+&lt;/table>&lt;/div></description></item><item><title>镇静催眠药</title><link>https://daisilia.com/series/%E8%8D%AF%E7%90%86%E5%AD%A6/%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E8%8D%AF%E7%90%86%E5%AD%A6/%E9%95%87%E9%9D%99%E5%82%AC%E7%9C%A0%E8%8D%AF/</link><pubDate>Fri, 04 Mar 2022 17:20:27 +0800</pubDate><guid>https://daisilia.com/series/%E8%8D%AF%E7%90%86%E5%AD%A6/%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E8%8D%AF%E7%90%86%E5%AD%A6/%E9%95%87%E9%9D%99%E5%82%AC%E7%9C%A0%E8%8D%AF/</guid><description>苯二氮卓类</description></item><item><title>Vue 组件化</title><link>https://daisilia.com/record/vue-%E7%BB%84%E4%BB%B6%E5%8C%96/</link><pubDate>Tue, 04 Jan 2022 16:55:54 +0800</pubDate><guid>https://daisilia.com/record/vue-%E7%BB%84%E4%BB%B6%E5%8C%96/</guid><description>注意事项 组件初始化所用的配置对象中没有 el 选项。 组件中的 data 配置项中的“数据”要写成函数。 关于组件起名 组件名推荐写法： 一个单词：school、S</description></item><item><title>AJAX 杂记</title><link>https://daisilia.com/record/ajax-%E6%9D%82%E8%AE%B0/</link><pubDate>Fri, 31 Dec 2021 16:35:23 +0800</pubDate><guid>https://daisilia.com/record/ajax-%E6%9D%82%E8%AE%B0/</guid><description>&lt;dl>
 &lt;dt>AJAX（Asynchronous JavaScript and XML，异步的 JavaScript 与 XML 技术）&lt;/dt>
 &lt;dd>AJAX 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/dd>
 &lt;dd>AJAX 指的是一套综合了多项技术的浏览器端网页开发技术。AJAX 应用可以仅向服务器发送并取回必须的数据，并在客户端采用 JavaScript 处理来自服务器的回应。因为在服务器和浏览器之间交换的数据大量减少，服务器回应更快了。同时，很多的处理工作可以在发出请求的客户端机器上完成，因此 Web 服务器的负荷也减少了。&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/dd>
@@ -361,7 +361,7 @@ alt="SinusRhythmLabels"/>&lt;/a>&lt;figcaption>
 &lt;td align="center">血清学实验、影像学检查&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>肝炎病毒</title><link>https://daisilia.com/series/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/%E7%97%85%E6%AF%92/%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92/</link><pubDate>Mon, 10 May 2021 11:22:27 +0000</pubDate><guid>https://daisilia.com/series/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/%E7%97%85%E6%AF%92/%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92/</guid><description>&lt;table class='left-sticky'>&lt;caption>&lt;h4 class='title'>肝炎病毒分型&lt;/h4>&lt;p class='caption'>HGV 为病理学中新增&lt;/p>&lt;/caption>
+&lt;/table></description></item><item><title>肝炎病毒</title><link>https://daisilia.com/series/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/%E7%97%85%E6%AF%92/%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92/</link><pubDate>Mon, 10 May 2021 11:22:27 +0000</pubDate><guid>https://daisilia.com/series/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/%E7%97%85%E6%AF%92/%E8%82%9D%E7%82%8E%E7%97%85%E6%AF%92/</guid><description>&lt;div class='table-wrap'>&lt;table class="left-sticky">&lt;caption class='caption'>HGV 为病理学中新增&lt;/caption>&lt;caption class='title'>肝炎病毒分型&lt;/caption>
 &lt;thead>
 &lt;tr>
 &lt;th align="center">病毒&lt;/th>
@@ -415,7 +415,7 @@ alt="SinusRhythmLabels"/>&lt;/a>&lt;figcaption>
 &lt;td align="center">-&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table>
+&lt;/table>&lt;/div>
 &lt;!-- *[HAV]: 甲型肝炎病毒 -->
 &lt;!-- *[HBV]: 乙型肝炎病毒 -->
 &lt;!-- *[HCV]: 丙型肝炎病毒 -->
@@ -463,7 +463,7 @@ alt="SinusRhythmLabels"/>&lt;/a>&lt;figcaption>
 &lt;dt>&lt;strong>应激&lt;/strong>（stress）&lt;/dt>
 &lt;dd>指机体在感受到各种因素的强烈刺激时，机体为满足其应对需求，&lt;ins>内环境稳态发生的适应性变化与重建&lt;/ins>。&lt;/dd>
 &lt;/dl></description></item><item><title>TODO 外科病人的代谢及营养治疗</title><link>https://daisilia.com/series/%E5%A4%96%E7%A7%91%E5%AD%A6/%E5%A4%96%E7%A7%91%E7%97%85%E4%BA%BA%E7%9A%84%E4%BB%A3%E8%B0%A2%E5%8F%8A%E8%90%A5%E5%85%BB%E6%B2%BB%E7%96%97/</link><pubDate>Sat, 28 May 2022 16:01:57 +0800</pubDate><guid>https://daisilia.com/series/%E5%A4%96%E7%A7%91%E5%AD%A6/%E5%A4%96%E7%A7%91%E7%97%85%E4%BA%BA%E7%9A%84%E4%BB%A3%E8%B0%A2%E5%8F%8A%E8%90%A5%E5%85%BB%E6%B2%BB%E7%96%97/</guid><description>https://changjiang.yuketang.cn/v2/web/student-v3/8505407/594381631030218368/10727484</description></item><item><title>肾上腺素受体激动药</title><link>https://daisilia.com/series/%E8%8D%AF%E7%90%86%E5%AD%A6/%E4%BC%A0%E5%87%BA%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E8%8D%AF%E7%90%86%E5%AD%A6/%E8%82%BE%E4%B8%8A%E8%85%BA%E7%B4%A0%E5%8F%97%E4%BD%93%E6%BF%80%E5%8A%A8%E8%8D%AF/</link><pubDate>Tue, 09 Nov 2021 16:00:58 +0800</pubDate><guid>https://daisilia.com/series/%E8%8D%AF%E7%90%86%E5%AD%A6/%E4%BC%A0%E5%87%BA%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E8%8D%AF%E7%90%86%E5%AD%A6/%E8%82%BE%E4%B8%8A%E8%85%BA%E7%B4%A0%E5%8F%97%E4%BD%93%E6%BF%80%E5%8A%A8%E8%8D%AF/</guid><description>肾上腺素受体激动药又称拟交感肾上腺素药、拟交感胺类（作用与兴奋交感神经的效应相似），是一类化学结构和药理作用与肾上腺素、去甲肾上腺素相似的药</description></item><item><title>原虫</title><link>https://daisilia.com/series/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/%E5%8E%9F%E8%99%AB/</link><pubDate>Mon, 05 Jul 2021 19:58:07 +0000</pubDate><guid>https://daisilia.com/series/%E7%97%85%E5%8E%9F%E7%94%9F%E7%89%A9%E5%AD%A6/%E5%8E%9F%E8%99%AB/</guid><description>&lt;p>&lt;strong>原虫&lt;/strong>（protozoa）为&lt;strong>单细胞真核生物&lt;/strong>，属原生动物界，分布极为广泛，大多营自由生活。寄生于人体和的动物的原虫有 40 余种，包括致病性原虫（&lt;strong>医学原虫&lt;/strong>）和非致病性原虫。&lt;/p>
-&lt;table class='left-sticky'>&lt;caption>&lt;/caption>
+&lt;div class='table-wrap'>&lt;table class="left-sticky">
 &lt;thead>
 &lt;tr>
 &lt;th align="center">&lt;/th>
@@ -585,7 +585,7 @@ alt="SinusRhythmLabels"/>&lt;/a>&lt;figcaption>
 &lt;td align="center">-&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>外科感染</title><link>https://daisilia.com/series/%E5%A4%96%E7%A7%91%E5%AD%A6/%E5%A4%96%E7%A7%91%E6%84%9F%E6%9F%93/</link><pubDate>Thu, 30 Jun 2022 11:14:17 +0800</pubDate><guid>https://daisilia.com/series/%E5%A4%96%E7%A7%91%E5%AD%A6/%E5%A4%96%E7%A7%91%E6%84%9F%E6%9F%93/</guid><description>&lt;dl>
+&lt;/table>&lt;/div></description></item><item><title>外科感染</title><link>https://daisilia.com/series/%E5%A4%96%E7%A7%91%E5%AD%A6/%E5%A4%96%E7%A7%91%E6%84%9F%E6%9F%93/</link><pubDate>Thu, 30 Jun 2022 11:14:17 +0800</pubDate><guid>https://daisilia.com/series/%E5%A4%96%E7%A7%91%E5%AD%A6/%E5%A4%96%E7%A7%91%E6%84%9F%E6%9F%93/</guid><description>&lt;dl>
 &lt;dt>感染（infection）&lt;/dt>
 &lt;dd>病原体（细菌、真菌等）入侵机体导致的局部或全身炎症反应。&lt;/dd>
 &lt;dt>外科感染（surgical infection）&lt;/dt>

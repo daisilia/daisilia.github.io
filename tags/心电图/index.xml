@@ -4,7 +4,7 @@ alt="SinusRhythmLabels"/>&lt;/a>&lt;figcaption>
 &lt;h4 class="title">SinusRhythmLabels&lt;/h4>&lt;p class="caption">By Created by Agateller (Anthony Atkielski), converted to svg by atom. - SinusRhythmLabels.png, Public Domain, &lt;a href="https://commons.wikimedia.org/w/index.php?curid=1560893" target="_blank">https://commons.wikimedia.org/w/index.php?curid=1560893&lt;/a>&lt;/p>
 &lt;/figcaption>
 &lt;/figure>
-&lt;table>&lt;caption>&lt;h4 class='title'>心电图波段对应的心脏的电活动&lt;/h4>&lt;/caption>
+&lt;div class='table-wrap'>&lt;table>&lt;caption class='title'>心电图波段对应的心脏的电活动&lt;/caption>
 &lt;thead>
 &lt;tr>
 &lt;th>波段&lt;/th>
@@ -41,4 +41,4 @@ alt="SinusRhythmLabels"/>&lt;/a>&lt;figcaption>
 &lt;td>心室开始除极到心室复极完毕&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item></channel></rss>
+&lt;/table>&lt;/div></description></item></channel></rss>
