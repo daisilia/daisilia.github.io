@@ -49,5 +49,5 @@
 
   # [[daisy.message]]
   #   title = "Hello"
-  #   type = " | default | info | warning |error"
+  #   type = "error" # " | default | info | warning |error"
   #   content = "This is the content of site message."
