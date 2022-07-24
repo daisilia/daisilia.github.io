@@ -1,7 +1,7 @@
 ---
 title: "建站踩坑记录"
 date: 2021-10-10T23:30:20+08:00
-lastmod: 2021-12-29T13:49:40+08:00
+lastmod: 2022-07-24T14:42:51+08:00
 draft: false
 ---
 
@@ -88,4 +88,6 @@ jobs:
 ```bash
 git submodule add https://github.com/alohaia/hugo-theme-daisilia.git themes/daisilia
 ```
+
+    git submodule add https://github.com/alohaia/hugo-theme-daisilia.git themes/daisilia
 
