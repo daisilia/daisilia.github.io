@@ -1,7 +1,7 @@
 ---
 title: "WSL 演示 NeoVim 配置安装"
 date: 2022-04-25T23:26:17+08:00
-lastmod: 2022-04-25T23:26:17+08:00
+lastmod: 2022-08-09T19:03:59+08:00
 comments: true
 math: false
 tags:
@@ -205,7 +205,7 @@ Nred fonts：[https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.co
 如果你要用我的配置：
 
 - 建议禁用 hugowiki.vim，这是我自己写的一个自用插件。
-- 我的配置自带一个 packer，插件安装、配置的方法和其他的插件管理器不太一样，详见 [README](https://github.com/alohaia/nvimcfg)。
+- 我的配置自带一个 packer，插件安装、配置的方法和其他的插件管理器不太一样，详见 [README(CN)](https://github.com/alohaia/nvimcfg/blob/lua/README_cn.md)。
     - 命令有：
         - `PackInstall`：安装未安装且 `disable != true` 的插件；
         - `PackUpdate`：安装未安装且 `disable != true` 的插件，并更新所有已安装且 `disable != true` 的插件；
