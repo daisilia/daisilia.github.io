@@ -3,6 +3,8 @@ baseURL = 'https://daisilia.com'
 theme = 'daisilia'
 enableEmoji = true
 hasCJKLanguage = true
+paginate = 10
+paginatePath = 'page'
 
 # language
 languageCode = 'zh-cn'
