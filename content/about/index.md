@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2021-09-16T16:29:41+08:00
-lastmod: 2022-03-01T16:39:47+08:00
+lastmod: 2022-10-23T19:57:09+08:00
 type: about
 ---
 
@@ -38,4 +38,4 @@ type: about
     - Outlook: [liu.qihuan@outlook.com](mailto:liu.qihuan@outlook.com)
     - Gmail: [ericksonorlandop11811@gmail.com](mailto:ericksonorlandop11811@gmail.com)
 - Github [@alohaia](https://github.com/alohaia)
-- BiliBili [@alohaia](https://space.bilibili.com/437854288)
+- Bilibili [@alohaia](https://space.bilibili.com/437854288)
