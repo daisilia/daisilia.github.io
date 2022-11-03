@@ -1,8 +1,7 @@
 ---
 title: "植体周炎预测模型：Logistic 回归分析及列线图模型"
 date: 2022-02-23T12:55:52+08:00
-lastmod: 2022-06-08T18:06:49+08:00
-draft: true
+lastmod: 2022-11-03T10:13:19+08:00
 comments: true
 math: true
 weight: 1
@@ -32,13 +31,7 @@ library(writexl)
 library(lme4)
 library(broom)
 library(tidyverse)
-```
 
-```
-#> Error in library(tidyverse): 不存在叫'tidyverse'这个名字的程辑包
-```
-
-```r
 # 导入数据
 raw_data <- read_excel("data.xlsx")
 ```
@@ -82,14 +75,14 @@ for(name in names.count) {
 
 ```
 #> # A tibble: 6 × 23
-#>   吸烟  种植前空腹血糖 性别  修复体材料 口内植体数目 骨吸收情况 分期  分级
+#>   吸烟  种植前空腹血糖 性别  修复体材料 口内植体数目 骨吸收情况 分期  分级 
 #>   <fct>          <dbl> <fct> <fct>             <dbl> <fct>      <fct> <fct>
-#> 1 0               4.9  1     1                     4 <1/3       3     b
-#> 2 0               4.9  1     1                     4 1/3-1/2    3     b
-#> 3 0               5.98 1     1                     3 <1/3       3     c
-#> 4 0               4.89 2     1                     7 1/3-1/2    3     c
-#> 5 0               4.89 2     1                     7 植体       3     c
-#> 6 0               4.89 2     1                     7 1/3-1/2    4     c
+#> 1 0               4.9  1     1                     4 <1/3       3     b    
+#> 2 0               4.9  1     1                     4 1/3-1/2    3     b    
+#> 3 0               5.98 1     1                     3 <1/3       3     c    
+#> 4 0               4.89 2     1                     7 1/3-1/2    3     c    
+#> 5 0               4.89 2     1                     7 植体       3     c    
+#> 6 0               4.89 2     1                     7 1/3-1/2    4     c    
 #> # … with 15 more variables: 颌位 <fct>, 牙位 <fct>, `角化组织宽度（mm）` <dbl>,
 #> #   `维护周期（月）` <dbl>, 平均复查周期 <dbl>, 种植系统 <fct>, 植体直径 <dbl>,
 #> #   植体长度 <dbl>, 植骨手术明细 <fct>, 用膜明细 <fct>, 缝合方式 <fct>,
@@ -113,26 +106,8 @@ write(smp, file = "sample.txt")
 ```r
 # 随机抽取训练集，其他作为测试集
 smp <- scan(file = "sample.txt")
-```
-
-```
-#> Error in scan(file = "sample.txt"): ignoring SIGPIPE signal
-```
-
-```r
 data.train <- data[smp, ]
-```
-
-```
-#> Error in `[.tbl_df`(data, smp, ): 找不到对象'smp'
-```
-
-```r
 data.test <- data[-smp, ]
-```
-
-```
-#> Error in `[.tbl_df`(data, -smp, ): 找不到对象'smp'
 ```
 
 ### 单因素 Logistic 回归
@@ -156,18 +131,12 @@ for (name in names.all) {
     names.selected <- c(names.selected, name)
   }
 }
-```
-
-```
-#> Error in is.data.frame(data): 找不到对象'data.train'
-```
-
-```r
 names.selected
 ```
 
 ```
-#> NULL
+#> [1] "修复体材料"     "骨吸收情况"     "分级"           "维护周期（月）"
+#> [5] "平均复查周期"
 ```
 
 根据单因素 Logistic 回归的结果，这次抽样选出的危险因素（P \< 0.05）为：“修复体材料”，“骨吸收情况”，“分级”，“维护周期（月）”和“平均复查周期”。
@@ -185,26 +154,40 @@ f.05 <- as.formula(paste(collapse = "~",
      paste(collapse = "", c("`", paste(names.05, collapse = "`+`"), "`"))
      )
 ))
-```
-
-```
-#> Error in str2lang(x): 不能用零长度变数名
-```
-
-```r
 model.05 <- glm(f.05, data = data.train, family = binomial())
-```
-
-```
-#> Error in stats::model.frame(formula = f.05, data = data.train, drop.unused.levels = TRUE): 找不到对象'f.05'
-```
-
-```r
 summary(model.05)
 ```
 
 ```
-#> Error in h(simpleError(msg, call)): 在为'summary'函数选择方法时评估'object'参数出了错: 找不到对象'model.05'
+#> 
+#> Call:
+#> glm(formula = f.05, family = binomial(), data = data.train)
+#> 
+#> Deviance Residuals: 
+#>    Min      1Q  Median      3Q     Max  
+#> -1.511  -0.548  -0.331  -0.189   2.628  
+#> 
+#> Coefficients:
+#>                   Estimate Std. Error z value Pr(>|z|)    
+#> (Intercept)       -5.26989    0.72909   -7.23  4.9e-13 ***
+#> 修复体材料2       -0.07740    0.41125   -0.19  0.85072    
+#> 修复体材料3        0.95364    0.52022    1.83  0.06678 .  
+#> 骨吸收情况>1/2     2.81191    0.63639    4.42  9.9e-06 ***
+#> 骨吸收情况1/3-1/2  0.66028    0.44389    1.49  0.13689    
+#> 骨吸收情况植体     1.12159    0.52408    2.14  0.03235 *  
+#> 分级c              1.08745    0.44902    2.42  0.01544 *  
+#> `维护周期（月）`   0.02031    0.00576    3.52  0.00042 ***
+#> 平均复查周期       0.01974    0.00941    2.10  0.03593 *  
+#> ---
+#> Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+#> 
+#> (Dispersion parameter for binomial family taken to be 1)
+#> 
+#>     Null deviance: 283.80  on 328  degrees of freedom
+#> Residual deviance: 219.58  on 320  degrees of freedom
+#> AIC: 237.6
+#> 
+#> Number of Fisher Scoring iterations: 6
 ```
 
 {{% tab type="success" summary="" details=false open=true %}}
@@ -234,65 +217,31 @@ st.boot <- function(data, indices) {
 
 # 运行 Bootstrap 计算 OR
 results <- boot(data.train, statistic = st.boot, R = 1000)
-```
 
-```
-#> Error in NROW(data): 找不到对象'data.train'
-```
-
-```r
 ci <- matrix(nrow = length(results$t0), ncol = 2)
-```
-
-```
-#> Error in matrix(nrow = length(results$t0), ncol = 2): 找不到对象'results'
-```
-
-```r
 colnames(ci) <- c("2.5%", "97.5%")
-```
-
-```
-#> Error in colnames(ci) <- c("2.5%", "97.5%"): 找不到对象'ci'
-```
-
-```r
 rownames(ci) <- names(results$t0)
-```
-
-```
-#> Error in eval(expr, envir, enclos): 找不到对象'results'
-```
-
-```r
 for (i in seq_len(length(results$t0))) {
   n <- boot.ci(boot.out = results, conf = 0.95, type = "bca", index = i)
   ci[i, ] <- n$bca[c(4, 5)]
 }
-```
 
-```
-#> Error in eval(expr, envir, enclos): 找不到对象'results'
-```
-
-```r
 table2.05 <- data.frame(
   "OR" = results$t0,
   "OR.CI" = ci,
   "P值" = tidy(model.05)$p.value
 )
-```
-
-```
-#> Error in data.frame(OR = results$t0, OR.CI = ci, P值 = tidy(model.05)$p.value): 找不到对象'results'
-```
-
-```r
 head(table2.05)
 ```
 
 ```
-#> Error in h(simpleError(msg, call)): 在为'head'函数选择方法时评估'x'参数出了错: 找不到对象'table2.05'
+#>                          OR OR.CI.2.5. OR.CI.97.5.       P值
+#> (Intercept)        0.005144   0.001077     0.02295 4.901e-13
+#> 修复体材料2        0.925524   0.365046     2.13859 8.507e-01
+#> 修复体材料3        2.595143   0.856581     7.63863 6.678e-02
+#> 骨吸收情况>1/2    16.641733   4.311440    62.61887 9.938e-06
+#> 骨吸收情况1/3-1/2  1.935325   0.718117     4.88898 1.369e-01
+#> 骨吸收情况植体     3.069725   0.762045     8.27774 3.235e-02
 ```
 
 #### `confint` 函数
@@ -304,18 +253,17 @@ table_simple <- data.frame(
   "OR.CI" = exp(confint(model.05)),
   "P值" = tidy(model.05)$p.value
 )
-```
-
-```
-#> Error in coef(model.05): 找不到对象'model.05'
-```
-
-```r
 head(table_simple)
 ```
 
 ```
-#> Error in h(simpleError(msg, call)): 在为'head'函数选择方法时评估'x'参数出了错: 找不到对象'table_simple'
+#>                          OR OR.CI.2.5.. OR.CI.97.5..       P值
+#> (Intercept)        0.005144    0.001112      0.01965 4.901e-13
+#> 修复体材料2        0.925524    0.403301      2.04682 8.507e-01
+#> 修复体材料3        2.595143    0.913069      7.12754 6.678e-02
+#> 骨吸收情况>1/2    16.641733    4.901419     60.79632 9.938e-06
+#> 骨吸收情况1/3-1/2  1.935325    0.811607      4.67088 1.369e-01
+#> 骨吸收情况植体     3.069725    1.063397      8.47141 3.235e-02
 ```
 
 OR 和 P 值与之前的结果相同，但置信区间有少许差别。
@@ -327,44 +275,15 @@ OR 和 P 值与之前的结果相同，但置信区间有少许差别。
 
 ```r
 library(rms)
-```
 
-```
-#> Error in library(rms): 不存在叫'rms'这个名字的程辑包
-```
-
-```r
 # 使用训练集建立列线图预测模型
 fit.train <- lrm(f.05, data.train, x = TRUE, y = TRUE)
-```
-
-```
-#> Error in lrm(f.05, data.train, x = TRUE, y = TRUE): 没有"lrm"这个函数
-```
-
-```r
 ddist.train <- datadist(data.train)
-```
-
-```
-#> Error in datadist(data.train): 没有"datadist"这个函数
-```
-
-```r
 options(datadist = ddist.train)
-```
-
-```
-#> Error in options(datadist = ddist.train): 找不到对象'ddist.train'
-```
-
-```r
 plot(nomogram(fit.train, fun = plogis, lp = FALSE, funlabel = "预测概率"))
 ```
 
-```
-#> Error in nomogram(fit.train, fun = plogis, lp = FALSE, funlabel = "预测概率"): 没有"nomogram"这个函数
-```
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-9-1.png" title="列线图预测模型" alt="列线图预测模型" >}}
 
 ## 数据验证
 
@@ -395,62 +314,38 @@ library(pROC)
 
 ```r
 pre.train <- predict(model.05, data.train, type = c("response"))
-```
-
-```
-#> Error in predict(model.05, data.train, type = c("response")): 找不到对象'model.05'
-```
-
-```r
 p.roc.train <- plot.roc(data.train$植体周炎, pre.train,
                         main = "ROC Curve（训练集）", percent = TRUE,
                         print.auc = TRUE,
                         ci = TRUE, of = "thresholds",
                         thresholds = "best",
                         print.thres = "best")
-```
-
-```
-#> Error in plot.roc(data.train$植体周炎, pre.train, main = "ROC Curve（训练集）", : 找不到对象'data.train'
-```
-
-```r
 ci.auc(p.roc.train)
 ```
 
 ```
-#> Error in ci.auc(p.roc.train): 找不到对象'p.roc.train'
+#> 95% CI: 75.2%-88.2% (DeLong)
 ```
+
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-11-1.png" title="ROC Curve（训练集）" alt="ROC Curve（训练集）" >}}
 
 
 ```r
 pre.test <- predict(model.05, data.test, type = c("response"))
-```
-
-```
-#> Error in predict(model.05, data.test, type = c("response")): 找不到对象'model.05'
-```
-
-```r
 p.roc.test <- plot.roc(data.test$植体周炎, pre.test,
                         main = "ROC Curve（测试集）", percent = TRUE,
                         print.auc = TRUE,
                         ci = TRUE, of = "thresholds",
                         thresholds = "best",
                         print.thres = "best")
-```
-
-```
-#> Error in plot.roc(data.test$植体周炎, pre.test, main = "ROC Curve（测试集）", : 找不到对象'data.test'
-```
-
-```r
 ci.auc(p.roc.test)
 ```
 
 ```
-#> Error in ci.auc(p.roc.test): 找不到对象'p.roc.test'
+#> 95% CI: 60.2%-79.8% (DeLong)
 ```
+
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-12-1.png" title="ROC Curve（测试集）" alt="ROC Curve（测试集）" >}}
 训练集 AUC 达 81.7%（95%CI：75.16%-88.25%），测试集 AUC 为 70.0%（95%CI：60.24%-79.76%），提示列线图模型区分度良好。
 
 ### 列线图校准曲线
@@ -460,65 +355,27 @@ ci.auc(p.roc.test)
 
 ```r
 cal_train <- calibrate(fit.train,  method = "boot", B = 1000)
-```
-
-```
-#> Error in calibrate(fit.train, method = "boot", B = 1000): 没有"calibrate"这个函数
-```
-
-```r
 plot(cal_train,
      xlab = "Nomogram Predicted",
      ylab = "Actual",
      main = "Calibration Curve（训练集）")
 ```
 
-```
-#> Error in plot(cal_train, xlab = "Nomogram Predicted", ylab = "Actual", : 找不到对象'cal_train'
-```
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-13-1.png" title="列线图校准曲线（训练集）" alt="列线图校准曲线（训练集）" >}}
 
 
 ```r
 fit.test <- lrm(f.05, data.test, x = TRUE, y = TRUE)
-```
-
-```
-#> Error in lrm(f.05, data.test, x = TRUE, y = TRUE): 没有"lrm"这个函数
-```
-
-```r
 ddist.test <- datadist(data.test)
-```
-
-```
-#> Error in datadist(data.test): 没有"datadist"这个函数
-```
-
-```r
 options(datadist = ddist.test)
-```
 
-```
-#> Error in options(datadist = ddist.test): 找不到对象'ddist.test'
-```
-
-```r
 cal_test <- calibrate(fit.test,  method = "boot", B = 1000)
-```
-
-```
-#> Error in calibrate(fit.test, method = "boot", B = 1000): 没有"calibrate"这个函数
-```
-
-```r
 plot(cal_test,
      xlab = "Nomogram Predicted",
      ylab = "Actual",
      main = "Calibration Curve（测试集）")
 ```
 
-```
-#> Error in plot(cal_test, xlab = "Nomogram Predicted", ylab = "Actual", : 找不到对象'cal_test'
-```
+{{< figure src="/R-figures/R 与数学建模/植体周炎预测模型/unnamed-chunk-14-1.png" title="列线图校准曲线（测试集）" alt="列线图校准曲线（测试集）" >}}
 
 通过校验曲线可以看出训练集和测试集的预测值与实际值基本一致。

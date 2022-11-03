@@ -1,7 +1,7 @@
 ---
 title: "植体周炎预测模型：Logistic 回归分析及列线图模型"
 date: 2022-02-23T12:55:52+08:00
-lastmod: 2022-06-08T11:20:00+08:00
+lastmod: 2022-11-03T10:13:19+08:00
 comments: true
 math: true
 weight: 1
