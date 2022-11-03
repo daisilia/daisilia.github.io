@@ -3,7 +3,7 @@ title: R 数据科学
 comments: true
 math: true
 date: 2021-09-02T19:12:20+08:00
-lastmod: 2022-05-09T14:26:16+08:00
+lastmod: 2022-11-03T09:44:40+08:00
 tags:
     - R
     - 数学建模
@@ -25,10 +25,6 @@ install.packages("tidyverse")
 
 ```r
 library(tidyverse)
-```
-
-```
-#> Error in library(tidyverse): 不存在叫'tidyverse'这个名字的程辑包
 ```
 
 
@@ -254,6 +250,8 @@ ggplot(data = diamonds) +
 绘图时用来计算新数据的算法称为 `stat`（statistical transformation，**统计变换**）。几何对象（`geom_bar`）使用给出的值及映射关系（`x = cut`）计算出新数据（`count`）及映射（映射到 y 轴）。
 `?geom_bar` 显示 `stat`（统计变换）的默认值为 `"count"`（注意与 `stat_count()` 计算出的 `count` 区别），这说明 `geom_bar()` 默认使用 `stat_count()` 进行统计变换。`stat_count()` 的说明也在这页，在 "Computed variables" 一节中有两个变量 `count` 和 `prop`，它们是 `stat_count()` 会计算出的新数据。
 
-$${\bf f}_{ij} = {\bf r}_{ij} / {\bf r}_i^{\frac12}\\
-{\bf w} = \frac{\sum\limits_{j=1}^k{\bf f}_{ij}{\bf p}_{ij}}{\sum\limits_{j=1}^k{\bf p}_{ij}}\,,\ (k=2, i = 1,2,3)
+$$f_{ij} = r_{ij} / r_i^{\frac12}
+\\,.$$
+
+$$w = \frac{\sum\limits_{j=1}^k f_{ij} p_{ij}}{\sum\limits_{j=1}^k p_{ij}}\\,,\ (k=2, i = 1,2,3)
 \\,.$$

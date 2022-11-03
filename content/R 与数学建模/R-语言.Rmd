@@ -3,7 +3,7 @@ title: R 语言
 comments: true
 mathjax: false
 date: 2021-08-19T18:26:37+08:00
-lastmod: 2022-01-24T18:06:14+08:00
+lastmod: 2022-11-03T09:38:41+08:00
 tags:
     - R
     - 数学建模
