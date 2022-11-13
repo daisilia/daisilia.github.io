@@ -10,6 +10,8 @@
     github = "https://github.com/alohaia"
     email = "liu.qihuan@outlook.com"
     bilibili = "https://space.bilibili.com/437854288"
+  [daisy.related]
+    enable=false
   [daisy.comment]
     enable            = true
     disable_on_local  = true
