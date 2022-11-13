@@ -1,7 +1,7 @@
 ---
-title: "临床流行病学和循证医学"
+title: "临床流行病学与循证医学"
 date: 2022-11-11T18:24:27+08:00
-lastmod: 2022-11-12T18:57:55+08:00
+lastmod: 2022-11-13T16:26:11+08:00
 comments: true
 math: false
 weight: 10
@@ -77,7 +77,7 @@ tags:
 
 ### 评价
 
-评价的内容：
+评价的内容/原则：
 
 1. 研究结果的真实性（validity）
 2. 临床重要性（clinical importance）
