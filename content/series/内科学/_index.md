@@ -1,10 +1,10 @@
 ---
 title: "内科学"
 date: 2022-08-22T10:40:35+08:00
-lastmod: 2022-08-22T13:39:49+08:00
+lastmod: 2022-11-19T14:19:24+08:00
 comments: true
 math: false
-weight: 1
+weight: 0
 tags:
     - 内科学
 ---
