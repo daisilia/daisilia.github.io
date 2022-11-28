@@ -1,7 +1,7 @@
 ---
 title: "心电图"
 date: 2022-05-09T14:02:47+08:00
-lastmod: 2022-11-25T16:48:59+08:00
+lastmod: 2022-11-28T15:52:33+08:00
 comments: true
 math: true
 weight: 1
@@ -191,13 +191,13 @@ $$HR = \frac{1500}{n}
 {{% table title="心肌梗死的定位诊断" caption="心电图上心肌梗死的部位主要根据 Q 波或 QS 波出现于哪些导联而定。" left_sticky=false %}}
 | 出现的导联                           | 心壁     | 冠脉                 |
 |--------------------------------------|----------|----------------------|
-| V<sub>1</sub>～V<sub>3</sub>         | 前间壁   | 左前降支             |
-| V<sub>3</sub>～V<sub>5</sub>         | 前壁     | 左前降支             |
+| V<sub>1</sub>--V<sub>3</sub>         | 前间壁   | 左前降支             |
+| V<sub>3</sub>--V<sub>5</sub>；V<sub>1</sub>--V<sub>4</sub> | 前壁     | 左前降支             |
 | Ⅰ、aVL、V<sub>5</sub>、V<sub>6</sub> | 侧壁     | 左前降支或左回旋支   |
-| V<sub>1</sub>～V<sub>5</sub>         | 广泛前壁 | 左前降支             |
+| V<sub>1</sub>--V<sub>5</sub>         | 广泛前壁 | 左前降支             |
 | Ⅱ、Ⅲ、aVF                            | 下壁     | 右冠状动脉或左回旋支 |
-| V<sub>7</sub>～V<sub>9</sub>         | 正后壁   | 左回旋支或右冠状动脉 |
-| V<sub>3R</sub>～V<sub>4R</sub>       | 右心室   | 右冠状动脉           |
+| V<sub>7</sub>--V<sub>9</sub>         | 正后壁   | 左回旋支或右冠状动脉 |
+| V<sub>3R</sub>--V<sub>4R</sub>       | 右心室   | 右冠状动脉           |
 {{% /table %}}
 
 ### 心肌梗死的分类
