@@ -24,7 +24,7 @@ defaultContentLanguage = 'zh'
 [author]
   fullname = "Qihuan Liu"
   nickname = "Aloha"
-  avatar = "/images/avatar.gif"
+  avatar = "/images/avatar.jpg"
   homepage = "https://daisilia.com"
 
 [taxonomies]

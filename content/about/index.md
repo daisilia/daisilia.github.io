@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2021-09-16T16:29:41+08:00
-lastmod: 2022-10-23T19:57:09+08:00
+lastmod: 2022-12-05T16:32:02+08:00
 type: about
 ---
 
@@ -14,7 +14,7 @@ type: about
 - CMU（~~Carnegie Mellon University~~中国医科大学）在读*医学牲*
 - 编程爱好者、（Neo）Vimmer
 
-{{< figure src="https://github-readme-stats.vercel.app/api?username=alohaia&show_icons=true&theme=tokyonight" fancybox=false title="" caption="" alt="" class="float-right" >}}
+{{< figure src="https://github-readme-stats.vercel.app/api?username=alohaia&show_icons=true&count_private=true&hide_border=true&locale=cn&icon_color=ff6020&title_color=ff6020" fancybox=false title="" caption="" alt="" class="float-right" >}}
 
 **What am I doing?**
 
