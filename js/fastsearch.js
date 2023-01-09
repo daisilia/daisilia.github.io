@@ -18,10 +18,6 @@ function toggleSearch(force) {
     // Means we don't load json unless searches are going to happen; keep user payload small unless needed
     if(firstRun) {
         loadSearch(); // loads our json data and builds fuse.js search index
-        if (loading) {
-            loading.innerHTML = 'Loading completed, type to search.';
-            loading.classList.add('loaded');
-        }
         firstRun = false; // let's never do this again
     }
 
@@ -69,8 +65,11 @@ document.addEventListener('keydown', function(event) {
 // ==========================================
 // execute search as text is changed
 //
+var lastText = ''
 maininput.onkeyup = function() {
-    executeSearch(this.value)
+    if (this.value != lastText) {
+        executeSearch(this.value)
+    }
 }
 
 
@@ -109,6 +108,12 @@ function loadSearch() {
             keys: keys,
         }
         fuse = new Fuse(data, options); // build the index from the json file
+
+        // change loading mask
+        if (loading) {
+            loading.innerHTML = 'Loading completed, type to search.';
+            loading.classList.add('loaded');
+        }
     })
 }
 
