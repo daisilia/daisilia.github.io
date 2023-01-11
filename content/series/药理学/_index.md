@@ -1,7 +1,7 @@
 ---
 title: 药理学
 date: 2021-09-03 10:15:33
-lastmod: 2023-01-10T17:23:14+08:00
+lastmod: 2023-01-11T16:48:17+08:00
 draft: false
 comments: true
 math: false
@@ -21,11 +21,10 @@ categories:
 
 {{% quote work="" author="Darsetllung des Paracelsus" %}}
 万物皆毒，无显著界定。药物与毒物之间的唯一区别就是剂量。
-
 All things are poison, and nothing is without poison; the dosage alone makes it so a thing is not a poison.[^1]
+{{% /quote %}}
 
 [^1]: https://en.wikipedia.org/wiki/The_dose_makes_the_poison
-{{% /quote %}}
 
 根据将药理学分为两个分支：
 - <a href="{{% relref "药物代谢动力学" %}}">**药物代谢动力学**/**药动学**</a>（pharmacokinetics）：研究药物在机体的影响下所发生的变化与作用规律。
