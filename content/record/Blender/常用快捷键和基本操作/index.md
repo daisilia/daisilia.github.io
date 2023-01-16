@@ -1,7 +1,7 @@
 ---
 title: "常用快捷键和基本操作"
 date: 2023-01-11T17:27:26+08:00
-lastmod: 2023-01-13T19:22:41+08:00
+lastmod: 2023-01-16T22:42:39+08:00
 comments: true
 math: false
 tags:
@@ -60,7 +60,7 @@ tags:
 - <kbd>Shift</kbd>+<kbd>D</kbd>：非关联复制
 - <kbd>O</kbd>：软选择
 - <kbd>M</kbd>：合并顶点
-- <kbd>Ctrl</kbd>+<kbd>J</kbd>：合并对象
+- <kbd>Ctrl</kbd>+<kbd>J</kbd>：合并对象；【编辑模式】两点之间连线
 - <kbd>L</kbd>：选择相邻元素
 - <kbd>P</kbd>：分离对象
 - <kbd>Shift</kbd>+<kbd>R</kbd>：重复操作
@@ -154,4 +154,52 @@ tags:
 
 {{% tab type="warning" summary="" details=true open=true %}}
 按下 <kbd>E</kbd> 之后，按 <kbd>RightClick</kbd> 只会取消移动操作，而没有取消挤出选取操作。所以不应该用 <kbd>RightClick</kbd> 取消，而应在完成操作后再用 <kbd>Ctrl</kbd>+<kbd>Z</kbd> 取消操作。
+{{% /tab %}}
+
+#### 内插面
+
+- <kbd>I</kbd>：内插面，横向改变新面的大小。内插面模式下左上角会消失提示，左下角有选项菜单。
+    - <kbd>Ctrl</kbd>：纵向改变内插面位置
+    - <kbd>O</kbd>：开关外插
+    - <kbd>I</kbd>：开关分离（及“各面”选项）
+    - <kbd>B</kbd>：开关边界边（需关闭分离）
+    - “并排边”：
+
+#### 倒角
+
+- <kbd>Ctrl</kbd>+<kbd>B</kbd>：**边线倒角**
+    - 移动鼠标：改变倒角宽度
+    - 滚动滚轮/<kbd>S</kbd>：改变倒角分段数
+    - <kbd>P</kbd>：控制形状/轮廓
+    - 输入数值：控制宽度
+
+{{% tab type="default" summary="倒角的宽度类型" details=false %}}
+
+{{< figure src="宽度类型.png" width="250px" title="宽度类型" caption="" attribution="" alt="宽度类型" class="float-right" id="fig_宽度类型" >}}
+
+[官方文档](https://docs.blender.org/manual/zh-hans/3.4/modeling/modifiers/generate/bevel.html)这样解释倒角宽度类型：
+
+宽度类型：声明如何使用*宽度*以决定倒角总量。
+
+偏移量
+: 原始边到倒角面的垂直距离。
+
+宽度
+: 坡口形成的两条新边的距离（如果有多个段，则坡口两侧的边）。
+
+深度
+: 该值是从原始边到倒角面的垂直距离。
+
+百分比
+: 新边线滑移距离相对邻边长度的百分比。
+
+绝对
+: 沿着与斜面边缘相邻的边缘的确切距离。当连接到斜面边缘的非斜面边缘与直角以外的角度相遇时，可以看到与*偏移*的差异。
+{.grid}
+
+{{< figure src="偏移量与绝对值.png" title="偏移量与绝对值" attribution="" alt="偏移量与绝对值" id="fig_偏移量与绝对值"
+    caption="*偏移量*与*绝对*之间的区别如图所示。图中为一个梯形体的顶视图，梯形体顶面为一个边长为 2 m 的正方形。右上角使用*偏移量*，左下角使用*绝对*，两者*宽度*均为 1 m。"
+    class="right" img-width="200px"
+>}}
+
 {{% /tab %}}

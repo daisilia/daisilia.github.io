@@ -3,7 +3,7 @@ title: 病原生物学
 comments: true
 mathjax: false
 date: 2021-03-16 15:49:12
-lastmod: 2022-07-11T17:39:30+08:00
+lastmod: 2023-01-16T20:38:44+08:00
 tags:
     - 病原生物学
 categories:
@@ -11,6 +11,8 @@ categories:
 ---
 
 **病原生物学**（pathogen biology）是研究病原生物的{{% hzl "@" %}}*生物学规律*、@*致病机制*@_及@*其和宿主之间相互作用*{{% /hzl %}}的学科。
+
+<!--separator-->
 
 生物 | 生命体 | 有机体（organism）
 : 能进行新陈代谢、能生长、具有应激性、能生殖发育、遗传变异，能在一定程度上适应和影响环境。
@@ -47,6 +49,7 @@ categories:
 <mark>寄生</mark>（parasitism）
 : 两种生物在一起生活，一方受益，另一方受害。
 : 受益的一方称为*寄生物*（parasite），受害的一方称为*宿主*（host）。
+{.grid}
 
 ### 寄生虫生活史及宿主类型
 
@@ -77,6 +80,7 @@ categories:
 
 转续宿主（paratenic host，transport host）
 : 某些寄生虫侵入的<ins>非正常宿主</ins>，寄生虫不能继续发育，可长期处于幼虫阶段，当有机会进入正常宿主体内时，才可发育为成虫。
+{.grid}
 
 {{% tab type="success" summary="寄生虫对宿主的作用" %}}
 1. **夺取营养**：营养不良、贫血；
