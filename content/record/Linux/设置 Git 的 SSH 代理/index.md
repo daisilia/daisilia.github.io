@@ -1,7 +1,7 @@
 ---
 title: "设置 Git 的 SSH 代理"
 date: 2022-12-06T19:39:17+08:00
-lastmod: 2022-12-06T20:34:56+08:00
+lastmod: 2023-01-20T00:23:53+08:00
 comments: true
 math: false
 tags:
@@ -9,7 +9,7 @@ tags:
     - 代理
 ---
 
-不同于 http/https 代理，为 git 设置代理不需要修改 `~/.gitconfig` 文件或使用 `git config` 命令。
+不同于 http/https 代理，为 git 设置代理不需要修改 `~/.gitconfig` 文件或使用 `git config` 命令，或者说，这样设置没有效果。
 
 <!--more-->
 
