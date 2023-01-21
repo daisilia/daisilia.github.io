@@ -1,7 +1,7 @@
 ---
 title: 药理学
 date: 2021-09-03 10:15:33
-lastmod: 2023-01-11T16:48:17+08:00
+lastmod: 2023-01-21T19:59:44+08:00
 draft: false
 comments: true
 math: false
@@ -19,12 +19,10 @@ categories:
 药物（Drug）
 : 可以<ins>改变或查明</ins>机体生理功能及病理状态，可用于<ins>预防、诊断和治疗</ins>疾病，但对用药者（相对）无害的物质。
 
-{{% quote work="" author="Darsetllung des Paracelsus" %}}
+{{% quote work="" author="Darsetllung des Paracelsus" cite="https://en.wikipedia.org/wiki/The_dose_makes_the_poison" %}}
 万物皆毒，无显著界定。药物与毒物之间的唯一区别就是剂量。
-All things are poison, and nothing is without poison; the dosage alone makes it so a thing is not a poison.[^1]
+All things are poison, and nothing is without poison; the dosage alone makes it so a thing is not a poison.
 {{% /quote %}}
-
-[^1]: https://en.wikipedia.org/wiki/The_dose_makes_the_poison
 
 根据将药理学分为两个分支：
 - <a href="{{% relref "药物代谢动力学" %}}">**药物代谢动力学**/**药动学**</a>（pharmacokinetics）：研究药物在机体的影响下所发生的变化与作用规律。
