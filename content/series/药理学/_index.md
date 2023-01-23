@@ -1,7 +1,7 @@
 ---
 title: 药理学
 date: 2021-09-03 10:15:33
-lastmod: 2023-01-21T19:59:44+08:00
+lastmod: 2023-01-23T17:18:37+08:00
 draft: false
 comments: true
 math: false
@@ -20,7 +20,7 @@ categories:
 : 可以<ins>改变或查明</ins>机体生理功能及病理状态，可用于<ins>预防、诊断和治疗</ins>疾病，但对用药者（相对）无害的物质。
 
 {{% quote work="" author="Darsetllung des Paracelsus" cite="https://en.wikipedia.org/wiki/The_dose_makes_the_poison" %}}
-万物皆毒，无显著界定。药物与毒物之间的唯一区别就是剂量。
+万物皆毒，无显著界定；药物与毒物之间的唯一区别就是剂量。
 All things are poison, and nothing is without poison; the dosage alone makes it so a thing is not a poison.
 {{% /quote %}}
 
@@ -33,18 +33,18 @@ All things are poison, and nothing is without poison; the dosage alone makes it 
 <!-- 2. 药动学过程——作用部位和有效部位 -->
 <!-- 3. 药效学过程——药理学效应 -->
 <!-- 4. 治疗学过程——治疗效果和不良反应 -->
-<!--  -->
+
 <!-- ## 药理学实验方法 -->
-<!--  -->
+
 <!-- ### 实验药理学和实验治疗学 -->
-<!--  -->
+
 <!-- 1. 实验药理学：健康动物或正常的细胞、组织、器官 -->
 <!-- 2. 实验治疗学：病态动物或异常的细胞、组织、器官（病理模型） -->
-<!--  -->
+
 <!-- 实验对象为<ins>动物</ins>——健康或病态动物或组织等。 -->
-<!--  -->
+
 <!-- ### 临床药理学研究 -->
-<!--  -->
+
 <!-- 1. 药物不良反应监测 -->
 <!-- 2. 临床合理用药和药物评价 -->
 <!-- 3. 新药临床试验（药效学、药动学） -->
@@ -52,9 +52,9 @@ All things are poison, and nothing is without poison; the dosage alone makes it 
 <!--     2. 二期临床试验：100 对病人以上 -->
 <!--     3. 三期临床试验：300 对病人以上，完成后新药即可上市 -->
 <!--     4. 四期临床试验：2000 对病人以上 -->
-<!--  -->
+
 <!-- 实验对象为<ins>人体</ins>——健康志愿者或病人。 -->
-<!--  -->
+
 <!-- 新药（new drug） -->
 <!-- : 化学结构、药品组分和药理作用不同于现有药品的药物。 -->
 <!-- : 《药品管理法实施条例》做出权威界定：”未曾在中国境内上市销售的药品就是新药“。 -->
