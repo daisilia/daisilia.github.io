@@ -26,7 +26,7 @@
   [daisy.quote]
     enable = 'jinrishici' # or 'rainbow'
   [daisy.music]
-    enable      = true
+    enable      = false
     server      = 'netease'
     type        = 'playlist'
     id          = '6822976600'
