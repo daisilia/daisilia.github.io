@@ -1,7 +1,7 @@
 ---
 title: "设置 Git 的 SSH 代理"
 date: 2022-12-06T19:39:17+08:00
-lastmod: 2023-01-20T00:23:53+08:00
+lastmod: 2023-02-08T18:32:23+08:00
 comments: true
 math: false
 tags:
@@ -27,4 +27,4 @@ Host github.com
 
 需要注意的是，代理协议为 `http`，没有启用的需启用 `http` 代理。以 Linux 下的 Qv2ray 为例，进入 “首选项” \> “入站设置”，按下图设置。
 
-{{< figure src="http_代理设置.png" title="http 代理设置" caption="" attribution="" alt="http 代理设置" class="" >}}
+{{< figure src="http_代理设置.png" title="http 代理设置" caption="" alt="http 代理设置" class="" >}}

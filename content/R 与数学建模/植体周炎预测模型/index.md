@@ -1,7 +1,7 @@
 ---
 title: "植体周炎预测模型：Logistic 回归分析及列线图模型"
 date: 2022-02-23T12:55:52+08:00
-lastmod: 2022-11-03T10:13:19+08:00
+lastmod: 2023-02-08T18:32:23+08:00
 comments: true
 math: true
 weight: 1
@@ -291,7 +291,7 @@ plot(nomogram(fit.train, fun = plogis, lp = FALSE, funlabel = "预测概率"))
 
 ### ROC 曲线
 
-{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" alt="Sensitivity_and_specificity.svg" caption="由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href='https://creativecommons.org/licenses/by-sa/4.0' title='Creative Commons Attribution-Share Alike 4.0'>CC BY-SA 4.0</a>，<a href='https://commons.wikimedia.org/w/index.php?curid=65826093'>链接</a>" class="float-right" id="fig_Sensitivity_and_specificity.svg" >}}
+{{< figure src="Sensitivity_and_specificity.svg" title="特异度和敏感度" alt="Sensitivity_and_specificity.svg" attr="由FeanDoe - Modified version from Walber&#039;s Precision and Recall &lt;a class=&quot;external free&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&quot;&gt;https://commons.wikimedia.org/wiki/File:Precisionrecall.svg&lt;/a&gt;，<a href='https://creativecommons.org/licenses/by-sa/4.0' title='Creative Commons Attribution-Share Alike 4.0'>CC BY-SA 4.0</a>，<a href='https://commons.wikimedia.org/w/index.php?curid=65826093'>链接</a>" class="float-right" id="fig_Sensitivity_and_specificity.svg" >}}
 
 ROC 曲线**全称受试者工作特征曲线** （receiver operating characteristic curve），又称为**感受性曲线**（sensitivity curve），曲线上每个点反映着对同一信号刺激的感受性。
 ROC 曲线的横轴为**特异度**（specificity），即**真阴性率**（true negative rate，TNR）；纵轴为**敏感度**（sensitivity），即**真阳性率**（true postive rate，TPR）、**召回率**（Recall）。

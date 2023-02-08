@@ -1,7 +1,7 @@
 ---
 title: "常用快捷键和基本操作"
 date: 2023-01-11T17:27:26+08:00
-lastmod: 2023-01-16T22:42:39+08:00
+lastmod: 2023-02-08T18:32:23+08:00
 comments: true
 math: false
 tags:
@@ -175,7 +175,7 @@ tags:
 
 {{% tab type="default" summary="倒角的宽度类型" details=false %}}
 
-{{< figure src="宽度类型.png" width="250px" title="宽度类型" caption="" attribution="" alt="宽度类型" class="float-right" id="fig_宽度类型" >}}
+{{< figure src="宽度类型.png" width="250px" title="宽度类型" caption="" alt="宽度类型" class="float-right" id="fig_宽度类型" >}}
 
 [官方文档](https://docs.blender.org/manual/zh-hans/3.4/modeling/modifiers/generate/bevel.html)这样解释倒角宽度类型：
 
@@ -197,7 +197,7 @@ tags:
 : 沿着与斜面边缘相邻的边缘的确切距离。当连接到斜面边缘的非斜面边缘与直角以外的角度相遇时，可以看到与*偏移*的差异。
 {.grid}
 
-{{< figure src="偏移量与绝对值.png" title="偏移量与绝对值" attribution="" alt="偏移量与绝对值" id="fig_偏移量与绝对值"
+{{< figure src="偏移量与绝对值.png" title="偏移量与绝对值" alt="偏移量与绝对值" id="fig_偏移量与绝对值"
     caption="*偏移量*与*绝对*之间的区别如图所示。图中为一个梯形体的顶视图，梯形体顶面为一个边长为 2 m 的正方形。右上角使用*偏移量*，左下角使用*绝对*，两者*宽度*均为 1 m。"
     class="right" img-width="200px"
 >}}

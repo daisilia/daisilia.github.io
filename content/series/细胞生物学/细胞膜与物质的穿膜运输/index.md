@@ -1,7 +1,7 @@
 ---
 title: "细胞膜与物质的穿膜运输"
 date: 2021-10-23T14:54:04+08:00
-lastmod: 2023-01-23T21:51:48+08:00
+lastmod: 2023-02-08T18:32:23+08:00
 draft: false
 comments: true
 math: false
@@ -41,7 +41,7 @@ Voltage-gated sodium channels have two gates: an activating gate that is voltage
 电压门控钠通道有两个门：电压依赖性激活门和时间依赖性失活门。激活门的打开允许钠流入和细胞去极化。无论激活门的状态如何，关闭失活门都会停止钠的流动。
 {{% /quote %}}
 
-{{< figure src="钠离子通道四过程.svg" img-width="50%" title="钠离子通道四过程" caption="" attribution="" alt="钠离子通道四过程" class="" id="fig_钠离子通道四过程" >}}
+{{< figure src="钠离子通道四过程.svg" img-width="50%" title="钠离子通道四过程" caption="" alt="钠离子通道四过程" class="" id="fig_钠离子通道四过程" >}}
 {{% /tab %}}
 
 ##### 离子通道的类型

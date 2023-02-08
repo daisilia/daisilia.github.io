@@ -1,7 +1,7 @@
 ---
 title: "系统评价与 Meta-分析"
 date: 2022-11-13T10:16:02+08:00
-lastmod: 2022-11-13T22:15:26+08:00
+lastmod: 2023-02-08T18:32:23+08:00
 comments: true
 math: false
 weight: 70
@@ -163,7 +163,7 @@ Cochrane 偏倚风险评估工具，包括 7 个方面：{{% hzl %}}随机分配
 - 随机效应模型：一般用 D-L 法
 
 {{% tab type="success" summary="森林图" details=false id="tab_森林图" %}}
-{{< figure src="Pre-term_corticosteroid_data.svg" attribution="By Thomas Lumley, User:HLHJ - Source code modified by User:HLHJ from the data and plotting scripts supplied with the GPL-2-licensed software package rmeta (part of the R statistical environment). See rmeta documentation., GPLv2, https://commons.wikimedia.org/w/index.php?curid=63508931" title="森林图" caption="" alt="森林图" class="" id="fig_森林图" >}}
+{{< figure src="Pre-term_corticosteroid_data.svg" attr="By Thomas Lumley, User:HLHJ - Source code modified by User:HLHJ from the data and plotting scripts supplied with the GPL-2-licensed software package rmeta (part of the R statistical environment). See rmeta documentation., GPLv2, https://commons.wikimedia.org/w/index.php?curid=63508931" title="森林图" caption="" alt="森林图" class="" id="fig_森林图" >}}
 
 - 当效应量 OR、RR、RD、均数差、加权均数差的 95%CI 菱形/横线与森林图的无效线（横坐标为 1 或 0）**相交**时，可认为试验因素*无效*。
 - 对于*不利结局*：当菱形/横线完全在无效线
