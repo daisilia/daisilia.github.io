@@ -1,7 +1,7 @@
 ---
 title: "使用 Kroki 绘图"
 date: 2023-02-08T19:51:46+08:00
-lastmod: 2023-02-09T00:58:14+08:00
+lastmod: 2023-02-09T02:18:33+08:00
 comments: true
 math: false
 ---
@@ -71,7 +71,7 @@ math: false
 
 ↓↓↓
 
-{{< kroki type="actdiag" >}}
+{{< kroki type="actdiag" title="ActDiag" caption="**This** is *caption*." attr="Hugo discourse - Is there some pre-packaged way to use Kroki from markdown?">}}
 {
   write -> convert -> image
 
@@ -86,18 +86,49 @@ math: false
 }
 {{< /kroki >}}
 
+```xxx
+{{%/* kroki type="plantuml" id="TEST" %}}
+actor Bob
+actor "This is [[http://plantuml.com/sequence Alice]] actor" as Alice
+Bob -> Alice [[http://plantuml.com/start]] : hello
+note left [[http://plantuml.com/start]]
+  a note with a link
+end note
+Alice -> Bob : hello with [[http://plantuml.com/start{Tooltip for message} some link]]
+note right [[http://plantuml.com/start]] : another note
+note left of Bob
+You can use [[http://plantuml.com/start links in notes]] also.
+end note
+{{% /kroki */%}}
+
+```
+
+↓↓↓
+
+{{% kroki type="plantuml" id="TEST" %}}
+actor Bob
+actor "This is [[http://plantuml.com/sequence Alice]] actor" as Alice
+Bob -> Alice [[http://plantuml.com/start]] : hello
+note left [[http://plantuml.com/start]]
+  a note with a link
+end note
+Alice -> Bob : hello with [[http://plantuml.com/start{Tooltip for message} some link]]
+note right [[http://plantuml.com/start]] : another note
+note left of Bob
+You can use [[http://plantuml.com/start links in notes]] also.
+end note
+{{% /kroki %}}
+
 ## 可用选项
 
 ### 代码块
 
-传递给代码块的属性（Attributions）会全部原封不动地加在 `figure` 标签上，除了以下几个需要注意：
+传递给代码块的属性（Attributions），如 `id`、`style` 会全部原封不动地加在 `figure` 标签上，除了以下几个需要注意：
 
 - `type` 会被忽略
 - `width` 会被放进 `style` 属性中
 - `class` 的开头会加上 `diagram-kroki diagram-kroki-{type}`，`{type}` 即 `type` 属性
-- `alt` 和 `img-width`：
-    - `alt` 会加在 `img` 标签上
-    - `img-width` 会作为 `width` 属性加在 `img` 标签上
+- `img-width` 会作为 `width` 加在 `embed` 标签的 `style` 属性中
 
 ### Shortcode
 
@@ -107,11 +138,9 @@ math: false
     - `id`、`class`：`id`、`class` 属性
     - `width`：加在 `style` 属性中
     - ~~`style`~~：不支持，需要修改样式可使用 `class` 选项 + 修改 CSS 文件的方式。
-- `img` 标签：
-    - `alt`：`alt` 属性，默认为 `kroki diagram`
-    - `img-width`：作为 `width` 属性加在 `img` 标签上
+- `embed` 标签：
+    - `img-width`：作为 `width` 加在 `embed` 标签的 `style` 属性中上
 - 其他：
-    - `fancybox`：是否使用 fancybox
     - `title`：图像标题
     - `caption`：标题下的注释文字
     - `attr`：引用
