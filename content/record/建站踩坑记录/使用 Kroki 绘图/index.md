@@ -1,7 +1,7 @@
 ---
 title: "使用 Kroki 绘图"
 date: 2023-02-08T19:51:46+08:00
-lastmod: 2023-02-09T02:18:33+08:00
+lastmod: 2023-02-09T23:11:48+08:00
 comments: true
 math: false
 ---
@@ -9,8 +9,6 @@ math: false
 在提交 [063c974](https://github.com/alohaia/hugo-theme-daisilia/commit/063c974720900f1033b222469a4c757d7889ca62) 中，添加了利用 Kroki 绘图的功能。
 
 方法参考自 [Hugo discourse - Is there some pre-packaged way to use Kroki from markdown?](https://discourse.gohugo.io/t/is-there-some-pre-packaged-way-to-use-kroki-from-markdown/36924/3)。
-
-在线编辑器：[Niolesk: Edit **diagrams** from **textual** descriptions! A kroki interface.](https://niolesk.top/)。
 
 <!--more-->
 
@@ -86,11 +84,30 @@ math: false
 }
 {{< /kroki >}}
 
+
 ```xxx
-{{%/* kroki type="plantuml" id="TEST" %}}
+{{%/* kroki type="excalidraw" file="hand-written.excalidraw.json" %}}{{% /kroki */%}}
+```
+
+↓↓↓
+
+{{% kroki type="excalidraw" file="hand-written.excalidraw.json" %}}{{% /kroki %}}
+
+```xxx
+{{%/* kroki type="vega" file="bar-chart.vega.json" %}}{{% /kroki */%}}
+```
+
+↓↓↓
+
+{{% kroki type="vega" file="bar-chart.vega.json" %}}{{% /kroki %}}
+
+在图表中插入超链接：
+
+```xxx
+{{%/* kroki type="plantuml" %}}
 actor Bob
 actor "This is [[http://plantuml.com/sequence Alice]] actor" as Alice
-Bob -> Alice [[http://plantuml.com/start]] : hello
+Bob -> Alice [[{{< relref "/about" >}}]] : hello
 note left [[http://plantuml.com/start]]
   a note with a link
 end note
@@ -100,15 +117,12 @@ note left of Bob
 You can use [[http://plantuml.com/start links in notes]] also.
 end note
 {{% /kroki */%}}
-
 ```
 
-↓↓↓
-
-{{% kroki type="plantuml" id="TEST" %}}
+{{% kroki type="plantuml" %}}
 actor Bob
 actor "This is [[http://plantuml.com/sequence Alice]] actor" as Alice
-Bob -> Alice [[http://plantuml.com/start]] : hello
+Bob -> Alice [[{{< relref "/about" >}}]] : hello
 note left [[http://plantuml.com/start]]
   a note with a link
 end note
@@ -117,6 +131,20 @@ note right [[http://plantuml.com/start]] : another note
 note left of Bob
 You can use [[http://plantuml.com/start links in notes]] also.
 end note
+{{% /kroki %}}
+
+```xxx
+{{%/* kroki type="plantuml" id="TEST" %}}
+@startmindmap
+* [[{{< relref "/about" >}} about]]
+@endmindmap
+{{% /kroki */%}}
+```
+
+{{% kroki type="plantuml" id="TEST" %}}
+@startmindmap
+* [[{{< relref "/about" >}} about]]
+@endmindmap
 {{% /kroki %}}
 
 ## 可用选项
@@ -144,3 +172,27 @@ end note
     - `title`：图像标题
     - `caption`：标题下的注释文字
     - `attr`：引用
+
+## 工具和语法参考
+
+工具：
+
+- 在线编辑器：[Niolesk: Edit **diagrams** from **textual** descriptions! A kroki interface.](https://niolesk.top/)。
+- 示例：[https://kroki.io/examples.html](https://kroki.io/examples.html)
+
+语法参考：
+
+- Diagram
+    - Block diagram（`blockdiag`），Sequence diagram（`seqdiag`）、Activity diagram（`actdiag`）、Network diagram（`nwdiag`）、Packet diagram（`packetdiag`）、Rack diagram（`rackdiag`）：[blockdiag 1.0 documentation](http://blockdiag.com/en/index.html#table-of-contents)
+    - Mermaid（`mermaid`）：[Diagram Syntax | Mermaid](https://mermaid.js.org/intro/n00b-syntaxReference.html)
+    - Nomnoml（`nomnoml`）：[nomnoml](https://stage.nomnoml.com/)，[nomnoml(legacy)](https://nomnoml.com/)
+    - PlantUML（`plantuml`）：[PlantUML](https://plantuml.com/zh/)
+    - Pikchr（`pikchr`）：[Pikchr User Manual](https://pikchr.org/home/doc/trunk/doc/userman.md)
+    - Vega（`vega`）：[Vega – A Visualization Grammar](https://vega.github.io/vega/)
+    - Vega-Lite（`vegalite`）：[Vega-Lite – A Grammar of Interactive Graphics](https://vega.github.io/vega-lite/)
+    - Third-party
+        - Excalidraw - Hand-drawn like diagrams（`excalidraw`）：[Excalidraw](https://excalidraw.com/)
+    - Entity Relationship Diagram（`erd`）
+    - Object Oriented Graph（`graphviz`）
+- Visualization：
+    - Conjugate prior relationships（`ditta`）：[stathissideris/ditaa](https://github.com/stathissideris/ditaa#syntax)，[ditta](https://ditaa.sourceforge.net/)
