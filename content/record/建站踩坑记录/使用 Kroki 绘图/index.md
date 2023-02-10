@@ -1,16 +1,18 @@
 ---
 title: "使用 Kroki 绘图"
 date: 2023-02-08T19:51:46+08:00
-lastmod: 2023-02-09T23:11:48+08:00
+lastmod: 2023-02-10T21:25:21+08:00
 comments: true
 math: false
 ---
 
-在提交 [063c974](https://github.com/alohaia/hugo-theme-daisilia/commit/063c974720900f1033b222469a4c757d7889ca62) 中，添加了利用 Kroki 绘图的功能。
+在提交 [3d3c075](https://github.com/alohaia/hugo-theme-daisilia/commit/3d5c0756970b3986ab3f0f8810921f8458592f8b) 中，添加了利用 Kroki 绘图的功能。
 
-方法参考自 [Hugo discourse - Is there some pre-packaged way to use Kroki from markdown?](https://discourse.gohugo.io/t/is-there-some-pre-packaged-way-to-use-kroki-from-markdown/36924/3)。
+方法参考自 [Hugo discourse - Is there some pre-packaged way to use Kroki from markdown?](https://discourse.gohugo.io/t/is-there-some-pre-packaged-way-to-use-kroki-from-markdown/36924/5)。
 
 <!--more-->
+
+{{< figure src="kroki_cheatsheet_20210515_v1.1_EN.png" title="Kroki Cheatsheet" attr="Cheat sheet v.1.1 · 2021/05/15 · created by Tomo Masuda // @tomo-makes https://kroki.io/ · https://github.com/yuzutech/kroki" alt="Kroki Cheatsheet" id="fig_kroki_cheatsheet_20210515_v1.1_en" >}}
 
 ## 代码块和 Shortcode
 
