@@ -1,7 +1,7 @@
 ---
 title: "使用 Kroki 绘图"
 date: 2023-02-08T19:51:46+08:00
-lastmod: 2023-02-12T20:00:45+08:00
+lastmod: 2023-02-12T20:56:53+08:00
 comments: true
 math: false
 ---
@@ -19,7 +19,7 @@ math: false
 提交 [063c974](https://github.com/alohaia/hugo-theme-daisilia/commit/063c974720900f1033b222469a4c757d7889ca62) 中的关键文件有两个——`layouts/_default/_markup/render-codeblock-kroki.html` 和 `layouts/shortcodes/kroki.html`，前者将 `kroki` 代码块替换为 SVG 图像，后者则使用 Hugo 的 shortcode 功能。
 
 ````
-```kroki {type=actdiag}
+```kroki {#TEST1 type=actdiag title="Title" caption="caption" attr="Attributions"}
 {
   write -> convert -> image
 
@@ -53,7 +53,7 @@ math: false
 ```
 
 ```xxx
-{{</* kroki type="actdiag" >}}
+{{</* kroki type="actdiag" title="ActDiag" caption="**This** is *caption*." attr="Hugo discourse - Is there some pre-packaged way to use Kroki from markdown?">}}
 {
   write -> convert -> image
 
@@ -88,12 +88,12 @@ math: false
 
 
 ```xxx
-{{%/* kroki type="excalidraw" file="hand-written.excalidraw.json" %}}{{% /kroki */%}}
+{{</* kroki type="excalidraw" file="hand-written.excalidraw.json" >}}{{< /kroki */>}}
 ```
 
 ↓↓↓
 
-{{% kroki type="excalidraw" file="hand-written.excalidraw.json" %}}{{% /kroki %}}
+{{< kroki type="excalidraw" file="hand-written.excalidraw.json" >}}{{< /kroki >}}
 
 ```xxx
 {{%/* kroki type="vega" file="bar-chart.vega.json" %}}{{% /kroki */%}}
@@ -101,7 +101,7 @@ math: false
 
 ↓↓↓
 
-{{% kroki type="vega" file="bar-chart.vega.json" %}}{{% /kroki %}}
+{{< kroki type="vega" file="bar-chart.vega.json" >}}{{< /kroki >}}
 
 在图表中插入超链接：
 
