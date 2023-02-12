@@ -1,7 +1,7 @@
 ---
 title: "使用 Kroki 绘图"
 date: 2023-02-08T19:51:46+08:00
-lastmod: 2023-02-10T21:25:21+08:00
+lastmod: 2023-02-12T20:00:45+08:00
 comments: true
 math: false
 ---
@@ -37,7 +37,7 @@ math: false
 
 ↓↓↓
 
-```kroki {type=actdiag}
+```kroki {#TEST1 type=actdiag title="Title" caption="caption" attr="Attributions"}
 {
   write -> convert -> image
 
@@ -159,6 +159,7 @@ end note
 - `width` 会被放进 `style` 属性中
 - `class` 的开头会加上 `diagram-kroki diagram-kroki-{type}`，`{type}` 即 `type` 属性
 - `img-width` 会作为 `width` 加在 `embed` 标签的 `style` 属性中
+- `attr`、`title`、`caption`：同 [Shortcode](#shortcode)
 
 ### Shortcode
 
