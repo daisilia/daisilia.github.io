@@ -1,7 +1,7 @@
 ---
-title: "两种 Shortcode 记号在渲染顺序上的差异"
+title: "两种 Shortcode 记号的差异"
 date: 2023-02-11T17:56:20+08:00
-lastmod: 2023-02-12T22:13:29+08:00
+lastmod: 2023-02-19T19:47:48+08:00
 comments: true
 math: false
 ---
@@ -45,3 +45,4 @@ So, beyond the very simple examples, if you want to preserve HTML as … HTML wi
 {{% quote author="" work="" style="" cite="https://gohugo.io/content-management/shortcodes/#shortcodes-with-markdown" %}}
 In Hugo 0.55 we changed how the `%` delimiter works. Shortcodes using the `%` as the outer-most delimiter will now be fully rendered when sent to the content renderer. They can be part of the generated table of contents, footnotes, etc.
 {{% /quote %}}
+
