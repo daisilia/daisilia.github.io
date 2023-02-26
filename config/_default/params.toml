@@ -1,6 +1,6 @@
 [daisy]
-  subtitle     = '不乱于心，不困于情。不畏将来，不念过往。'
-  description  = '欲望要简单，待人要真诚，扮好每一个角色，与自己和解'
+  subtitle     = '不乱于心，不困于情；不畏将来，不念过往'
+  description  = '欲望要简单，待人要真诚，扮好每一个角色'
   mes_404      = 'Over the Mountains, mountains...'
   scroll_title = true
   [daisy.copyright]
