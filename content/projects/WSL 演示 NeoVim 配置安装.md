@@ -1,7 +1,7 @@
 ---
 title: "WSL 演示 NeoVim 配置安装"
 date: 2022-04-25T23:26:17+08:00
-lastmod: 2022-08-09T19:03:59+08:00
+lastmod: 2023-04-02T23:32:51+08:00
 comments: true
 math: false
 tags:
@@ -32,7 +32,7 @@ Win+R，输入 optionalfeatures.exe，回车，勾选“适用于 Linux 的 Wind
 
 #### 2. 开始安装 ArchWSL
 
-> 不一定要是 ArchWSL，只不过我比较习惯用 ArchLinux。
+不一定要是 ArchWSL，只不过我比较习惯用 ArchLinux。
 
 - README：[https://github.com/yuk7/ArchWSL/blob/master/i18n/README_zh-cn.md](https://github.com/yuk7/ArchWSL/blob/master/i18n/README_zh-cn.md)
 - ArchWSL documentation - 如何安装：[https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/How-to-Setup/](https://wsldl-pg.github.io/ArchW-docs/locale/zh-CN/How-to-Setup/)
@@ -45,11 +45,12 @@ wsl -l -v        # 查看 ArchWSL 信息
 wsl              # 进入 ArchWSL
 ```
 
-> 备用命令：
-> ```powershell
-> wsl --set-version arch 2 # 设置 ArchWSL 的 WSL 版本
-> wsl --set-default arch   # 设置 WSL 的默认发行版为 ArchWSL
-> ```
+{{< tab type="default" summary="备用命令" details=true open=true >}}
+```powershell
+wsl --set-version arch 2 # 设置 ArchWSL 的 WSL 版本
+wsl --set-default arch   # 设置 WSL 的默认发行版为 ArchWSL
+```
+{{< /tab >}}
 
 进入了 ArchWSL：
 
@@ -81,15 +82,15 @@ Arch.exe config --default-user {username}            # 设置默认用户
 
 ### 配置 git
 
-> 先进入 WSL。
-
 ```bash
 sudo pacman -S git  # 安装 Git
 ```
 
 #### 配置 Git 代理
 
-> 懂得都懂，不懂的话请[跳过这一步](#安装-neovim-及配置)。
+{{< tab type="default" summary="" >}}
+懂的都懂，不懂的话请[跳过这一步](#安装-neovim-及配置)。
+{{< /tab >}}
 
 创建可执行文件：
 
@@ -103,7 +104,7 @@ chmod +x ~/.local/bin/pxy
 将以下内容写入 `~/.local/bin/pxy`（或其他 `PATH` 目录下的文件）：
 
 ```bash
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 hostip=$(cat /etc/resolv.conf | grep nameserver | awk '{ print $2 }')
 protocol='socks5'     # 这里可以换成其他协议
 port=10808            # 这里可以换成其他端口号
@@ -114,7 +115,7 @@ set_proxy(){
     export http_proxy="${PROXY_HTTP}"
     export HTTP_PROXY="${PROXY_HTTP}"
     export https_proxy="${PROXY_HTTP}"
-    export HTTPS_proxy="${PROXY_HTTP}"
+    export HTTPS_PROXY="${PROXY_HTTP}"
 
     git config --global http.proxy ${PROXY_HTTP}
     git config --global https.proxy ${PROXY_HTTP}
@@ -166,7 +167,9 @@ win32yank：[https://github.com/equalsraf/win32yank](https://github.com/equalsra
 sudo mv {/path/to/win32yank.exe} /usr/bin
 ```
 
-> 路径一般为 `/mnt/c/Desktop/win32yank.exe`，我的路径不是这个是因为我把桌面移到了 E 盘。
+{{< tab type="default" summary="" >}}
+路径一般为 `/mnt/c/Desktop/win32yank.exe`，视频中我的路径不是这个是因为我把桌面移到了 E 盘。
+{{< /tab >}}
 
 安装 Python 的 neovim 模块：
 
@@ -204,7 +207,7 @@ Nred fonts：[https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.co
 
 如果你要用我的配置：
 
-- 建议禁用 hugowiki.vim，这是我自己写的一个自用插件。
+- 建议禁用 hugowiki.vim，安装其他的 Markdown 插件，这是我自己写的一个自用插件。
 - 我的配置自带一个 packer，插件安装、配置的方法和其他的插件管理器不太一样，详见 [README(CN)](https://github.com/alohaia/nvimcfg/blob/lua/README_cn.md)。
     - 命令有：
         - `PackInstall`：安装未安装且 `disable != true` 的插件；

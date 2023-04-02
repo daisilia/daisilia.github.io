@@ -77,3 +77,9 @@ defaultContentLanguage = 'zh'
 
 # for RMarkdown
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+
+[caches]
+ [caches.getresource]
+    dir = ':resourceDir/_gen'
+    # maxAge = "72h"
+    maxAge = -1

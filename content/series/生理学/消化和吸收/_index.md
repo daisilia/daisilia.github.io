@@ -1,7 +1,7 @@
 ---
 title: "消化和吸收"
 date: 2023-03-19T13:02:44+08:00
-lastmod: 2023-03-19T23:13:46+08:00
+lastmod: 2023-03-25T22:12:28+08:00
 comments: true
 math: false
 weight: 60
