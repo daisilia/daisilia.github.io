@@ -1,7 +1,7 @@
 ---
 title: "WSL 演示 NeoVim 配置安装"
 date: 2022-04-25T23:26:17+08:00
-lastmod: 2023-04-02T23:32:51+08:00
+lastmod: 2023-04-09T01:30:09+08:00
 comments: true
 math: false
 tags:
