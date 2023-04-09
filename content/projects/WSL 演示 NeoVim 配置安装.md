@@ -1,7 +1,7 @@
 ---
 title: "WSL 演示 NeoVim 配置安装"
 date: 2022-04-25T23:26:17+08:00
-lastmod: 2023-04-09T01:30:09+08:00
+lastmod: 2023-04-09T19:54:32+08:00
 comments: true
 math: false
 tags:
@@ -9,7 +9,7 @@ tags:
     - WSL
 ---
 
-B 站视频[【WSL + NeoVim】WSL 演示 NeoVim 配置安装](https://www.bilibili.com/video/BV1C44y1g7Sg/)，中的演示文稿。
+B 站视频[【WSL + NeoVim】WSL 演示 NeoVim 配置安装](https://www.bilibili.com/video/BV1C44y1g7Sg/)中的演示文稿。
 
 <!--more-->
 
@@ -199,7 +199,7 @@ sudo R
 
 #### 安装字体
 
-Nred fonts：[https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads)
+Nerd fonts：[https://www.nerdfonts.com/font-downloads](https://www.nerdfonts.com/font-downloads)
 
 设置 Windows terminal 字体：设置 => Arch => 外观 => 字体 => 选择 "JetBrainsMono Nerd Font" => 保存。
 
