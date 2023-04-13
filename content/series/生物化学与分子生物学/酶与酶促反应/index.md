@@ -1,7 +1,7 @@
 ---
-title: "酶"
+title: "酶与酶促反应"
 date: 2023-04-07T20:10:24+08:00
-lastmod: 2023-04-07T21:10:18+08:00
+lastmod: 2023-04-13T21:26:25+08:00
 comments: true
 math: true
 weight: 30
