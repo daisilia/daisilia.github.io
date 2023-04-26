@@ -1,7 +1,7 @@
 ---
 title: "常用快捷键和基本操作"
 date: 2023-01-11T17:27:26+08:00
-lastmod: 2023-02-08T18:32:23+08:00
+lastmod: 2023-04-26T17:05:42+08:00
 comments: true
 math: false
 tags:
@@ -199,7 +199,7 @@ tags:
 
 {{< figure src="偏移量与绝对值.png" title="偏移量与绝对值" alt="偏移量与绝对值" id="fig_偏移量与绝对值"
     caption="*偏移量*与*绝对*之间的区别如图所示。图中为一个梯形体的顶视图，梯形体顶面为一个边长为 2 m 的正方形。右上角使用*偏移量*，左下角使用*绝对*，两者*宽度*均为 1 m。"
-    class="right" img-width="200px"
+    class="left" img-width="200px"
 >}}
 
 {{% /tab %}}
