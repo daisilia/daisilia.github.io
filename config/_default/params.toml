@@ -6,10 +6,6 @@
   [daisy.copyright]
     startyear = 2020
     creativecommons = "by-nc-sa"
-  [daisy.social]
-    github = "https://github.com/alohaia"
-    email = "liu.qihuan@outlook.com"
-    bilibili = "https://space.bilibili.com/437854288"
   [daisy.related]
     enable=false
   [daisy.comment]
@@ -23,10 +19,25 @@
     reactions_enabled = "1"
     emit_metadata     = "1"
     theme             = "light"
+  [daisy.pjax]
+    enable = true
+  [daisy.fancybox]
+    enable = true
+  [daisy.exturl]
+    enable = false
+  # sidebar
+  [daisy.social]
+    github = "https://github.com/alohaia"
+    email = "liu.qihuan@outlook.com"
+    bilibili = "https://space.bilibili.com/437854288"
+  [daisy.links]
+    "**郭老师**的网络自留地" = "https://www.sdiopid.top"
+  [daisy.calendar]
+    enable = true
   [daisy.quote]
     enable = 'jinrishici' # or 'rainbow'
   [daisy.music]
-    enable      = true
+    enable      = false
     server      = 'netease'
     type        = 'playlist'
     id          = '6822976600'
@@ -40,15 +51,7 @@
     loop        = 'all'
     preload     = 'auto'
     mutex       = true
-  [daisy.pjax]
-    enable = true
-  [daisy.fancybox]
-    enable = true
-  [daisy.exturl]
-    enable = false
-  [daisy.links]
-    "**郭老师**的网络自留地" = "https://www.sdiopid.top"
-
+  # messages
   # [[daisy.message]]
   #   title = "Hello"
   #   type = "error" # " | default | info | warning |error"
