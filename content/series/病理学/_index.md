@@ -1,7 +1,7 @@
 ---
 title: 病理学
 date: 2021-08-31 09:16:40
-lastmod: 2023-04-30T16:52:04+08:00
+lastmod: 2023-05-07T22:07:50+08:00
 comments: true
 math: false
 tags:
@@ -10,7 +10,7 @@ categories:
     - 病理学
 ---
 
-Empty...
+“临床病例联系”见内科学，不是病理学重点。
 
 <!--more-->
 
