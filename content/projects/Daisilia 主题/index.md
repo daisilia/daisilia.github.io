@@ -1,7 +1,7 @@
 ---
 title: "Daisilia 主题"
 date: 2023-05-21T14:49:37+08:00
-lastmod: 2023-05-21T17:00:16+08:00
+lastmod: 2023-05-21T18:14:10+08:00
 comments: true
 math: false
 ---
@@ -18,8 +18,6 @@ math: false
 
 - `id`：AV 或 BV 号
 - `page`：视频分 P，如 P2 就是 `page=2`
-
-### 卡片 {alias="card"}
 
 ### 图片 {alias="figure"}
 
@@ -75,21 +73,21 @@ id="fig_linus-torvalds" */>}}
 
 见[使用 Kroki 绘图]({{< relref "使用 kroki 绘图" >}})。
 
-### note
-
 ### 引用 {alias="quote"}
 
 ```html
 {{</* quote author="宋代·杨万里" work="《夏夜追凉》" align="center" link="https://so.gushiwen.cn/shiwenv_2d549d9a09f4.aspx" */>}}
 竹深树密虫鸣处，时有微凉不是风。
 {{</* /quote */>}}
+
+> 简单引用
 ```
 
 {{< quote author="宋代·杨万里" work="《夏夜追凉》" align="center" link="https://so.gushiwen.cn/shiwenv_2d549d9a09f4.aspx" >}}
 竹深树密虫鸣处，时有微凉不是风。
 {{< /quote >}}
 
-### sa
+> 简单引用
 
 ### Section 标题 {alias="section"}
 
@@ -166,3 +164,5 @@ id="fig_linus-torvalds" */>}}
 |     所致疾病     |        肠阿米巴病<br/>肠外阿米巴病        |                            脂肪痢                            |   泌尿生殖道炎症（滴虫性阴道炎）   |                  疟疾                 |       先天性、获得性弓形虫病       | 机会致病：腹泻 |
 |     检查方法     | 碘液染色法（查包囊）<br/>脓血便直接涂片法 | 碘液染色法（查包囊）<br/>水样便直接涂片法<br/>十二指肠引流法 |     泌尿生殖道分泌物直接涂片法     |            外周血涂片染色法           |                  -                 |        -       |
 {{< /table >}}
+
+
