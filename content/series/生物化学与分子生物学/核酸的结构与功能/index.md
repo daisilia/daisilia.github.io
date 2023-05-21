@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-{{< table title="三种 RNA 对比" caption="" left-sticky=false id="tbl_三种-rna-对比" >}}
+{{< table title="三种 RNA 对比" id="tbl_三种-rna-对比" >}}
 |          | mRNA                   | tRNA                               | rRNA           |
 |:--------:|------------------------|------------------------------------|----------------|
 |   分布   | 细胞核、胞质           | 胞质                               | 胞质           |

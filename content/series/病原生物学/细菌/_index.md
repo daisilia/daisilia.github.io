@@ -3,12 +3,12 @@ title: 细菌
 comments: true
 mathjax: false
 date: 2021-03-21 13:22:41
+lastmod: 2023-05-21T18:06:05+08:00
 weight: 10
 tags:
     - 病原生物学
 categories:
     - 病原生物学
-lastmod: 2021-11-27T17:37:49+08:00
 ---
 
 **细菌**（bacterium）是一类有细胞壁，以无性二分裂方式进行繁殖的原核细胞型微生物，大小为微米（μm）级。
@@ -37,7 +37,7 @@ lastmod: 2021-11-27T17:37:49+08:00
 使用*革兰氏染色法*可将细菌分为**革兰氏阳性菌**（G<sup>+</sup>）和**革兰氏阴性菌**（G<sup>-</sup>）两大类。
 两者染色不同的原因在于*细胞壁组成不同*，除了共有的肽聚糖成分之外，各自还有*特殊组分*。
 
-{{< figure src="Gram-stain.jpg" title="Gram-stain" caption="" alt="Gram-stain" class="" >}}
+{{< figure src="Gram-stain.jpg" title="Gram-stain" alt="Gram-stain" >}}
 
 {{% tab type="default" summary="革兰氏阳性菌和革兰氏阴性菌" details=false open=true %}}
 

@@ -13,7 +13,7 @@ tags:
 
 {{< figure src="SinusRhythmLabels.svg" title="SinusRhythmLabels" caption="By Created by Agateller (Anthony Atkielski), converted to svg by atom. - SinusRhythmLabels.png, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1560893" alt="SinusRhythmLabels" class="" id="fig_sinusrhythmlabels" >}}
 
-{{% table title="心电图波段对应的心脏的电活动" caption="" left-sticky=false %}}
+{{% table title="心电图波段对应的心脏的电活动" %}}
 | 波段                           | 电活动                                 |
 |--------------------------------|----------------------------------------|
 | P 波                           | 心房除极                               |
@@ -99,7 +99,7 @@ $$HR = \frac{1500}{n}
 8. QT 间期：长短与心律快慢有关，心律越快，QT 间期越短。不同导联之间存在一定差异，正常人最大可达 50 ms。
 9. U 波：T 波后 0.02～0.04s 出现的振幅很小的波，V<sub>3、4</sub> 较明显。<ins>低血钾</ins>可见 U 波升高。
 
-{{% table title="QRS 波群正常心电图" caption="" left-sticky=false id="tbl_qrs-波群正常心电图" %}}
+{{% table title="QRS 波群正常心电图" id="tbl_qrs-波群正常心电图" %}}
 |                  | 波形 | 主波方向 | 振幅                                                 |
 |------------------|------|----------|------------------------------------------------------|
 | V<sub>1、2</sub> | rS   |          | R ≤ 1.0 mV                                           |

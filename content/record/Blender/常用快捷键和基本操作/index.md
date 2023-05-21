@@ -1,7 +1,7 @@
 ---
 title: "常用快捷键和基本操作"
 date: 2023-01-11T17:27:26+08:00
-lastmod: 2023-04-26T17:05:42+08:00
+lastmod: 2023-05-21T18:02:21+08:00
 comments: true
 math: false
 tags:
@@ -175,7 +175,7 @@ tags:
 
 {{% tab type="default" summary="倒角的宽度类型" details=false %}}
 
-{{< figure src="宽度类型.png" width="250px" title="宽度类型" caption="" alt="宽度类型" class="float-right" id="fig_宽度类型" >}}
+{{< figure src="宽度类型.png" width="250px" title="宽度类型" alt="宽度类型" class="float-right" id="fig_宽度类型" >}}
 
 [官方文档](https://docs.blender.org/manual/zh-hans/3.4/modeling/modifiers/generate/bevel.html)这样解释倒角宽度类型：
 

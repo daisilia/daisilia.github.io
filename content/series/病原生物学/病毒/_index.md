@@ -3,7 +3,7 @@ title: 病毒
 comments: true
 mathjax: false
 date: 2021-03-21 13:18:29
-lastmod: 2023-03-19T13:45:42+08:00
+lastmod: 2023-05-21T18:06:04+08:00
 weight: 80
 tags:
     - 病原生物学
@@ -244,7 +244,7 @@ categories:
 
 重组发生在<ins>分子内</ins>，而重配发生在<ins>分子间</ins>（每个节段视为一个分子），见下图[^重组和重配]：
 
-{{< figure src="重组和重配.png" title="重组和重配" caption="" alt="重组和重配" class="" >}}
+{{< figure src="重组和重配.png" title="重组和重配" alt="重组和重配" >}}
 
 [^重组和重配]: Simon-Loriere, E., Holmes, E. Why do RNA viruses recombine?. Nat Rev Microbiol 9, 617–626 (2011). https://doi.org/10.1038/nrmicro2614
 
