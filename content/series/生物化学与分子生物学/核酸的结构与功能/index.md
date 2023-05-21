@@ -1,7 +1,7 @@
 ---
 title: "核酸的结构与功能"
 date: 2023-04-07T19:31:47+08:00
-lastmod: 2023-04-13T21:26:26+08:00
+lastmod: 2023-05-21T17:03:02+08:00
 comments: true
 math: false
 weight: 20
@@ -12,7 +12,7 @@ tags:
 
 <!--more-->
 
-{{< table title="三种 RNA 对比" caption="" left_sticky=false id="tbl_三种-rna-对比" >}}
+{{< table title="三种 RNA 对比" caption="" left-sticky=false id="tbl_三种-rna-对比" >}}
 |          | mRNA                   | tRNA                               | rRNA           |
 |:--------:|------------------------|------------------------------------|----------------|
 |   分布   | 细胞核、胞质           | 胞质                               | 胞质           |

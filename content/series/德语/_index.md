@@ -1,7 +1,7 @@
 ---
 title: "德语"
 date: 2022-01-27T15:47:51+08:00
-lastmod: 2022-01-27T15:59:03+08:00
+lastmod: 2023-05-21T17:03:00+08:00
 draft: true
 comments: true
 math: false
@@ -11,7 +11,7 @@ tags:
     - 语言
 ---
 
-{{% table title="德语语法基本体系" caption="" left_sticky=false id="tbl_德语语法基本体系"  %}}
+{{% table title="德语语法基本体系" caption="" left-sticky=false id="tbl_德语语法基本体系"  %}}
 | 名词         | 动词       | 句型 | 形容词和副词 | 介词         | 其他     |
 |--------------|------------|------|--------------|--------------|----------|
 | 三个性别     | 动词现在时 | 提问 | 从属形容词   | 需 Akkusativ | 数字     |

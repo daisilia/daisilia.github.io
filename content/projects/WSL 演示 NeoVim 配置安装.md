@@ -1,7 +1,7 @@
 ---
 title: "WSL 演示 NeoVim 配置安装"
 date: 2022-04-25T23:26:17+08:00
-lastmod: 2023-04-09T19:54:32+08:00
+lastmod: 2023-05-21T15:09:47+08:00
 comments: true
 math: false
 tags:
@@ -13,7 +13,7 @@ B 站视频[【WSL + NeoVim】WSL 演示 NeoVim 配置安装](https://www.bilibi
 
 <!--more-->
 
-{{< bilibili bvid="1C44y1g7Sg" >}}
+{{< bilibili bv="BV1C44y1g7Sg" >}}
 
 ## 准备工作
 

@@ -1,7 +1,7 @@
 ---
 title: "心电图"
 date: 2022-05-09T14:02:47+08:00
-lastmod: 2022-11-28T15:52:33+08:00
+lastmod: 2023-05-21T17:03:01+08:00
 comments: true
 math: true
 weight: 1
@@ -13,7 +13,7 @@ tags:
 
 {{< figure src="SinusRhythmLabels.svg" title="SinusRhythmLabels" caption="By Created by Agateller (Anthony Atkielski), converted to svg by atom. - SinusRhythmLabels.png, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1560893" alt="SinusRhythmLabels" class="" id="fig_sinusrhythmlabels" >}}
 
-{{% table title="心电图波段对应的心脏的电活动" caption="" left_sticky=false %}}
+{{% table title="心电图波段对应的心脏的电活动" caption="" left-sticky=false %}}
 | 波段                           | 电活动                                 |
 |--------------------------------|----------------------------------------|
 | P 波                           | 心房除极                               |
@@ -99,7 +99,7 @@ $$HR = \frac{1500}{n}
 8. QT 间期：长短与心律快慢有关，心律越快，QT 间期越短。不同导联之间存在一定差异，正常人最大可达 50 ms。
 9. U 波：T 波后 0.02～0.04s 出现的振幅很小的波，V<sub>3、4</sub> 较明显。<ins>低血钾</ins>可见 U 波升高。
 
-{{% table title="QRS 波群正常心电图" caption="" left_sticky=false id="tbl_qrs-波群正常心电图" %}}
+{{% table title="QRS 波群正常心电图" caption="" left-sticky=false id="tbl_qrs-波群正常心电图" %}}
 |                  | 波形 | 主波方向 | 振幅                                                 |
 |------------------|------|----------|------------------------------------------------------|
 | V<sub>1、2</sub> | rS   |          | R ≤ 1.0 mV                                           |
@@ -188,7 +188,7 @@ $$HR = \frac{1500}{n}
 3. **近期**（**亚急性期**）：梗死后数周至数月。此期以<ins>坏死及缺血图形</ins>为主要特征。抬高的 ST 段恢复至基线，T 波逐渐变浅，Q 波持续存在。
 4. **陈旧期**（**愈合期**）：急性心肌梗死数月之后，ST 段和 T 波恢复正常或 T 波持续倒置、低平，趋于恒定不变，残留下<ins>坏死 Q 波</ins>。
 
-{{% table title="心肌梗死的定位诊断" caption="心电图上心肌梗死的部位主要根据 Q 波或 QS 波出现于哪些导联而定。" left_sticky=false %}}
+{{% table title="心肌梗死的定位诊断" caption="心电图上心肌梗死的部位主要根据 Q 波或 QS 波出现于哪些导联而定。" left-sticky=false %}}
 | 出现的导联                           | 心壁     | 冠脉                 |
 |--------------------------------------|----------|----------------------|
 | V<sub>1</sub>--V<sub>3</sub>         | 前间壁   | 左前降支             |
