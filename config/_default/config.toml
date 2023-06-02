@@ -76,7 +76,7 @@ defaultContentLanguage = 'zh'
   home = ["HTML", "RSS", "JSON"]
 
 # for RMarkdown
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+ignoreFiles = ['\.Rmd$', '\.Rmarkdown$', '_cache$']
 
 [caches]
  [caches.getresource]
