@@ -75,11 +75,15 @@ defaultContentLanguage = 'zh'
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-# for RMarkdown
-ignoreFiles = ['\.Rmd$', '\.Rmarkdown$', '_cache$']
-
 [caches]
- [caches.getresource]
+  [caches.getresource]
     dir = ':resourceDir/_gen'
     # maxAge = "72h"
     maxAge = -1
+
+[module]
+[[module.mounts]]
+  source = 'content'
+  target = 'content'
+  # exclude Rmarkdown files
+  excludeFiles = ['**.Rmd', '**.Rmarkdown']
