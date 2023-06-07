@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Diary on Aloha's Blog</title><link>https://daisilia.com/diary/</link><description>Recent content in Diary on Aloha's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Tue, 01 Mar 2022 16:47:42 +0800</lastBuildDate><atom:link href="https://daisilia.com/diary/index.xml" rel="self" type="application/rss+xml"/><item><title>2023-06-04</title><link>https://daisilia.com/diary/2023/06/04/</link><pubDate>Sun, 04 Jun 2023 09:09:37 +0800</pubDate><guid>https://daisilia.com/diary/2023/06/04/</guid><description>本文不作任何担保。 欢迎任何意见，可通过评论直接提出。 角膜组织分层组织学上从前向后分为：上皮细胞层、前弹力层（Bowman membrane）、</description></item><item><title>2023-06-02</title><link>https://daisilia.com/diary/2023/06/02/</link><pubDate>Sat, 03 Jun 2023 10:56:39 +0800</pubDate><guid>https://daisilia.com/diary/2023/06/02/</guid><description>Hugo 网站列表收录https://jmooring.github.io/hugo-sites/ To appear on this list, the site’s home page must contain a meta element with the name attribute set to</description></item><item><title>进入学习状态的小技巧</title><link>https://daisilia.com/diary/2023/06/01/</link><pubDate>Sat, 03 Jun 2023 10:54:47 +0800</pubDate><guid>https://daisilia.com/diary/2023/06/01/</guid><description>一般来说，开始学习是一件需要意志力的事。想象一下，让你停下手中的娱乐或其他感兴趣的事，去打开课本开始学习，这实在是让人感觉缺乏动力。但如果把</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Diary on Aloha's Blog</title><link>https://daisilia.com/diary/</link><description>Recent content in Diary on Aloha's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh</language><lastBuildDate>Tue, 01 Mar 2022 16:47:42 +0800</lastBuildDate><atom:link href="https://daisilia.com/diary/index.xml" rel="self" type="application/rss+xml"/><item><title>2023-06-07</title><link>https://daisilia.com/diary/2023/06/07/</link><pubDate>Wed, 07 Jun 2023 08:04:37 +0800</pubDate><guid>https://daisilia.com/diary/2023/06/07/</guid><description>&lt;div class="highlight">&lt;div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>选择题：
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>1.(2 3) 概述
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>4.(1 2) **放射药物**
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>5. 放射保护：了解基本原则
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>8. 了解
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>**重点**：
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>9.1 大题：药物、临床应用（尤其是癫痫）
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>10.1 大题：显像剂，显像原理，不同平面可以看到的心肌壁，联合负荷试验如何进行，心肌缺血、心肌梗死、心肌炎的诊断
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>11.(1 2 3)：临床应用、显像剂、异常影像的诊断
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>12.(1 2 3 4 6) 大题：临床应用、显像剂、异常影像的诊断
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>13：显像剂、显像原理、V/Q 血流匹配？ → 栓塞、COPD
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>14.(1 2 3 4)：1、4 选择题，2、3 大题
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>16.(1 2 3)：常见**肾图**类型、肾动态的临床应用、介入肾显像（大题）
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>17.(1)：
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - 大题：临床应用、假阴性/假阳性诊断
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - 选择题：常用显像剂
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>22. 适应症、禁忌症、副反应（大题）
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>23.(1 2) 了解 (4) 大题
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>2023-06-04</title><link>https://daisilia.com/diary/2023/06/04/</link><pubDate>Sun, 04 Jun 2023 09:09:37 +0800</pubDate><guid>https://daisilia.com/diary/2023/06/04/</guid><description>本文不作任何担保。 欢迎任何意见，可通过评论直接提出。 角膜组织分层组织学上从前向后分为：上皮细胞层、前弹力层（Bowman membrane）、</description></item><item><title>2023-06-02</title><link>https://daisilia.com/diary/2023/06/02/</link><pubDate>Sat, 03 Jun 2023 10:56:39 +0800</pubDate><guid>https://daisilia.com/diary/2023/06/02/</guid><description>Hugo 网站列表收录https://jmooring.github.io/hugo-sites/ To appear on this list, the site’s home page must contain a meta element with the name attribute set to</description></item><item><title>进入学习状态的小技巧</title><link>https://daisilia.com/diary/2023/06/01/</link><pubDate>Sat, 03 Jun 2023 10:54:47 +0800</pubDate><guid>https://daisilia.com/diary/2023/06/01/</guid><description>一般来说，开始学习是一件需要意志力的事。想象一下，让你停下手中的娱乐或其他感兴趣的事，去打开课本开始学习，这实在是让人感觉缺乏动力。但如果把</description></item></channel></rss>
