@@ -1,7 +1,7 @@
 ---
 title: 2023-06-07
 date: 2023-06-07T08:04:37+08:00
-lastmod: 2023-06-08T11:12:34+08:00
+lastmod: 2023-06-08T11:15:39+08:00
 comments: true
 math: true
 ---
@@ -26,10 +26,6 @@ math: true
     23.(1 2) 了解 (4) 大题
 
 <!--more-->
-
-{{< tab type="default" summary="" details=true open=true >}}
-各器官系统常用显像剂：
-{{< /tab >}}
 
 ## 核医学基础
 
