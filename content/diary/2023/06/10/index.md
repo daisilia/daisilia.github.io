@@ -1,8 +1,7 @@
 ---
 title: 2023-06-10
 date: 2023-06-10T12:48:01+08:00
-lastmod: 2023-06-10T15:11:24+08:00
-draft: true
+lastmod: 2023-06-10T15:11:59+08:00
 comments: true
 math: true
 ---

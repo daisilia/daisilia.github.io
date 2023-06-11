@@ -1,7 +1,7 @@
 ---
 title: "使用 Kroki 绘图"
 date: 2023-02-08T19:51:46+08:00
-lastmod: 2023-02-12T20:56:53+08:00
+lastmod: 2023-06-10T19:08:00+08:00
 comments: true
 math: false
 ---
@@ -138,14 +138,44 @@ end note
 ```xxx
 {{%/* kroki type="plantuml" id="TEST" %}}
 @startmindmap
-* [[{{< relref "/about" >}} about]]
++ OS
+++ Ubuntu
++++ Linux Mint
++++ Kubuntu
++++ Lubuntu
++++ KDE Neon
++++ [[{{< relref "/about" >}} about]]
+++ LMDE
+++ SolydXK
+++ SteamOS
+++ Raspbian
+-- Windows 95
+-- Windows 98
+-- Windows NT
+--- Windows 8
+--- Windows 10
 @endmindmap
 {{% /kroki */%}}
 ```
 
 {{% kroki type="plantuml" id="TEST" %}}
 @startmindmap
-* [[{{< relref "/about" >}} about]]
++ OS
+++ Ubuntu
++++ Linux Mint
++++ Kubuntu
++++ Lubuntu
++++ KDE Neon
++++ [[{{< relref "/about" >}} about]]
+++ LMDE
+++ SolydXK
+++ SteamOS
+++ Raspbian
+-- Windows 95
+-- Windows 98
+-- Windows NT
+--- Windows 8
+--- Windows 10
 @endmindmap
 {{% /kroki %}}
 
