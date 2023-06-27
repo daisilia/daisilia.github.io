@@ -3,9 +3,6 @@
   description  = '欲望要简单，待人要真诚，扮好每个角色'
   mes_404      = 'Over the Mountains, mountains...'
   scroll_title = true
-  [daisy.copyright]
-    startyear = 2020
-    creativecommons = "by-nc-sa"
   [daisy.related]
     enable=false
   [daisy.comment]
@@ -56,3 +53,11 @@
   #   title = "Hello"
   #   type = "error" # " | default | info | warning |error"
   #   content = "This is the content of site message."
+  [daisy.footer]
+    enable = ["poweredby", "copyright", "creativecommons"]
+  [daisy.footer.copyright]
+    startyear = 2020
+    icon = '''<span class="heart animate__heartBeat animate__infinite"><i class="fas fa-heart"></i></span>'''
+  [daisy.footer.creativecommons]
+    scheme = "by-nc-sa"
+    lang = "deed.zh"
