@@ -1,7 +1,7 @@
 ---
 title: "Daisilia 主题"
 date: 2023-05-21T14:49:37+08:00
-lastmod: 2023-06-29T12:14:15+08:00
+lastmod: 2023-06-29T12:31:46+08:00
 comments: true
 math: false
 ---
@@ -200,3 +200,7 @@ id="fig_linus-torvalds" */>}}
 {{< tab type="default" summary="" details=true >}}
 所有消息都将会在最后一个消息被关闭后 14 天再次出现。
 {{< /tab >}}
+
+### 搜索
+
+快捷键 <kbd>Ctrl</kbd>+<kbd>/</kbd> 或点击搜索按钮开始搜索，支持模糊搜索和[高级搜索](https://fusejs.io/examples.html#extended-search)。
