@@ -1,7 +1,7 @@
 ---
 title: "N 胆碱受体阻断药"
 date: 2021-11-07T15:31:09+08:00
-lastmod: 2023-05-21T17:03:01+08:00
+lastmod: 2023-06-29T09:51:37+08:00
 draft: false
 comments: true
 math: false
@@ -94,6 +94,6 @@ categories:
 
 <ins>麻醉辅助药</ins>，用于腹腔手术、气管插管等。
 
-##### 禁忌症 {.item}
+##### 禁忌证 {.item}
 
 重症肌无力、支气管哮喘、严重[感染性休克]({{< relref "/series/病理生理学/休克" >}})。

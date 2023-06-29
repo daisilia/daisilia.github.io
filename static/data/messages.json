@@ -1,0 +1,12 @@
+{
+    "id 01": {
+        "title": "Hello",
+        "type": "error",
+        "content": "This is the content of site message. expire_days: 14"
+    },
+    "02": {
+        "title": "Hello",
+        "type": "error",
+        "content": "This is the content of site message. expire_days: 7"
+    }
+}

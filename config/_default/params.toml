@@ -48,11 +48,6 @@
     loop        = 'all'
     preload     = 'auto'
     mutex       = true
-  # messages
-  # [[daisy.message]]
-  #   title = "Hello"
-  #   type = "error" # " | default | info | warning |error"
-  #   content = "This is the content of site message."
   [daisy.footer]
     enable = ["poweredby", "copyright", "creativecommons"]
   [daisy.footer.copyright]
