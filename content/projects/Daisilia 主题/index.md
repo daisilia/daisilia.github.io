@@ -1,7 +1,7 @@
 ---
 title: "Daisilia 主题"
 date: 2023-05-21T14:49:37+08:00
-lastmod: 2023-05-21T18:14:10+08:00
+lastmod: 2023-06-29T12:14:15+08:00
 comments: true
 math: false
 ---
@@ -148,6 +148,12 @@ id="fig_linus-torvalds" */>}}
 
 ### 表格 {alias="table"}
 
+```xxx title url link_text
+{{</* table title="表格标题" caption="说明文字" attr="引用说明" */>}}
+... Markdown 表格内容 ...
+{{</* /table */>}}
+```
+
 {{< table title="表格标题" caption="说明文字" attr="引用说明" >}}
 |                  |               溶组织内阿米巴              |                        蓝氏贾第鞭毛虫                        |             阴道毛滴虫             |                 疟原虫                |             刚地弓形虫             |    隐孢子虫    |
 |:----------------:|:-----------------------------------------:|:------------------------------------------------------------:|:----------------------------------:|:-------------------------------------:|:----------------------------------:|:--------------:|
@@ -165,4 +171,32 @@ id="fig_linus-torvalds" */>}}
 |     检查方法     | 碘液染色法（查包囊）<br/>脓血便直接涂片法 | 碘液染色法（查包囊）<br/>水样便直接涂片法<br/>十二指肠引流法 |     泌尿生殖道分泌物直接涂片法     |            外周血涂片染色法           |                  -                 |        -       |
 {{< /table >}}
 
+### 全站消息
 
+在根目录创建文件 `static/data/messages.json`，格式如下：
+
+```json
+{
+    "id 01": {
+        "title": "Hello",
+        "type": "error",
+        "content": "This is the content of site message."
+    },
+    "02": {
+        "title": "Hello",
+        "content": "This is the content of site message."
+    },
+    "03": {
+        "content": "This is the content of site message."
+    }
+}
+```
+
+- 消息 ID（`id 01`、`02`）：一个任意唯一的字符串。ID 中的空格会被替换为 `-`。
+- `title`（可选）：消息标题，任意字符串。
+- `type`（可选）：消息样式，可用的有 `default`（默认）、`info`、`warning`、`danger`/`error`。
+- `content`：消息正文内容，任意字符串，支持 HTML。
+
+{{< tab type="default" summary="" details=true >}}
+所有消息都将会在最后一个消息被关闭后 14 天再次出现。
+{{< /tab >}}
