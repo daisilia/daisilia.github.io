@@ -1,7 +1,7 @@
 ---
 title: "考研注意事项"
 date: 2023-07-08T19:29:49+08:00
-lastmod: 2023-07-08T20:56:58+08:00
+lastmod: 2023-07-09T09:43:36+08:00
 comments: true
 math: false
 ---
@@ -20,4 +20,11 @@ math: false
 | 阅读理解 C（翻译）       | 500-600  | 10（5×2）              | 20          |
 | *合计*                   |          | 100                    | 170         |
 {{< /table >}}
+
+04 年 5 道汉译英至少需要 25 分钟。
+
+- for the sake of ...：因为……
+- be second to ...：次于……
+- second（follow）：赞成，second my advice
+- accuse SB of doing STH: 指责某人做某事
 
