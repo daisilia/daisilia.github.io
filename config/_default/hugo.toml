@@ -86,4 +86,4 @@ defaultContentLanguage = 'zh'
   source = 'content'
   target = 'content'
   # exclude Rmarkdown files
-  excludeFiles = ['**.Rmd', '**.Rmarkdown']
+  excludeFiles = ['**.Rmd', '**.Rmarkdown', '**.drawio']
