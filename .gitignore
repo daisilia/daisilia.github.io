@@ -1,8 +1,5 @@
 resources/
 public/
 
-trash/
-*.old
-*.back
-test/
-test.*
+*.drawio.bkp
+*.drawio.dtmp
