@@ -1,7 +1,7 @@
 ---
 title: "生理性止血"
 date: 2023-07-10T19:35:49+08:00
-lastmod: 2023-07-10T22:52:00+08:00
+lastmod: 2023-07-11T09:19:50+08:00
 comments: true
 math: false
 weight: 33
@@ -64,4 +64,4 @@ tags:
 
 ### 凝血过程
 
-{{< figure src="凝血过程.svg" title="凝血过程" style="normal" >}}
+{{< figure src="凝血过程.svg" title="凝血过程" img-width="80%" style="normal" >}}
