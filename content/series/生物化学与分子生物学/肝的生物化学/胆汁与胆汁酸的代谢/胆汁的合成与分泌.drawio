@@ -1,0 +1,55 @@
+<mxfile host="Electron" modified="2023-07-13T02:13:36.337Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="PlE4fdO7T-HJheoLNNHN" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="1nM4ry4I6lP0_Ujpqp6l">
+    <mxGraphModel dx="1532" dy="1138" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-24" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="6mb24FIX-rSDOmY6yTPQ-16" target="6mb24FIX-rSDOmY6yTPQ-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-16" value="胆囊胆汁" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="350" y="23" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-26" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="6mb24FIX-rSDOmY6yTPQ-18" target="6mb24FIX-rSDOmY6yTPQ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-18" value="肝细胞" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="-60" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="6mb24FIX-rSDOmY6yTPQ-28" target="6mb24FIX-rSDOmY6yTPQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-21" value="肝胆汁" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="23" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-23" value="十二指肠" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-29" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="6mb24FIX-rSDOmY6yTPQ-21" target="6mb24FIX-rSDOmY6yTPQ-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="43" as="sourcePoint" />
+            <mxPoint x="310" y="43" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-31" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="6mb24FIX-rSDOmY6yTPQ-28" target="6mb24FIX-rSDOmY6yTPQ-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-28" value="胆囊" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="140" y="23" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-32" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6mb24FIX-rSDOmY6yTPQ-30" target="6mb24FIX-rSDOmY6yTPQ-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-30" value="胆囊" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="140" y="-60" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-33" value="黏液" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="110" y="-10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6mb24FIX-rSDOmY6yTPQ-34" value="水、其他成分" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-10" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

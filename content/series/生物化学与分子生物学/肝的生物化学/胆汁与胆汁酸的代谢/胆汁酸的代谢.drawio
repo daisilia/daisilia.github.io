@@ -1,0 +1,151 @@
+<mxfile host="Electron" modified="2023-07-13T03:10:29.116Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="d1KSY8-YbpCJszNZa7_x" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="-imKoAK45Y_XJNsxU4IW">
+    <mxGraphModel dx="1532" dy="1138" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-33" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-50" y="-50" width="530" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-27" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;align=center;dashed=1;fillColor=none;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-33">
+          <mxGeometry width="530" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-29" value="肝细胞" style="whiteSpace=wrap;html=1;fontSize=16;dashed=1;fillColor=none;horizontal=0;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-33">
+          <mxGeometry x="490" width="40" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-7" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-5" target="7DoQVXYMMJKFsTHCYxxu-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-5" value="胆固醇" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="90" y="-30" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-6" target="7DoQVXYMMJKFsTHCYxxu-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-6" value="7α-羟胆固醇" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="70" y="48" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-8" value="胆固醇 7α-羟化酶" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;fontSize=16;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="10" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-14" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-9" target="7DoQVXYMMJKFsTHCYxxu-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-9" value="..." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="105" y="100" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-13" target="7DoQVXYMMJKFsTHCYxxu-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-19" value="水解" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="7DoQVXYMMJKFsTHCYxxu-17">
+          <mxGeometry x="-0.2418" y="-4" relative="1" as="geometry">
+            <mxPoint x="-5" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-18" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-13" target="7DoQVXYMMJKFsTHCYxxu-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-20" value="甘氨酸、牛磺酸" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="7DoQVXYMMJKFsTHCYxxu-18">
+          <mxGeometry x="-0.1922" y="1" relative="1" as="geometry">
+            <mxPoint x="31" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-13" value="胆烷酰 CoA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="70" y="150" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-25" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-21" target="7DoQVXYMMJKFsTHCYxxu-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-21" value="初级游离胆汁酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="238" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-26" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-22" target="7DoQVXYMMJKFsTHCYxxu-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-22" value="初级结合胆汁酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="145" y="238" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-38" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-24" target="7DoQVXYMMJKFsTHCYxxu-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-24" value="胆汁酸钠盐/钾盐" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="55" y="300" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-47" value="回肠和结肠上段" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="338" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-48" value="肠菌酶" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="130" y="338" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-51" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-2.5" y="380" width="255" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-37" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=none;dashed=1;container=0;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-51">
+          <mxGeometry width="255" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-40" value="胆酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;container=0;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-51">
+          <mxGeometry x="30" y="41" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-41" value="脱氧胆酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;container=0;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-51">
+          <mxGeometry x="15" y="121" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-42" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="7DoQVXYMMJKFsTHCYxxu-51" source="7DoQVXYMMJKFsTHCYxxu-40" target="7DoQVXYMMJKFsTHCYxxu-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-43" value="鹅脱氧胆酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;container=0;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-51">
+          <mxGeometry x="140" y="39" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-44" value="石胆酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;container=0;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-51">
+          <mxGeometry x="155" y="121" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-45" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="7DoQVXYMMJKFsTHCYxxu-51" source="7DoQVXYMMJKFsTHCYxxu-43" target="7DoQVXYMMJKFsTHCYxxu-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-50" value="生成游离型次级胆汁酸" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=none;dashed=1;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-51">
+          <mxGeometry width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-57" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-54" target="7DoQVXYMMJKFsTHCYxxu-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-58" value="甘氨酸、牛磺酸" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="7DoQVXYMMJKFsTHCYxxu-57">
+          <mxGeometry x="-0.1708" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-54" value="吸收入肝" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="340" y="130" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="7DoQVXYMMJKFsTHCYxxu-37" target="7DoQVXYMMJKFsTHCYxxu-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="460" />
+              <mxPoint x="290" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-55" value="肝肠循环" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="7DoQVXYMMJKFsTHCYxxu-53">
+          <mxGeometry x="-0.2388" y="-1" relative="1" as="geometry">
+            <mxPoint y="-34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-56" value="结合型次级胆汁酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="310" y="250" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-63" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-50" y="310" width="530" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-64" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;align=center;dashed=1;fillColor=none;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-63">
+          <mxGeometry width="530" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="7DoQVXYMMJKFsTHCYxxu-65" value="肠道" style="whiteSpace=wrap;html=1;fontSize=16;dashed=1;fillColor=none;horizontal=0;" vertex="1" parent="7DoQVXYMMJKFsTHCYxxu-63">
+          <mxGeometry x="490" width="40" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
