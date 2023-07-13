@@ -1,0 +1,37 @@
+<mxfile host="Electron" modified="2023-07-13T06:55:46.387Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="A82uukPoUDC3gXOQzBtj" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="qh5nWpfkVu7vhYwui-S6">
+    <mxGraphModel dx="1532" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xo9qM0CHMJnMxEGXSowc-3" value="胆红素" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="40" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Xo9qM0CHMJnMxEGXSowc-5" value="胆绿素" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="180" y="40" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Xo9qM0CHMJnMxEGXSowc-8" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="10" y="60" width="170" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Xo9qM0CHMJnMxEGXSowc-6" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=async;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="Xo9qM0CHMJnMxEGXSowc-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint" />
+            <mxPoint x="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xo9qM0CHMJnMxEGXSowc-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=async;endFill=1;" edge="1" parent="Xo9qM0CHMJnMxEGXSowc-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="10" as="sourcePoint" />
+            <mxPoint y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xo9qM0CHMJnMxEGXSowc-9" value="氧化性物质" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Xo9qM0CHMJnMxEGXSowc-10" value="胆绿素还原酶" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="30" y="70" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
