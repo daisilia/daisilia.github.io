@@ -1,10 +1,10 @@
 ---
 title: "出血性疾病"
 date: 2023-07-12T21:05:51+08:00
-lastmod: 2023-07-12T21:20:41+08:00
+lastmod: 2023-07-14T11:09:23+08:00
 comments: true
 math: false
-weight: 60614
+weight: 61400
 tags:
     - 内科学
     - 血液

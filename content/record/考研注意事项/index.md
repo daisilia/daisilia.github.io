@@ -1,7 +1,7 @@
 ---
 title: "考研注意事项"
 date: 2023-07-08T19:29:49+08:00
-lastmod: 2023-07-09T09:43:36+08:00
+lastmod: 2023-07-13T22:37:07+08:00
 comments: true
 math: false
 ---
@@ -27,4 +27,15 @@ math: false
 - be second to ...：次于……
 - second（follow）：赞成，second my advice
 - accuse SB of doing STH: 指责某人做某事
+- whereas：然而（对比两个事实）
+- grievance：不满
+- grieve：为...感到悲伤
+- resent：怨恨
+- buy those nonsenses：相信了那个胡言乱语
+- legislative measures：立法措施
+- legislative initiative：立法倡议
+- the lesson from the latter is also applicable to the former：从后者得到的教训同样适用于前者
+- a controversialist of mixed liberal and conservative views：一位自由和保守思想兼备的善辩者
+- be triumphing over：胜过
+- elaborate：精心准备
 
