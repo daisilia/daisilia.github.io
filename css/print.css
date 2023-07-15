@@ -1,0 +1,30 @@
+@media print {
+    body {
+        background-color: white;
+        margin: 2px 0;
+    }
+    .tab {
+        box-shadow: none;
+    }
+    .tab, table, figure, p {
+        page-break-inside: avoid;
+    }
+    .site-sidebar, .site-footer, .site-header,
+    .site-comment, .series-container {
+        display: none;
+    }
+    .site-inner {
+        grid-template-rows: 0 auto 0;
+    }
+    .article-metadata .meta-section:not(:first-child) {
+        display: none;
+    }
+    table {
+        max-height: 100%;
+        white-space: normal;
+    }
+    table td, table th {
+        padding: .2em .4em;
+    }
+}
+

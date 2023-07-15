@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Han KaiTi";
+    font-style: italic;
+    src: local("AR PL UKai CN"), local("KaiTi"), local("STXingkai");
+}
+
+@font-face {
+    font-family: "Eng Italic";
+    font-style: italic;
+    font-weight: bold;
+    src: url("/font/SFCartoonistHand-BoldItalic.ttf");
+    unicode-range: U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+    font-family: "Eng Italic";
+    font-style: italic;
+    font-weight: normal;
+    src: url("/font/SFCartoonistHand-Italic.ttf");
+    unicode-range: U+0030-0039, U+0041-005A, U+0061-007A;
+}
+
+:root {
+    --header-height: 80px;
+    --footer-height: 80px;
+    --content-width: 800px;
+
+    --font-handwrite: "Indie Flower", cursive;
+    --font-code: "JetBrains Mono", monospace;
+    --font-italic: "Eng Italic", "Han KaiTi", "Noto Serif SC", cursive;
+    --font-sans: "Roboto", "Noto Sans SC", sans-serif;
+    --font-serif: "Andada Pro", "Noto Serif SC", serif;
+    --font-height-double: 32px;
+
+    --white: #ffffff;
+    --gray: #cccccc;
+    --gray-light: #f0f0f0;
+    --gray-deep: #818181;
+    --black: #1b1b1b;
+    --dark: #000000;
+    --orange: #ff8855;
+    --orange-deep: #ff6020;
+
+    --code-background: #fafafa;
+    --inline-code-background: #f0f0f0;
+    --link: var(--black);
+    --link-hover: var(--orange-deep);
+
+    --z-overcontent: 1;
+    --z-series: 200;
+    --z-sidebar: 300;
+    --z-search: 400;
+    --z-fullscreen: 999;
+    --z-loadingbar: 9999;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* set overflow-y to "overlay" in daisy.js when page loaded */
+    font-family: var(--font-sans); /* default font family */
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-serif) }
+
+#TableOfContents li, .series-title, .series-list li {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+::selection {
+    background-color: var(--gray);
+}
+
+:focus-visible {
+    outline: none;
+}
+
+@keyframes fadeRight {
+    0%    {opacity: 0; transform: translateX(-20px)}
+    100%  {opacity: 1; transform: translateX(0)}
+}
+@keyframes fadeUp {
+    0%    {opacity: 0; transform: translateY(-20px)}
+    100%  {opacity: 1; transform: translateY(0)}
+}
+@keyframes fadeIn {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+}
+
