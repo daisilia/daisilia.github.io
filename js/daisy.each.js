@@ -45,34 +45,6 @@ $("sidebar-content").ready(function(){
     window.onscroll = function() {
         updateScrollPercent();
     }
-
-    // let anchors = document.querySelectorAll('a[href^="#"]');
-    // for(let anchor of anchors){
-    //     anchor.onclick = function(e) {
-    //         console.log(anchor.getAttribute("href"));
-    //         location.hash = anchor.getAttribute("href");
-    //         e.preventDefault();
-    //     }
-    // }
-})
-
-$(".series-list").ready(function(){
-    let series = document.querySelector(".series-list");
-    if(series && !series.classList.contains("numbered")){
-        series.classList.add("numbered");
-        genUlNum(series);
-    }
-})
-
-$(".series-content").ready(function(){
-    if(window.location.pathname == "/series/") { return }
-    let items = document.querySelectorAll(".series-title, .series-item")
-    for(let item of items){
-        if(item.getAttribute("href") == window.location.pathname) {
-            item.classList.add("now")
-            break
-        }
-    }
 })
 
 // https://css-tricks.com/how-to-animate-the-details-element-using-waapi/
