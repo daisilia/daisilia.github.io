@@ -1,7 +1,7 @@
 ---
 title: "考研注意事项"
 date: 2023-07-08T19:29:49+08:00
-lastmod: 2023-07-14T23:13:59+08:00
+lastmod: 2023-07-17T22:32:13+08:00
 comments: true
 math: false
 ---
@@ -12,6 +12,7 @@ math: false
 
 - 选句填空题要由浅入深跟着文章大义来，不要急着用说明深层次问题的句子。
 - 注意不要掉进关键词陷阱——包含关键词的选项可能是故意设置的陷阱。
+- 做题时注意自我证明，而非凭感觉
 
 ### 时间
 
@@ -67,13 +68,27 @@ math: false
     - casual and absence of deference：随意、不拘礼节
     - we are close friends, yet you care about the bills
     - cry poor：哭穷
+- 2007
+    - crisis：危机时期
+    - careers open to talent：为人才开放就业机会
+    - rallying cry：战斗口号
+    - conservative：保守的
+    - egalitarian sentiments：平等主义情感
+    - high achievers owe their success mostly to nurture（培养）：这句话并不强调 "high achievers" 的观点，而是表达了一个观点。
+    - overlook：~~过度重视~~ 忽视
+    - analogy：类比
+    - cliff：悬崖
+    - spouse：配偶
+    - be laid off：失业
 
 ### 熟词生义
 
 {{< table title="熟词生义" id="tbl_熟词生义" >}}
-| 词        | 义         | 词     | 义     | 词    | 义         | 词    | 义             |
-|-----------|------------|--------|--------|-------|------------|-------|----------------|
-| indeed    | 实际上     | wander | 流浪   | while | 尽管，虽然 | put   | 说（观点）     |
-| emergence | 出现；兴起 | yet    | 但是还 | stock | 股票；总量 | track | 跟着（follow） |
-| agenda    | 议程；目的 |
+| 词        | 义         | 词        | 义               | 词     | 义                 |
+|-----------|------------|-----------|------------------|--------|--------------------|
+| indeed    | 实际上     | wander    | 流浪             | while  | 尽管，虽然         |
+| emergence | 出现；兴起 | yet       | 但是还           | stock  | 股票；总量         |
+| agenda    | 议程；目的 | by        | 到（什么时候）   | career | 职业生涯；就业机会 |
+| crown     | 王冠；王室 | exclusion | （被）排斥的情况 | cry    | 哭；大喊；口号     |
+| put       | 说（观点） | track     | 跟着（follow）   | common | 寻常的；共同的     |
 {{< /table >}}
