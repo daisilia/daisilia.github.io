@@ -1,0 +1,52 @@
+<mxfile host="Electron" modified="2023-07-19T11:13:51.239Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="ErSFDittJzExsJ53QWG4" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="lWm-rhe8_xcZe9Gz-vtW">
+    <mxGraphModel dx="1532" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-22" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PEGUd3biK_I4V6TmzLFQ-1" target="PEGUd3biK_I4V6TmzLFQ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-23" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="PEGUd3biK_I4V6TmzLFQ-1" target="PEGUd3biK_I4V6TmzLFQ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-1" value="供" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="100" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-2" value="受" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="PEGUd3biK_I4V6TmzLFQ-3" target="PEGUd3biK_I4V6TmzLFQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-3" value="红细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-12" value="血清" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="25" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-18" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="PEGUd3biK_I4V6TmzLFQ-15" target="PEGUd3biK_I4V6TmzLFQ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" edge="1" parent="1" source="PEGUd3biK_I4V6TmzLFQ-15" target="PEGUd3biK_I4V6TmzLFQ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-15" value="红细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="220" y="50" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" edge="1" parent="1" source="PEGUd3biK_I4V6TmzLFQ-16" target="PEGUd3biK_I4V6TmzLFQ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-16" value="血清" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="225" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-19" value="主侧" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="85" y="68" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PEGUd3biK_I4V6TmzLFQ-21" value="次侧" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="165" y="68" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
