@@ -1,7 +1,7 @@
 ---
 title: "考研注意事项"
 date: 2023-07-08T19:29:49+08:00
-lastmod: 2023-07-19T22:42:13+08:00
+lastmod: 2023-07-20T22:20:09+08:00
 comments: true
 math: false
 ---
@@ -86,16 +86,43 @@ math: false
     - in question：讨论中的
     - disproportionately：太大（或太小）的；不成比例的
     - affirm：证实
+- 2009
+    - be slow *off* the starting line：起步慢
+    - instinct：本能；天性；直觉
+    - wistful：惆怅的
+    - inclusive：没有定论
+    - test ... to determine：测定
+    - imply：暗示；意味着
+    - implication：含义
+    - paradox：悖论
+    - paradoxical：矛盾的
+    - overlap：重叠；重复
+    - precision：精确度
+    - deride：嘲笑
+    - discipline：n. 纪律；n.&v. 训练
+    - Puritan：清教徒
+    - intellectual：智力的；知识分子
+    - minister：部长；大臣；牧师
+    - preoccupation：忧心忡忡；思虑；关注要点；全神贯注
+    - dominant：占主导地位的；优势的；（基因）显性的
 
 ### 熟词生义
 
 {{< table title="熟词生义" id="tbl_熟词生义" >}}
-| 词        | 义                                   | 词        | 义               | 词     | 义                 |
-|-----------|--------------------------------------|-----------|------------------|--------|--------------------|
-| indeed    | 实际上                               | wander    | 流浪             | while  | 尽管，虽然         |
-| emergence | 出现；兴起                           | yet       | 但是还           | stock  | 股票；总量         |
-| agenda    | 议程；目的                           | by        | 到（什么时候）   | career | 职业生涯；就业机会 |
-| crown     | 王冠；王室                           | exclusion | （被）排斥的情况 | cry    | 哭；大喊；口号     |
-| put       | 说（观点）                           | track     | 跟着（follow）   | common | 寻常的；共同的     |
-| subject   | 学科；主题；<mark>受到...影响</mark> |
+| 词        | 义                                   | 词        | 义               |
+|-----------|--------------------------------------|-----------|------------------|
+| indeed    | 实际上                               | wander    | 流浪             |
+| emergence | 出现；兴起                           | yet       | 但是还           |
+| agenda    | 议程；目的                           | by        | 到（什么时候）   |
+| crown     | 王冠；王室                           | exclusion | （被）排斥的情况 |
+| put       | 说（观点）                           | track     | 跟着（follow）   |
+| subject   | 学科；主题；<mark>受到...影响</mark> | determine | 确定             |
+| while     | 尽管，虽然                           | unfolding | 逐渐发展         |
+| stock     | 股票；总量                           |
+| career    | 职业生涯；就业机会                   |
+| cry       | 哭；大喊；口号                       |
+| common    | 寻常的；共同的                       |
+
+
+
 {{< /table >}}
