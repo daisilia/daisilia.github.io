@@ -601,7 +601,7 @@ dl.indent dt::after {
     content: none;
 }
 .series-content ul {
-    padding: 0 2px 5px 15px;
+    padding: 0 2px 0 15px;
     margin: 0;
 }
 .series-list {
@@ -882,7 +882,6 @@ dl.indent dt::after {
     border-left: 4px solid;
     border-radius: 2px;
     margin: 15px 4px 15px;
-    width: calc(100% - 8px);
 }
 .tab+.tab {
     margin-top: -11px;
