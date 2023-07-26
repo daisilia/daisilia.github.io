@@ -1,0 +1,456 @@
+<mxfile host="Electron" modified="2023-07-22T12:53:54.100Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.1 Chrome/112.0.5615.204 Electron/24.6.1 Safari/537.36" etag="B9UFmDnOSGw6zReMKDLj" version="21.6.1" type="device">
+  <diagram name="第 1 页" id="F9b6YT8afZqq8gRaBVHN">
+    <mxGraphModel dx="1928" dy="1538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-79" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-310" y="-352.5" width="140" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-3" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-1" target="YoVNrVPS_L9D9x1vIS_5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-4" value="G 细胞" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-3">
+          <mxGeometry x="-0.094" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-1" value="胃窦、十二指肠" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="100" y="-90" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=classic;endFill=1;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-2" target="YoVNrVPS_L9D9x1vIS_5-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-2" target="YoVNrVPS_L9D9x1vIS_5-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-16" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-2" target="YoVNrVPS_L9D9x1vIS_5-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-17" value="促进" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-16">
+          <mxGeometry x="-0.0206" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-18" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-2" target="YoVNrVPS_L9D9x1vIS_5-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="-100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-20" value="促进" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-18">
+          <mxGeometry x="0.0925" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-56" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-2" target="YoVNrVPS_L9D9x1vIS_5-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="-10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-58" value="促进" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-56">
+          <mxGeometry x="0.1039" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-2" value="促胃液素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="125" y="20" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-5" target="YoVNrVPS_L9D9x1vIS_5-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-5" value="胃窦括约肌收缩" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="429.15" y="40" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-6" target="YoVNrVPS_L9D9x1vIS_5-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="529.15" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-6" value="幽门括约肌收缩" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="429.15" y="110" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-12" value="胃排空延缓" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="614.15" y="79.55" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-15" value="胃肠运动" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="454.15" y="260" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-19" value="胃肠上皮生长" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="439.15" y="190" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-30" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-21" target="YoVNrVPS_L9D9x1vIS_5-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-31" value="S 细胞" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-30">
+          <mxGeometry x="-0.0254" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-33" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-21" target="YoVNrVPS_L9D9x1vIS_5-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-34" value="K 细胞" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-33">
+          <mxGeometry x="-0.0734" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-37" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-21" target="YoVNrVPS_L9D9x1vIS_5-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-38" value="I 细胞" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-37">
+          <mxGeometry x="-0.1553" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-21" value="十二指肠上部" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-165" y="210" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-41" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-29" target="YoVNrVPS_L9D9x1vIS_5-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-42" value="抑制" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-41">
+          <mxGeometry x="-0.1289" y="2" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-29" value="促胰液素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="125" y="380" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-32" value="抑胃肽" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="390" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-39" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-36" target="YoVNrVPS_L9D9x1vIS_5-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-40" value="促进" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-39">
+          <mxGeometry x="-0.1051" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-43" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-36" target="YoVNrVPS_L9D9x1vIS_5-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-45" value="刺激" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-43">
+          <mxGeometry x="-0.0432" y="3" relative="1" as="geometry">
+            <mxPoint x="-3" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-46" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-36" target="YoVNrVPS_L9D9x1vIS_5-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-48" value="刺激" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-46">
+          <mxGeometry x="0.0538" relative="1" as="geometry">
+            <mxPoint x="-1" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-36" value="缩胆囊素&lt;br&gt;（促胰酶素）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="110" y="200" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-44" value="胰液分泌" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="70" y="100" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-47" value="胆囊收缩" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="180" y="100" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-50" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-49" target="YoVNrVPS_L9D9x1vIS_5-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="40" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-49" value="盐酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry y="380" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-52" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-51" target="YoVNrVPS_L9D9x1vIS_5-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-55" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-51" target="YoVNrVPS_L9D9x1vIS_5-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-51" value="脂肪酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="135" y="300" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-54" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-53" target="YoVNrVPS_L9D9x1vIS_5-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-60" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-53" target="YoVNrVPS_L9D9x1vIS_5-85">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-53" value="蛋白质消化产物" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-105" y="140" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-57" value="胃酸、胃蛋白酶分泌" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="414.15" y="-30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-65" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-62" target="YoVNrVPS_L9D9x1vIS_5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-62" value="迷走神经递质" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="-20.45" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-64" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-63" target="YoVNrVPS_L9D9x1vIS_5-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-515" y="50.00454545454549" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-68" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-63" target="YoVNrVPS_L9D9x1vIS_5-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-63" value="食物扩张胃" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-655" y="20" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-70" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-66" target="YoVNrVPS_L9D9x1vIS_5-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-66" value="胃底、胃体感受器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="-20.45" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-83" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-67" target="YoVNrVPS_L9D9x1vIS_5-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-67" value="幽门部感受器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-515" y="60" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-73" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-69" target="YoVNrVPS_L9D9x1vIS_5-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-69" value="迷走神经" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-285" y="-330" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-77" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-72" target="YoVNrVPS_L9D9x1vIS_5-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-72" value="中枢" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="-260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-92" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-76" target="YoVNrVPS_L9D9x1vIS_5-93">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="-240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-111" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-76" target="YoVNrVPS_L9D9x1vIS_5-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-138" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-76" target="YoVNrVPS_L9D9x1vIS_5-139">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-450" y="-187" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-76" value="迷走神经" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-285" y="-190" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-81" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-80" target="YoVNrVPS_L9D9x1vIS_5-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-84" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;dashed=1;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-80" target="YoVNrVPS_L9D9x1vIS_5-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-80" target="YoVNrVPS_L9D9x1vIS_5-153">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-730" y="-70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-240" y="-40" />
+              <mxPoint x="-740" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-80" value="迷走-迷走反射（长反射）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="-20.45" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-86" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-82" target="YoVNrVPS_L9D9x1vIS_5-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-82" target="YoVNrVPS_L9D9x1vIS_5-153">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-630" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-230" y="155" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-82" value="内在神经丛短反射" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-305" y="60" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-87" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-85" target="YoVNrVPS_L9D9x1vIS_5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-85" value="G 细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="60" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-90" target="YoVNrVPS_L9D9x1vIS_5-125">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="-370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-90" target="YoVNrVPS_L9D9x1vIS_5-99">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="85" y="-290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-90" target="YoVNrVPS_L9D9x1vIS_5-113">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="-280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-114" value="抑制" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=0" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-112">
+          <mxGeometry x="-0.2266" relative="1" as="geometry">
+            <mxPoint x="58" y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-90" value="ACh" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="-380" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-105" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-93" target="YoVNrVPS_L9D9x1vIS_5-106">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185" y="-205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-93" value="促胃液素释放肽&lt;br&gt;CRP&lt;br&gt;铃蟾素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="-210" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-104" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" target="YoVNrVPS_L9D9x1vIS_5-103">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="-295" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-100" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-99" target="YoVNrVPS_L9D9x1vIS_5-101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185" y="-250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-99" value="ECL 细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="190" y="-310" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-102" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-101" target="YoVNrVPS_L9D9x1vIS_5-125">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="-295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-101" value="组胺" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-103" target="YoVNrVPS_L9D9x1vIS_5-106">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="515" y="-140" />
+              <mxPoint x="110" y="-140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-128" value="直接抑制" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=0" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-127">
+          <mxGeometry x="0.1186" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-103" target="YoVNrVPS_L9D9x1vIS_5-113">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="515" y="-400" />
+              <mxPoint x="30" y="-400" />
+              <mxPoint x="30" y="-295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-103" value="胃酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="485" y="-310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-108" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-106" target="YoVNrVPS_L9D9x1vIS_5-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-106" value="幽门 G 细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="55" y="-190" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-109" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-107" target="YoVNrVPS_L9D9x1vIS_5-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-107" target="YoVNrVPS_L9D9x1vIS_5-125">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="-220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-107" value="促胃液素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="190" y="-190" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-116" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-113" target="YoVNrVPS_L9D9x1vIS_5-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-113" value="δ 细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="75" y="-310" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-117" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-115" target="YoVNrVPS_L9D9x1vIS_5-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-118" value="抑制" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontStyle=0" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-117">
+          <mxGeometry x="-0.2045" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-115" value="生长抑素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="65" y="-260" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-122" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-121" target="YoVNrVPS_L9D9x1vIS_5-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-124" value="阻断" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-122">
+          <mxGeometry x="-0.2977" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-121" value="阿托品" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="-490" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-125" value="壁细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="380" y="-310" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-133" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-131" target="YoVNrVPS_L9D9x1vIS_5-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-134" value="刺激" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-133">
+          <mxGeometry x="-0.4102" y="-4" relative="1" as="geometry">
+            <mxPoint x="4" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-131" value="食物" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="-430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-136" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-132" target="YoVNrVPS_L9D9x1vIS_5-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-132" value="口腔、咽、食管等处的感受器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-625" y="-350" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-137" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-135" target="YoVNrVPS_L9D9x1vIS_5-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-142" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;dashed=1;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-135" target="YoVNrVPS_L9D9x1vIS_5-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-143" value="抑制性迷走神经肽能纤维" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="YoVNrVPS_L9D9x1vIS_5-142">
+          <mxGeometry x="-0.1711" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-135" value="迷走-迷走反射" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="-280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-146" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="YoVNrVPS_L9D9x1vIS_5-139" target="YoVNrVPS_L9D9x1vIS_5-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-139" value="VIP、NO" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="-172" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-145" value="胃底、胃体舒张（&lt;b&gt;容受性舒张&lt;/b&gt;）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-635" y="-110" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YoVNrVPS_L9D9x1vIS_5-153" value="胃运动增强&lt;br&gt;加快胃排空" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="10" width="100" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

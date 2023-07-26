@@ -1,7 +1,7 @@
 ---
 title: "考研注意事项"
 date: 2023-07-08T19:29:49+08:00
-lastmod: 2023-07-20T22:20:09+08:00
+lastmod: 2023-07-21T22:34:42+08:00
 comments: true
 math: false
 ---
@@ -112,7 +112,7 @@ math: false
 | 词        | 义                                   | 词        | 义               |
 |-----------|--------------------------------------|-----------|------------------|
 | indeed    | 实际上                               | wander    | 流浪             |
-| emergence | 出现；兴起                           | yet       | 但是还           |
+| emergence | 出现；兴起                           | yet       | 但是还；然而     |
 | agenda    | 议程；目的                           | by        | 到（什么时候）   |
 | crown     | 王冠；王室                           | exclusion | （被）排斥的情况 |
 | put       | 说（观点）                           | track     | 跟着（follow）   |
@@ -126,3 +126,14 @@ math: false
 
 
 {{< /table >}}
+
+
+## 导师
+
+- 南方医科大学：
+    - [南方医科大学深圳医院，凌莉](https://yjsxt.smu.edu.cn/open/TeacherInfo.aspx?id=!kthF29jvWg=)
+- 中山大学
+- 暨南大学
+- 广州医学院
+- 首都医科大学
+
