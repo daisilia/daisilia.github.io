@@ -1,7 +1,7 @@
 ---
 title: "使用 Kroki 绘图"
 date: 2023-02-08T19:51:46+08:00
-lastmod: 2023-07-28T22:56:44+08:00
+lastmod: 2023-07-28T23:01:32+08:00
 comments: true
 math: false
 ---
@@ -51,41 +51,6 @@ math: false
   }
 }
 ```
-
-```xxx
-{{</* kroki type="actdiag" title="ActDiag" caption="**This** is *caption*." attr="Hugo discourse - Is there some pre-packaged way to use Kroki from markdown?">}}
-{
-  write -> convert -> image
-
-  lane user {
-    label = "User"
-    write [label = "Writing reST"];
-    image [label = "Get diagram IMAGE"];
-  }
-  lane actdiag {
-    convert [label = "Convert reST to Image"];
-  }
-}
-{{< /kroki */>}}
-```
-
-↓↓↓
-
-{{< kroki type="actdiag" title="ActDiag" caption="**This** is *caption*." attr="Hugo discourse - Is there some pre-packaged way to use Kroki from markdown?">}}
-{
-  write -> convert -> image
-
-  lane user {
-    label = "User"
-    write [label = "Writing reST"];
-    image [label = "Get diagram IMAGE"];
-  }
-  lane actdiag {
-    convert [label = "Convert reST to Image"];
-  }
-}
-{{< /kroki >}}
-
 
 ```xxx
 {{</* kroki type="excalidraw" file="hand-written.excalidraw.json" >}}{{< /kroki */>}}
