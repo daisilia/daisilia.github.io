@@ -1,7 +1,7 @@
 ---
 title: "Daisilia 主题"
 date: 2023-05-21T14:49:37+08:00
-lastmod: 2023-06-30T23:14:20+08:00
+lastmod: 2023-07-28T23:06:08+08:00
 comments: true
 math: false
 ---
@@ -71,7 +71,7 @@ id="fig_linus-torvalds" */>}}
 
 ### Kroki {alias="kroki"}
 
-见[使用 Kroki 绘图]({{< relref "使用 kroki 绘图" >}})。
+见使用 Kroki 绘图。
 
 ### 引用 {alias="quote"}
 
