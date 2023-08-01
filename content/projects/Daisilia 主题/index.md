@@ -1,7 +1,7 @@
 ---
 title: "Daisilia 主题"
 date: 2023-05-21T14:49:37+08:00
-lastmod: 2023-07-28T23:06:08+08:00
+lastmod: 2023-08-01T11:33:48+08:00
 comments: true
 math: false
 ---
@@ -11,13 +11,14 @@ math: false
 ### Bilibili 视频 {alias="bilibili"}
 
 ```html
-{{</* bilibili id=av2 */>}}
+{{</* bilibili id=av2 autoplay=false */>}}
 ```
 
-{{< bilibili id=av2 >}}
+{{< bilibili id=av2 autoplay=false >}}
 
 - `id`：AV 或 BV 号
 - `page`：视频分 P，如 P2 就是 `page=2`
+- `autoplay`：是否自动播放
 
 ### 图片 {alias="figure"}
 
@@ -179,7 +180,7 @@ id="fig_linus-torvalds" */>}}
 |   ~~体内移行~~   |                     -                     |        -       |
 {{< /table >}}
 
-### 全站消息
+## 全站消息
 
 在根目录创建文件 `static/data/messages.json`，格式如下：
 
@@ -209,6 +210,10 @@ id="fig_linus-torvalds" */>}}
 所有消息都将会在最后一个消息被关闭后 14 天再次出现。
 {{< /tab >}}
 
-### 搜索
+## 搜索
 
 快捷键 <kbd>Ctrl</kbd>+<kbd>/</kbd> 或点击搜索按钮开始搜索，支持模糊搜索和[高级搜索](https://fusejs.io/examples.html#extended-search)。
+
+## 数学公式
+
+LaTeX 公式编辑器：[Equation Editor for online mathematics](https://editor.codecogs.com/)

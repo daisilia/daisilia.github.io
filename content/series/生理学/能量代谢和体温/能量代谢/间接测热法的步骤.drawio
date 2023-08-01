@@ -1,0 +1,113 @@
+<mxfile host="Electron" modified="2023-07-31T03:16:59.277Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="KgZKgUBlKPZmTLUeLtlr" version="21.6.5" type="device">
+  <diagram name="第 1 页" id="oxqRGLyPOMwY4Tl8o_Ae">
+    <mxGraphModel dx="1532" dy="1138" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NcP14KBBZVTenF44-F67-3" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-1" target="NcP14KBBZVTenF44-F67-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-4" value="÷ 0.16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="NcP14KBBZVTenF44-F67-3">
+          <mxGeometry x="-0.1881" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-1" value="m(尿氮)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="-22" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-6" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-2" target="NcP14KBBZVTenF44-F67-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-7" value="× 蛋白质生物热价" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="NcP14KBBZVTenF44-F67-6">
+          <mxGeometry x="-0.2219" relative="1" as="geometry">
+            <mxPoint x="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-2" value="m(&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;蛋白质)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-22" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-30" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-5" target="NcP14KBBZVTenF44-F67-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-5" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Q(&lt;/span&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;蛋白质)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="280" y="-22" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-8" target="NcP14KBBZVTenF44-F67-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-8" target="NcP14KBBZVTenF44-F67-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-8" value="测定" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-18" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-9" target="NcP14KBBZVTenF44-F67-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-9" value="V(O&lt;sub&gt;2&lt;/sub&gt;)&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;总&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="50" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-13" target="NcP14KBBZVTenF44-F67-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-13" value="V(CO&lt;sub&gt;2&lt;/sub&gt;)&lt;sub&gt;总&lt;/sub&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontSize=16;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="130" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-14" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="-50" width="120" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-16" target="NcP14KBBZVTenF44-F67-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-16" value="V(O&lt;sub&gt;2&lt;/sub&gt;)&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;蛋白质&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="5" y="50" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-17" target="NcP14KBBZVTenF44-F67-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-17" value="V(CO&lt;sub&gt;2&lt;/sub&gt;)&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;&lt;sub&gt;蛋白质&lt;/sub&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry y="130" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-23" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-22" target="NcP14KBBZVTenF44-F67-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="477" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-25" value="查表" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="NcP14KBBZVTenF44-F67-23">
+          <mxGeometry x="-0.3" relative="1" as="geometry">
+            <mxPoint x="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-22" value="NPRQ（非蛋白呼吸商）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="157" y="95" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-27" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-24" target="NcP14KBBZVTenF44-F67-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-31" value="× [V(O&lt;sub&gt;2&lt;/sub&gt;)&lt;sub&gt;总&lt;/sub&gt;&amp;nbsp;- V(O&lt;sub&gt;2&lt;/sub&gt;)&lt;sub&gt;蛋白质&lt;/sub&gt;]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="NcP14KBBZVTenF44-F67-27">
+          <mxGeometry x="-0.0226" y="2" relative="1" as="geometry">
+            <mxPoint x="97" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-24" value="氧热价（非蛋白质）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="420" y="95" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-29" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="NcP14KBBZVTenF44-F67-26" target="NcP14KBBZVTenF44-F67-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-26" value="Q（非蛋白质）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="440" y="30" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NcP14KBBZVTenF44-F67-28" value="Q（总）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="465" y="-22" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

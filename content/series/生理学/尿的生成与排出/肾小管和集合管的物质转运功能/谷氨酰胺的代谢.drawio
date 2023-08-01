@@ -1,0 +1,69 @@
+<mxfile host="Electron" modified="2023-07-31T13:37:03.689Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="B-afEWGFj5S34pVcS9xr" version="21.6.5" type="device">
+  <diagram name="第 1 页" id="j7LZ_lgE1nmDuN3l4a0i">
+    <mxGraphModel dx="1532" dy="1138" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-3" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="PH9SoAy7qyFofkFRNO1o-1" target="PH9SoAy7qyFofkFRNO1o-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="PH9SoAy7qyFofkFRNO1o-1" target="PH9SoAy7qyFofkFRNO1o-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-90" y="63" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-1" value="谷氨酰胺" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-245" y="48" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-5" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="PH9SoAy7qyFofkFRNO1o-2" target="PH9SoAy7qyFofkFRNO1o-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="PH9SoAy7qyFofkFRNO1o-2" target="PH9SoAy7qyFofkFRNO1o-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="20" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="63" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-2" value="谷氨酸根" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="48" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-7" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="PH9SoAy7qyFofkFRNO1o-4" target="PH9SoAy7qyFofkFRNO1o-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="PH9SoAy7qyFofkFRNO1o-4" target="PH9SoAy7qyFofkFRNO1o-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="10" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="63" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-4" value="α-酮戊二酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="190" y="48" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-6" value="其他产物" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="370" y="48" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-9" value="2 HCO&lt;sub&gt;3&lt;/sub&gt;&lt;sup&gt;-&lt;/sup&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="370" y="-10" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-12" value="HN&lt;sub&gt;4&lt;/sub&gt;&lt;sup&gt;+&lt;/sup&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="190" y="-10" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-13" value="HN&lt;sub&gt;4&lt;/sub&gt;&lt;sup&gt;+&lt;/sup&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-35" y="-10" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-15" value="谷氨酰胺酶（限速酶）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="78" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PH9SoAy7qyFofkFRNO1o-16" value="谷氨酸脱氢酶" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="60" y="78" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
