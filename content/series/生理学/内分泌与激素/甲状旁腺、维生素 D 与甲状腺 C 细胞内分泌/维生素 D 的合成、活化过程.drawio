@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2023-08-04T07:27:08.051Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="pAbOtRf1dCuLgDUw6Y4w" version="21.6.5" type="device">
+  <diagram name="第 1 页" id="YtbY4QOUAecM4ys1zAIQ">
+    <mxGraphModel dx="1932" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-3" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="hIjc3YWUVFi7h48MZqG8-1" target="hIjc3YWUVFi7h48MZqG8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-7" value="25-羟化酶" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="hIjc3YWUVFi7h48MZqG8-3">
+          <mxGeometry x="-0.8175" relative="1" as="geometry">
+            <mxPoint x="51" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-14" value="肝" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="hIjc3YWUVFi7h48MZqG8-3">
+          <mxGeometry x="-0.7291" y="2" relative="1" as="geometry">
+            <mxPoint x="45" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-1" value="维生素 D&lt;sub&gt;3&lt;/sub&gt;&lt;br&gt;（胆钙化醇）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="113" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-5" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="hIjc3YWUVFi7h48MZqG8-2" target="hIjc3YWUVFi7h48MZqG8-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-15" value="1α-羟化酶" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="hIjc3YWUVFi7h48MZqG8-5">
+          <mxGeometry x="-0.4533" y="3" relative="1" as="geometry">
+            <mxPoint x="36" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-16" value="肾脏" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="hIjc3YWUVFi7h48MZqG8-5">
+          <mxGeometry x="-0.7908" y="2" relative="1" as="geometry">
+            <mxPoint x="63" y="19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-2" value="25-羟维生素 D&lt;sub&gt;3&lt;/sub&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="70" y="123" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-4" value="1,25-二羟维生素 D&lt;sub&gt;3&lt;/sub&gt;&lt;br&gt;（钙三醇）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="360" y="113" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="hIjc3YWUVFi7h48MZqG8-8" target="hIjc3YWUVFi7h48MZqG8-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-8" value="食物" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="hIjc3YWUVFi7h48MZqG8-10" target="hIjc3YWUVFi7h48MZqG8-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-12" value="紫外线" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="hIjc3YWUVFi7h48MZqG8-11">
+          <mxGeometry x="-0.2396" y="-2" relative="1" as="geometry">
+            <mxPoint x="8" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-13" value="皮肤" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="hIjc3YWUVFi7h48MZqG8-11">
+          <mxGeometry x="-0.4514" y="1" relative="1" as="geometry">
+            <mxPoint x="17" y="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hIjc3YWUVFi7h48MZqG8-10" value="7-脱氢胆固醇" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="128" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

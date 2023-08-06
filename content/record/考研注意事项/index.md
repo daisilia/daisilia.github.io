@@ -1,7 +1,8 @@
 ---
 title: "考研注意事项"
 date: 2023-07-08T19:29:49+08:00
-lastmod: 2023-07-21T22:34:42+08:00
+lastmod: 2023-08-04T13:39:17+08:00
+draft: true
 comments: true
 math: false
 ---
@@ -126,14 +127,4 @@ math: false
 
 
 {{< /table >}}
-
-
-## 导师
-
-- 南方医科大学：
-    - [南方医科大学深圳医院，凌莉](https://yjsxt.smu.edu.cn/open/TeacherInfo.aspx?id=!kthF29jvWg=)
-- 中山大学
-- 暨南大学
-- 广州医学院
-- 首都医科大学
 
