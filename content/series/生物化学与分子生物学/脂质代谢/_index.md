@@ -1,12 +1,12 @@
 ---
 title: "脂质代谢"
 date: 2023-04-13T22:33:13+08:00
-lastmod: 2023-07-13T11:20:07+08:00
+lastmod: 2023-08-06T15:16:39+08:00
 comments: true
 math: false
 weight: 70
 tags:
-    - 生物化学
+    - 生物化学与分子生物学
     - 脂质
 ---
 
