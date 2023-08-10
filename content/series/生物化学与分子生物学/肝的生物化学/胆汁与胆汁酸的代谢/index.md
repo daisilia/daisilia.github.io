@@ -1,20 +1,22 @@
 ---
 title: "胆汁与胆汁酸的代谢"
 date: 2023-07-13T10:02:10+08:00
-lastmod: 2023-08-06T15:15:37+08:00
+lastmod: 2023-08-08T16:06:19+08:00
 comments: true
 math: false
 weight: 193
 tags:
     - 生物化学与分子生物学
-    - 核酸
+    - 肝脏
+    - 胆汁
+    - 胆汁酸
 ---
 
 胆汁（bile）由肝细胞分泌。
 
-{{< figure src="胆汁的合成与分泌.svg" title="胆汁的合成与分泌" >}}
-
 <!--more-->
+
+{{< figure src="胆汁的合成与分泌.svg" title="胆汁的合成与分泌" >}}
 
 {{< tab style="warning" >}}
 外科学认为小胆管细胞也分泌部分胆汁
