@@ -41,6 +41,9 @@
     }
   });
 </script><script src=/js/daisy.js></script>
-<script data-pjax src=/js/daisy.each.js></script><script src=/js/pjax.js></script>
-<script src=/js/pjax.user.js></script><script src=/js/calendar.js></script><script src=https://sdk.jinrishici.com/v2/browser/jinrishici.js></script>
+<script data-pjax src=/js/daisy.each.js></script>
+<script src=/js/pjax.js></script>
+<script src=/js/pjax.user.js></script>
+<script src=/js/calendar.js></script>
+<script src=https://sdk.jinrishici.com/v2/browser/jinrishici.js></script>
 <script>var content_part,content_full,is_poem=!0,Result;const wrap=document.getElementsByClassName("sidebar-quote")[0],content=document.getElementById("SidebarQuoteContent"),from=document.getElementById("SidebarQuoteFrom");function toggleFull(){wrap.classList.toggle("expanded"),wrap.classList.toggle("collapsed"),content.innerHTML==content_part?content.innerHTML=content_full:content.innerHTML=content_part}jinrishici.load(function(e){Result=e,content_part=e.data.content,content.innerText=content_part,from.innerHTML=`<span class="author">${e.data.origin.dynasty}·${e.data.origin.author}</span>`+`<span class="title">《${e.data.origin.title}》</span>`;var t="",n=/^(([^，。！？]{5}[，。！？]){2}|([^，。！？]{7}[，。！？]){2})+$/g,s=0;e.data.origin.content.forEach(e=>{e.match(n)?e.match(n)[0].length+1!=s&&s!=0&&(is_poem=!1,s=e.match(n)[0].length+1):is_poem=!1}),is_poem?content.classList.add("poem"):t="&nbsp".repeat(8),content_full=t+e.data.origin.content.join("<br>"+t),content.onclick=toggleFull})</script></body></html>
