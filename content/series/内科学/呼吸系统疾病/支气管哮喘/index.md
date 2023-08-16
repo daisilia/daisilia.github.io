@@ -3,7 +3,7 @@ title: "支气管哮喘"
 aliases:
     - "哮喘"
 date: 2022-11-04T22:37:43+08:00
-lastmod: 2023-08-15T22:05:02+08:00
+lastmod: 2023-08-16T09:43:23+08:00
 comments: true
 math: false
 weight: 20400
@@ -83,7 +83,7 @@ tags:
 严重哮喘发作可出现缺氧。
 
 1. 发作早期：PaO<sub>2</sub> 下降引起过度通气，可使 **PaCO<sub>2</sub>↓**，pH 上升，表现为**呼吸性碱中毒**。
-2. 恶化：同时出现缺氧和 CO<sub>2</sub> 潴留（PaCO<sub>2</sub>↑），表现为**呼吸性酸中毒**。
+2. 恶化：同时出现<mark>缺氧（PaO<sub>2</sub>）和 CO<sub>2</sub> 潴留（PaCO<sub>2</sub>↑）</mark>，表现为**呼吸性酸中毒**。
 3. 晚期：如缺氧严重，可合并**代谢性酸中毒**。
 
 {{% tab type="success" summary="" details=false  %}}
