@@ -1,7 +1,7 @@
 ---
 title: "酸碱平衡紊乱"
 date: 2023-09-16T21:04:18+08:00
-lastmod: 2023-09-16T22:10:22+08:00
+lastmod: 2023-09-16T22:30:51+08:00
 comments: true
 math: false
 weight: 35
@@ -78,7 +78,7 @@ tags:
 - 补钾的作用：
     - 纠正低钾血症：代谢性碱中毒时常伴有低钾血症。
     - 升高 H<sup>+</sup> 浓度：K<sup>+</sup> 进入细胞内将其中的 H<sup>+</sup> 交换出来
-    - 促进肾脏排泄 HCO<sub>3</sub><sup>-</sup>：通过补钾可竞争性抑制肾脏排 H<sup>+</sup>，减少了小管液中 HCO<sub>3</sub><sup>+</sup> 与 H<sup>+</sup> 反应生成 CO<sub>2</sub> 而被重吸收，促进肾脏排泄 HCO<sub>3</sub><sup>-</sup> ，有利于加速碱中毒的纠正。
+    - 促进肾脏排泄 HCO<sub>3</sub><sup>-</sup>：通过补钾可竞争性抑制肾脏排 H<sup>+</sup>，减少了小管液中 HCO<sub>3</sub><sup>-</sup> 与 H<sup>+</sup> 反应生成 CO<sub>2</sub> 而被重吸收，促进肾脏排泄 HCO<sub>3</sub><sup>-</sup> ，有利于加速碱中毒的纠正。
 
 ## 呼吸性酸中毒
 
