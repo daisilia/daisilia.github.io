@@ -1,14 +1,13 @@
 ---
 title: "介入放射学"
 date: 2022-05-23T12:44:52+08:00
-lastmod: 2022-06-08T18:41:05+08:00
+lastmod: 2023-09-19T10:00:32+08:00
 comments: true
 math: false
 weight: 10
 tags:
     - 医学影像学
     - 介入放射学
-    - TODO：影像
 ---
 
 介入放射学（interventional radiology）

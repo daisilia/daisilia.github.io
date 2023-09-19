@@ -1,7 +1,7 @@
 ---
 title: "间质性肺疾病"
 date: 2022-11-19T13:45:19+08:00
-lastmod: 2023-05-21T17:02:58+08:00
+lastmod: 2023-09-19T10:00:32+08:00
 comments: true
 math: false
 weight: 20900
@@ -9,7 +9,6 @@ tags:
     - 内科学
     - 呼吸系统
     - 间质性肺疾病
-    - TODO：内科学
 ---
 
 间质性肺疾病（interstitial lung diseases，ILDs）| 弥漫性实质性肺疾病（diffuse parenchymal lung disease，DPLD）
