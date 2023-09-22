@@ -11,4 +11,14 @@
 &lt;dd>专司生物信息携带功能的&lt;em>小分子物质&lt;/em>。&lt;span class="hidden-text">小分子信号分子&lt;/span>&lt;/dd>
 &lt;dt>信号转导通路（signal transduction pathway）&lt;/dt>
 &lt;dd>完成细胞间或细胞内生物信息转换和传递的信号分子链。&lt;/dd>
-&lt;/dl></description></item></channel></rss>
+&lt;/dl>
+&lt;ul>
+&lt;li>膜受体（这一类细胞外信号分子为水溶性，不能进入细胞膜）：
+&lt;ul>
+&lt;li>&lt;a href="#%e7%a6%bb%e5%ad%90%e9%80%9a%e9%81%93%e5%9e%8b%e5%8f%97%e4%bd%93%e4%bb%8b%e5%af%bc%e7%9a%84%e4%bf%a1%e5%8f%b7%e8%bd%ac%e5%af%bc">离子通道型受体&lt;/a>：单次跨膜，等同于化学门通道，通过离子跨膜移动传递信号&lt;/li>
+&lt;li>&lt;a href="#g-%e8%9b%8b%e7%99%bd%e8%80%a6%e8%81%94%e5%8f%97%e4%bd%93%e4%bb%8b%e5%af%bc%e7%9a%84%e4%bf%a1%e5%8f%b7%e8%bd%ac%e5%af%bc">G 蛋白偶联受体&lt;/a>：7 次跨膜，激活 G 蛋白后，通过一系列反应路径产生信号分子来传递信号&lt;/li>
+&lt;li>&lt;a href="#%e9%85%b6%e8%81%94%e5%9e%8b%e5%8f%97%e4%bd%93%e4%bb%8b%e5%af%bc%e7%9a%84%e4%bf%a1%e5%8f%b7%e8%bd%ac%e5%af%bc">酶联型受体&lt;/a>：单次跨膜，没有物质进出细胞膜，是通过激活膜内相关酶的活性传递信号&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#%e6%a0%b8%e5%8f%97%e4%bd%93%e4%bb%8b%e5%af%bc%e7%9a%84%e4%bf%a1%e5%8f%b7%e8%bd%ac%e5%af%bc">核受体&lt;/a>（这一类细胞外信号分子为脂溶性，不能进入细胞膜）：通过激活转录因子和 DNA 结合直接调节基因表达起到传递生物信号的作用&lt;/li>
+&lt;/ul></description></item></channel></rss>
