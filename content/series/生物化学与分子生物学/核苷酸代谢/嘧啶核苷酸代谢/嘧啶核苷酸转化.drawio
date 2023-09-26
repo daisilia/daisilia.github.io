@@ -1,0 +1,99 @@
+<mxfile host="Electron" modified="2023-09-25T15:10:23.125Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="TzIsOh4SW0gMEI922IgB" version="21.7.5" type="device">
+  <diagram name="第 1 页" id="GsJs5P2JUwCovrq6-IVo">
+    <mxGraphModel dx="1532" dy="1132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n98RuirjIWRG1HX-NJSu-5" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;dashed=1;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-1" target="n98RuirjIWRG1HX-NJSu-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-1" value="UMP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="95" y="23" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-3" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-2" target="n98RuirjIWRG1HX-NJSu-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-2" value="嘧啶从头合成" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="28" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-7" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;dashed=1;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-4" target="n98RuirjIWRG1HX-NJSu-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-9" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;dashed=1;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-4" target="n98RuirjIWRG1HX-NJSu-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-4" value="UDP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="215" y="23" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-23" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-6" target="n98RuirjIWRG1HX-NJSu-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-6" value="UTP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-70" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-11" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-8" target="n98RuirjIWRG1HX-NJSu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-8" value="dUDP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="210" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-13" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-10" target="n98RuirjIWRG1HX-NJSu-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-10" value="dUMP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="330" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-12" value="dTMP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="510" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-25" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;dashed=1;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-22" target="n98RuirjIWRG1HX-NJSu-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-22" value="CTP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="380" y="-70" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-27" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;dashed=1;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-24" target="n98RuirjIWRG1HX-NJSu-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-24" value="CDP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="470" y="-65" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-29" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;dashed=1;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-26" target="n98RuirjIWRG1HX-NJSu-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-26" value="dCDP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-65" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=20;startSize=8;endSize=8;strokeWidth=2;" edge="1" parent="1" source="n98RuirjIWRG1HX-NJSu-28" target="n98RuirjIWRG1HX-NJSu-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="200" />
+              <mxPoint x="370" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-28" value="dCMP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-70" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-31" value="谷氨酰胺" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="280" y="-82" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-32" value="加氨基" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="290" y="-42" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-33" value="加甲基" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="420" y="150" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-34" value="X-FH&lt;sub&gt;4&lt;/sub&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-35" value="dUMP 的主要来源" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="460" y="208" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n98RuirjIWRG1HX-NJSu-36" value="自发脱氨基" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="28" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
