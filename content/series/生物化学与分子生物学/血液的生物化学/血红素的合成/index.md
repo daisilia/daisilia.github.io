@@ -1,7 +1,7 @@
 ---
 title: "血红素的合成"
 date: 2023-09-26T22:37:48+08:00
-lastmod: 2023-09-26T23:13:51+08:00
+lastmod: 2023-10-01T00:20:27+08:00
 comments: true
 math: false
 weight: 182

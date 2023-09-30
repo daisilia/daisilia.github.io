@@ -4,7 +4,7 @@ aliases:
     - 生物化学
     - 分子生物学
 date: 2023-04-07T19:27:46+08:00
-lastmod: 2023-09-24T20:05:41+08:00
+lastmod: 2023-10-01T00:20:28+08:00
 comments: true
 math: false
 weight: 0

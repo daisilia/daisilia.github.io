@@ -1,7 +1,7 @@
 ---
 title: "蛋白质的结构与功能"
 date: 2023-08-06T15:11:41+08:00
-lastmod: 2023-09-18T23:26:01+08:00
+lastmod: 2023-10-01T00:21:20+08:00
 comments: true
 math: true
 weight: 10

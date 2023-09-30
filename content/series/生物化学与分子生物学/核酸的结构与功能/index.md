@@ -1,7 +1,7 @@
 ---
 title: "核酸的结构与功能"
 date: 2023-04-07T19:31:47+08:00
-lastmod: 2023-09-19T00:24:58+08:00
+lastmod: 2023-10-01T00:22:08+08:00
 comments: true
 math: false
 weight: 20

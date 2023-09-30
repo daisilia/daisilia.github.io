@@ -1,7 +1,7 @@
 ---
 title: "蛋白质消化吸收和氨基酸代谢"
 date: 2023-08-09T11:05:51+08:00
-lastmod: 2023-09-23T23:20:54+08:00
+lastmod: 2023-10-01T00:21:45+08:00
 comments: true
 math: false
 weight: 80

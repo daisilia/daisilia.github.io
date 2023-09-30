@@ -1,7 +1,7 @@
 ---
 title: "嘌呤核苷酸代谢"
 date: 2023-08-09T12:09:58+08:00
-lastmod: 2023-09-27T12:05:56+08:00
+lastmod: 2023-10-01T00:21:45+08:00
 comments: true
 math: false
 weight: 92

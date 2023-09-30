@@ -1,7 +1,7 @@
 ---
 title: "原核生物 RNA 的合成"
 date: 2023-09-28T23:04:45+08:00
-lastmod: 2023-09-29T16:52:51+08:00
+lastmod: 2023-10-01T00:21:45+08:00
 comments: true
 math: false
 weight: 142

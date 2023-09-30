@@ -1,7 +1,7 @@
 ---
 title: "糖代谢"
 date: 2023-09-24T10:56:31+08:00
-lastmod: 2023-09-24T12:37:27+08:00
+lastmod: 2023-10-01T00:21:20+08:00
 comments: true
 math: true
 weight: 50

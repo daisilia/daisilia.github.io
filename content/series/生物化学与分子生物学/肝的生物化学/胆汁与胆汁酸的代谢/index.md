@@ -1,7 +1,7 @@
 ---
 title: "胆汁与胆汁酸的代谢"
 date: 2023-07-13T10:02:10+08:00
-lastmod: 2023-09-27T00:02:45+08:00
+lastmod: 2023-10-01T00:22:08+08:00
 comments: true
 math: false
 weight: 193

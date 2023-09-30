@@ -1,7 +1,7 @@
 ---
 title: "蛋白质的合成"
 date: 2023-09-29T09:51:59+08:00
-lastmod: 2023-09-29T16:59:09+08:00
+lastmod: 2023-10-01T00:20:27+08:00
 comments: true
 math: false
 weight: 150

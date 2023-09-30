@@ -1,7 +1,7 @@
 ---
 title: "嘧啶核苷酸代谢"
 date: 2023-08-09T12:10:17+08:00
-lastmod: 2023-09-27T12:18:56+08:00
+lastmod: 2023-10-01T00:21:20+08:00
 comments: true
 math: false
 weight: 93
