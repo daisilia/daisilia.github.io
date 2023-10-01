@@ -1233,9 +1233,6 @@ sub {
 .article-content ol, .article-content ul {
     padding-inline-start: 32px;
 }
-.article-content li {
-    list-style-position: inside;
-}
 
 /* custom */
 .heading.medicine::after {
