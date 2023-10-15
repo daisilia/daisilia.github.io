@@ -3,7 +3,7 @@ title: "血液疾病"
 aliases:
     - 血液系统疾病
 date: 2023-07-11T10:23:37+08:00
-lastmod: 2023-09-19T10:00:32+08:00
+lastmod: 2023-10-13T20:29:12+08:00
 comments: true
 math: false
 weight: 60000
@@ -24,3 +24,10 @@ tags:
 [^2]: [为什么要做骨髓活检？](http://www.tjmuch.com/system/2016/03/16/011246879.shtml)
 
 一般只需要观察骨髓细胞形态与细胞比例，做<mark>骨髓穿刺</mark>涂片即可确诊，如[再生障碍性贫血]({{< relref "再生障碍性贫血" >}})
+
+{{< tab style="success" summary="化疗方案选择" details=true open=true >}}
+急淋用 VP，急粒用哈（HA）达（DA）；
+M3 维甲酸，中枢注甲胺；
+霍奇金俺不会死（ABVD），反霍奇金就翘辫子（CHOP）；
+慢粒首选依马替，睾丸急淋双侧照。
+{{< /tab >}}
