@@ -1,0 +1,99 @@
+<mxfile host="Electron" modified="2023-10-16T08:07:56.905Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="ASfa3bWoArcB02vvSYkY" version="22.0.2" type="device">
+  <diagram name="第 1 页" id="0GJDUh79BzKI89nmxH3X">
+    <mxGraphModel dx="1502" dy="1102" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-1" target="v4-eaB-5zp2mB8D7-QdS-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-1" value="促胃液素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-300" y="-2" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-6" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-2" target="v4-eaB-5zp2mB8D7-QdS-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-2" value="促胰液素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-180" y="190" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-3" target="v4-eaB-5zp2mB8D7-QdS-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-3" value="促胰酶素（CCK）&lt;br&gt;/缩胆囊素（PZ）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="315" y="180" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-23" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-4" target="v4-eaB-5zp2mB8D7-QdS-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-4" value="小导管细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="190" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-5" target="v4-eaB-5zp2mB8D7-QdS-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-5" value="腺泡细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="195" y="190" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-10" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-8" target="v4-eaB-5zp2mB8D7-QdS-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-8" value="I 细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="360" y="98" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-11" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-9" target="v4-eaB-5zp2mB8D7-QdS-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-9" value="&lt;b&gt;蛋白质消化产物&lt;/b&gt;&lt;br&gt;脂酸钠&lt;br&gt;脂肪&lt;br&gt;盐酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="470" y="68" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-12" target="v4-eaB-5zp2mB8D7-QdS-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-12" value="S 细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-170" y="98" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-15" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-14" target="v4-eaB-5zp2mB8D7-QdS-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-14" value="HCl" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="-280" y="98" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-16" target="v4-eaB-5zp2mB8D7-QdS-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sOBP_y7apXRpv9JIy-v6-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="v4-eaB-5zp2mB8D7-QdS-16" target="sOBP_y7apXRpv9JIy-v6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-16" value="迷走神经" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=16;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="70" y="-2" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="v4-eaB-5zp2mB8D7-QdS-18" target="v4-eaB-5zp2mB8D7-QdS-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-18" value="G 细胞" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-170" y="-2" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-22" value="水、碳酸氢盐" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v4-eaB-5zp2mB8D7-QdS-25" value="胰酶" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="210" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sOBP_y7apXRpv9JIy-v6-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="sOBP_y7apXRpv9JIy-v6-1" target="v4-eaB-5zp2mB8D7-QdS-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sOBP_y7apXRpv9JIy-v6-1" value="蛋白分解产物&lt;br&gt;脂酸钠" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="88" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sOBP_y7apXRpv9JIy-v6-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="sOBP_y7apXRpv9JIy-v6-4" target="v4-eaB-5zp2mB8D7-QdS-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sOBP_y7apXRpv9JIy-v6-4" value="ACh" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="215" y="98" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
