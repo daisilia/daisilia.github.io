@@ -1,10 +1,10 @@
 ---
 title: "现象或谚语背后的哲理"
 date: 2023-08-26T21:28:08+08:00
-lastmod: 2023-08-26T22:20:57+08:00
+lastmod: 2023-10-17T11:30:56+08:00
 comments: true
 math: false
-weight: 1
+weight: 101
 tags:
     - 政治
     - 马克思主义基本原理
