@@ -1,0 +1,105 @@
+<mxfile host="Electron" modified="2023-10-27T15:17:42.190Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="cN0kA1flOp2AVnedFBcz" version="22.0.3" type="device">
+  <diagram name="第 1 页" id="V8oTGGVDVU58Qys0d0EZ">
+    <mxGraphModel dx="1358" dy="1009" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-3" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zZ2GYFOy4jCpd7BXWt_E-1" target="zZ2GYFOy4jCpd7BXWt_E-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-1" value="糖原" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="28" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-2" value="血糖" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="100" y="28" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-6" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zZ2GYFOy4jCpd7BXWt_E-4" target="zZ2GYFOy4jCpd7BXWt_E-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-4" value="脂肪酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="128" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-5" value="酮体" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="100" y="128" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-7" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="zZ2GYFOy4jCpd7BXWt_E-8" target="zZ2GYFOy4jCpd7BXWt_E-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-8" value="糖原" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="255" y="28" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-9" value="血糖" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="435" y="28" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;dashed=1;endArrow=openThin;endFill=0;" edge="1" parent="1" source="zZ2GYFOy4jCpd7BXWt_E-11" target="zZ2GYFOy4jCpd7BXWt_E-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-11" value="脂肪酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="250" y="126" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-12" value="酮体" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="435" y="126" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-15" value="胰高血糖素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="-25" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-16" value="胰岛素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="335" y="-25" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zZ2GYFOy4jCpd7BXWt_E-18" target="zZ2GYFOy4jCpd7BXWt_E-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-18" value="蛋白质" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-85" y="78" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-21" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zZ2GYFOy4jCpd7BXWt_E-19" target="zZ2GYFOy4jCpd7BXWt_E-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-19" value="氨基酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="15" y="78" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-23" value="蛋白质" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="250" y="78" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-24" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;dashed=1;endArrow=openThin;endFill=0;" edge="1" parent="1" source="zZ2GYFOy4jCpd7BXWt_E-25" target="zZ2GYFOy4jCpd7BXWt_E-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="441" y="58" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-41" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="zZ2GYFOy4jCpd7BXWt_E-25" target="zZ2GYFOy4jCpd7BXWt_E-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-25" value="氨基酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="350" y="78" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-31" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="365" y="147.5" as="sourcePoint" />
+            <mxPoint x="377" y="134.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-32" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="377" y="147.5" as="sourcePoint" />
+            <mxPoint x="365" y="134.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-35" value="" style="group;rotation=-30;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="414" y="65" width="12" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-33" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="zZ2GYFOy4jCpd7BXWt_E-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="4" y="15" as="sourcePoint" />
+            <mxPoint x="8" y="-2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZ2GYFOy4jCpd7BXWt_E-34" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="zZ2GYFOy4jCpd7BXWt_E-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="14" y="9" as="sourcePoint" />
+            <mxPoint x="-2" y="4" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,7 +1,7 @@
 ---
 title: "肾小管和集合管的物质转运功能"
 date: 2023-07-31T20:36:54+08:00
-lastmod: 2023-10-19T23:55:25+08:00
+lastmod: 2023-10-27T14:05:17+08:00
 comments: true
 math: false
 weight: 83
@@ -122,7 +122,7 @@ tags:
     - 主要在集合管吸收，集合管上皮细胞顶端膜存在 *AQP2*，受 ADH 调节，基底膜存在 AQP3/AQP4。
 {{< /tab >}}
 
-### HCO<sub>3</sub><sup>-</sup> 的重吸收与 H<sup>+</sup> 的分泌 {#碳酸氢根的重吸收和氢离子的分泌}
+### HCO<sub>3</sub><sup>-</sup> 的重吸收与 H<sup>+</sup> 的分泌 {#碳酸氢根的重吸收和氢的分泌}
 
 {{< section >}}近端小管{{< /section >}}
 
