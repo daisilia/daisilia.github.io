@@ -1,7 +1,7 @@
 ---
 title: "心脏的泵血功能"
 date: 2023-07-19T19:43:38+08:00
-lastmod: 2023-10-10T10:18:42+08:00
+lastmod: 2023-10-29T15:25:43+08:00
 comments: true
 math: false
 weight: 41
@@ -27,7 +27,7 @@ tags:
 
 ## 心脏泵血过程
 
-{{< figure src="心动周期中的指标和瓣膜的变化.png" title="心动周期中的指标和瓣膜的变化" >}}
+{{< figure src="心动周期中的指标和瓣膜的变化.png" title="心动周期中的指标和瓣膜的变化" style="float-right" >}}
 
 1. 等容收缩期
     - 房室瓣关闭,动脉瓣关闭
