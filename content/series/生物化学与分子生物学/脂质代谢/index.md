@@ -1,7 +1,7 @@
 ---
 title: "脂质代谢"
 date: 2023-04-13T22:33:13+08:00
-lastmod: 2023-10-29T16:36:44+08:00
+lastmod: 2023-10-30T12:09:23+08:00
 comments: true
 math: true
 weight: 70
@@ -167,9 +167,9 @@ $$Q_{2n} = (1.5 + 2.5)(n - 1) + 10n - 2 = 14n - 6(ATP)
 
 {{< figure src="甘油三酯的合成.png" title="甘油三酯的合成" >}}
 
-{{< figure src="柠檬酸-丙酮酸循环.png" img-width="500px" title="柠檬酸-丙酮酸循环" >}}
+{{< figure src="柠檬酸-丙酮酸循环示意图.png" img-width="500px" title="柠檬酸-丙酮酸循环示意图" >}}
 
-{{< figure src="柠檬酸-丙酮酸循环.svg" embed=true title="柠檬酸-丙酮酸循环中的物质转换" >}}
+{{< figure src="柠檬酸-丙酮酸循环中的物质转换.svg" embed=true title="柠檬酸-丙酮酸循环中的物质转换" >}}
 
 #### 甘油三酯合成的原料
 

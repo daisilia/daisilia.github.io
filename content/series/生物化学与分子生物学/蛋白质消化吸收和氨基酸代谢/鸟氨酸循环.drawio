@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-10-29T11:13:01.784Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="anZ9mHLjGhkg4LxH34tQ" version="22.0.3" type="device">
+<mxfile host="Electron" modified="2023-10-30T03:23:51.137Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="C48PHyl4MkV8T0Ftw6hI" version="22.0.3" type="device">
   <diagram name="第 1 页" id="GsJs5P2JUwCovrq6-IVo">
-    <mxGraphModel dx="1395" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1234" dy="983" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -44,22 +44,22 @@
         <mxCell id="5yjlM6OjosKDK0_YHAEV-30" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;fontFamily=var(--font-sans);" parent="1" source="5yjlM6OjosKDK0_YHAEV-10" target="5yjlM6OjosKDK0_YHAEV-27" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-30" y="235" />
+              <mxPoint x="-30" y="270" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-10" value="精氨酸代琥珀酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=var(--font-sans);" parent="1" vertex="1">
-          <mxGeometry x="27.5" y="220" width="140" height="30" as="geometry" />
+          <mxGeometry x="27.5" y="255" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;fontFamily=var(--font-sans);" parent="1" source="5yjlM6OjosKDK0_YHAEV-12" target="5yjlM6OjosKDK0_YHAEV-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="98" y="190" />
+              <mxPoint x="98" y="225" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-12" value="天冬氨酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=16;fontStyle=1;fontFamily=var(--font-sans);" parent="1" vertex="1">
-          <mxGeometry x="130" y="170" width="90" height="30" as="geometry" />
+          <mxGeometry x="130" y="205" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;fontFamily=var(--font-sans);" parent="1" source="5yjlM6OjosKDK0_YHAEV-14" target="5yjlM6OjosKDK0_YHAEV-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -67,15 +67,15 @@
         <mxCell id="5yjlM6OjosKDK0_YHAEV-29" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;fontFamily=var(--font-sans);" parent="1" source="5yjlM6OjosKDK0_YHAEV-14" target="5yjlM6OjosKDK0_YHAEV-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-90" y="190" />
+              <mxPoint x="-90" y="225" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-14" value="精氨酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=var(--font-sans);" parent="1" vertex="1">
-          <mxGeometry x="-125" y="220" width="70" height="30" as="geometry" />
+          <mxGeometry x="-125" y="255" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-18" value="尿素" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=16;fontFamily=var(--font-sans);" parent="1" vertex="1">
-          <mxGeometry x="-200" y="170" width="60" height="30" as="geometry" />
+          <mxGeometry x="-200" y="190" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;dashed=1;fontFamily=var(--font-sans);" parent="1" source="5yjlM6OjosKDK0_YHAEV-19" target="5yjlM6OjosKDK0_YHAEV-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -99,7 +99,7 @@
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-31" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;fontFamily=var(--font-sans);" parent="1" source="5yjlM6OjosKDK0_YHAEV-27" target="5yjlM6OjosKDK0_YHAEV-32" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="170" y="295" as="targetPoint" />
+            <mxPoint x="170" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-34" value="三羧酸循环" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;fontFamily=var(--font-sans);" parent="5yjlM6OjosKDK0_YHAEV-31" vertex="1" connectable="0">
@@ -108,7 +108,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-27" value="延胡索酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontFamily=var(--font-sans);" parent="1" vertex="1">
-          <mxGeometry x="-80" y="280" width="90" height="30" as="geometry" />
+          <mxGeometry x="-80" y="315" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-28" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;fontFamily=var(--font-sans);" parent="1" source="5yjlM6OjosKDK0_YHAEV-14" target="5yjlM6OjosKDK0_YHAEV-7" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -124,10 +124,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-32" value="草酰乙酸" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=var(--font-sans);" parent="1" vertex="1">
-          <mxGeometry x="130" y="280" width="90" height="30" as="geometry" />
+          <mxGeometry x="130" y="315" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-35" value="AST" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;fontSize=16;rounded=1;fontFamily=var(--font-sans);" parent="1" vertex="1">
-          <mxGeometry x="182.5" y="220" width="50" height="30" as="geometry" />
+          <mxGeometry x="182.5" y="255" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5yjlM6OjosKDK0_YHAEV-39" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;fontFamily=var(--font-sans);" parent="1" source="5yjlM6OjosKDK0_YHAEV-38" target="5yjlM6OjosKDK0_YHAEV-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -143,8 +143,11 @@
         <mxCell id="5yjlM6OjosKDK0_YHAEV-42" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;线粒体&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=var(--font-sans);" parent="1" vertex="1">
           <mxGeometry x="494" y="-125" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cYb0sr2voifBaF_Z5kES-1" value="1 ATP&lt;br&gt;2 P~P" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="27.5" y="165" width="70" height="50" as="geometry" />
+        <mxCell id="cYb0sr2voifBaF_Z5kES-1" value="1 ATP&lt;br&gt;2 P~P" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=var(--font-sans);" parent="1" vertex="1">
+          <mxGeometry x="32.5" y="200" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="w1jryGpUh6AdpMd4y7c0-1" value="精氨酸代琥珀酸合成酶" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;fontSize=16;rounded=1;fontFamily=var(--font-sans);" vertex="1" parent="1">
+          <mxGeometry x="109" y="170" width="180" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
