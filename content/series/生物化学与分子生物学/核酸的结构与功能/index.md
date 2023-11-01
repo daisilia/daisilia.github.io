@@ -1,7 +1,7 @@
 ---
 title: "核酸的结构与功能"
 date: 2023-04-07T19:31:47+08:00
-lastmod: 2023-10-01T00:22:08+08:00
+lastmod: 2023-11-01T21:10:02+08:00
 comments: true
 math: false
 weight: 20
@@ -92,7 +92,7 @@ tags:
 |                                                    干扰小 RNA，siRNA |        21--23 bp**        | 诱导外源性基因表达的 mRNA 降解                                                                                                             |
 |                                                                piRNA |            30nt           | 与 PIWI 蛋白家族成员结合形成 piwi 复合物来调控基因沉默                                                                                     |
 |                                                 长非编码 RNA，lncRNA | <mark>200-10000 nt</mark> | 结合在编码蛋白质的基因上游启动子区，干扰下游基因的表达                                                                                     |
-|                                                    环状 RNA，circRNA |                           | 通过结合 miRNA，进而解除 miRNA 对其靶基因的抑制作用，升髙靶基因的表达水平，产生相应的生物学效应                                            |
+|                                                    环状 RNA，circRNA |                           | 通过结合 miRNA，进而解除 miRNA 对其靶基因的抑制作用，<br/>升髙靶基因的表达水平，产生相应的生物学效应                                            |
 {{< /table >}}
 
 ### 核糖体 RNA {alias="rRNA"}

@@ -1,7 +1,7 @@
 ---
 title: "糖代谢"
 date: 2023-09-24T10:56:31+08:00
-lastmod: 2023-10-28T23:23:58+08:00
+lastmod: 2023-11-01T21:52:04+08:00
 comments: true
 math: true
 weight: 50
@@ -81,9 +81,9 @@ $$\ce{丙酮酸 + NAD^+ + HS-CoA ->[丙酮酸脱氢酶复合体] 乙酰 CoA + NA
 
 {{< section >}}丙酮酸脱氢酶复合体的组成及辅因子{{< /section >}}
 
-1. E<sub>1</sub>（丙酮酸脱氢酶）：TPP（维生素 B<sub>1</sub>）
-2. E<sub>2</sub>（二氢硫辛酰胺转乙酰酶）：硫辛酸、CoA（泛酸）
-3. E<sub>3</sub>（二氢硫辛酰胺脱氢酶）：FAD（维生素 B<sub>2</sub>）、NAD（维生素 PP）
+1. E<sub>1</sub>（丙酮酸脱氢酶）：TPP（焦磷酸硫胺素，维生素 B<sub>1</sub> 的活性形式）
+2. E<sub>2</sub>（二氢硫辛酰胺转乙酰酶）：硫辛酸、CoA（含泛酸）
+3. E<sub>3</sub>（二氢硫辛酰胺脱氢酶）：FAD（维生素 B<sub>2</sub> 的活性形式）、NAD<sup>+</sup>（维生素 PP 的活性形式）
 
 {{< section >}}调节{{< /section >}}
 
