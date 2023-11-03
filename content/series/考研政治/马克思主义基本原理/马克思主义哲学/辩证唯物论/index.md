@@ -1,10 +1,10 @@
 ---
 title: "辩证唯物论"
 date: 2023-10-30T22:14:03+08:00
-lastmod: 2023-11-03T00:13:59+08:00
+lastmod: 2023-11-03T23:32:07+08:00
 comments: true
 math: false
-weight: 112
+weight: 111
 tags:
     - 政治
     - 马克思主义

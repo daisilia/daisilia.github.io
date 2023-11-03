@@ -1,10 +1,10 @@
 ---
 title: "唯物辩证法"
 date: 2023-10-30T22:38:50+08:00
-lastmod: 2023-11-03T13:17:49+08:00
+lastmod: 2023-11-03T23:32:06+08:00
 comments: true
 math: false
-weight: 113
+weight: 112
 tags:
     - 政治
     - 马克思主义
