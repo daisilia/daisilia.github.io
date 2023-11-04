@@ -1,7 +1,7 @@
 ---
 title: "蛋白质的合成"
 date: 2023-09-29T09:51:59+08:00
-lastmod: 2023-10-31T15:24:06+08:00
+lastmod: 2023-11-04T15:52:46+08:00
 comments: true
 math: true
 weight: 150
@@ -103,7 +103,7 @@ $$\ce{氨基酸 + \rm{tRNA} + ATP ->[氨酰-tRNA 合成酶][Mg2+] 氨酰-\rm{tRN
 2. mRNA 与核糖体小亚基结合
     - 小亚基与 mRNA 结合时，可准确识别可读框的起始密码子 AUG，而不会结合内部的 AUG，从而正确地翻译出所编码蛋白质
     - mRNA 起始密码子 AUG 上游，存在一段被称为核糖体结合位点（RBS）的序列，该序列距 AUG 上游约 10 个核苷酸处通常为 -**AGGAGG**-（**S-D 序列**），可被 16S rRNA 通过碱基互补而精确识别，从而{{< note "S-D 序列" >}}**将核糖体小亚基准确定位于 mRNA**{{< /note >}}
-3. [fMet-tRNA<sup>fMet</sup>](#tab_起始氨酰-tRNA) 结合在核糖体 **P 位**
+3. [**fMet-tRNA<sup>fMet</sup>**](#tab_起始氨酰-tRNA) 结合在核糖体 **P 位**（~~A 位~~）
     - {{< note "IF2" >}}fMet-tRNA<sup>fMet</sup> 与**结合了 GTP 的 IF2** 一起，识别并结合对应于小亚基 P 位的 AUG 处{{< /note >}}
     - 此时，{{< note "IF1" >}}**A 位**被 **IF1 占据**，不与任何氨酰-tRNA 结合{{< /note >}}
 4. 翻译起始复合物形成：
