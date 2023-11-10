@@ -1,7 +1,7 @@
 ---
 title: "肌细胞的收缩"
 date: 2023-02-26T18:15:13+08:00
-lastmod: 2023-10-08T12:35:58+08:00
+lastmod: 2023-11-10T22:31:29+08:00
 comments: true
 math: false
 weight: 24
@@ -151,7 +151,7 @@ JSR 膜中嵌有*钙释放通道*（calcium release channel）或称*雷诺丁�
 1. **T 管膜的动作电位传导**：肌膜上的动作电位沿 <mark>T 管（横管）</mark>膜传至肌细胞内部，并<mark>激活 T 管膜和肌膜中的 L 型钙通道</mark>。
 2. **JSR 内 Ca<sup>2+</sup> 的释放**：肌膜的去极化，在骨骼肌可通过构象变化触发钙释放机制，在心肌则通过[钙诱导钙释放机制]({{< relref "心脏的电生理学及生理特性#收缩性" >}})，使 JSR 内的 Ca<sup>2+</sup> 顺浓度差释放到胞质中，胞质内的 Ca<sup>2+</sup> 浓度由静息时的 0.1 μmol/L 水平迅速升高百倍以上。
 3. **Ca<sup>2+</sup> 触发肌丝滑行**：胞质内 Ca<sup>2+</sup> 浓度的升高促使 Ca<sup>2+</sup> 与 TnC 结合而触发肌肉收缩。见[横桥周期](#横桥周期)。
-4. **<mark>JSR</mark> 回摄 Ca<sup>2+</sup>**：
+4. **<mark>JSR</mark>{{< hdt "（实际是 LSR）" >}}回摄 Ca<sup>2+</sup>**：
     - 在*骨骼肌*，胞质内增加的 Ca<sup>2+</sup> 几乎<mark>全部</mark>经激活 LSR 膜中的**钙泵**而被回摄进 SR 中；
     - 而*心肌*胞质内的 Ca<sup>2+</sup> 大部分经 LSR 膜中的**钙泵**活动被回收，尚有 <mark>10%--20%</mark> 的 Ca<sup>2+</sup> 则由肌膜中的 Na<sup>+</sup>-Ca<sup>2+</sup> 交换体和钙泵排至胞外。 胞质中 Ca<sup>2+</sup> 浓度降低则导致肌肉舒张，可见**肌肉舒张的过程亦耗能**。
 

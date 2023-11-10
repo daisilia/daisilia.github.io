@@ -1,7 +1,7 @@
 ---
 title: "细胞的信号转导"
 date: 2023-01-25T13:05:44+08:00
-lastmod: 2023-11-01T12:33:00+08:00
+lastmod: 2023-11-10T21:26:26+08:00
 comments: true
 math: false
 weight: 22
@@ -72,6 +72,8 @@ G 蛋白耦联受体介导的信号转导所涉及的信号分子包括多种信
     - 抑制 AC（Gi）：α<sub>2</sub> **肾上腺素**受体、*多巴胺* D<sub>2</sub> 受体、**5-HT<sub>2</sub>** 受
 - 受体-G 蛋白-PLC-IP<sub>3</sub>-Ca<sup>2+</sup> 和 DG-PKC 通路（Gq）： **5-HT<sub>2</sub>** 受体、α<sub>1</sub> <mark>**肾上腺素**</mark>受体
 
+三条通路的 [G 蛋白的种类](#tab_g-蛋白的种类)不同。
+
 {{% table title="三条常见转导通路" left-sticky=false id="tbl_三条常见转导通路"
     caption="\*Ca<sup>2+</sup>-CaM 依赖性蛋白激酶，由钙调蛋白（CaM）与 Ca<sup>2+</sup> 结合形成 Ca<sup>2+</sup>-CaM 的复合物激活"%}}
 | 转导通路                                                                                    | G 蛋白效应器<br/>（效应器酶） | 第二信使                                                                | 蛋白激酶         |
@@ -101,7 +103,7 @@ G 蛋白（G protein）| ***鸟苷酸结合蛋白***（guanine nucleotide-bindin
 : G 蛋白存在于细胞膜的内侧面，通常指由 α、β 和 γ 三个亚单位构成的**异三聚体 G 蛋白**。其中 **α 亚单位**既有结合 GTP 或 GDP 的能力，又具有 **GTP 酶活性**；而 β 和 γ 亚单位通常形成功能复合体发挥作用。
 : 另外，体内还存在*小 G 蛋白*（small G protein，**Ras 蛋白**）和*转录因子*两类 G 蛋白，但它们一般不直接受 G 蛋白耦联受体的激活。
 
-{{< tab style="default" summary="不同种类的 G 蛋白" details=true >}}
+{{< tab style="default" summary="不同种类的 G 蛋白" details=true id="tab_g-蛋白的种类" >}}
 - Gs：激活态的 Gs 能激活 AC，AC 被激活后，其位于胞内侧的催化活性部位，可催化胞质中 ATP 分解生成 cAMP，提高胞质中 cAMP 的浓度
 - Gi：激活态的 Gi 则抑制 AC 的活性，降低胞质中 cAMP 的浓度
 - Gq：Gq 激活 PLC，分解 PIP<sub>2</sub> 为 IP<sub>3</sub> 和 DG（二酰甘油）
@@ -137,7 +139,7 @@ G 蛋白效应器酶不包括鸟苷酸环化酶（GC），鸟苷酸环化酶以�
 
 G 蛋白激活的[效应器酶](#效应器酶)再分解细胞内底物所产生的小分子物质属于第二信使。
 
-目前已知的第二信使有{{% hzl %}}**环-磷酸腺苷**（cyclic adenosine monophosphate，**cAMP**）、|**环-磷酸鸟苷**（cyclic guanosine monophosphate，**cGMP**）、|**二酰甘油**（diacylglycerol，**DG/DAG**）、|**三磷酸肌醇**（inositol triphosphate，**IP<sub>3</sub>**，肌醇-1，4，5-三磷酸）、|**花生四烯酸**（arachidonic acid，**AA**)**及其代谢产物**、|**Ca<sup>2+</sup>**、|**神经酰胺**{{< hdt "生化" >}}、|**NO**{{< hdt "生化" >}}、|**CO**{{< hdt "生化" >}}{{% /hzl %}}等。
+目前已知的第二信使有{{% hzl %}}**环-磷酸腺苷**（**cAMP**）、|**环-磷酸鸟苷**（**cGMP**）、|**二酰甘油**（**DG/DAG**）、|**三磷酸肌醇**（**IP<sub>3</sub>**，肌醇-1，4，5-三磷酸）、|**花生四烯酸**（**AA**)**及其代谢产物**、|**Ca<sup>2+</sup>**、|**神经酰胺**{{< hdt "生化" >}}、|**NO**{{< hdt "生化" >}}、|**CO**{{< hdt "生化" >}}{{% /hzl %}}等。
 
 - cAMP：
     - 作用：通过别构激活 PKA 进一步发挥生物学效应
