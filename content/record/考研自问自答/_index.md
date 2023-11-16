@@ -1,7 +1,7 @@
 ---
 title: "考研自问自答"
 date: 2023-11-03T14:22:24+08:00
-lastmod: 2023-11-10T21:13:40+08:00
+lastmod: 2023-11-16T16:09:25+08:00
 comments: true
 math: false
 ---
@@ -61,7 +61,7 @@ math: false
     - RNA pol Ⅰ：{{< hdt "45S rRNA" >}}
     - RNA pol Ⅱ：{{< hdt "hnRNA，调控性非编码 RNA：lncRNA、miRNA 和 piRNA" >}}
     - RNA pol Ⅲ：{{< hdt "tRNA，5S rRNA，核小 RNA（snRNA，属于核酶）" >}}
-4. 真核生物 TFⅡD 识别的序列为 TATA/{{< hdt "Pribnow" >}} 盒
+4. 真核生物 TFⅡD 识别的序列为 TATA/{{< hdt "Hognest" >}} 盒
 5. 真核生物的转录终止：
     - 真核生物的转录终止和{{< hdt "转录后修饰" >}}密切相关。
     - 在可读框的下游，常有一组共同序列 {{< hdt "AATAAA" >}} 序列，再下游还有相当多的 GT 序列，这些序列称为{{< hdt "转录终止的修饰点" >}}。
