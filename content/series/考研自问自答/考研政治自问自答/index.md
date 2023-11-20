@@ -1,9 +1,11 @@
 ---
 title: "考研政治自问自答"
 date: 2023-11-13T14:38:30+08:00
-lastmod: 2023-11-19T12:24:44+08:00
+lastmod: 2023-11-20T22:46:52+08:00
 comments: true
 math: false
+features:
+    - clickableHiddenText
 weight: 300
 tags:
     - 政治

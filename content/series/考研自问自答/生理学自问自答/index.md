@@ -1,9 +1,11 @@
 ---
 title: "生理学自问自答"
 date: 2023-11-10T18:08:55+08:00
-lastmod: 2023-11-14T21:50:29+08:00
+lastmod: 2023-11-20T22:47:12+08:00
 comments: true
-math: true
+features:
+    - clickableHiddenText
+    - math
 tags:
     - 生理学
 ---
@@ -1124,19 +1126,3 @@ tags:
 - {{< hdt "PO/AH（视前区-下丘脑前部）" >}}是机体最重要的体温调节中枢，其中的热敏神经元、冷敏神经元的活动设定了{{< hdt "体温调定点" >}}。
 {{< /tab >}}
 
-<style>
-.hidden-text {
-    cursor: pointer;
-}
-.hidden-text.passed {
-    background: inherit;
-    text-decoration: underline;
-}
-</style>
-<script>
-for (h of document.getElementsByClassName("hidden-text")) {
-    h.onclick = function() {
-        this.classList.toggle("passed");
-    }
-}
-</script>

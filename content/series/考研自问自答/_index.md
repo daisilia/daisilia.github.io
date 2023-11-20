@@ -1,9 +1,10 @@
 ---
 title: "考研自问自答"
 date: 2023-11-03T14:22:24+08:00
-lastmod: 2023-11-16T16:09:25+08:00
+lastmod: 2023-11-20T22:48:02+08:00
 comments: true
-math: false
+features:
+    - clickableHiddenText
 ---
 
 ## 生物化学与分子生物学
@@ -1156,19 +1157,3 @@ math: false
 - 阿米巴溃疡：{{< hdt "盲肠和升结肠" >}}，{{< hdt "烧瓶" >}}状溃疡
 {{< /tab >}}
 
-<style>
-.hidden-text {
-    cursor: pointer;
-}
-.hidden-text.passed {
-    background: inherit;
-    text-decoration: underline;
-}
-</style>
-<script>
-for (h of document.getElementsByClassName("hidden-text")) {
-    h.onclick = function() {
-        this.classList.toggle("passed");
-    }
-}
-</script>
