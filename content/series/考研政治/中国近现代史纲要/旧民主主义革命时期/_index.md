@@ -1,10 +1,10 @@
 ---
 title: "旧民主主义革命时期"
 date: 2023-11-19T12:26:16+08:00
-lastmod: 2023-11-21T20:34:00+08:00
+lastmod: 2023-11-23T11:48:02+08:00
 comments: true
 math: false
-weight: 210
+weight: 310
 tags:
     - 政治
     - 中国近现代史纲要

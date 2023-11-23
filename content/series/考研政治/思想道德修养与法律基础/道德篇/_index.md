@@ -1,10 +1,10 @@
 ---
 title: "道德篇"
 date: 2023-11-17T13:23:32+08:00
-lastmod: 2023-11-18T18:20:55+08:00
+lastmod: 2023-11-23T11:48:02+08:00
 comments: true
 math: false
-weight: 420
+weight: 220
 tags:
     - 政治
     - 思想道德修养与法律基础
