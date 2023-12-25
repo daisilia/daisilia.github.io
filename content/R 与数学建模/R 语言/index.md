@@ -3,7 +3,7 @@ title: R 语言
 comments: true
 mathjax: false
 date: 2021-08-19T18:26:37+08:00
-lastmod: 2022-11-03T09:38:41+08:00
+lastmod: 2023-12-25T17:43:29+08:00
 tags:
     - R
     - 数学建模
@@ -14,7 +14,7 @@ R 语言基础，主要参考：
 - 李东风 [《R 语言教程》](https://www.math.pku.edu.cn/teachers/lidf/docs/Rbook/html/_Rbook)
 - 菜鸟教程 - [R 语言教程](https://www.runoob.com/r/r-tutorial.html)
 
-数据科学相关见 [R 数据科学]({{< relref "/R 与数学建模/R-数据科学" >}})。
+数据科学相关见 [R 数据科学]({{< relref "/R 与数学建模/R 数据科学" >}})。
 
 <!--more-->
 
@@ -772,7 +772,7 @@ f(6)
 ```
 
 ```
-#> Error in print(b): 缺少参数"b",也没有缺省值
+#> Error in f(6): 缺少参数"b",也没有缺省值
 ```
 
 ```
