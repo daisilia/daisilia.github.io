@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2021-09-16T16:29:41+08:00
-lastmod: 2023-11-03T22:13:34+08:00
+lastmod: 2023-12-25T16:20:21+08:00
 type: about
 ---
 
@@ -11,7 +11,7 @@ type: about
 
 **Who am I?**
 
-- CMU（~~Carnegie Mellon University~~中国医科大学）在读*医学牲*
+- 在读*医学牲*
 - 编程爱好者、（Neo）Vimmer
 
 **What am I doing?**
