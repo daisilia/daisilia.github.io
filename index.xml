@@ -1035,7 +1035,7 @@
 &lt;dt>贝赫切特病（Behcet disease，BD）| 白塞病&lt;/dt>
 &lt;dd>一种以口腔和外阴溃疡、眼炎为临床特征，基本病理改变为&lt;em>血管炎&lt;/em>，累及多个系统的慢性疾病，可分为血管型、神经型、胃肠型等。&lt;/dd>
 &lt;dd>病情呈&lt;strong>反复发作和缓解交替&lt;/strong>，除因内脏受损死亡外，大部分病人的预后良好。&lt;/dd>
-&lt;/dl></description></item><item><title>2023-09-27</title><link>https://daisilia.com/diary/2023/09/27/</link><pubDate>Wed, 27 Sep 2023 15:30:08 +0800</pubDate><guid>https://daisilia.com/diary/2023/09/27/</guid><description>KDE window tiling
+&lt;/dl></description></item><item><title>2023-12-26 Lintr</title><link>https://daisilia.com/diary/2023/12/26/</link><pubDate>Tue, 26 Dec 2023 12:37:15 +0800</pubDate><guid>https://daisilia.com/diary/2023/12/26/</guid><description>https://lintr.r-lib.org/articles/lintr.html 比如要配置缩进空格数： 1 2 3 linters: linters_with_defaults( indentation_linter = indentation_linter(indent = 2L) )</description></item><item><title>2023-09-27</title><link>https://daisilia.com/diary/2023/09/27/</link><pubDate>Wed, 27 Sep 2023 15:30:08 +0800</pubDate><guid>https://daisilia.com/diary/2023/09/27/</guid><description>KDE window tiling
 https://store.kde.org/p/2045724
 https://www.pling.com/p/2026302/
 Key bindings can be configured in KDE System Settings among KWin&amp;rsquo;s own keyboard shortcuts. Here&amp;rsquo;s the default ones:
